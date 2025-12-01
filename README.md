@@ -4,6 +4,14 @@
 
 ---
 
+## 🚀 Avancée Majeure Récente
+
+**Reformulation radicale du redshift cosmologique** : Le redshift n'est plus causé par l'expansion spatiale, mais par l'évolution de la distorsion temporelle cosmique. Cette reformulation permet d'unifier l'explication de la matière noire (25%) et de l'énergie noire (70%) sous un seul cadre théorique cohérent basé sur la distorsion temporelle.
+
+📄 Voir : [FORMULATION_REDSHIFT_TEMPOREL.md](FORMULATION_REDSHIFT_TEMPOREL.md)
+
+---
+
 ## 📋 Vue d'ensemble
 
 Ce projet vise à développer une théorie scientifique rigoureuse basée sur deux concepts fondamentaux :
@@ -63,6 +71,27 @@ Pour le Système Solaire :
 - **Terre** : IDT = 1.48 × 10⁻⁸
 - **Neptune** : IDT = 4.92 × 10⁻¹⁰
 
+### 7. Énergie Noire Réinterprétée
+**Nouvelle définition** : L'énergie noire est la manifestation observable de **l'expansion différentielle du vide cosmique**.
+
+**Nature** : Non pas une substance mystérieuse à pression négative, mais un **effet géométrique** résultant de la distorsion temporelle différentielle.
+
+**Mécanisme** :
+- La matière "ancre" l'espace-temps par distorsion temporelle commune
+- Les régions riches en matière s'expandent plus lentement
+- Les vides cosmiques s'expandent au taux maximal H₀
+- Cette différence crée l'accélération apparente de l'expansion
+
+### 8. Formulation du Redshift Temporel
+**Reformulation radicale** : Le redshift cosmologique n'est PAS causé par l'expansion spatiale, mais par **l'évolution de la distorsion temporelle**.
+
+**Formule centrale** :
+```
+1 + z = τ_observateur / τ_émission
+```
+
+**Interprétation** : Le temps cosmique a "accéléré" depuis le Big Bang. Les photons anciens apparaissent décalés vers le rouge car ils ont été émis à une époque où le temps s'écoulait plus lentement.
+
 ---
 
 ## 📐 Formulation Mathématique
@@ -112,14 +141,21 @@ L'effet est basé sur la différence de distorsion temporelle entre deux zones s
 ├── FORMULATION_MATHEMATIQUE.md            # Équations et formules
 ├── SYNTHESE_REPONSES.md                   # Clarifications et précisions
 ├── RESULTATS_TEST.md                      # Tests de cohérence cosmologique
+├── FORMULATION_REDSHIFT_TEMPOREL.md       # ⚡ Reformulation redshift temporel
 │
 ├── DEFINITION_MATIERE_NOIRE.md            # 🇫🇷 Définition complète matière noire
 ├── DARK_MATTER_DEFINITION.md              # 🇬🇧 Dark matter definition (EN)
 ├── DEFINICION_MATERIA_OSCURA.md           # 🇪🇸 Definición materia oscura (ES)
 │
+├── DEFINITION_ENERGIE_NOIRE.md            # 🇫🇷 Définition complète énergie noire
+├── DARK_ENERGY_DEFINITION.md              # 🇬🇧 Dark energy definition (EN)
+├── DEFINICION_ENERGIA_OSCURA.md           # 🇪🇸 Definición energía oscura (ES)
+│
 ├── reponses.md                            # Réponses aux questions fondamentales
 │
 ├── calcul_lorentz_systeme_solaire.py     # Cartographie Després du Système Solaire
+├── calcul_distorsion_cosmologique.py     # Calculs distorsion temporelle cosmologique
+├── correspondance_tau_redshift.py         # Correspondance τ(t) ↔ redshift z
 ├── test_formule.py                        # Script de test (avec graphiques)
 └── test_formule_simple.py                 # Script de test (version simple)
 ```
@@ -130,11 +166,17 @@ L'effet est basé sur la différence de distorsion temporelle entre deux zones s
 
 | Phase | Description | Progression |
 |-------|-------------|-------------|
-| **Phase 1** | Fondations conceptuelles | 80% ✅ |
-| **Phase 2** | Formalisation mathématique | 40% 🟡 |
-| **Phase 3** | Validation numérique | 0% ⏳ |
-| **Phase 4** | Prédictions testables | 0% ⏳ |
-| **Phase 5** | Documentation multilingue | 0% ⏳ |
+| **Phase 1** | Fondations conceptuelles | 95% ✅ |
+| **Phase 2** | Formalisation mathématique | 65% 🟡 |
+| **Phase 3** | Validation numérique | 20% 🟡 |
+| **Phase 4** | Prédictions testables | 10% 🟡 |
+| **Phase 5** | Documentation multilingue | 40% 🟡 |
+
+**Avancées récentes** :
+- ✅ Définition complète de l'énergie noire (3 langues)
+- ✅ Formulation du redshift temporel (reformulation radicale)
+- ✅ Calculs de distorsion temporelle cosmologique
+- ✅ Correspondance τ(t) ↔ redshift z
 
 ---
 
@@ -175,7 +217,9 @@ Voir [PROGRESS_ET_QUESTIONS.md](PROGRESS_ET_QUESTIONS.md) pour la liste complèt
 
 ---
 
-## 🌐 Définition de la Matière Noire (Documents Multilingues)
+## 🌐 Documentation Multilingue
+
+### Matière Noire
 
 **Documents complets expliquant la réinterprétation de la matière noire** par points d'accumulation de distorsion temporelle :
 
@@ -183,16 +227,54 @@ Voir [PROGRESS_ET_QUESTIONS.md](PROGRESS_ET_QUESTIONS.md) pour la liste complèt
 - 🇬🇧 **English** : [DARK_MATTER_DEFINITION.md](DARK_MATTER_DEFINITION.md)
 - 🇪🇸 **Español** : [DEFINICION_MATERIA_OSCURA.md](DEFINICION_MATERIA_OSCURA.md)
 
-Ces documents couvrent :
+**Contenu** :
 - Définition précise de la matière noire comme effet géométrique
 - Liaison Asselin : différence/moyenne de distorsion temporelle
 - Cartographie Després : indice Lorentz + 3ᵉ loi de Kepler
 - Applications observationnelles et prédictions testables
 
-**Calculs concrets** : [calcul_lorentz_systeme_solaire.py](calcul_lorentz_systeme_solaire.py)
+**Calculs** : [calcul_lorentz_systeme_solaire.py](calcul_lorentz_systeme_solaire.py)
 - Cartographie Després complète du Système Solaire
 - Valeurs d'IDT pour toutes les planètes
 - Liaisons Asselin entre planètes adjacentes
+
+### Énergie Noire
+
+**Documents complets expliquant la réinterprétation de l'énergie noire** par expansion différentielle du vide cosmique :
+
+- 🇫🇷 **Français** : [DEFINITION_ENERGIE_NOIRE.md](DEFINITION_ENERGIE_NOIRE.md)
+- 🇬🇧 **English** : [DARK_ENERGY_DEFINITION.md](DARK_ENERGY_DEFINITION.md)
+- 🇪🇸 **Español** : [DEFINICION_ENERGIA_OSCURA.md](DEFINICION_ENERGIA_OSCURA.md)
+
+**Contenu** :
+- Définition de l'énergie noire comme effet géométrique
+- Loi de l'expansion différentielle : H_local(ρ) = H₀ · [1 - α · τ(ρ)]
+- Gradient d'expansion entre régions denses et vides
+- Contribution au décalage vers le rouge cosmologique
+- Applications aux structures cosmiques à grande échelle
+
+**Calculs** : [calcul_distorsion_cosmologique.py](calcul_distorsion_cosmologique.py)
+- Calculs de distorsion temporelle cosmologique
+- Taux d'expansion différentiels
+- Gradient H entre galaxies et vides
+
+### Redshift Temporel
+
+**Reformulation radicale du redshift cosmologique** :
+
+- 🇫🇷 **Français** : [FORMULATION_REDSHIFT_TEMPOREL.md](FORMULATION_REDSHIFT_TEMPOREL.md)
+
+**Contenu** :
+- Principe fondamental : redshift = évolution de la distorsion temporelle
+- Formule centrale : 1 + z = τ_observateur / τ_émission
+- Évolution temporelle : τ(t) = τ₀ · (t / t₀)^β
+- Remplacement conceptuel de la constante de Hubble
+- Implications pour la cosmologie observationnelle
+
+**Calculs** : [correspondance_tau_redshift.py](correspondance_tau_redshift.py)
+- Correspondance complète entre τ(t) et redshift z
+- Évolution de la distorsion temporelle cosmique
+- Comparaisons avec observations
 
 ---
 
@@ -220,5 +302,5 @@ Projet de recherche théorique
 
 ---
 
-**Dernière mise à jour** : 2025-11-28
-**Version** : 0.1.0-alpha (Fondations conceptuelles)
+**Dernière mise à jour** : 2025-12-01
+**Version** : 0.2.0-beta (Matière noire + Énergie noire + Redshift temporel)
