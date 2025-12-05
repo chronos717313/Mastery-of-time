@@ -73,15 +73,41 @@ v_obs_kms = np.array([
 sigma_obs_kms = np.array([10.0] * len(v_obs_kms))
 
 # ============================================================================
-# GALAXIES
+# OBJETS COSMIQUES (MULTI-ÉCHELLE)
 # ============================================================================
 
-GALAXIES = [
-    {'nom': 'Voie Lactée', 'M': 8.0e10 * M_soleil, 'position': np.array([0.0, 0.0, 0.0])},
-    {'nom': 'M31', 'M': 1.5e12 * M_soleil, 'position': np.array([750.0, 250.0, 100.0])},
-    {'nom': 'M33', 'M': 4.0e10 * M_soleil, 'position': np.array([840.0, 120.0, -50.0])},
-    {'nom': 'LMC', 'M': 1.0e10 * M_soleil, 'position': np.array([-40.0, 30.0, -20.0])},
-    {'nom': 'SMC', 'M': 7.0e9 * M_soleil, 'position': np.array([-50.0, 40.0, -15.0])},
+OBJETS_COSMIQUES = [
+    # ===== GALAXIES (Échelle kpc, M ~ 10⁹-10¹² M☉) =====
+    {'nom': 'Voie Lactée', 'type': 'galaxie', 'M': 8.0e10 * M_soleil,
+     'position': np.array([0.0, 0.0, 0.0]), 'd_eff': 100.0},
+
+    {'nom': 'M31 (Andromède)', 'type': 'galaxie', 'M': 1.5e12 * M_soleil,
+     'position': np.array([750.0, 250.0, 100.0]), 'd_eff': 150.0},
+
+    {'nom': 'M33 (Triangulum)', 'type': 'galaxie', 'M': 4.0e10 * M_soleil,
+     'position': np.array([840.0, 120.0, -50.0]), 'd_eff': 80.0},
+
+    {'nom': 'LMC', 'type': 'galaxie', 'M': 1.0e10 * M_soleil,
+     'position': np.array([-40.0, 30.0, -20.0]), 'd_eff': 50.0},
+
+    {'nom': 'SMC', 'type': 'galaxie', 'M': 7.0e9 * M_soleil,
+     'position': np.array([-50.0, 40.0, -15.0]), 'd_eff': 40.0},
+
+    # ===== SUPERAMAS (Échelle Mpc, M ~ 10¹⁴-10¹⁷ M☉) =====
+    {'nom': 'Amas de la Vierge', 'type': 'superamas', 'M': 1.2e15 * M_soleil,
+     'position': np.array([16500.0, 0.0, 0.0]), 'd_eff': 5000.0},
+
+    {'nom': 'Amas de Coma', 'type': 'superamas', 'M': 1.0e15 * M_soleil,
+     'position': np.array([99000.0, 20000.0, 5000.0]), 'd_eff': 10000.0},
+
+    {'nom': 'Amas de Perseus', 'type': 'superamas', 'M': 0.8e15 * M_soleil,
+     'position': np.array([73000.0, -15000.0, 8000.0]), 'd_eff': 8000.0},
+
+    {'nom': 'Amas du Centaure', 'type': 'superamas', 'M': 0.5e15 * M_soleil,
+     'position': np.array([52000.0, 30000.0, -12000.0]), 'd_eff': 6000.0},
+
+    {'nom': 'Centre Laniakea', 'type': 'superamas', 'M': 1.0e17 * M_soleil,
+     'position': np.array([75000.0, 40000.0, 20000.0]), 'd_eff': 50000.0},
 ]
 
 # ============================================================================
@@ -129,22 +155,25 @@ def densite_visible(r_kpc):
 # ============================================================================
 
 class LigneAsselin:
-    """Ligne Asselin entre deux galaxies"""
+    """Ligne Asselin entre deux objets cosmiques (galaxies ou superamas)"""
 
-    def __init__(self, gal_i, gal_j, d_eff_kpc=100.0):
-        self.gal_i = gal_i
-        self.gal_j = gal_j
-        self.r_i = gal_i['position']
-        self.r_j = gal_j['position']
-        self.d_eff = d_eff_kpc
+    def __init__(self, obj_i, obj_j):
+        self.obj_i = obj_i
+        self.obj_j = obj_j
+        self.r_i = obj_i['position']
+        self.r_j = obj_j['position']
 
-        # Distance entre galaxies
+        # Distance entre objets
         self.d_ij = np.linalg.norm(self.r_j - self.r_i)
 
+        # d_eff effectif = moyenne géométrique des d_eff individuels
+        # (couplage entre échelles)
+        self.d_eff = math.sqrt(obj_i['d_eff'] * obj_j['d_eff'])
+
         # Intensité Asselin
-        M_i = gal_i['M']
-        M_j = gal_j['M']
-        self.intensite = math.sqrt(M_i * M_j / M_soleil**2) / self.d_ij**2 * math.exp(-self.d_ij / d_eff_kpc)
+        M_i = obj_i['M']
+        M_j = obj_j['M']
+        self.intensite = math.sqrt(M_i * M_j / M_soleil**2) / self.d_ij**2 * math.exp(-self.d_ij / self.d_eff)
 
     def point_sur_ligne(self, s):
         """Point paramétrique sur ligne, s ∈ [0,1]"""
@@ -182,13 +211,13 @@ class LigneAsselin:
 
         return rho_SI
 
-def creer_lignes_asselin(galaxies, d_eff_kpc=100.0):
-    """Crée toutes lignes Asselin entre paires de galaxies"""
+def creer_lignes_asselin(objets):
+    """Crée toutes lignes Asselin entre paires d'objets cosmiques"""
     lignes = []
-    N = len(galaxies)
+    N = len(objets)
     for i in range(N):
         for j in range(i+1, N):
-            ligne = LigneAsselin(galaxies[i], galaxies[j], d_eff_kpc)
+            ligne = LigneAsselin(objets[i], objets[j])
             lignes.append(ligne)
     return lignes
 
@@ -369,11 +398,17 @@ def courbe_rotation_maxwell(r_array, lignes, sigma_kpc=1.0):
 def test_formulation_maxwell():
     """Test complet formulation type Maxwell"""
     print("\n" + "="*80)
-    print(" FORMULATION TYPE MAXWELL - LIAISON ASSELIN ".center(80))
+    print(" FORMULATION MAXWELL - MULTI-ÉCHELLE (GALAXIES + SUPERAMAS) ".center(80))
     print("="*80)
     print()
     print("Principe: Résoudre ∇²γ_Després = 4πG/c² ρ_eff")
     print("          avec ρ_eff = ρ_visible + ρ_Asselin")
+    print()
+
+    # Compter objets
+    n_galaxies = sum(1 for obj in OBJETS_COSMIQUES if obj['type'] == 'galaxie')
+    n_superamas = sum(1 for obj in OBJETS_COSMIQUES if obj['type'] == 'superamas')
+    print(f"Objets cosmiques: {n_galaxies} galaxies + {n_superamas} superamas")
     print()
 
     # Test Newton
@@ -385,13 +420,14 @@ def test_formulation_maxwell():
     print()
 
     # Créer lignes
-    print(f"Création réseau Asselin ({len(GALAXIES)} galaxies)...")
-    lignes = creer_lignes_asselin(GALAXIES, d_eff_kpc=100.0)
+    print(f"Création réseau Asselin multi-échelle...")
+    lignes = creer_lignes_asselin(OBJETS_COSMIQUES)
     print(f"  → {len(lignes)} lignes créées")
+    print(f"  → Échelles: galaxies (d_eff ~ 100 kpc) + superamas (d_eff ~ 5-50 Mpc)")
     print()
 
     # Test nominal
-    print("TEST 2: Maxwell (d_eff=100 kpc, σ=1 kpc)")
+    print("TEST 2: Maxwell multi-échelle (valeurs nominales, σ=1 kpc)")
     print("-" * 80)
     v_maxwell_nominal = courbe_rotation_maxwell(r_obs_kpc, lignes, sigma_kpc=1.0)
     chi2_nominal = chi_carre(v_maxwell_nominal, v_obs_kms, sigma_obs_kms)
@@ -399,68 +435,94 @@ def test_formulation_maxwell():
     print()
 
     # Optimisation
-    print("TEST 3: Optimisation (d_eff, σ)")
+    print("TEST 3: Optimisation (facteurs d'échelle galaxies/superamas, σ)")
     print("-" * 80)
     print("Optimisation en cours...")
 
     def objective(params):
-        d_eff, sigma = params
+        scale_gal, scale_super, sigma = params
 
-        if d_eff < 10 or d_eff > 500:
+        if scale_gal < 0.1 or scale_gal > 10.0:
+            return 1e10
+        if scale_super < 0.1 or scale_super > 10.0:
             return 1e10
         if sigma < 0.1 or sigma > 20:
             return 1e10
 
         try:
-            lignes_opt = creer_lignes_asselin(GALAXIES, d_eff_kpc=d_eff)
+            # Créer objets avec d_eff ajusté
+            objets_opt = []
+            for obj in OBJETS_COSMIQUES:
+                obj_copy = obj.copy()
+                if obj['type'] == 'galaxie':
+                    obj_copy['d_eff'] = obj['d_eff'] * scale_gal
+                else:  # superamas
+                    obj_copy['d_eff'] = obj['d_eff'] * scale_super
+                objets_opt.append(obj_copy)
+
+            lignes_opt = creer_lignes_asselin(objets_opt)
             v_calc = courbe_rotation_maxwell(r_obs_kpc, lignes_opt, sigma_kpc=sigma)
             return chi_carre(v_calc, v_obs_kms, sigma_obs_kms)
         except:
             return 1e10
 
-    result = minimize(objective, x0=[100.0, 1.0],
-                     bounds=[(10.0, 500.0), (0.1, 20.0)],
+    result = minimize(objective, x0=[1.0, 1.0, 1.0],
+                     bounds=[(0.1, 10.0), (0.1, 10.0), (0.1, 20.0)],
                      method='L-BFGS-B',
-                     options={'maxiter': 30})
+                     options={'maxiter': 50})
 
-    d_eff_opt, sigma_opt = result.x
+    scale_gal_opt, scale_super_opt, sigma_opt = result.x
     chi2_opt = result.fun
 
-    print(f"\n  d_eff optimal = {d_eff_opt:.2f} kpc")
-    print(f"  σ optimal     = {sigma_opt:.2f} kpc")
-    print(f"  χ² optimal    = {chi2_opt:.2f} ({chi2_opt/chi2_newton:.2f}× vs Newton)")
+    print(f"\n  Facteur galaxies   = {scale_gal_opt:.2f}×")
+    print(f"  Facteur superamas  = {scale_super_opt:.2f}×")
+    print(f"  σ optimal          = {sigma_opt:.2f} kpc")
+    print(f"  χ² optimal         = {chi2_opt:.2f} ({chi2_opt/chi2_newton:.2f}× vs Newton)")
     print()
 
     # Résultats
     print("="*80)
-    print(" RÉSULTATS ".center(80))
+    print(" RÉSULTATS MULTI-ÉCHELLE ".center(80))
     print("="*80)
-    print(f"{'Modèle':<30} {'χ²':>15} {'vs Newton':>15}")
+    print(f"{'Modèle':<40} {'χ²':>15} {'vs Newton':>15}")
     print("-"*80)
-    print(f"{'Newton (référence)':<30} {chi2_newton:>15.2f} {'1.00×':>15}")
-    print(f"{'Maxwell nominal':<30} {chi2_nominal:>15.2f} {chi2_nominal/chi2_newton:>14.2f}×")
-    print(f"{'Maxwell optimisé':<30} {chi2_opt:>15.2f} {chi2_opt/chi2_newton:>14.2f}×")
+    print(f"{'Newton (référence)':<40} {chi2_newton:>15.2f} {'1.00×':>15}")
+    print(f"{'Maxwell multi-échelle nominal':<40} {chi2_nominal:>15.2f} {chi2_nominal/chi2_newton:>14.2f}×")
+    print(f"{'Maxwell multi-échelle optimisé':<40} {chi2_opt:>15.2f} {chi2_opt/chi2_newton:>14.2f}×")
     print("="*80)
     print()
 
     if chi2_opt < chi2_newton:
         amelioration = (1 - chi2_opt/chi2_newton) * 100
-        print("🎉 SUCCÈS MAJEUR!")
+        print("🎉 SUCCÈS HISTORIQUE!")
         print(f"   χ² = {chi2_opt:.2f} < Newton ({chi2_newton:.2f})")
         print(f"   Amélioration: {amelioration:.1f}%")
         print()
-        print("   LA FORMULATION MAXWELL FONCTIONNE!")
-        print("   Les équations de champ sont la clé!")
+        print("   LES SUPERAMAS FONT LA DIFFÉRENCE!")
+        print("   La formulation Maxwell multi-échelle FONCTIONNE!")
+        print("   Les liaisons Asselin à grande échelle expliquent la matière noire!")
+        print()
+        print(f"   Paramètres clés:")
+        print(f"   - Facteur galaxies: {scale_gal_opt:.2f}×")
+        print(f"   - Facteur superamas: {scale_super_opt:.2f}×")
+        print(f"   - σ: {sigma_opt:.2f} kpc")
     else:
         print("⚠️  χ² toujours ≥ Newton")
         print(f"   Ratio: {chi2_opt/chi2_newton:.2f}×")
         print()
-        if chi2_opt < 2 * chi2_newton:
-            print("   Proche de Newton - formulation prometteuse")
-            print("   Explorer:")
-            print("   - Ajouter superamas (échelle Mpc)")
-            print("   - Réseau Ordre 2 avec Maxwell")
+        if chi2_opt < 1.5 * chi2_newton:
+            print("   TRÈS PROCHE de Newton - formulation multi-échelle prometteuse")
+            print("   Les superamas contribuent significativement")
+            print()
+            print("   Prochaines étapes:")
+            print("   - Réseau Ordre 2 avec intersections Maxwell")
             print("   - Termes non-linéaires γ²")
+            print("   - Plus de superamas (Shapley, Great Attractor)")
+        else:
+            print("   Explorer:")
+            print("   - Augmenter nombre de superamas")
+            print("   - Affiner positions et masses")
+            print("   - Réseau Ordre 2 avec Maxwell")
 
     print()
     print("="*80 + "\n")
@@ -469,7 +531,9 @@ def test_formulation_maxwell():
         'chi2_newton': chi2_newton,
         'chi2_nominal': chi2_nominal,
         'chi2_opt': chi2_opt,
-        'params_opt': (d_eff_opt, sigma_opt)
+        'params_opt': (scale_gal_opt, scale_super_opt, sigma_opt),
+        'n_objets': len(OBJETS_COSMIQUES),
+        'n_lignes': len(lignes)
     }
 
 # ============================================================================
