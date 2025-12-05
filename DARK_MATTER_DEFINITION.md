@@ -125,7 +125,7 @@ Where:
 
 ### Dark Matter Emergence Mechanism
 
-**Step 1**: Matter creates a local temporal distortion τ(r) ∝ 1/r²
+**Step 1**: Matter creates a local temporal distortion τ(r) = GM/(rc²) ∝ 1/r
 
 **Step 2**: Asselin Links connect different regions with temporal distortions
 
@@ -162,7 +162,7 @@ Where:
 
 **Temporal Distortion Explanation**:
 1. The galactic center creates strong temporal distortion
-2. This distortion propagates as τ(r) ∝ 1/r²
+2. This distortion propagates as τ(r) = GM/(rc²) ∝ 1/r (consistent with GR)
 3. Cumulative Asselin Links create additional gravitational effect at periphery
 4. The Després Mapping shows non-zero TDI even at large distances
 5. This TDI generates the observed "dark matter" effect

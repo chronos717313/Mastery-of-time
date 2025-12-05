@@ -125,7 +125,7 @@ Donde:
 
 ### Mecanismo de Emergencia de la Materia Oscura
 
-**Paso 1**: La materia crea una distorsión temporal local τ(r) ∝ 1/r²
+**Paso 1**: La materia crea una distorsión temporal local τ(r) = GM/(rc²) ∝ 1/r
 
 **Paso 2**: Los Enlaces Asselin conectan diferentes regiones con distorsiones temporales
 
@@ -162,7 +162,7 @@ Donde:
 
 **Explicación por la Distorsión Temporal**:
 1. El centro galáctico crea una fuerte distorsión temporal
-2. Esta distorsión se propaga según τ(r) ∝ 1/r²
+2. Esta distorsión se propaga según τ(r) = GM/(rc²) ∝ 1/r (coherente con RG)
 3. Los Enlaces Asselin acumulativos crean un efecto gravitacional adicional en la periferia
 4. La Cartografía Després muestra un IDT no nulo incluso a grandes distancias
 5. Este IDT genera el efecto observado de "materia oscura"

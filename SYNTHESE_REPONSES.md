@@ -1,5 +1,9 @@
 # Synthèse des Réponses - Précisions Théoriques
 
+**⚠️ NOTE IMPORTANTE (2025-12-05)** : Ce document contient des discussions historiques. La formulation correcte établie est **τ(r) = GM/(rc²) ∝ 1/r** (cohérent avec la Relativité Générale), et NON τ(r) ∝ 1/r² comme mentionné dans certaines sections anciennes.
+
+---
+
 ## 1. Nature de l'Expansion Différentielle
 
 ### Réponse : A + B + C (Tous liés)

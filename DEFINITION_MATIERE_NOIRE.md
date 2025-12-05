@@ -125,7 +125,7 @@ Où :
 
 ### Mécanisme d'Émergence de la Matière Noire
 
-**Étape 1** : La matière crée une distorsion temporelle locale τ(r) ∝ 1/r²
+**Étape 1** : La matière crée une distorsion temporelle locale τ(r) = GM/(rc²) ∝ 1/r
 
 **Étape 2** : Les Liaisons Asselin connectent différentes régions avec distorsions temporelles
 
@@ -162,7 +162,7 @@ Où :
 
 **Explication par la Distorsion Temporelle** :
 1. Le centre galactique crée une forte distorsion temporelle
-2. Cette distorsion se propage selon τ(r) ∝ 1/r²
+2. Cette distorsion se propage selon τ(r) = GM/(rc²) ∝ 1/r (cohérent avec RG)
 3. Les Liaisons Asselin cumulatives créent un effet gravitationnel additionnel en périphérie
 4. La Cartographie Després montre un IDT non-nul même aux grandes distances
 5. Cet IDT génère l'effet observé de "matière noire"

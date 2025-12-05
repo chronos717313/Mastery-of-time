@@ -1,7 +1,9 @@
 # Progrès et Questions en Suspens - Théorie de Maîtrise du Temps
 
 **Date de création:** 2025-11-28
-**Dernière mise à jour:** 2025-11-28
+**Dernière mise à jour:** 2025-12-05
+
+**⚠️ CORRECTION IMPORTANTE (2025-12-05)** : La formulation correcte de la distorsion temporelle est **τ(r) = GM/(rc²) ∝ 1/r** (cohérent avec la Relativité Générale), et NON τ(r) ∝ 1/r². Cette correction résout les questions de cohérence avec la RG.
 
 ---
 
