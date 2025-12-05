@@ -230,15 +230,135 @@ Ces documents contiennent l'ancienne formule erronée avec `d³` :
 
 ---
 
+## 🧪 Tests Quantitatifs (Phase 3)
+
+### Vue d'Ensemble
+
+**6 approches testées exhaustivement** sur courbes de rotation galactiques (Voie Lactée)
+
+**Résultat global** : ❌ Aucune approche ne reproduit les observations avec formulation actuelle
+
+### Tests Effectués
+
+| # | Approche | d_eff | χ² | vs Newton | Fichier |
+|---|----------|-------|-----|-----------|---------|
+| 1 | Horizon cosmologique | 4,231 Mpc | 1,367 | 5.2× pire | calcul_courbe_rotation_galaxie.py |
+| 2 | Optimisation numérique | 10 kpc | 1,083 | 4.1× pire | optimisation_distance_effective.py |
+| 3 | Rayon halo | 50 kpc | 1,294 | 5.0× pire | test_echelles_recommandees.py |
+| 4 | Rayon viral | 100 kpc | 1,329 | 5.1× pire | test_echelles_recommandees.py |
+| 5 | Hybride IDT | 100 kpc | 1,329 | 5.1× pire | test_approche_hybride_IDT.py |
+| 6 | Double expansion | Variable | 1,329 | 5.1× pire | modele_double_expansion.py |
+
+**Newton (référence)** : χ² = 261 (matière visible seule)
+
+### Diagnostic Convergent
+
+**Les 6 tests convergent vers le MÊME diagnostic** :
+
+> Le problème n'est PAS dans les paramètres (d_eff, M_IDT, α),
+> mais dans la **FORMULATION MATHÉMATIQUE** de l'effet cumulatif.
+
+**Formule actuelle** :
+```python
+contribution += dM * f * (r_kpc / r_shell)  # INADÉQUATE
+```
+
+**Problèmes** :
+- Approximation ad hoc sans justification RG
+- Facteur géométrique `(r/r_shell)` arbitraire
+- Produit effet INVERSE de ce qui est souhaité
+- Plus de masse → empire l'ajustement (devrait améliorer)
+
+### Documents d'Analyse
+
+**Synthèse complète** :
+- `SYNTHESE_COMPLETE_TESTS_QUANTITATIFS.md` (1000+ lignes)
+
+**Analyses détaillées** :
+- `ANALYSE_COURBES_ROTATION.md` (Test #1, diagnostic initial)
+- `ANALYSE_OPTIMISATION_D_EFF.md` (Test #2, 3 échelles révélées)
+- `ANALYSE_ECHELLES_GALACTIQUES.md` (5 options comparées)
+- `SYNTHESE_ECHELLE_GALACTIQUE.md` (recommandation structurée)
+- `APPROCHE_HYBRIDE_IDT.md` (analyse conceptuelle)
+- `REPONSE_APPROCHE_HYBRIDE.md` (résultats hybride)
+
+### Résultats Importants
+
+**Ce qui fonctionne** ✅ :
+- Méthodologie de test validée
+- Infrastructure de calcul fonctionnelle
+- Diagnostic précis du problème
+- 3 régimes d'échelle confirmés (local / galactique / cosmologique)
+
+**Ce qui ne fonctionne pas** ❌ :
+- Formulation cumulative actuelle
+- Ajustement aux observations (tous χ² > 1,000)
+- Aucun paramétrage acceptable trouvé
+
+**Conclusion** :
+Tests sont un **SUCCÈS DIAGNOSTIQUE** - problème identifié avec précision,
+mais révèlent besoin **REFONTE MATHÉMATIQUE** avant validation numérique.
+
+---
+
+## 💡 Nouvelles Pistes Théoriques
+
+### 1. Halo = Limite d'Expansion du Vide
+
+**Concept** : La matière "ancre" l'espace-temps et freine l'expansion locale
+
+- Au centre (densité haute) → pas d'expansion → liaisons fortes
+- À la périphérie (densité basse) → expansion forte → liaisons rompues
+- Le halo = zone de transition
+
+**Formulation proposée** :
+```
+d_eff(ρ) = fonction de la densité locale
+```
+
+**Lien avec IDT** : d_eff pourrait dépendre de la cartographie Després
+
+### 2. Réseau de Lignes Asselin
+
+**Concept** : Modéliser liaisons comme réseau géométrique avec renforcement aux intersections
+
+**Approche** :
+1. Tracer lignes Asselin entre toutes masses
+2. Trouver points de croisement
+3. Depuis intersections, créer nouvelles lignes (ordre 2)
+4. Itérer : réseau multi-niveaux
+
+**Avantages** :
+- Émergence naturelle de la structure
+- Dépend de configuration des masses
+- Prédictions testables (filaments, anisotropie)
+
+**Document** : `RESEAU_LIGNES_ASSELIN.md` (600+ lignes)
+
+### 3. Double Expansion (Spatial + Temporel)
+
+**Concept** : Partitionner l'énergie noire entre expansion spatiale et temporelle
+
+**Formulation** :
+```
+Énergie noire = α × expansion_spatiale + (1-α) × expansion_temporelle
+```
+
+**Résultat** : α optimal = 0.0 (100% temporel avec formulation actuelle)
+
+**Document** : `modele_double_expansion.py`
+
+---
+
 ## 📊 État d'Avancement
 
-| Phase | Description | Progression |
-|-------|-------------|-------------|
-| **Phase 1** | Fondations conceptuelles | ✅ **100%** |
-| **Phase 2** | Formalisation mathématique | 🟢 **85%** |
-| **Phase 3** | Validation numérique | 🟡 **45%** |
-| **Phase 4** | Prédictions testables | 🟡 **55%** |
-| **Phase 5** | Documentation multilingue | ✅ **100%** |
+| Phase | Description | Progression | Statut |
+|-------|-------------|-------------|--------|
+| **Phase 1** | Fondations conceptuelles | ✅ **100%** | COMPLÈTE |
+| **Phase 2** | Formalisation mathématique | 🔴 **30%** | BLOCAGE |
+| **Phase 3** | Validation numérique | 🔴 **10%** | BLOQUÉE |
+| **Phase 4** | Prédictions testables | 🟡 **55%** | EN COURS |
+| **Phase 5** | Documentation multilingue | ✅ **100%** | COMPLÈTE |
 
 ### Phase 1 : ✅ COMPLÉTÉE (100%)
 
@@ -247,22 +367,57 @@ Ces documents contiennent l'ancienne formule erronée avec `d³` :
 - ❌ Constantes manquantes → ✅ Identifiées : RG standard (G, c) + β = 2/3
 - ❌ Cadre théorique flou → ✅ Confirmé : Relativité Générale
 
-### Phase 2 : 🟢 EN COURS (85%)
+**Fondations solides** : Concepts établis, cohérents, et prometteurs.
+
+---
+
+### Phase 2 : 🔴 BLOCAGE SÉVÈRE (30%)
+
+**⚠️ IMPORTANT** : Tests quantitatifs ont révélé problème fondamental dans formulation cumulative
 
 **Accompli** :
 - ✅ Équations principales définies
 - ✅ Métrique d'espace-temps proposée
 - ✅ Valeurs numériques exactes calculées
-- ⚠️ Dérivation complète des équations d'Einstein à finaliser
 
-### Phase 3 : 🟡 PROCHAINE (45%)
+**Blocage identifié** :
+- ❌ **Formulation cumulative inadéquate** (6 tests quantitatifs échoués)
+- ❌ Tous les modèles testés donnent χ² 4-5× pire que Newton
+- ❌ Aucun paramétrage (d_eff, M_IDT, α) ne fonctionne
 
-**Accompli** :
-- ✅ Calculs de base effectués
-- ✅ Correspondance τ-z établie
-- ✅ Temps local terrestre exact
-- ⚠️ Courbes de rotation galactiques à calculer
-- ⚠️ Fit sur données observationnelles à faire
+**Diagnostic** : Le problème est dans la FORMULATION MATHÉMATIQUE, pas dans les paramètres.
+
+**Action requise** :
+🎯 **Dériver formulation rigoureuse depuis RG** (géodésiques exactes)
+
+---
+
+### Phase 3 : 🔴 BLOQUÉE (10%)
+
+**Statut** : Validation numérique impossible avec formulation actuelle
+
+**Tests effectués (tous échoués)** :
+1. ❌ d_cosmo = 4,231 Mpc : χ² = 1,367 (5.2× pire que Newton)
+2. ❌ d_eff optimisé = 10 kpc : χ² = 1,083 (4.1× pire)
+3. ❌ d_eff = 50 kpc (halo) : χ² = 1,294 (5.0× pire)
+4. ❌ d_eff = 100 kpc (viral) : χ² = 1,329 (5.1× pire)
+5. ❌ Hybride (IDT + Asselin) : χ² = 1,329 (M_IDT→0)
+6. ❌ Double expansion : χ² = 1,329 (α→0)
+
+**Référence** : Newton (matière visible seule) χ² = 261
+
+**Convergence** : 6 approches différentes → même diagnostic
+
+**Documents détaillés** :
+- `SYNTHESE_COMPLETE_TESTS_QUANTITATIFS.md` (vue d'ensemble)
+- `ANALYSE_COURBES_ROTATION.md` (premier test)
+- `ANALYSE_OPTIMISATION_D_EFF.md` (optimisation)
+- `ANALYSE_ECHELLES_GALACTIQUES.md` (5 échelles comparées)
+- `REPONSE_APPROCHE_HYBRIDE.md` (hybride IDT)
+
+**Raison du blocage** : Attend révision complète Phase 2
+
+---
 
 ### Phase 4 : 🟡 EN COURS (55%)
 
@@ -271,6 +426,13 @@ Ces documents contiennent l'ancienne formule erronée avec `d³` :
 2. ✅ Anisotropie du redshift (Δz/z ~ 10⁻⁴)
 3. ✅ Corrélation CMB-structures (10-20% plus forte)
 4. ⚠️ Protocoles expérimentaux à détailler
+
+**Nouvelles pistes identifiées** :
+- 💡 Halo = limite d'expansion du vide (matière ancre espace-temps)
+- 💡 d_eff(ρ) fonction de densité locale ou IDT
+- 💡 Réseau de lignes Asselin avec intersections géométriques
+
+---
 
 ### Phase 5 : ✅ COMPLÉTÉE (100%)
 
