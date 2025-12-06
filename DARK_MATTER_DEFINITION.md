@@ -1,8 +1,8 @@
 # Dark Matter Definition
 ## A Reinterpretation Through Temporal Distortion
 
-**Version**: 1.0
-**Date**: 2025-11-30
+**Version**: 2.0
+**Date**: 2025-12-05
 **Language**: English
 
 ---
@@ -11,13 +11,17 @@
 
 Within the framework of the Theory of Time Mastery, **dark matter** is not an exotic form of invisible matter, but rather an **emergent effect** resulting from the accumulation and interaction of temporal distortion lines in spacetime.
 
+**Terminology**: We use the term **Després Mass** to quantify the apparent equivalent mass at temporal distortion accumulation points (what Lambda-CDM calls "dark matter"). The **Després Mapping** provides Lorentz values (γ_Després) at every point in space.
+
 ---
 
-## 1. Definition of Dark Matter
+## 1. Definition of Dark Matter and Després Mass
 
 ### Fundamental Statement
 
 **Dark matter is a manifestation of accumulation points of temporal distortion lines, analogous to gravitational Lagrange points.**
+
+The **Després Mass** quantifies this manifestation as an **equivalent mass**: M_Després = M_observed - M_baryonic
 
 ### Key Characteristics
 
@@ -25,11 +29,12 @@ Within the framework of the Theory of Time Mastery, **dark matter** is not an ex
 - Not a particle or material substance
 - But a **geometric effect** of temporal distortion
 - Points where temporal distortion gradients add up and accumulate
+- The **Després Mass** represents the equivalent mass of this geometric effect
 
 **Analogy with Lagrange Points**:
 - Just as Lagrange points are zones of gravitational equilibrium
-- "Dark matter points" are zones of temporal distortion accumulation
-- These zones create apparent gravitational effects without visible mass
+- "Després Mass points" are zones of temporal distortion accumulation
+- These zones create apparent gravitational effects equivalent to a mass M_Després
 
 ---
 
@@ -76,15 +81,15 @@ Where:
 
 ### Definition
 
-**The Després Mapping provides an index of the Lorentz value associated with Kepler's 3rd law in different gravitational systems.**
+**The Després Mapping is a cartographic system that provides Lorentz values (γ_Després factor) at every point in space, linking Kepler's 3rd law with gravitational effects.**
 
 ### Concept
 
-The Després Mapping is a **cartographic tool** that assigns to each point in space a value quantifying:
+The Després Mapping is a **cartographic tool** that assigns to each point in space a generalized Lorentz value quantifying:
 
-1. **The local Lorentz factor** γ(r)
-2. **The temporal distortion** τ(r)
-3. **The connection with Keplerian dynamics**
+1. **The Lorentz factor γ_Després(r)** - primary value provided by the mapping
+2. **The temporal distortion** τ(r) - integrated into γ_Després
+3. **The connection with Keplerian dynamics** - v(r) according to Kepler's 3rd law
 
 ### Formulation
 
@@ -121,36 +126,39 @@ Where:
 
 ---
 
-## 4. Connection with Dark Matter
+## 4. Link with Dark Matter and Generation of Després Mass
 
-### Dark Matter Emergence Mechanism
+### Després Mass Emergence Mechanism
 
-**Step 1**: Matter creates a local temporal distortion τ(r) = GM/(rc²) ∝ 1/r
+**Step 1**: Baryonic matter creates a local temporal distortion τ(r) = GM/(rc²) ∝ 1/r
 
 **Step 2**: Asselin Links connect different regions with temporal distortions
 
-**Step 3**: In zones where multiple distortion lines accumulate:
+**Step 3**: The Després Mapping reveals accumulation zones:
 - The total distortion gradient increases
-- The Temporal Distortion Index (TDI) becomes locally elevated
+- The γ_Després value becomes locally elevated
+- The Temporal Distortion Index (TDI = γ_Després - 1) increases
 - These zones create an **apparent gravitational effect**
 
-**Step 4**: These accumulation zones behave like "dark matter":
-- They influence galactic rotation curves
-- They stabilize large-scale structures
-- They emit no radiation (because they are not particles)
+**Step 4**: These accumulation zones constitute the **Després Mass**:
+- They influence galactic rotation curves (elevated velocities)
+- They stabilize large-scale structures (cosmic filaments)
+- They emit no radiation (geometric effect, not particles)
+- Their equivalent mass M_Després is measurable through gravitational effects
 
 ### Master Equation
 
-The apparent gravitational effect due to dark matter in region R:
+The equivalent Després Mass in region R:
 
 ```
-ρ_DM_apparent(R) = k · ∑ᵢ Asselin_Link(R, Mᵢ)
+M_Després(R) = k_Asselin · ∫∫∫ |∇γ_Després(r')|² dV'
 ```
 
 Where:
-- `ρ_DM_apparent` = apparent dark matter density
-- `k` = coupling constant to be determined
-- The sum is over all masses Mᵢ linked to R by temporal distortion
+- `M_Després` = equivalent mass (effect of cumulative temporal distortion)
+- `k_Asselin` = coupling constant (calibrated from observations)
+- `γ_Després` = Lorentz values given by the Després Mapping
+- The integral is over the considered volume
 
 ---
 
@@ -158,14 +166,15 @@ Where:
 
 ### A) Galactic Rotation Curves
 
-**Observed Problem**: Stars at galaxy peripheries rotate too fast for the visible mass.
+**Observed Problem**: Stars at galaxy peripheries rotate too fast for the visible baryonic mass.
 
-**Temporal Distortion Explanation**:
+**Explanation via Després Mass**:
 1. The galactic center creates strong temporal distortion
 2. This distortion propagates as τ(r) = GM/(rc²) ∝ 1/r (consistent with GR)
 3. Cumulative Asselin Links create additional gravitational effect at periphery
-4. The Després Mapping shows non-zero TDI even at large distances
-5. This TDI generates the observed "dark matter" effect
+4. The Després Mapping reveals elevated γ_Després values even at large distances
+5. These γ_Després values generate an **equivalent Després Mass** M_Després
+6. The total observed mass = M_baryonic + M_Després explains the elevated velocities
 
 **Testable Prediction**:
 ```
@@ -179,23 +188,26 @@ Where:
 
 ### B) Galaxy Clusters
 
-**Observation**: Galaxy clusters show gravitational lensing effects exceeding visible mass.
+**Observation**: Galaxy clusters show gravitational lensing effects exceeding visible baryonic mass.
 
-**Explanation**:
+**Explanation via Després Mass**:
 - Each cluster galaxy creates temporal distortion
 - Asselin Links between all galaxies accumulate
-- The accumulation creates high-TDI zones (Lagrange-type points)
-- These zones curve spacetime → gravitational lensing
+- The Després Mapping shows very high γ_Després values at the center
+- These values correspond to significant **Després Mass** (M_Després ≈ 4 × M_baryonic)
+- The total mass (M_baryonic + M_Després) curves spacetime → gravitational lensing
 
 ### C) Cosmic Filaments
 
 **Observation**: Matter organizes into filaments at large scales.
 
-**Explanation**:
+**Explanation via Després Mass**:
 - Filaments are **temporal distortion accumulation lines**
 - Where Asselin Links between clusters are strongest
-- The Després Mapping shows temporal distortion "highways"
-- Matter naturally follows these lines of least temporal resistance
+- The Després Mapping reveals elevated γ_Després values along the filaments
+- This local increase in γ_Després creates a **linear Després Mass**
+- Baryonic matter is attracted to these Després Mass zones
+- Result: observed filamentary structure of the universe
 
 ---
 
@@ -203,31 +215,35 @@ Where:
 
 | Aspect | Lambda-CDM | Theory of Time Mastery |
 |--------|-----------|------------------------|
-| **Dark matter nature** | Exotic particle (WIMP, axion...) | Geometric effect of temporal distortion |
-| **Direct detection** | Expected (underground detectors) | Impossible (no particle) |
-| **Spatial distribution** | Spherical halo around galaxies | Lagrange-type accumulation points |
-| **Link with visible matter** | None (except gravitation) | Direct Asselin Link |
-| **Testable predictions** | Annihilation, scattering | Després mapping, modified rotation curves |
+| **Nature** | Exotic particle (WIMP, axion...) | **Després Mass** = geometric effect of temporal distortion |
+| **Quantification** | Real mass M_dark (particles) | **Equivalent mass** M_Després = M_observed - M_baryonic |
+| **Direct detection** | Expected (underground detectors) | Impossible (no particle, geometric effect) |
+| **Spatial distribution** | NFW halo (N-body simulations) | Accumulation points according to Asselin Links |
+| **Mapping** | Numerical simulations | **Després Mapping**: γ_Després(r) values |
+| **Link with visible matter** | None (except gravitation) | Direct Asselin Link (temporal gradient) |
+| **Testable predictions** | Annihilation, scattering | Halo asymmetry, θ_halo ↔ θ_neighbor correlation |
 
 ---
 
 ## 7. Unique and Testable Predictions
 
-### Prediction 1: Halo Asymmetry
+### Prediction 1: Després Mass Halo Asymmetry
 
-**Lambda-CDM**: Spherical and symmetric dark matter halo
+**Lambda-CDM**: Spherical and symmetric dark matter halo (NFW)
 
-**Time Mastery**: Asymmetric distribution following temporal distortion lines
-- "Halos" should be elongated toward neighboring structures
+**Time Mastery**: Asymmetric **Després Mass halo** following Asselin Links
+- Després Mass halos should be elongated toward massive neighboring galaxies
 - Shape depends on Asselin Links with environment
+- **Decisive test**: Correlation θ_halo ↔ θ_neighbor > 0.5 (TM) vs ≈ 0 (LCDM)
 
-### Prediction 2: Correlation with Neighboring Structures
+### Prediction 2: Després Mass - Environment Correlation
 
-**Prediction**: The "amount" of apparent dark matter in a galaxy depends on its environment:
-- Isolated galaxies: less apparent dark matter
-- Cluster galaxies: more apparent dark matter (cumulative links)
+**Prediction**: The **Després Mass** M_Després in a galaxy depends on its environment:
+- Isolated galaxies: low M_Després (few Asselin Links)
+- Cluster galaxies: high M_Després (numerous cumulative links)
+- Quantitative relation: M_Després ∝ ∑ᵢ (M_neighbor,i / d_neighbor,i)
 
-**Test**: Analyze rotation curves as a function of galactic environment
+**Test**: Analyze M_Després / M_baryonic ratio as a function of galactic environment
 
 ### Prediction 3: Temporal Signature
 
@@ -283,23 +299,25 @@ Where:
 
 ## 10. Conclusion
 
-The reinterpretation of dark matter as **temporal distortion accumulation points** offers:
+The reinterpretation of dark matter as **Després Mass** (equivalent mass at temporal distortion accumulation points) offers:
 
-1. An elegant geometric explanation
-2. A direct link with General Relativity
-3. Unique testable predictions
+1. An elegant geometric explanation (effect, not particle)
+2. A direct link with General Relativity (τ = Φ/c²)
+3. Unique testable predictions (halo asymmetry)
 4. A conceptual unification with dark energy
 
 The three key concepts:
 
-- **Dark matter** = Lagrange-type points of temporal distortion
-- **Asselin Link** = Difference/average of distortion between zones
-- **Després Mapping** = Lorentz index + Kepler's 3rd law
+- **Després Mass** = Equivalent mass M_Després = M_observed - M_baryonic (quantifies the "dark matter" effect)
+- **Asselin Link** = Temporal distortion gradient |τ(A) - τ(B)| (generating mechanism)
+- **Després Mapping** = Lorentz values γ_Després(r) at every point (mapping of the effect)
+
+**Hierarchy**: Asselin Links → Després Mapping (γ_Després) → Després Mass (M_Després)
 
 This approach now requires:
-- Complete mathematical formalization
-- Numerical calculations for rotation curves
-- Identification of testable observational predictions
+- Complete mathematical formalization (integral equations)
+- Numerical calculations for rotation curves (k_Asselin calibration)
+- Decisive test: θ_halo ↔ θ_neighbor correlation with UNIONS data
 
 ---
 
