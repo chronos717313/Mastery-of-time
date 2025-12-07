@@ -342,10 +342,85 @@ I thank the SPARC collaboration for making their data public, and the Planck, UN
 
 ## REFERENCES
 
+### Observational Data and Surveys
+
+Lelli, F., McGaugh, S. S., & Schombert, J. M. 2016, AJ, 152, 157 (SPARC catalog)
+McGaugh, S. S., Lelli, F., & Schombert, J. M. 2016, PRL, 117, 201101 (SPARC mass-acceleration relation)
+Scolnic, D. M., et al. 2018, ApJ, 859, 101 (Pantheon SNIa compilation)
+Brout, D., et al. 2022, ApJ, 938, 110 (Pantheon+ with 1701 SNIa)
+Planck Collaboration 2020, A&A, 641, A6 (Planck 2018 cosmological parameters)
+Planck Collaboration 2016, A&A, 594, A21 (Planck ISW-LSS cross-correlation)
+
+### Weak Lensing and Structure
+
+Robison, B., et al. 2023, MNRAS, 523, 1614 (UNIONS halo ellipticity catalog)
+Mandelbaum, R., et al. 2018, PASJ, 70, S25 (HSC weak lensing)
+Kilbinger, M., et al. 2013, MNRAS, 430, 2200 (CFHTLenS cosmic shear)
+Heymans, C., et al. 2021, A&A, 646, A140 (KiDS-1000 cosmic shear)
+
+### Dark Matter Searches and Constraints
+
 Aprile, E., et al. 2018, PRL, 121, 111302 (XENON1T null result)
-Lelli, F., McGaugh, S. S., & Schombert, J. M. 2016, AJ, 152, 157 (SPARC)
-Planck Collaboration 2020, A&A, 641, A6
-Robison, B., et al. 2023, MNRAS, 523, 1614 (UNIONS halo ellipticity)
+Akerib, D. S., et al. 2017, PRL, 118, 021303 (LUX limits)
+Agnese, R., et al. 2018, PRL, 120, 061802 (SuperCDMS constraints)
+Bertone, G., & Hooper, D. 2018, RMP, 90, 045002 (Dark matter review)
+
+### ΛCDM and Standard Cosmology
+
+Riess, A. G., et al. 1998, AJ, 116, 1009 (Accelerating universe from SNIa)
+Perlmutter, S., et al. 1999, ApJ, 517, 565 (Measurements of Ω and Λ)
+Weinberg, S. 1989, RMP, 61, 1 (Cosmological constant problem)
+Frieman, J. A., Turner, M. S., & Huterer, D. 2008, ARA&A, 46, 385 (Dark energy review)
+
+### Modified Gravity and Alternative Theories
+
+Milgrom, M. 1983, ApJ, 270, 365 (MOND original paper)
+Bekenstein, J., & Milgrom, M. 1984, ApJ, 286, 7 (MOND and clusters)
+Famaey, B., & McGaugh, S. S. 2012, Living Rev. Relativity, 15, 10 (Modified gravity review)
+Verlinde, E. 2017, SciPost Phys., 2, 016 (Emergent gravity)
+Moffat, J. W. 2006, JCAP, 03, 004 (Scalar-tensor-vector gravity)
+
+### General Relativity and Gravitational Physics
+
+Einstein, A. 1916, Annalen der Physik, 354, 769 (General relativity foundation)
+Schwarzschild, K. 1916, Sitzungsber. Preuss. Akad. Wiss., 189 (Schwarzschild metric)
+Misner, C. W., Thorne, K. S., & Wheeler, J. A. 1973, "Gravitation" (W. H. Freeman)
+Will, C. M. 2014, Living Rev. Relativity, 17, 4 (Tests of GR)
+
+### Rotation Curves and Galaxy Dynamics
+
+Rubin, V. C., & Ford, W. K. 1970, ApJ, 159, 379 (First flat rotation curves)
+Bosma, A. 1981, AJ, 86, 1825 (Extended HI rotation curves)
+van Albada, T. S., et al. 1985, ApJ, 295, 305 (Dark matter in NGC 3198)
+de Blok, W. J. G., et al. 2008, AJ, 136, 2648 (High-resolution rotation curves)
+Oh, S.-H., et al. 2015, AJ, 149, 180 (LITTLE THINGS dwarf galaxies)
+
+### Elliptical Galaxies and Velocity Dispersion
+
+Faber, S. M., & Jackson, R. E. 1976, ApJ, 204, 668 (Faber-Jackson relation)
+Dressler, A. 1984, ApJ, 281, 512 (Morphology-density relation)
+Cappellari, M., et al. 2013, MNRAS, 432, 1709 (ATLAS³ᴰ stellar kinematics)
+Thomas, J., et al. 2011, MNRAS, 415, 545 (Dark matter in ellipticals)
+
+### Cosmological Simulations and N-body
+
+Springel, V., et al. 2005, Nature, 435, 629 (Millennium simulation)
+Vogelsberger, M., et al. 2014, Nature, 509, 177 (Illustris simulation)
+Schaye, J., et al. 2015, MNRAS, 446, 521 (EAGLE simulations)
+Navarro, J. F., Frenk, C. S., & White, S. D. M. 1997, ApJ, 490, 493 (NFW profile)
+
+### Mathematical Methods and Statistics
+
+Press, W. H., et al. 2007, "Numerical Recipes" 3rd ed. (Cambridge Univ. Press)
+Bevington, P. R., & Robinson, D. K. 2003, "Data Reduction and Error Analysis" (McGraw-Hill)
+Hogg, D. W., Bovy, J., & Lang, D. 2010, arXiv:1008.4686 (Fitting models to data)
+
+### Software and Tools
+
+Astropy Collaboration 2013, A&A, 558, A33 (Astropy core package)
+Hunter, J. D. 2007, CSE, 9, 90 (Matplotlib)
+van der Walt, S., Colbert, S. C., & Varoquaux, G. 2011, CSE, 13, 22 (NumPy)
+Virtanen, P., et al. 2020, Nature Methods, 17, 261 (SciPy 1.0)
 
 ---
 
