@@ -1,0 +1,22 @@
+================================================================================
+CALIBRATION PRÉCISE k POUR GALAXIES ELLIPTIQUES
+================================================================================
+
+Échantillon: 14 elliptiques calibrées
+
+STATISTIQUES k:
+  k min:    0.0001
+  k max:    0.0009
+  k moyen:  0.0002 ± 0.0002
+  k médian: 0.0001
+  Scatter:  facteur 8.5
+
+MEILLEUR MODÈLE: combined
+  R² = 0.0259
+
+  k_ell = 0.002 · (M/10¹⁰)^-0.528 · (1+f_gas)^-38.410
+
+COMPARAISON SPIRALES:
+  k₀: 0.343 (spiral) vs 0.002 (ell)  → ratio 0.005
+  α:  -1.610 (spiral) vs -0.528 (ell)  → diff +1.082
+  β:  -3.585 (spiral) vs -38.410 (ell)  → diff -34.825
