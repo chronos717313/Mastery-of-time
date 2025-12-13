@@ -38,6 +38,8 @@ Status: READY FOR EXECUTION
 """
 
 import numpy as np
+import matplotlib
+matplotlib.use('Agg')  # Non-interactive backend
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 from scipy.stats import pearsonr, spearmanr
@@ -583,4 +585,5 @@ print("  - Si halos aléatoires (r < 0.2) → ΛCDM confirmé, TMT réfutée")
 print("\nPAS D'AMBIGUÏTÉ POSSIBLE. TEST BINAIRE: OUI ou NON.")
 print("="*80)
 
-plt.show()
+# plt.show()  # Disabled for non-interactive execution
+print("\n✅ Test terminé - Figure sauvegardée dans ../data/results/")
