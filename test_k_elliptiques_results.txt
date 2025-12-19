@@ -1,0 +1,17 @@
+================================================================================
+TEST LOI k SUR GALAXIES ELLIPTIQUES (z = 0-2)
+================================================================================
+
+Échantillon: 50 galaxies elliptiques
+Redshift: z = 0.0 - 2.0
+
+RÉSULTATS:
+  Moyenne σ_pred/σ_obs:  1.324 ± 0.128
+  Médiane σ_pred/σ_obs:  1.335
+  Galaxies dans ±20%:    20.0%
+
+CORRÉLATION REDSHIFT:
+  r(σ_ratio, z) = -0.036  (p = 0.8023)
+
+CONCLUSION:
+  ⚠ Loi k nécessite ajustements pour elliptiques

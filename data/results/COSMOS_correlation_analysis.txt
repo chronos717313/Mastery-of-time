@@ -1,0 +1,20 @@
+ANALYSE COSMOS: θ_halo ↔ θ_voisin
+================================================================================
+
+SIMULATION MT (alignement α=0.8):
+  Corrélation Pearson: r = 0.522
+  p-value: 3.08e-38
+  <Δθ> = 16.5° ± 12.5°
+  Fraction alignée (Δθ<30°): 85.8%
+
+SIMULATION ΛCDM (halos aléatoires):
+  Corrélation Pearson: r = -0.020
+  p-value: 6.43e-01
+  <Δθ> = 44.2° ± 26.0°
+  Fraction alignée (Δθ<30°): 34.5%
+
+DÉCISION:
+  Ratio r_MT / r_ΛCDM = -25.8
+  → MT: ALIGNEMENT DÉTECTÉ (r > 0.5)
+  → Signature Liaisons Asselin confirmée!
+  → ΛCDM: Cohérent (r < 0.2, halos aléatoires)

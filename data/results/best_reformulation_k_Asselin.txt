@@ -1,0 +1,33 @@
+MEILLEURE REFORMULATION k_Asselin
+================================================================================
+
+Formulation: Non-local (α=1)
+χ²_red moyen: 0.51
+k_Asselin moyen: 1.000000e+10
+
+RÉSULTATS PAR GALAXIE:
+--------------------------------------------------------------------------------
+
+NGC2403:
+  k_Asselin = 1.000000e+10
+  χ²_red = 0.49
+
+NGC3198:
+  k_Asselin = 1.000000e+10
+  χ²_red = 0.55
+
+NGC6503:
+  k_Asselin = 1.000000e+10
+  χ²_red = 0.49
+
+DDO154:
+  k_Asselin = 1.000000e+10
+  χ²_red = 0.30
+
+UGC2885:
+  k_Asselin = 1.000000e+10
+  χ²_red = 0.61
+
+NGC2841:
+  k_Asselin = 1.000000e+10
+  χ²_red = 0.60
