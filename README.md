@@ -1,8 +1,80 @@
-# Théorie de Maîtrise du Temps
+# Time Mastery Theory (TMT) / Théorie de Maîtrise du Temps
 
-**Une théorie alternative pour expliquer les phénomènes cosmologiques attribués à la matière noire et l'énergie noire**
+<div align="center">
+
+**An Alternative Cosmological Framework**
+*Une Théorie Cosmologique Alternative*
+
+[![Status](https://img.shields.io/badge/status-experimental-orange)]()
+[![Test](https://img.shields.io/badge/weak%20lensing-ready-brightgreen)]()
+[![Data](https://img.shields.io/badge/data-COSMOS%2FDES-blue)]()
+
+[English](#english-version) | [Français](#version-française) | [Español](#versión-española)
+
+</div>
 
 ---
+
+# English Version
+
+## 📖 About
+
+The **Time Mastery Theory (TMT)** proposes an alternative explanation for dark matter and dark energy through geometric effects in spacetime.
+
+**Current Status**: **Decisive experimental test ready** - Weak Lensing Halo-Neighbor Alignment (methodology validated, awaiting real COSMOS/DES data)
+
+### Key Results (January 2026)
+- **Universal Law k(M_bary, f_gas)**: R² = 0.9976 (10,000+ galaxies)
+- **Weak Lensing Signal**: r = 0.378 [0.357, 0.399], p < 10⁻⁸⁸ (N=5,000 simulation)
+- **ΛCDM Discrimination**: 35.6σ (highly significant)
+
+### 📚 English Documentation → [`docs/en/`](docs/en/)
+- [**Final Summary - Weak Lensing Test**](docs/en/FINAL_SUMMARY_WEAK_LENSING_TEST_TMT.md) - Complete test overview
+- [**COSMOS/DES Download Guide**](docs/en/COSMOS_DES_DOWNLOAD_GUIDE.md) - Data acquisition
+- [**Test Execution Report**](docs/en/WEAK_LENSING_TEST_EXECUTION_REPORT.md) - Analysis results
+
+### 🚀 Quick Start (English)
+
+```bash
+# Install dependencies
+pip3 install numpy scipy matplotlib astropy
+
+# Run weak lensing test (simulation)
+cd scripts
+python3 test_weak_lensing_TMT_vs_LCDM_real_data.py
+```
+
+---
+
+# Version Française
+
+## 📖 À propos
+
+La **Théorie de Maîtrise du Temps (TMT)** propose une explication alternative pour la matière noire et l'énergie noire via des effets géométriques dans l'espace-temps.
+
+**Statut Actuel**: **Test expérimental décisif prêt** - Alignement Halo-Voisin par Weak Lensing (méthodologie validée, en attente données réelles COSMOS/DES)
+
+### Résultats Clés (Janvier 2026)
+- **Loi Universelle k(M_bary, f_gas)**: R² = 0.9976 (10,000+ galaxies)
+- **Signal Weak Lensing**: r = 0.378 [0.357, 0.399], p < 10⁻⁸⁸ (N=5,000 simulation)
+- **Discrimination ΛCDM**: 35.6σ (hautement significatif)
+
+### 📚 Documentation Française → [`docs/fr/`](docs/fr/)
+- [**Résumé Final - Test Weak Lensing**](docs/fr/RESUME_FINAL_TEST_WEAK_LENSING_TMT.md) - Vue d'ensemble complète
+- [**Guide Téléchargement COSMOS/DES**](docs/fr/GUIDE_TELECHARGEMENT_COSMOS_DES.md) - Acquisition des données
+- [**Rapport d'Exécution du Test**](docs/fr/TEST_WEAK_LENSING_EXECUTION_RAPPORT.md) - Résultats d'analyse
+- [**Guide Pédagogique TMT vs ΛCDM**](docs/fr/00-vulgarisation/TMT_vs_LCDM_GUIDE_PEDAGOGIQUE.md) - Vulgarisation (100/100)
+
+### 🚀 Démarrage Rapide (Français)
+
+```bash
+# Installer dépendances
+pip3 install numpy scipy matplotlib astropy
+
+# Exécuter test weak lensing (simulation)
+cd scripts
+python3 test_weak_lensing_TMT_vs_LCDM_real_data.py
+```
 
 ## 📋 Vue d'ensemble
 
@@ -276,5 +348,46 @@ Projet de recherche théorique
 
 ---
 
-**Dernière mise à jour** : 2025-12-07
-**Version** : 0.3.0-beta (Formalisation mathématique et tests numériques)
+---
+
+# Versión Española
+
+## 📖 Acerca de
+
+La **Teoría del Dominio del Tiempo (TMT)** propone una explicación alternativa para la materia oscura y la energía oscura mediante efectos geométricos en el espacio-tiempo.
+
+**Estado Actual**: **Prueba experimental decisiva lista** - Alineación Halo-Vecino por Weak Lensing (metodología validada, esperando datos reales COSMOS/DES)
+
+### Resultados Clave (Enero 2026)
+- **Ley Universal k(M_bary, f_gas)**: R² = 0.9976 (10,000+ galaxias)
+- **Señal Weak Lensing**: r = 0.378 [0.357, 0.399], p < 10⁻⁸⁸ (N=5,000 simulación)
+- **Discriminación ΛCDM**: 35.6σ (altamente significativo)
+
+### 📚 Documentación en Español → [`docs/es/`](docs/es/)
+
+*La documentación en español está en proceso de traducción. Por favor consulte las versiones en inglés o francés mientras tanto.*
+
+Disponible en español:
+- [**Definición Materia Oscura**](DEFINICION_MATERIA_OSCURA.md) - Definición completa v1.1
+
+### 🚀 Inicio Rápido (Español)
+
+```bash
+# Instalar dependencias
+pip3 install numpy scipy matplotlib astropy
+
+# Ejecutar prueba weak lensing (simulación)
+cd scripts
+python3 test_weak_lensing_TMT_vs_LCDM_real_data.py
+```
+
+### 📧 Contacto
+
+- **Autor**: Pierre-Olivier Després Asselin
+- **Email**: pierreolivierdespres@gmail.com
+- **GitHub**: [@cadespres](https://github.com/cadespres)
+
+---
+
+**Última actualización** : 2026-01-15
+**Version** : 0.4.0-beta (Test Weak Lensing - Metodología Validada)
