@@ -28,3 +28,8 @@ venv/
 .idea/
 *.swp
 *.swo
+
+# Données volumineuses (FITS, catalogues)
+data/input/
+*.fits
+*.fits.gz

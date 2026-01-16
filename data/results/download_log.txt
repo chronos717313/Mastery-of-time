@@ -1,0 +1,25 @@
+[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;34m🌌 TÉLÉCHARGEMENT DONNÉES WEAK LENSING - TMT[0m
+[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+
+  Projet: Théorie de Maîtrise du Temps (TMT)
+  Test: θ_halo ↔ θ_voisin (Alignement halos)
+  Destination: /home/user/Maitrise-du-temps/data/input
+
+[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;34m📡 TÉLÉCHARGEMENT DONNÉES COSMOS (~2 GB)[0m
+[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32m✅ Espace disque OK: 29694 MB disponibles[0m
+
+[1;33m[1/2][0m
+
+[0;34mℹ️  Téléchargement: cosmos_zphot_shapes.fits (~1200 MB)[0m
+  URL: https://irsa.ipac.caltech.edu/data/COSMOS/tables/morphology/cosmos_zphot_shapes.fits
+  Destination: /home/user/Maitrise-du-temps/data/input/cosmos/cosmos_zphot_shapes.fits
+--2026-01-15 22:50:22--  https://irsa.ipac.caltech.edu/data/COSMOS/tables/morphology/cosmos_zphot_shapes.fits
+Connecting to 21.0.0.27:15004... connected.
+Proxy request sent, awaiting response... 404 Not Found
+2026-01-15 22:50:23 ERROR 404: Not Found.
+
+[0;31m❌ Échec du téléchargement: cosmos_zphot_shapes.fits[0m
+[0;31m❌ Échec du téléchargement COSMOS[0m

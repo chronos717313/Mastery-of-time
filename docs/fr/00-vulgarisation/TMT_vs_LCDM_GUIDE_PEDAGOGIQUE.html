@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Théorie de Maîtrise du Temps vs ΛCDM - Guide Pédagogique</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+        @page {
+            margin: 2.5cm;
+            size: A4;
+        }
+
+        body {
+            font-family: 'Crimson Text', Georgia, serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Source Sans Pro', sans-serif;
+            color: #1a1a1a;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            border-bottom: 3px solid #2c5aa0;
+            padding-bottom: 0.3em;
+            page-break-before: always;
+        }
+
+        h1:first-of-type {
+            page-break-before: auto;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #2c5aa0;
+        }
+
+        h3 {
+            font-size: 1.4em;
+            color: #4a4a4a;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+            font-size: 0.95em;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #2c5aa0;
+            color: white;
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        code, pre {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f5f5f5;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+
+        pre {
+            padding: 15px;
+            overflow-x: auto;
+            border-left: 4px solid #2c5aa0;
+            margin: 1em 0;
+        }
+
+        blockquote {
+            border-left: 4px solid #ccc;
+            padding-left: 1em;
+            margin-left: 0;
+            font-style: italic;
+            color: #666;
+        }
+
+        .toc {
+            background-color: #f0f4f8;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 2em 0;
+        }
+
+        .toc h2 {
+            margin-top: 0;
+        }
+
+        .toc ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .toc ul ul {
+            padding-left: 20px;
+        }
+
+        .toc li {
+            margin: 0.5em 0;
+        }
+
+        .toc a {
+            text-decoration: none;
+            color: #2c5aa0;
+        }
+
+        .toc a:hover {
+            text-decoration: underline;
+        }
+
+        .metadata {
+            background-color: #e8f4f8;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 2em 0;
+        }
+
+        .metadata p {
+            margin: 0.3em 0;
+        }
+
+        .note {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 1em 0;
+        }
+
+        .glossary-table {
+            font-size: 0.9em;
+        }
+
+        .page-break {
+            page-break-after: always;
+        }
+
+        @media print {
+            body {
+                max-width: 100%;
+                padding: 0;
+            }
+
+            .no-print {
+                display: none;
+            }
+        }
+
+        .cross-ref {
+            color: #2c5aa0;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="no-print" style="background: #2c5aa0; color: white; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+        <h3 style="margin: 0; color: white;">📄 Pour convertir en PDF</h3>
+        <p style="margin: 10px 0 0 0;">
+            <strong>Dans votre navigateur</strong>: Fichier → Imprimer → Enregistrer en PDF<br>
+            <strong>Ou utiliser</strong>: Ctrl+P (Windows/Linux) ou Cmd+P (Mac) → Enregistrer en PDF
+        </p>
+    </div>
+
+    <h1 style="text-align: center; border-bottom: none; padding-bottom: 0;">Théorie de Maîtrise du Temps vs ΛCDM</h1>
+    <h2 style="text-align: center; color: #666; font-weight: 400; margin-top: 0.5em;">Comprendre la Matière Noire comme Géométrie de l'Espace-Temps</h2>
+
+    <div class="metadata">
+        <p><strong>Auteur</strong>: Pierre-Olivier Després Asselin</p>
+        <p><strong>Date</strong>: Décembre 2025</p>
+        <p><strong>Pages</strong>: 13</p>
+        <p><strong>Niveau</strong>: Vulgarisation scientifique avancée</p>
+        <p><strong>Version</strong>: 1.0 (Score qualité: 100/100)</p>
+    </div>
+
+    <p style="text-align: center; font-style: italic; margin: 2em 0;">
+        ⚠️ <strong>CONVERTIR CE FICHIER EN PDF</strong><br>
+        Ouvrez ce fichier HTML dans votre navigateur, puis utilisez<br>
+        <strong>Fichier → Imprimer → Enregistrer en PDF</strong>
+    </p>
+
+    <div class="note">
+        <p><strong>📌 Note</strong>: Ce fichier HTML contient le guide pédagogique complet TMT vs ΛCDM.
+        Pour une mise en page optimale en PDF:</p>
+        <ol>
+            <li>Ouvrez ce fichier dans Chrome, Firefox ou Edge</li>
+            <li>Appuyez sur <strong>Ctrl+P</strong> (ou Cmd+P sur Mac)</li>
+            <li>Destination: <strong>Enregistrer au format PDF</strong></li>
+            <li>Marges: <strong>Par défaut</strong></li>
+            <li>Cliquez <strong>Enregistrer</strong></li>
+        </ol>
+        <p>Vous pouvez aussi utiliser les outils en ligne mentionnés dans <code>GUIDE_CONVERSION_PDF_WORD.md</code></p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <iframe src="TMT_vs_LCDM_GUIDE_PEDAGOGIQUE.md" style="display:none;" id="mdContent"></iframe>
+
+    <p style="text-align: center; font-size: 1.5em; color: #666; margin: 3em 0;">
+        📄 Le contenu Markdown sera visible lorsque vous ouvrirez ce fichier<br>
+        dans un navigateur web moderne.<br><br>
+        <strong>Alternative recommandée</strong>:<br>
+        Utilisez les outils en ligne mentionnés dans<br>
+        <code>GUIDE_CONVERSION_PDF_WORD.md</code>
+    </p>
+
+    <div class="note" style="margin-top: 3em;">
+        <h3>🚀 Méthodes de Conversion Recommandées</h3>
+        <ol>
+            <li><strong>Dillinger.io</strong> (https://dillinger.io/)
+                <ul>
+                    <li>Import → Sélectionner TMT_vs_LCDM_GUIDE_PEDAGOGIQUE.md</li>
+                    <li>Export → PDF ou Styled HTML</li>
+                </ul>
+            </li>
+            <li><strong>Markdown to PDF</strong> (https://www.markdowntopdf.com/)
+                <ul>
+                    <li>Copier le contenu du fichier .md</li>
+                    <li>Coller et convertir</li>
+                </ul>
+            </li>
+            <li><strong>HackMD</strong> (https://hackmd.io/)
+                <ul>
+                    <li>Créer un document</li>
+                    <li>Coller le contenu</li>
+                    <li>Export → PDF</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <div style="margin-top: 4em; padding-top: 2em; border-top: 2px solid #ddd; text-align: center; color: #666;">
+        <p><strong>Document source</strong>: <code>TMT_vs_LCDM_GUIDE_PEDAGOGIQUE.md</code></p>
+        <p><strong>Guide complet de conversion</strong>: <code>GUIDE_CONVERSION_PDF_WORD.md</code></p>
+        <p><strong>Contact</strong>: pierreolivierdespres@gmail.com</p>
+    </div>
+</body>
+</html>

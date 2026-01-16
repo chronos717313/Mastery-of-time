@@ -1,0 +1,8 @@
+RÉSULTATS TEST WEAK LENSING TMT - TMT
+============================================================
+
+Corrélation Pearson: r = 0.378 [0.357, 0.399]
+Alignment score: 0.008
+p-value: 3.80e-88
+
+Nombre de paires: 2,699

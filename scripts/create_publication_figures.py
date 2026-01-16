@@ -14,6 +14,8 @@ Date: December 2025
 """
 
 import numpy as np
+import matplotlib
+matplotlib.use('Agg')  # Non-interactive backend
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 from scipy.special import i0, i1, k0, k1
@@ -23,7 +25,7 @@ G = 4.302e-6  # kpc (km/s)^2 / Msun
 c = 3.0e5     # km/s
 
 # Universal law parameters (calibrated 2025-12-07)
-k0 = 0.343
+k0_universal = 0.343  # Renamed to avoid conflict with scipy.special.k0
 alpha = -1.610
 beta_gas = -3.585
 M0 = 1e10  # Msun (normalization)
@@ -40,7 +42,7 @@ galaxies = {
 
 def k_universal_law(M_bary, f_gas):
     """Universal coupling law k(M_bary, f_gas)"""
-    return k0 * (M_bary / M0)**alpha * (1 + f_gas)**beta_gas
+    return k0_universal * (M_bary / M0)**alpha * (1 + f_gas)**beta_gas
 
 def Phi_disk(r, M_disk, R_disk):
     """Gravitational potential of exponential disk (Freeman 1970)"""
@@ -361,4 +363,5 @@ print("\nAll figures saved to: ../data/results/")
 print("\nReady for publication submission!")
 print("="*70)
 
-plt.show()
+# plt.show()  # Disabled for non-interactive execution
+print("\n✅ All figures generated successfully in non-interactive mode")
