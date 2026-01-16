@@ -1,0 +1,74 @@
+{
+  "title": "Time Mastery Theory: Alternative Cosmological Framework via Temporal Distortion",
+  "description": "The Time Mastery Theory (TMT) proposes an alternative explanation for dark matter and dark energy through geometric effects in spacetime. This dataset includes complete documentation, mathematical formulation, and experimental validation methodology for the decisive weak lensing test. Key result: Universal law k(M_bary, f_gas) with R²=0.9976 over 10,000+ galaxies. Current status: Methodology validated, awaiting real COSMOS/DES data for decisive test (timeline: 4-6 months).",
+  "version": "0.4.0-beta",
+  "upload_type": "dataset",
+  "publication_date": "2026-01-15",
+  "creators": [
+    {
+      "name": "Després Asselin, Pierre-Olivier",
+      "affiliation": "Independent Researcher",
+      "orcid": ""
+    }
+  ],
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "keywords": [
+    "cosmology",
+    "dark matter",
+    "dark energy",
+    "alternative theory",
+    "weak gravitational lensing",
+    "temporal distortion",
+    "general relativity",
+    "galaxy rotation curves",
+    "ΛCDM alternative",
+    "geometric dark matter",
+    "universal law",
+    "COSMOS survey",
+    "DES survey",
+    "falsifiable prediction"
+  ],
+  "subjects": [
+    {
+      "term": "Astrophysics - Cosmology and Nongalactic Astrophysics",
+      "identifier": "astro-ph.CO"
+    },
+    {
+      "term": "General Relativity and Quantum Cosmology",
+      "identifier": "gr-qc"
+    }
+  ],
+  "notes": "This work presents a falsifiable alternative to the ΛCDM cosmological model. The theory predicts a specific correlation r>0.50 for dark matter halo alignment with neighboring galaxies, testable with COSMOS/DES weak lensing data. Current simulation results (N=5,000) show r=0.378 [0.357, 0.399] with p<10⁻⁸⁸, demonstrating methodology validity while requiring real observational data for decisive test.",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/cadespres/Maitrise-du-temps",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "COSMOS Team",
+      "type": "DataCollector",
+      "affiliation": "Caltech/JPL"
+    },
+    {
+      "name": "DES Collaboration",
+      "type": "DataCollector",
+      "affiliation": "Dark Energy Survey"
+    }
+  ],
+  "references": [
+    "Bartelmann & Schneider (2001). Weak gravitational lensing. Physics Reports, 340, 291-472.",
+    "DES Collaboration (2021). Dark Energy Survey Year 3 results. ApJS, 254, 24.",
+    "Scoville et al. (2007). The Cosmic Evolution Survey (COSMOS). ApJS, 172, 1.",
+    "Kilbinger (2015). Cosmology with cosmic shear observations. Reports on Progress in Physics, 78, 086901."
+  ],
+  "language": "eng",
+  "communities": [
+    {
+      "identifier": "zenodo"
+    }
+  ]
+}
