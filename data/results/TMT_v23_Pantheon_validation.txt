@@ -1,0 +1,13 @@
+VALIDATION TMT v2.3 - PANTHEON+ REELLES
+==================================================
+
+Date: 18 janvier 2026
+SNIa analysees: 1588
+
+Chi2 reduit LCDM: 1.2122
+Chi2 reduit TMT:  1.1086
+
+Deltad_L moyen:  -0.9260%
+Deltad_L max:    6.6875%
+
+VERDICT: LIMITE

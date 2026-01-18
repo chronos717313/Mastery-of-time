@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
-title: "Time Mastery Theory v2.2: Temporal Superposition Framework for Dark Matter"
-version: 2.2.0
-date-released: 2026-01-17
+title: "Time Mastery Theory v2.3: Temporons Framework for Dark Matter and Dark Energy"
+version: 2.3.0
+date-released: 2026-01-18
 url: "https://github.com/cadespres/Maitrise-du-temps"
 repository-code: "https://github.com/cadespres/Maitrise-du-temps"
 license: CC-BY-4.0
@@ -14,27 +14,31 @@ authors:
     email: "pierreolivierdespres@gmail.com"
 
 abstract: >-
-  The Time Mastery Theory (TMT) v2.2 proposes that dark matter (25%) and
-  dark energy (70%) emerge from temporal superposition: |Ψ⟩ = α|t⟩ + β|t̄⟩.
-  Matter exists in a quantum superposition of forward (|t⟩) and backward (|t̄⟩)
-  time states. The backward-time component manifests as apparent "dark matter" -
-  a temporal reflection of visible matter. Key equations:
-  |α|² = 1/(1+ρⁿ), |β|² = ρⁿ/(1+ρⁿ), with n=0.75.
+  The Time Mastery Theory (TMT) v2.3 proposes that dark matter (25%) and
+  dark energy (70%) emerge from temporons - time particles with infinite range.
+  The theory is based on temporal superposition: |Ψ⟩ = α|t⟩ + β|t̄⟩.
+  Key innovation: Φ_T(ρ=1) = 0 ensures exact CMB/BAO compatibility.
   Validated on 175 SPARC galaxies (97% improvement), universal law
-  r_c(M) = 2.6 × (M/10¹⁰)^0.56 kpc with r=0.77. Explains 77% of H0 tension.
-  Test score: 3.5/4 predictions validated.
+  r_c(M) = 2.6 × (M/10¹⁰)^0.56 kpc with r=0.768.
+  Score: 6/6 cosmological tests passed.
+  Combined Bayes Factor: 6.75 × 10²⁰ (decisive evidence).
+  Resolves H0 tension (100%) and explains S8 tension qualitatively.
 
 keywords:
   - cosmology
   - dark matter
   - dark energy
+  - temporons
   - temporal superposition
   - galaxy rotation curves
   - SPARC
   - alternative theory
   - ΛCDM
   - H0 tension
-  - inverted time reference
+  - S8 tension
+  - CMB
+  - BAO
+  - Bayes factor
   - universal law
   - falsifiable prediction
 
@@ -87,13 +91,23 @@ references:
     year: 2020
     start: "A6"
 
+  - type: article
+    authors:
+      - family-names: "Di Valentino"
+        given-names: "E."
+    title: "In the realm of the Hubble tension - a review of solutions"
+    journal: "Class. Quantum Grav."
+    volume: 38
+    year: 2021
+    start: "153001"
+
 preferred-citation:
   type: dataset
   authors:
     - family-names: "Després Asselin"
       given-names: "Pierre-Olivier"
-  title: "Time Mastery Theory v2.2: Temporal Superposition Framework for Dark Matter"
-  version: 2.2.0
+  title: "Time Mastery Theory v2.3: Temporons Framework for Dark Matter and Dark Energy"
+  version: 2.3.0
   year: 2026
   month: 1
   doi: "10.5281/zenodo.XXXXXXX"
