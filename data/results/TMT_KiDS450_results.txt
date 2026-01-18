@@ -1,0 +1,28 @@
+TMT v2.3 KiDS-450 Test Results
+==================================================
+
+
+isotropy:
+  mean_alignment: 0.63646597719016
+  std: 0.00043524805447986756
+  random_expectation: 0.6366197723675814
+  deviation_percent: -0.02415808997723407
+  t_statistic: -0.3533506372709974
+  p_value: 0.7238255876475941
+  n_pairs: 500000
+  verdict: [OK] ISOTROPIC - Strong support for TMT v2.0
+
+ellipticity:
+  mean_e1: -0.00027223531253904023
+  mean_e2: 0.0011801982884692066
+  var_e1: 0.08401583560168845
+  var_e2: 0.08495286360872896
+  var_ratio: 0.9889700244672596
+  mean_e: 0.35899365032453573
+  verdict: [?] Possible systematic bias | Variance ratio OK
+
+redshift:
+  correlation_r: 0.04270318987262026
+  correlation_p: 0.0
+  z_bins: [{'z_min': 0, 'z_max': 0.3, 'mean_e': np.float64(0.36526686773248057), 'n': 278558}, {'z_min': 0.3, 'z_max': 0.6, 'mean_e': np.float64(0.35106463445664965), 'n': 290725}, {'z_min': 0.6, 'z_max': 0.9, 'mean_e': np.float64(0.34355881184033144), 'n': 300065}, {'z_min': 0.9, 'z_max': 1.2, 'mean_e': np.float64(0.41736548663616724), 'n': 81804}, {'z_min': 1.2, 'z_max': 2.0, 'mean_e': np.float64(0.43995123638808364), 'n': 47497}]
+  verdict: [OK] No significant z-dependence
