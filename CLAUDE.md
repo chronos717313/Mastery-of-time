@@ -4,6 +4,30 @@ Nous souhaitons bâtir des documents sérieux. 3 langues: français, anglais, es
 
 ---
 
+## 📋 Documents de Référence Housekeeping (Janvier 2026)
+
+**Analyse et Organisation du Projet** - Documents créés le 17-18 janvier 2026:
+
+| Document | Description |
+|----------|-------------|
+| **MISE_A_JOUR_CRITIQUE_v23.md** | État TMT v2.3 - Temporons, 6/6 tests cosmologiques ✅ |
+| **ANALYSE_BRANCHE_KRONOS.md** | Analyse complète branche professeur_kronos |
+| **VALIDATION_BRANCHE_KRONOS.md** | Plan archivage détaillé TMT v1.0 vs v2.x |
+| **HOUSEKEEPING_PLAN.md** | Plan réorganisation structure projet |
+| **CONCEPT_MAP.md** | Carte conceptuelle - Relations entre théories |
+| **STATUS.md** | État projet avec métriques |
+| **NAVIGATION_GUIDE.md** | Guide navigation ("Je veux...") |
+| **FILE_VALIDATION_REPORT.md** | Classification fichiers par âge/pertinence |
+| **ARCHIVING_PROPOSAL.md** | Proposition archivage fichiers obsolètes |
+
+**Utilisation**:
+- Lire **MISE_A_JOUR_CRITIQUE_v23.md** pour comprendre l'état actuel
+- Consulter **NAVIGATION_GUIDE.md** pour trouver rapidement un fichier/concept
+- Voir **CONCEPT_MAP.md** pour relations entre idées
+- Référer à **STATUS.md** pour métriques validation
+
+---
+
 ## Théorie de Maîtrise du Temps (TMT)
 
 La théorie de la gravitation ΛCDM laisse inexpliqué 95% des mouvements de l'univers (70% énergie noire, 25% matière noire).
