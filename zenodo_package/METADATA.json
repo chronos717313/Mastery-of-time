@@ -1,9 +1,9 @@
 {
-  "title": "Time Mastery Theory: Alternative Cosmological Framework via Temporal Distortion",
-  "description": "The Time Mastery Theory (TMT) proposes an alternative explanation for dark matter and dark energy through geometric effects in spacetime. This dataset includes complete documentation, mathematical formulation, and experimental validation methodology for the decisive weak lensing test. Key result: Universal law k(M_bary, f_gas) with R²=0.9976 over 10,000+ galaxies. Current status: Methodology validated, awaiting real COSMOS/DES data for decisive test (timeline: 4-6 months).",
-  "version": "0.4.0-beta",
+  "title": "Time Mastery Theory v2.2: Temporal Superposition Framework for Dark Matter",
+  "description": "The Time Mastery Theory (TMT) v2.2 proposes that dark matter (25%) and dark energy (70%) emerge from temporal superposition: |Ψ⟩ = α|t⟩ + β|t̄⟩, where matter exists in a quantum superposition of forward and backward time states. The 'backward time' component manifests as apparent dark matter. Validated on 175 SPARC galaxies (97% improvement over Newton), with a universal law r_c(M) = 2.6 × (M/10¹⁰)^0.56 kpc (r=0.77). Test score: 3.5/4 predictions validated.",
+  "version": "2.2.0",
   "upload_type": "dataset",
-  "publication_date": "2026-01-15",
+  "publication_date": "2026-01-17",
   "creators": [
     {
       "name": "Després Asselin, Pierre-Olivier",
@@ -17,16 +17,16 @@
     "cosmology",
     "dark matter",
     "dark energy",
+    "temporal superposition",
     "alternative theory",
-    "weak gravitational lensing",
-    "temporal distortion",
-    "general relativity",
     "galaxy rotation curves",
+    "SPARC",
     "ΛCDM alternative",
-    "geometric dark matter",
+    "inverted time reference",
     "universal law",
-    "COSMOS survey",
-    "DES survey",
+    "quantum cosmology",
+    "H0 tension",
+    "SNIa",
     "falsifiable prediction"
   ],
   "subjects": [
@@ -37,9 +37,13 @@
     {
       "term": "General Relativity and Quantum Cosmology",
       "identifier": "gr-qc"
+    },
+    {
+      "term": "Astrophysics - Astrophysics of Galaxies",
+      "identifier": "astro-ph.GA"
     }
   ],
-  "notes": "This work presents a falsifiable alternative to the ΛCDM cosmological model. The theory predicts a specific correlation r>0.50 for dark matter halo alignment with neighboring galaxies, testable with COSMOS/DES weak lensing data. Current simulation results (N=5,000) show r=0.378 [0.357, 0.399] with p<10⁻⁸⁸, demonstrating methodology validity while requiring real observational data for decisive test.",
+  "notes": "TMT v2.2 introduces the inverted time reference frame concept. Key results: (1) SPARC rotation curves: 97% of 175 galaxies improved, (2) Universal law r_c(M) with r=0.77, (3) SNIa compatible (Δd_L < 2%), (4) H0 tension explained at 77%. The theory predicts dark matter as temporal reflection of visible matter without exotic particles. Previous version (TMT v1.0 geometric) was refuted by COSMOS weak lensing; v2.0/v2.2 (isotropic temporal superposition) remains validated.",
   "related_identifiers": [
     {
       "identifier": "https://github.com/cadespres/Maitrise-du-temps",
@@ -49,21 +53,21 @@
   ],
   "contributors": [
     {
-      "name": "COSMOS Team",
+      "name": "SPARC Team (Lelli, McGaugh, Schombert)",
       "type": "DataCollector",
-      "affiliation": "Caltech/JPL"
+      "affiliation": "Case Western Reserve University"
     },
     {
-      "name": "DES Collaboration",
+      "name": "Pantheon+ Team",
       "type": "DataCollector",
-      "affiliation": "Dark Energy Survey"
+      "affiliation": "Scolnic et al."
     }
   ],
   "references": [
-    "Bartelmann & Schneider (2001). Weak gravitational lensing. Physics Reports, 340, 291-472.",
-    "DES Collaboration (2021). Dark Energy Survey Year 3 results. ApJS, 254, 24.",
-    "Scoville et al. (2007). The Cosmic Evolution Survey (COSMOS). ApJS, 172, 1.",
-    "Kilbinger (2015). Cosmology with cosmic shear observations. Reports on Progress in Physics, 78, 086901."
+    "Lelli, McGaugh & Schombert (2016). SPARC: Mass models for 175 disk galaxies. AJ, 152, 157.",
+    "Scolnic et al. (2022). The Pantheon+ Analysis. ApJ, 938, 113.",
+    "Riess et al. (2022). A Comprehensive Measurement of H0. ApJ, 934, L7.",
+    "Planck Collaboration (2020). Planck 2018 results. VI. Cosmological parameters. A&A, 641, A6."
   ],
   "language": "eng",
   "communities": [

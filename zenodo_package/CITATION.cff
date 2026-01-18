@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
-title: "Time Mastery Theory: Alternative Cosmological Framework via Temporal Distortion"
-version: 0.4.0-beta
-date-released: 2026-01-15
+title: "Time Mastery Theory v2.2: Temporal Superposition Framework for Dark Matter"
+version: 2.2.0
+date-released: 2026-01-17
 url: "https://github.com/cadespres/Maitrise-du-temps"
 repository-code: "https://github.com/cadespres/Maitrise-du-temps"
 license: CC-BY-4.0
@@ -14,28 +14,29 @@ authors:
     email: "pierreolivierdespres@gmail.com"
 
 abstract: >-
-  The Time Mastery Theory (TMT) proposes an alternative explanation for
-  dark matter (25%) and dark energy (70%) through geometric effects in
-  spacetime. The theory introduces: (1) Temporal Distortion Index (TDI)
-  measuring spacetime curvature, (2) Asselin Liaisons coupling gravitationally
-  bound regions, and (3) Després Mass representing geometric dark matter
-  emergence. A universal law k(M_bary, f_gas) with exceptional fit (R²=0.9976)
-  has been discovered. The decisive experimental test uses weak gravitational
-  lensing to measure dark matter halo alignment: TMT predicts r>0.50
-  (aligned with neighbors), ΛCDM predicts r<0.20 (random). Current simulation
-  (N=5,000) shows r=0.378 [0.357, 0.399], p<10⁻⁸⁸, requiring real COSMOS/DES
-  data for decisive result (4-6 months timeline).
+  The Time Mastery Theory (TMT) v2.2 proposes that dark matter (25%) and
+  dark energy (70%) emerge from temporal superposition: |Ψ⟩ = α|t⟩ + β|t̄⟩.
+  Matter exists in a quantum superposition of forward (|t⟩) and backward (|t̄⟩)
+  time states. The backward-time component manifests as apparent "dark matter" -
+  a temporal reflection of visible matter. Key equations:
+  |α|² = 1/(1+ρⁿ), |β|² = ρⁿ/(1+ρⁿ), with n=0.75.
+  Validated on 175 SPARC galaxies (97% improvement), universal law
+  r_c(M) = 2.6 × (M/10¹⁰)^0.56 kpc with r=0.77. Explains 77% of H0 tension.
+  Test score: 3.5/4 predictions validated.
 
 keywords:
   - cosmology
   - dark matter
   - dark energy
-  - weak gravitational lensing
-  - temporal distortion
+  - temporal superposition
+  - galaxy rotation curves
+  - SPARC
   - alternative theory
   - ΛCDM
-  - falsifiable prediction
+  - H0 tension
+  - inverted time reference
   - universal law
+  - falsifiable prediction
 
 identifiers:
   - type: doi
@@ -45,43 +46,54 @@ identifiers:
 references:
   - type: article
     authors:
-      - family-names: "Bartelmann"
-        given-names: "M."
-      - family-names: "Schneider"
-        given-names: "P."
-    title: "Weak gravitational lensing"
-    journal: "Physics Reports"
-    volume: 340
-    year: 2001
-    start: 291
-    end: 472
+      - family-names: "Lelli"
+        given-names: "F."
+      - family-names: "McGaugh"
+        given-names: "S.S."
+      - family-names: "Schombert"
+        given-names: "J.M."
+    title: "SPARC: Mass models for 175 disk galaxies with Spitzer photometry and accurate rotation curves"
+    journal: "Astronomical Journal"
+    volume: 152
+    year: 2016
+    start: 157
 
   - type: article
     authors:
-      - name: "DES Collaboration"
-    title: "Dark Energy Survey Year 3 results"
-    journal: "ApJS"
-    volume: 254
-    year: 2021
-    start: 24
+      - family-names: "Scolnic"
+        given-names: "D."
+    title: "The Pantheon+ Analysis: SuperCal-fragilistic Cross Calibration"
+    journal: "ApJ"
+    volume: 938
+    year: 2022
+    start: 113
 
   - type: article
     authors:
-      - family-names: "Scoville"
-        given-names: "N."
-    title: "The Cosmic Evolution Survey (COSMOS)"
-    journal: "ApJS"
-    volume: 172
-    year: 2007
-    start: 1
+      - family-names: "Riess"
+        given-names: "A.G."
+    title: "A Comprehensive Measurement of the Local Value of the Hubble Constant"
+    journal: "ApJ"
+    volume: 934
+    year: 2022
+    start: "L7"
+
+  - type: article
+    authors:
+      - name: "Planck Collaboration"
+    title: "Planck 2018 results. VI. Cosmological parameters"
+    journal: "A&A"
+    volume: 641
+    year: 2020
+    start: "A6"
 
 preferred-citation:
   type: dataset
   authors:
     - family-names: "Després Asselin"
       given-names: "Pierre-Olivier"
-  title: "Time Mastery Theory: Alternative Cosmological Framework via Temporal Distortion"
-  version: 0.4.0-beta
+  title: "Time Mastery Theory v2.2: Temporal Superposition Framework for Dark Matter"
+  version: 2.2.0
   year: 2026
   month: 1
   doi: "10.5281/zenodo.XXXXXXX"
