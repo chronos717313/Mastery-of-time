@@ -123,7 +123,7 @@ H(z, ρ) = H₀ · √[Ωₘ(1+z)³ + ΩΛ · (1 + 0.2 · (1 - |α|² + |β|²))
 ### Éléments CONSERVÉS (TMT v2.0)
 - **Superposition temporelle** pour courbes de rotation (**97.5% amélioration**, r_c ~ 5 kpc)
 - **Masse Després SCALAIRE** (contribution sphérique isotrope, pas directionnelle)
-- **Loi universelle k(M)** = 3.97 × (M/10^10)^(-0.48) avec R² = 0.374 (168 galaxies)
+- **Loi universelle k(M)** = 4.00 × (M/10^10)^(-0.49) avec R² = 0.64 (172 galaxies) **RECALIBRÉ**
 - **Expansion différentielle H(z, ρ)**
 
 ### Nouvelle Formulation
@@ -139,7 +139,7 @@ H(z, ρ) = H₀ · √[Ωₘ(1+z)³ + ΩΛ · (1 + 0.2 · (1 - |α|² + |β|²))
 
 | Élément | Statut Actuel | Test Requis |
 |---------|---------------|-------------|
-| Loi k(M) | ✅ R² = 0.374 (168 galaxies) | **VALIDÉ** |
+| Loi k(M) | ✅ R² = 0.64 (172 galaxies) | **RECALIBRÉ** |
 | Rayon critique r_c | ✅ ~5 kpc (médian) | **RECALIBRÉ** |
 | Expansion H(z, ρ) | Non testé | SNIa par environnement |
 | ISW amplifié +26% | Prédit | Planck × BOSS |
@@ -237,18 +237,18 @@ M_eff(r) = M_bary(r) × [1 + k × (r/r_c)]
 | Amélioration médiane | **97.5%** |
 | Galaxies améliorées | **169/175 (97%)** |
 
-#### Loi k(M) Calibrée sur 168 galaxies
+#### Loi k(M) Calibrée sur 172 galaxies (RECALIBRÉ Janvier 2026)
 
 ```
-k = 3.97 × (M/10^10)^(-0.48)
-R² = 0.374
+k = 4.00 × (M/10^10)^(-0.49)
+R² = 0.64
 ```
 
-| Paramètre | Ancienne calibration (6 gal) | Nouvelle calibration (168 gal) |
-|-----------|------------------------------|--------------------------------|
-| a | 0.343 | **3.97** |
-| b | -1.61 | **-0.48** |
-| R² | 0.9976 | 0.374 |
+| Paramètre | Ancienne (6 gal) | v2.0 (168 gal) | v2.3 (172 gal) |
+|-----------|------------------|----------------|----------------|
+| a | 0.343 | 3.97 | **4.00** |
+| b | -1.61 | -0.48 | **-0.49** |
+| R² | 0.9976 | 0.374 | **0.64** |
 
 #### Paramètres Optimaux (médians)
 
@@ -413,6 +413,24 @@ H(z, ρ) = H₀ · √[Ωₘ(1+z)³ + ΩΛ_eff · exp(β · (1 - ρ/ρ_crit))]
 
 ---
 
+### Validation Weak Lensing KiDS-450 (Janvier 2026)
+
+**Script**: `scripts/test_TMT_KiDS450.py`
+
+**Données**: 1,000,000 galaxies KiDS-450 (Hildebrandt+ 2017)
+
+| Test | Résultat | Verdict |
+|------|----------|---------|
+| **Isotropie halos** | Déviation -0.024% | ✅ **ISOTROPE** |
+| **Systématiques** | Var ratio = 0.989 | ✅ OK |
+| **Dépendance z** | r = 0.04 | ✅ Pas significatif |
+
+**Score TMT v2.0: 3/3** - Halos ISOTROPES confirmés
+
+**Conclusion**: Les données weak lensing KiDS-450 supportent fortement la prédiction TMT v2.0 que les halos de matière noire sont **ISOTROPES** (contribution scalaire), pas directionnels.
+
+---
+
 ### Prochains Tests
 1. ~~**BLOQUÉ**: Test k(M, f_gas) sur SPARC~~ ✅ **COMPLÉTÉ**
 2. ~~Test probabilités quantiques~~ ✅ **COMPLÉTÉ** (Score 6/10)
@@ -431,14 +449,25 @@ H(z, ρ) = H₀ · √[Ωₘ(1+z)³ + ΩΛ_eff · exp(β · (1 - ρ/ρ_crit))]
 - `data/results/TMT_v2_SPARC_reel_results.txt` - Résultats SPARC
 - `data/results/TMT_v2_probabilites_quantiques.txt` - Analyse probabiliste
 - `data/results/investigation_r_c.txt` - Investigation r_c
+- **`data/results/TMT_KiDS450_results.txt`** - **Résultats KiDS-450 (1M galaxies)** (NOUVEAU)
+- **`data/results/k_recalibration_TMT_v23.txt`** - **Recalibration k(M) R²=0.64** (NOUVEAU)
 
 ### Scripts de test
 - `scripts/test_TMT_v2_SPARC_reel.py` - Test 175 galaxies SPARC réelles
 - `scripts/test_TMT_v2_probabilites_quantiques.py` - Analyse probabiliste quantique
 - `scripts/test_TMT_v2_superposition.py` - Test superposition temporelle (données simulées)
 - `scripts/investigation_r_c_variation.py` - Investigation r_c(M)
-- **`scripts/test_3_predictions_TMT.py`** - **TEST 3 PRÉDICTIONS DISTINCTIVES** (NOUVEAU)
+- `scripts/test_3_predictions_TMT.py` - Test 3 prédictions distinctives
+- **`scripts/test_TMT_KiDS450.py`** - **TEST WEAK LENSING 1M GALAXIES** (NOUVEAU)
+- **`scripts/test_TMT_COSMOS2015.py`** - **TEST COSMOS2015** (NOUVEAU)
+- **`scripts/recalibrate_k_TMT.py`** - **RECALIBRATION k(M)** (NOUVEAU)
+
+### Scripts téléchargement données
+- `scripts/download_COSMOS2015.py` - Télécharge COSMOS2015 via VizieR
+- `scripts/download_KiDS450.py` - Télécharge KiDS-450 weak lensing
+- `scripts/download_UNIONS.py` - Accès UNIONS via CADC TAP
 
 ### Configuration Git
-- **Branche par défaut**: `professeur_kronos`
-- **Remote**: github.com/cadespres/Maitrise-du-temps
+- **Branche par défaut**: `main`
+- **Remote**: github.com/chronos717313/Mastery-of-time
+- **DOI**: 10.5281/zenodo.18287042
