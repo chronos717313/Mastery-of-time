@@ -162,24 +162,62 @@ TMT v2.0 respecte la symétrie CPT fondamentale:
 
 ---
 
-## 6. Prochaines Étapes
+## 6. Investigation r_c (NOUVEAU - 17 jan)
+
+### Problème résolu
+
+**Question** : Pourquoi r_c varie entre 5-18 kpc selon les tests?
+
+**Réponse** : r_c n'est PAS une constante universelle !
+
+### Découverte majeure
+
+```
+Corrélation r_c vs M_bary:
+  Pearson r = 0.768 (p = 3×10^-21)
+```
+
+### Relation empirique (103 galaxies SPARC)
+
+```
+r_c(M) = 2.6 × (M_bary / 10¹⁰ M_☉)^0.56 kpc
+```
+
+### Réconciliation
+
+| Valeur | Source | Statut |
+|--------|--------|--------|
+| 18 kpc | Données simulées | **OBSOLÈTE** |
+| 5.7 kpc | Médiane individuelle | ✓ (galaxie typique ~10^10) |
+| 10.6 kpc | Optimum global | ✓ (pondéré par masse) |
+
+---
+
+## 7. Prochaines Étapes
+
+### Complété
+
+- [x] Test k(M, f_gas) sur SPARC
+- [x] Test probabilités quantiques (Score 6/10)
+- [x] **Investigation r_c = 5 vs 10 vs 18 kpc** → r_c(M) découvert!
 
 ### À Faire
 
 1. [ ] Test ISW × vides (Planck × BOSS) - prédiction +26%
 2. [ ] Expansion différentielle SNIa par environnement
-3. [ ] Investigation r_c = 5 vs 10 vs 18 kpc
+3. [ ] Valider r_c(M) sur échantillon indépendant
 4. [ ] Publication arXiv
 
 ### Questions Ouvertes
 
-1. Pourquoi r_c varie entre 5-18 kpc selon les tests?
+1. ~~Pourquoi r_c varie entre 5-18 kpc selon les tests?~~ **RÉSOLU** (r_c dépend de M)
 2. Comment améliorer R² de la loi k(M)?
 3. Prédictions testables supplémentaires?
+4. **Interprétation physique** de r_c(M) ∝ M^0.56 ?
 
 ---
 
-## 7. Conclusion
+## 8. Conclusion
 
 **TMT v2.0** propose que la "matière noire" est le **reflet temporel quantique** de la matière visible:
 

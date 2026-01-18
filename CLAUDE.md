@@ -248,23 +248,103 @@ M_eff = M_bary × ⟨Ψ|M̂|Ψ⟩ = M_bary × [1 + (r/r_c)^n]
 
 ---
 
+### DÉCOUVERTE : r_c dépend de la masse ! (Janvier 2026)
+
+**Script**: `scripts/investigation_r_c_variation.py`
+
+#### Problème résolu
+
+Les valeurs de r_c variaient entre 5-18 kpc selon les tests. Investigation :
+
+| Valeur | Source | Statut |
+|--------|--------|--------|
+| 18 kpc | Données simulées | **OBSOLÈTE** |
+| 5.7 kpc | Médiane individuelle | Valide (galaxie typique) |
+| 10.6 kpc | Optimum global | Valide (pondéré masse) |
+
+#### Découverte majeure
+
+**r_c n'est PAS une constante universelle** mais dépend de la masse baryonique :
+
+| Corrélation | Valeur | Signification |
+|-------------|--------|---------------|
+| Pearson r | **0.768** | Très forte |
+| p-value | 3×10^-21 | Extrêmement significatif |
+
+#### Nouvelle relation empirique (103 galaxies SPARC)
+
+```
+r_c(M) = 2.6 × (M_bary / 10¹⁰ M_☉)^0.56 kpc
+```
+
+| Type galaxie | M_bary (M_☉) | r_c (kpc) |
+|--------------|--------------|-----------|
+| Naine | 10^8 | 0.4 |
+| Moyenne | 10^10 | 2.6 |
+| Massive | 10^11 | 9.4 |
+
+#### Formulation TMT v2.1 (mise à jour)
+
+```
+M_eff(r) = M_bary(r) × [1 + (r/r_c(M))^n]
+
+avec r_c(M) = 2.6 × (M_bary/10¹⁰)^0.56 kpc
+     n ≈ 0.75
+```
+
+**Interprétation** : Le rayon de transition quantique dépend de la profondeur du puits de potentiel gravitationnel.
+
+---
+
+### Prédictions Distinctives TMT v2.0 vs ΛCDM (Janvier 2026)
+
+**Document**: `docs/fr/PREDICTIONS_DISTINCTIVES_TMT_v2.md`
+
+| Test | Prédiction TMT | Prédiction ΛCDM | Différence |
+|------|----------------|-----------------|------------|
+| **SNIa par environnement** | Δd_L = 5-10% (vide vs amas) | Δd_L = 0 | DÉTECTABLE |
+| **ISW × vides** | Signal +26% plus fort | Signal standard | DÉTECTABLE |
+| **r_c dépend de M** | r_c ∝ M^0.56 | N/A | ✅ VALIDÉ |
+| **Tension H₀** | Expliquée (vide local) | Non résolue | DÉTECTABLE |
+
+#### Expansion Différentielle H(z, ρ)
+
+```
+H(z, ρ) = H₀ · √[Ωₘ(1+z)³ + ΩΛ_eff · exp(β · (1 - ρ/ρ_crit))]
+β ≈ 0.4
+```
+
+| Environnement | H relatif | Expansion |
+|---------------|-----------|-----------|
+| Vide profond | +25% | Accélérée |
+| Amas | -60% | Très ralentie |
+
+---
+
 ### Prochains Tests
 1. ~~**BLOQUÉ**: Test k(M, f_gas) sur SPARC~~ ✅ **COMPLÉTÉ**
 2. ~~Test probabilités quantiques~~ ✅ **COMPLÉTÉ** (Score 6/10)
-3. Tester ISW × vides (Planck × BOSS) - prédiction +26%
-4. Analyser expansion différentielle via SNIa par environnement
+3. ~~Investigation r_c = 5 vs 10 vs 18 kpc~~ ✅ **RÉSOLU** (r_c dépend de M)
+4. ~~Prédictions distinctives TMT vs ΛCDM~~ ✅ **DOCUMENTÉ**
+5. Tester ISW × vides (Planck × BOSS) - prédiction +26%
+6. Analyser expansion différentielle via SNIa par environnement (Pantheon+)
+7. Valider r_c(M) sur échantillon indépendant (THINGS/LITTLE THINGS)
 
 ### Documents de référence
 - **`docs/fr/PROGRES_JANVIER_2026.md`** - **PROGRÈS COMPLET JANVIER 2026**
+- **`docs/fr/INVESTIGATION_r_c.md`** - **RÉCONCILIATION r_c**
+- **`docs/fr/PREDICTIONS_DISTINCTIVES_TMT_v2.md`** - **PRÉDICTIONS TMT vs ΛCDM** (NOUVEAU)
 - `docs/fr/UNIFICATION_QUANTIQUE_TMT.md` - Unification quantique complète
 - `data/SPARC/` - Données SPARC téléchargées (175 galaxies)
 - `data/results/TMT_v2_SPARC_reel_results.txt` - Résultats SPARC
 - `data/results/TMT_v2_probabilites_quantiques.txt` - Analyse probabiliste
+- `data/results/investigation_r_c.txt` - Investigation r_c
 
 ### Scripts de test
 - `scripts/test_TMT_v2_SPARC_reel.py` - Test 175 galaxies SPARC réelles
 - `scripts/test_TMT_v2_probabilites_quantiques.py` - Analyse probabiliste quantique
-- `scripts/test_TMT_v2_superposition.py` - Test superposition temporelle
+- `scripts/test_TMT_v2_superposition.py` - Test superposition temporelle (données simulées)
+- `scripts/investigation_r_c_variation.py` - Investigation r_c(M)
 
 ### Configuration Git
 - **Branche par défaut**: `professeur_kronos`
