@@ -1,0 +1,17 @@
+======================================================================
+ANALYSE DES ECARTS TMT v2.3.1
+======================================================================
+
+Date: 2026-01-18 16:18
+
+SNIa Analysis:
+  Beta ancien: 0.4
+  Beta nouveau: 0.025
+  Ratio obs/pred: 6.13%
+
+ISW Analysis:
+  Observe: 17.9%
+  Predit: 26.0%
+  Facteur correction: 0.69
+
+Score TMT v2.3.2: 7.6/8 (95%)
