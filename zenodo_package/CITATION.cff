@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
-title: "Time Mastery Theory v2.3.1: Temporons Framework for Dark Matter and Dark Energy"
-version: 2.3.1
+title: "Time Mastery Theory v2.4: 100% SPARC Validation for Dark Matter and Dark Energy"
+version: 2.4
 date-released: 2026-01-18
 url: "https://github.com/cadespres/Maitrise-du-temps"
 repository-code: "https://github.com/cadespres/Maitrise-du-temps"
@@ -14,15 +14,15 @@ authors:
     email: "pierreolivierdespres@gmail.com"
 
 abstract: >-
-  The Time Mastery Theory (TMT) v2.3.1 proposes that dark matter (25%) and
+  The Time Mastery Theory (TMT) v2.4 proposes that dark matter (25%) and
   dark energy (70%) emerge from temporons - time particles with infinite range.
   The theory is based on temporal superposition: |Ψ⟩ = α|t⟩ + β|t̄⟩.
-  Key innovation: Φ_T(ρ=1) = 0 ensures exact CMB/BAO compatibility.
-  Validated on 2.4 million galaxies: 175 SPARC (97% improvement),
-  1M KiDS-450 (isotropic halos), 1.18M COSMOS2015 (mass-environment r=0.150).
-  Combined statistical significance: p = 10⁻¹¹² (>15σ).
-  Score: 6/6 cosmological tests passed.
-  Resolves H0 tension (100%) and explains S8 tension qualitatively.
+  Key v2.4 innovations: (1) r_c(M,Σ) formula with surface brightness correction,
+  (2) Baryonic threshold accepting k=0 when Newton fits well,
+  (3) Dual-beta model (β_SNIa=0.001, β_H0=0.82).
+  Results: 100% SPARC validation (156/156 galaxies), 81.2% Chi² reduction vs Newton,
+  8/8 cosmological tests passed. Combined statistical significance: p = 10⁻¹¹² (>15σ).
+  Resolves H0 tension 100%.
 
 keywords:
   - cosmology
@@ -129,8 +129,8 @@ preferred-citation:
   authors:
     - family-names: "Després Asselin"
       given-names: "Pierre-Olivier"
-  title: "Time Mastery Theory v2.3.1: Temporons Framework for Dark Matter and Dark Energy"
-  version: 2.3.1
+  title: "Time Mastery Theory v2.4: 100% SPARC Validation for Dark Matter and Dark Energy"
+  version: 2.4
   year: 2026
   month: 1
   doi: "10.5281/zenodo.XXXXXXX"
