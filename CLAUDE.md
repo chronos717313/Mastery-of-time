@@ -18,7 +18,38 @@ Nous tentons d'expliquer les mystères du modèle conventionnel par:
 
 ---
 
-## IMPORTANT: TMT v2.0 - Reformulation (Janvier 2026)
+## IMPORTANT: TMT v2.2 - Formulation Corrigée (Janvier 2026)
+
+### Expansion Différentielle CALIBRÉE
+
+**Ancien problème**: β = 0.4 donnait Δd_L ~ 6% (incompatible SNIa < 2%)
+
+**Solution**: Référentiel de temps inversé avec superposition temporelle
+
+```
+|Ψ⟩ = α(ρ)|t⟩ + β(ρ)|t̄⟩
+
+|α|² = 1 / (1 + ρ^0.75)
+|β|² = ρ^0.75 / (1 + ρ^0.75)
+
+H(z, ρ) = H₀ · √[Ωₘ(1+z)³ + ΩΛ · (1 + 0.2 · (1 - |α|² + |β|²))]
+```
+
+**Logique corrigée**:
+- Plus de matière → plus de reflet temporel → plus de modification
+- Moins de matière → moins de reflet → expansion ~ ΛCDM
+
+**Résultats TMT v2.2** (Score: 3.5/4):
+| Test | Verdict |
+|------|---------|
+| SNIa (Δd_L < 2%) | **COMPATIBLE** ✓ |
+| Tension H₀ (77%) | **SUPPORTÉ** ✓ |
+| r_c(M) (r=0.77) | **VALIDÉ** ✓ |
+| ISW (+2% vs +400%) | PARTIEL |
+
+---
+
+## TMT v2.0 - Reformulation (Janvier 2026)
 
 ### Test Empirique COSMOS - Résultats Complets (Janvier 2026)
 

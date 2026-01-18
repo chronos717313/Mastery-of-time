@@ -1,0 +1,13 @@
+======================================================================
+CALIBRATION BETA - RESULTATS
+======================================================================
+
+Ancien beta: 0.4
+Nouveau beta: 0.12
+
+Formule TMT v2.1:
+H(z, rho) = H0 * sqrt[Om*(1+z)^3 + OL*exp(0.12*(1-rho/rho_c))]
+
+SNIa Delta_dL: 2.00% (limite < 2%)
+H0 tension expliquee: 0.8%
+ISW amplification: +1.7%

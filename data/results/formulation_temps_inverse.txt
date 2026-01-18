@@ -1,0 +1,12 @@
+======================================================================
+TMT v2.2 - REFERENTIEL DE TEMPS INVERSE
+======================================================================
+
+Concept: |Psi> = alpha|t> + beta|t_bar>
+
+L'expansion depend de l'etat de superposition temporelle.
+Dans les vides: alpha^2 ~ 1 (temps forward domine)
+Dans les amas: superposition significative
+
+Conclusion: L'effet principal de TMT est sur les
+courbes de rotation, pas sur l'expansion cosmique.

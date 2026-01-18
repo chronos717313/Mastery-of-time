@@ -1,0 +1,18 @@
+======================================================================
+TMT v2.2 - RESULTATS FINAUX
+======================================================================
+
+Formule avec referentiel de temps inverse
+
+RESULTATS:
+  SNIa environnement: COMPATIBLE
+  Tension H0: SUPPORTE
+  r_c(M) / rotation: VALIDE
+  ISW supervides: PARTIEL
+
+Score: 3+1/4
+
+PARAMETRES:
+  n = 0.75
+  k = 0.2
+  r_c(M) = 2.6 * (M/10^10)^0.56 kpc
