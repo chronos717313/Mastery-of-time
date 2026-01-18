@@ -25,7 +25,10 @@
       "Bash(py scripts/test_TMT_v2_superposition.py)",
       "Bash(python -c:*)",
       "WebFetch(domain:astroweb.cwru.edu)",
-      "Bash(py scripts/test_TMT_v2_SPARC_reel.py)"
+      "Bash(py scripts/test_TMT_v2_SPARC_reel.py)",
+      "Bash(dir:*)",
+      "Bash(py test_weak_lensing_TMT_vs_LCDM_real_data.py)",
+      "Bash(py scripts/test_TMT_v2_probabilites_quantiques.py)"
     ]
   }
 }

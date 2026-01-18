@@ -1,0 +1,28 @@
+======================================================================
+TMT v2.0 - ANALYSE PROBABILISTE ET UNIFICATION QUANTIQUE
+======================================================================
+
+ECHANTILLON
+  Galaxies: 171
+  Source: SPARC (Lelli, McGaugh & Schombert 2016)
+
+PARAMETRES QUANTIQUES CALIBRES
+  r_c = 10.61 kpc (rayon de transition)
+  n   = 0.75 (exposant de superposition)
+
+FORCE STATISTIQUE
+  Galaxies ameliorees: 139/171 (81.3%)
+  Amelioration mediane: 33.5%
+  IC 95%: [26.9%, 39.0%]
+  p-value: 2.92e-01
+  Cohen's d: 0.04
+  Delta BIC moyen: 6058.6
+
+VERDICT
+  Score: 4/10
+  TMT v2.0 PARTIELLEMENT SUPPORTE
+
+FONDEMENT QUANTIQUE
+  |Psi> = alpha(r)|t> + beta(r)|t_bar>
+  |alpha|^2 + |beta|^2 = 1 (normalisation verifiee)
+  M_eff = M_bary * [1 + (r/r_c)^n]
