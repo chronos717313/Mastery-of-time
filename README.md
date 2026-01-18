@@ -6,6 +6,7 @@
 *Une Théorie Cosmologique Alternative*
 
 [![Version](https://img.shields.io/badge/version-TMT%20v2.3-blue)]()
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18287042.svg)](https://doi.org/10.5281/zenodo.18287042)
 [![Tests](https://img.shields.io/badge/cosmological%20tests-6%2F6%20passed-brightgreen)]()
 [![SPARC](https://img.shields.io/badge/SPARC%20galaxies-97%25%20improved-brightgreen)]()
 [![Bayes](https://img.shields.io/badge/Bayes%20Factor-10²⁰-orange)]()
@@ -259,7 +260,8 @@ Propiedad clave: Φ_T(ρ=1) = 0 → CMB/BAO = ΛCDM exactamente
 
 **Auteur / Author**: Pierre-Olivier Després Asselin
 **Email**: pierreolivierdespres@gmail.com
-**GitHub**: [@cadespres](https://github.com/cadespres)
+**GitHub**: [Mastery-of-time](https://github.com/chronos717313/Mastery-of-time)
+**DOI**: [10.5281/zenodo.18287042](https://doi.org/10.5281/zenodo.18287042)
 
 ---
 
