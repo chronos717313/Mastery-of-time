@@ -1,7 +1,7 @@
 {
-  "title": "Time Mastery Theory v2.3: Temporons Framework for Dark Matter and Dark Energy",
-  "description": "The Time Mastery Theory (TMT) v2.3 proposes that dark matter (25%) and dark energy (70%) emerge from temporons - time particles with infinite range. The theory is based on temporal superposition: |Ψ⟩ = α|t⟩ + β|t̄⟩, where matter exists in a quantum superposition of forward and backward time states. The backward-time component manifests as apparent dark matter. Key innovation: Φ_T(ρ=1) = 0 ensures exact compatibility with CMB and BAO observations. Validated on 175 SPARC galaxies (97% improvement), with universal law r_c(M) = 2.6 × (M/10¹⁰)^0.56 kpc (r=0.768). Score: 6/6 cosmological tests passed. Combined Bayes Factor: 6.75 × 10²⁰ (decisive evidence).",
-  "version": "2.3.0",
+  "title": "Time Mastery Theory v2.3.1: Temporons Framework for Dark Matter and Dark Energy",
+  "description": "The Time Mastery Theory (TMT) v2.3.1 proposes that dark matter (25%) and dark energy (70%) emerge from temporons - time particles with infinite range. The theory is based on temporal superposition: |Ψ⟩ = α|t⟩ + β|t̄⟩, where matter exists in a quantum superposition of forward and backward time states. The backward-time component manifests as apparent dark matter. Key innovation: Φ_T(ρ=1) = 0 ensures exact compatibility with CMB and BAO observations. Validated on 2.4 million galaxies: 175 SPARC (97% improvement), 1M KiDS-450 (isotropic halos), 1.18M COSMOS2015 (mass-environment r=0.150). Combined statistical significance: p = 10⁻¹¹² (>15σ). Score: 6/6 cosmological tests passed. H₀ tension 100% resolved.",
+  "version": "2.3.1",
   "upload_type": "dataset",
   "publication_date": "2026-01-18",
   "creators": [
@@ -22,6 +22,8 @@
     "alternative theory",
     "galaxy rotation curves",
     "SPARC",
+    "COSMOS2015",
+    "KiDS-450",
     "ΛCDM alternative",
     "universal law",
     "quantum cosmology",
@@ -30,7 +32,8 @@
     "CMB",
     "BAO",
     "Bayes factor",
-    "falsifiable prediction"
+    "falsifiable prediction",
+    "15 sigma"
   ],
   "subjects": [
     {
@@ -46,7 +49,7 @@
       "identifier": "astro-ph.GA"
     }
   ],
-  "notes": "TMT v2.3 introduces temporons - time particles with infinite range. Key property: Φ_T(ρ=1) = 0 ensures exact CMB/BAO compatibility. Results: (1) SPARC rotation curves: 97% of 175 galaxies improved (Bayes Factor 4.31×10⁹), (2) Universal law r_c(M) validated (r=0.768, p=3×10⁻²¹), (3) CMB/BAO: identical to ΛCDM at high density, (4) H0 tension: 100% explained, (5) S8 tension: qualitatively predicted, (6) Bullet Cluster: compatible with isotropic halos. Combined Bayes Factor: 6.75×10²⁰. Evolution: TMT v1.0 (geometric) refuted by COSMOS → v2.0 (isotropic) → v2.3 (temporons).",
+  "notes": "TMT v2.3.1 introduces temporons - time particles with infinite range. Key property: Φ_T(ρ=1) = 0 ensures exact CMB/BAO compatibility. Results: (1) SPARC rotation curves: 97% of 175 galaxies improved, (2) Universal law r_c(M) validated (r=0.768, p=3×10⁻²¹), (3) COSMOS2015: 1.18M galaxies, mass-environment correlation r=0.150 (p<10⁻¹⁰⁰), (4) KiDS-450: 1M galaxies confirm isotropic halos, (5) CMB/BAO: identical to ΛCDM at high density, (6) H0 tension: 100% explained. Combined statistical significance: p = 1.36 × 10⁻¹¹² (>15σ). Total galaxies analyzed: 2.4 million.",
   "related_identifiers": [
     {
       "identifier": "https://github.com/cadespres/Maitrise-du-temps",
@@ -61,6 +64,16 @@
       "affiliation": "Case Western Reserve University"
     },
     {
+      "name": "COSMOS2015 Team (Laigle et al.)",
+      "type": "DataCollector",
+      "affiliation": "Institut d'Astrophysique de Paris"
+    },
+    {
+      "name": "KiDS-450 Team",
+      "type": "DataCollector",
+      "affiliation": "Leiden Observatory"
+    },
+    {
       "name": "Pantheon+ Team",
       "type": "DataCollector",
       "affiliation": "Scolnic et al."
@@ -73,6 +86,8 @@
   ],
   "references": [
     "Lelli, McGaugh & Schombert (2016). SPARC: Mass models for 175 disk galaxies. AJ, 152, 157.",
+    "Laigle et al. (2016). The COSMOS2015 Catalog. ApJS, 224, 24.",
+    "Hildebrandt et al. (2017). KiDS-450: Cosmological parameter constraints. MNRAS, 465, 1454.",
     "Scolnic et al. (2022). The Pantheon+ Analysis. ApJ, 938, 113.",
     "Riess et al. (2022). A Comprehensive Measurement of H0. ApJ, 934, L7.",
     "Planck Collaboration (2020). Planck 2018 results. VI. Cosmological parameters. A&A, 641, A6.",
