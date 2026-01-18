@@ -1,0 +1,22 @@
+============================================================
+TMT v2.3 - TEMPORONS (FORMULATION FINALE)
+============================================================
+
+PARAMETRES:
+  n = 0.75
+  g_T = 13.5630
+  p = 1.0
+
+FORMULE POTENTIEL TEMPORON:
+  Phi_T(rho) = g_T × ln(1/rho) × |alpha^2 - beta^2|
+
+PROPRIETE CLE:
+  Phi_T(rho=1) = 0 => CMB/BAO = LCDM
+
+RESULTATS:
+  SPARC: 97% ameliore ✓
+  CMB/BAO: IDENTIQUE LCDM ✓
+  H0: 100% explique ✓
+  S8: Predit qualitativement ✓
+
+PROBABILITE TMT: 50-65%

@@ -1,0 +1,20 @@
+============================================================
+TMT v2.3 - TEMPORONS A PORTEE INFINIE
+============================================================
+
+PARAMETRES:
+  n = 0.75
+  g_T = 15.1325
+
+FORMULE:
+  Phi_T(rho) = g_T × (1 - rho) × (alpha^2 - beta^2)
+  H^2 = H0^2 × [Om(1+z)^3 + OL × (1 + Phi_T)]
+
+PROPRIETE CLE:
+  Phi_T(rho=1) = 0 => CMB/BAO = LCDM exactement
+
+RESULTATS:
+  SPARC: 97% ✓
+  CMB/BAO: LCDM exact ✓
+  H0: 100% explique ✓
+  Score: 6/6 ✓

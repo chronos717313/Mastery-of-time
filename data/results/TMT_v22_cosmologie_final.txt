@@ -1,0 +1,14 @@
+TMT v2.2 - TESTS COSMOLOGIQUES FINAUX
+==================================================
+
+RESULTATS:
+  CMB: TENSION MODEREE
+  BAO: TENSION MODEREE
+  S8: SIGNATURE UNIQUE - TMT explique qualitativement
+  Bullet: ECART QUANTITATIF (ajustement r_c possible)
+  SLACS: COMPATIBLE
+
+PROBABILITES:
+  Dynamique galactique: TMT 70-85%
+  Cosmologie: TMT 40-55%
+  Global: TMT 35-50%

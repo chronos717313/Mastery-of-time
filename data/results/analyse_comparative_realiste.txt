@@ -1,0 +1,22 @@
+================================================================================
+ANALYSE COMPARATIVE REALISTE: TMT v2.2 vs LambdaCDM
+================================================================================
+
+PROBABILITES DE SUCCES REALISTES:
+----------------------------------------
+Dynamique galactique seule:
+  TMT: 70-85%
+  LambdaCDM: 50-70%
+
+Cosmologie complete:
+  TMT: 20-40%
+  LambdaCDM: 60-80%
+
+Theorie finale:
+  TMT: 5-15%
+  LambdaCDM: 10-25%
+  Autre: 60-85%
+
+CONCLUSION:
+TMT v2.2 est une hypothese prometteuse qui merite
+des tests rigoureux, mais n'est pas encore prouvee.

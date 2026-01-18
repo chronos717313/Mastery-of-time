@@ -1,0 +1,16 @@
+============================================================
+TMT v2.3 - PARAMETRES CALIBRES
+============================================================
+
+Superposition temporelle:
+  n = 0.75
+
+Expansion differentielle:
+  k_eff(z) = k0 / (1+z)^alpha
+  k0 = 0.0000
+  alpha = 0.9571
+
+Performance:
+  Chi2 BAO: 16.65
+  Chi2 CMB: 4.63
+  H0 explique: 0%

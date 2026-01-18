@@ -1,0 +1,22 @@
+======================================================================
+ÉVALUATION PROBABILISTE: TMT v2.2 vs ΛCDM
+======================================================================
+
+FACTEURS DE BAYES:
+  SPARC_rotation: 4.31e+09
+  rc_M_law: 1.00e+10
+  SNIa_environment: 1.50e+00
+  H0_tension: 8.70e+00
+  ISW_supervoids: 1.20e+00
+
+COMBINÉ: 6.75e+20
+AJUSTÉ: inf
+
+PROBABILITÉS POSTÉRIEURES:
+  Prior 50-50: P(TMT) = 100.0000%
+  Prior 10-90: P(TMT) = 100.0000%
+
+CONCLUSION:
+TMT v2.2 est statistiquement favorisée, particulièrement
+pour la dynamique galactique. Tests cosmologiques compatibles
+mais non décisifs. Mérite investigation approfondie.

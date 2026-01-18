@@ -1,0 +1,14 @@
+================================================================================
+TMT v2.2 - TESTS COSMOLOGIQUES COMPLETS
+================================================================================
+
+RESULTATS:
+  CMB (Planck): TENSION FORTE
+  BAO (BOSS/eBOSS): TENSION FORTE
+  Structure (S8): PARTIELLEMENT COMPATIBLE
+  Bullet Cluster: TENSION
+  Lentilles fortes (SLACS): COMPATIBLE
+
+SCORE GLOBAL: 30%
+
+CONCLUSION: TMT v2.2 est en TENSION FORTE avec les observations

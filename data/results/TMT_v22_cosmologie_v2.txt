@@ -1,0 +1,10 @@
+TMT v2.2 - TESTS COSMOLOGIQUES COMPLETS
+==================================================
+
+CMB (Planck): TENSION
+BAO (BOSS): TENSION
+Tension S8: PROMETTEUR - TMT predit qualitativement la tension S8
+Bullet Cluster: TENSION
+Lentilles SLACS: COMPATIBLE
+
+SCORE: 38%
