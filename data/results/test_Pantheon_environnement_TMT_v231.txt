@@ -1,0 +1,126 @@
+======================================================================
+TEST PANTHEON+ SNIa PAR ENVIRONNEMENT
+TMT v2.3.1 - Expansion Differentielle H(z, rho)
+======================================================================
+
+Date: 2026-01-18 15:49
+Fichier: data/Pantheon+/Pantheon+SH0ES.dat
+SNIa total: 1700
+
+======================================================================
+STATISTIQUES DE BASE
+======================================================================
+
+Redshift: 0.0012 - 2.2613
+Redshift median: 0.1639
+Host mass: 2.00 - 12.59
+Host mass median: 10.09
+
+======================================================================
+CLASSIFICATION PAR ENVIRONNEMENT
+======================================================================
+
+Seuil bas (void-like):    log M < 9.5
+Seuil haut (cluster-like): log M > 10.5
+
+SNIa en environnement peu dense (vides):  531
+SNIa en environnement dense (amas):       568
+SNIa en environnement intermediaire:      601
+Total:                                    1700
+
+======================================================================
+RESIDUS DE DISTANCE PAR ENVIRONNEMENT
+======================================================================
+
+Environnement peu dense (vides):
+  N = 531
+  Residu moyen: -0.0854 mag
+  Ecart-type:   0.2040 mag
+  Erreur std:   0.0089 mag
+
+Environnement dense (amas):
+  N = 568
+  Residu moyen: -0.0958 mag
+  Ecart-type:   0.1897 mag
+  Erreur std:   0.0080 mag
+
+======================================================================
+DIFFERENCE VIDES - AMAS
+======================================================================
+
+Delta mu (vides - amas): 0.0103 +/- 0.0119 mag
+Significance:            0.87 sigma
+
+Ratio distance (vides/amas): 1.0048
+Difference en distance:      +0.48%
+
+
+======================================================================
+TESTS STATISTIQUES
+======================================================================
+
+Test t de Welch (variances inegales):
+  t-statistic: 0.8668
+  p-value:     3.86e-01
+
+Test de Mann-Whitney U (non-parametrique):
+  U-statistic: 153754.0
+  p-value:     5.75e-01
+
+Correlation masse-residu (echantillon complet):
+  Pearson r:  -0.0180 (p = 4.58e-01)
+  Spearman r: -0.0054 (p = 8.25e-01)
+
+
+======================================================================
+ANALYSE PAR TRANCHES DE REDSHIFT
+======================================================================
+
+z range      N_low    N_high   Delta_mu     Signif     Delta_%   
+----------------------------------------------------------------------
+0.01-0.05    175      174      +0.0011      0.06sigma   +0.05%
+0.05-0.10    24       28       +0.0150      0.33sigma   +0.69%
+0.10-0.30    126      174      +0.0047      0.28sigma   +0.22%
+0.30-0.50    79       115      +0.0195      0.94sigma   +0.90%
+0.50-1.00    96       36       -0.0111      0.35sigma   -0.51%
+
+======================================================================
+COMPARAISON AVEC PREDICTIONS
+======================================================================
+
+PREDICTIONS:
+  TMT v2.3.1: Delta d_L = 5-10% (vides plus lointains)
+  LCDM:       Delta d_L = 0% (pas de difference)
+
+OBSERVATION:
+  Delta d_L = +0.48%
+
+EVALUATION:
+  Direction: CORRECT (vides plus lointains)
+  vs TMT:  TROP FAIBLE
+  vs LCDM: COMPATIBLE
+
+======================================================================
+VERDICT FINAL
+======================================================================
+
+Significance statistique: NON SIGNIFICATIF (<1 sigma)
+Compatibilite TMT:        TROP FAIBLE
+Compatibilite LCDM:       COMPATIBLE
+
+VERDICT GLOBAL: LCDM COMPATIBLE (pas de signal)
+
+======================================================================
+RESUME
+======================================================================
+
+SNIa analysees:           1700
+Vides (log M < 9.5):     531
+Amas (log M > 10.5):     568
+Delta mu:                 +0.0103 +/- 0.0119 mag
+Delta distance:           +0.48%
+Significance:             0.87 sigma
+Test t p-value:           3.86e-01
+Correlation masse-residu: r = -0.0180
+
+VERDICT: LCDM COMPATIBLE (pas de signal)

@@ -1,0 +1,116 @@
+======================================================================
+TEST RIGOUREUX SNIa × VIDES COSMIQUES
+TMT v2.3.1 - Expansion Differentielle H(z, rho)
+======================================================================
+
+Date: 2026-01-18 15:54
+SNIa: data/Pantheon+/Pantheon+SH0ES.dat
+Voids: data/voids\sdss_voids.txt
+Clusters: data/voids\clusters.txt
+
+METHODOLOGIE:
+  1. Catalogue de vides base sur SDSS DR7/DR12 (Sutter et al.)
+  2. Catalogue d'amas base sur Abell/redMaPPer
+  3. Cross-match 3D (RA, DEC, z) avec Pantheon+ SNIa
+  4. Classification: VOID / CLUSTER / WALL (filaments)
+  5. Comparaison residus distance modulus
+
+======================================================================
+CLASSIFICATION PAR ENVIRONNEMENT COSMIQUE
+======================================================================
+
+SNIa dans les VIDES:     560 (32.9%)
+SNIa dans les AMAS:       27 (1.6%)
+SNIa dans les FILAMENTS:1114 (65.5%)
+Total:                  1701
+
+VOID:
+  N = 560
+  <z> = 0.040
+  <rho/rho_mean> = 0.77
+  Residu moyen = -0.0692 +/- 0.0100 mag
+
+CLUSTER:
+  N = 27
+  <z> = 0.021
+  <rho/rho_mean> = 17.48
+  Residu moyen = -0.0791 +/- 0.0302 mag
+
+WALL:
+  N = 1114
+  <z> = 0.317
+  <rho/rho_mean> = 1.00
+  Residu moyen = -0.0983 +/- 0.0049 mag
+
+======================================================================
+DIFFERENCE VOIDS - CLUSTERS
+======================================================================
+
+Delta mu (void - cluster): +0.0099 +/- 0.0318 mag
+Significance:              0.31 sigma
+Ratio distance:            1.0046
+Delta distance:            +0.46%
+
+======================================================================
+TESTS STATISTIQUES RIGOUREUX
+======================================================================
+
+Test t de Welch:
+  t = 0.306
+  p = 7.61e-01
+
+Test de Mann-Whitney U:
+  U = 7374.0
+  p = 8.29e-01
+
+Test de Kolmogorov-Smirnov:
+  KS = 0.144
+  p = 6.08e-01
+
+Bootstrap (N=10000):
+  Delta mu = 0.0107
+  IC 95%: [-0.0492, 0.0754]
+  Zero exclu: NON
+
+======================================================================
+COMPARAISON AVEC PREDICTIONS THEORIQUES
+======================================================================
+
+PREDICTIONS:
+  TMT v2.3.1:
+    - H_void > H_cluster (expansion differentielle)
+    - Delta d_L = +5% a +10% (voids plus lointains)
+    - Direction: positive (mu_void > mu_cluster)
+
+  LCDM:
+    - H uniforme partout
+    - Delta d_L = 0%
+    - Pas de correlation environnement-distance
+
+OBSERVATION:
+  Delta distance = +0.46%
+  Significance = 0.31 sigma
+
+EVALUATION:
+  Direction: CORRECTE (voids plus lointains) [+1 point]
+  Magnitude: TROP FAIBLE pour TMT (<3%) [0 point]
+  Significance: FAIBLE (<2 sigma) [0 point]
+
+  SCORE TMT: 1/3
+
+VERDICT: RESULTATS AMBIGUS
+
+======================================================================
+RESUME FINAL
+======================================================================
+
+SNIa analysees:         1701
+SNIa dans voids:        560
+SNIa dans clusters:     27
+Delta mu:               +0.0099 +/- 0.0318 mag
+Delta distance:         +0.46%
+Significance:           0.31 sigma
+Bootstrap IC 95%:       [-0.0492, 0.0754]
+Score TMT:              1/3
+
+VERDICT FINAL: RESULTATS AMBIGUS
