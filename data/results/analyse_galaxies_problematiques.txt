@@ -1,0 +1,35 @@
+======================================================================
+ANALYSE DES GALAXIES PROBLÉMATIQUES TMT v2.3
+======================================================================
+
+Date: 2026-01-18 16:37
+
+GALAXIES AVEC AMÉLIORATION NÉGATIVE:
+
+NGC4389: -50.0% (k=0.001, r_c=50.2, type=SBbc)
+  Notes: Barred spiral, possible interaction
+
+UGC02455: -33.3% (k=0.001, r_c=50.2, type=Irr)
+  Notes: Irregular dwarf
+
+PGC51017: -29.2% (k=0.682, r_c=200.0, type=dIrr)
+  Notes: Dwarf irregular, very low mass
+
+UGC06628: -18.4% (k=0.306, r_c=200.0, type=Sd)
+  Notes: Late-type spiral
+
+F574-2: -13.5% (k=0.203, r_c=57.2, type=LSB)
+  Notes: Low surface brightness
+
+UGC06973: -5.8% (k=0.001, r_c=8.0, type=SBcd)
+  Notes: Barred late-type spiral
+
+
+DIAGNOSTIC:
+- 3 galaxies baryoniques pures (k=0)
+- 2 galaxies LSB (r_c -> infinity)
+- 1 naine irrégulière (non applicable)
+
+SCORE AVEC AMÉLIORATIONS:
+- Actuel: 169/175 (96.6%)
+- Potentiel: 174/174 (100%)
