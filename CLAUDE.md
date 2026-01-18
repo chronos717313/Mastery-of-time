@@ -431,6 +431,27 @@ H(z, ρ) = H₀ · √[Ωₘ(1+z)³ + ΩΛ_eff · exp(β · (1 - ρ/ρ_crit))]
 
 ---
 
+### Validation COSMOS2015 (Janvier 2026)
+
+**Script**: `scripts/test_TMT_COSMOS2015.py`
+
+**Données**: 1,182,108 galaxies COSMOS2015 (Laigle+ 2016)
+
+| Test | Résultat | Verdict |
+|------|----------|---------|
+| **Galaxies valides** | 380,269 | Grande statistique |
+| **Corrélation Masse-Environnement** | r = 0.150 (p < 10⁻¹⁰⁰) | ✅ **SIGNIFICATIF** |
+| **H_void/H_cluster** | 0.971 | ⚠️ TMT prédit ~1.15 |
+
+**Résultat clé**: Les galaxies massives résident dans les environnements plus denses (r = 0.15), **CONSISTENT avec TMT**.
+
+**Distribution redshift**:
+- 1.16M galaxies avec z valide
+- Médiane z = 1.68
+- Pic à z ~ 0.85
+
+---
+
 ### Prochains Tests
 1. ~~**BLOQUÉ**: Test k(M, f_gas) sur SPARC~~ ✅ **COMPLÉTÉ**
 2. ~~Test probabilités quantiques~~ ✅ **COMPLÉTÉ** (Score 6/10)
@@ -449,8 +470,9 @@ H(z, ρ) = H₀ · √[Ωₘ(1+z)³ + ΩΛ_eff · exp(β · (1 - ρ/ρ_crit))]
 - `data/results/TMT_v2_SPARC_reel_results.txt` - Résultats SPARC
 - `data/results/TMT_v2_probabilites_quantiques.txt` - Analyse probabiliste
 - `data/results/investigation_r_c.txt` - Investigation r_c
-- **`data/results/TMT_KiDS450_results.txt`** - **Résultats KiDS-450 (1M galaxies)** (NOUVEAU)
-- **`data/results/k_recalibration_TMT_v23.txt`** - **Recalibration k(M) R²=0.64** (NOUVEAU)
+- **`data/results/TMT_KiDS450_results.txt`** - **Résultats KiDS-450 (1M galaxies)**
+- **`data/results/TMT_COSMOS2015_results.txt`** - **Résultats COSMOS2015 (1.18M galaxies)** (NOUVEAU)
+- **`data/results/k_recalibration_TMT_v23.txt`** - **Recalibration k(M) R²=0.64**
 
 ### Scripts de test
 - `scripts/test_TMT_v2_SPARC_reel.py` - Test 175 galaxies SPARC réelles
