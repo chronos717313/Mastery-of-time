@@ -255,7 +255,17 @@ M_eff = M_bary × ⟨Ψ|M̂|Ψ⟩ = M_bary × [1 + (r/r_c)^n]
 4. Analyser expansion différentielle via SNIa par environnement
 
 ### Documents de référence
+- **`docs/fr/PROGRES_JANVIER_2026.md`** - **PROGRÈS COMPLET JANVIER 2026**
 - `docs/fr/UNIFICATION_QUANTIQUE_TMT.md` - Unification quantique complète
-- `data/SPARC/` - Données SPARC téléchargées
-- `data/results/TMT_v2_SPARC_reel_results.txt` - Résultats détaillés
+- `data/SPARC/` - Données SPARC téléchargées (175 galaxies)
+- `data/results/TMT_v2_SPARC_reel_results.txt` - Résultats SPARC
 - `data/results/TMT_v2_probabilites_quantiques.txt` - Analyse probabiliste
+
+### Scripts de test
+- `scripts/test_TMT_v2_SPARC_reel.py` - Test 175 galaxies SPARC réelles
+- `scripts/test_TMT_v2_probabilites_quantiques.py` - Analyse probabiliste quantique
+- `scripts/test_TMT_v2_superposition.py` - Test superposition temporelle
+
+### Configuration Git
+- **Branche par défaut**: `professeur_kronos`
+- **Remote**: github.com/cadespres/Maitrise-du-temps
