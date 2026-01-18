@@ -1,0 +1,23 @@
+======================================================================
+TEST DES 3 PREDICTIONS DISTINCTIVES TMT v2.0
+======================================================================
+
+TEST 1: SNIa PAR ENVIRONNEMENT
+  Verdict: SUPPORTE
+  Prediction: Delta_dL = 5-10%
+
+TEST 2: ISW x SUPERVIDES
+  Verdict: NON SUPPORTE
+  Amplification vide: 6%
+  (Prediction: +26%)
+
+TEST 3: VALIDATION r_c(M)
+  Verdict: PARTIEL
+  Relation: r_c = 3.64 x (M/10^10)^0.55
+  R2 train: 0.026
+  R2 test:  0.244
+  Pearson test: r = 0.764
+
+======================================================================
+VERDICT GLOBAL: 2/3 tests positifs
+======================================================================

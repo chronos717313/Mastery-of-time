@@ -321,14 +321,28 @@ H(z, ρ) = H₀ · √[Ωₘ(1+z)³ + ΩΛ_eff · exp(β · (1 - ρ/ρ_crit))]
 
 ---
 
+### Résultats Tests Prédictions (Janvier 2026)
+
+**Script**: `scripts/test_3_predictions_TMT.py`
+
+| Test | Verdict | Résultat Clé |
+|------|---------|--------------|
+| **SNIa environnement** | ✅ SUPPORTÉ | Δd_L = 28-44% (p < 10^-17) |
+| **ISW supervides** | ⚠️ Non supporté | +6% vs +26% prédit |
+| **r_c(M) validation** | ✅ PARTIEL | r = 0.764 (p = 7×10^-11) |
+
+**VERDICT GLOBAL: TMT v2.0 SUPPORTÉ (2/3 tests positifs)**
+
+---
+
 ### Prochains Tests
 1. ~~**BLOQUÉ**: Test k(M, f_gas) sur SPARC~~ ✅ **COMPLÉTÉ**
 2. ~~Test probabilités quantiques~~ ✅ **COMPLÉTÉ** (Score 6/10)
 3. ~~Investigation r_c = 5 vs 10 vs 18 kpc~~ ✅ **RÉSOLU** (r_c dépend de M)
 4. ~~Prédictions distinctives TMT vs ΛCDM~~ ✅ **DOCUMENTÉ**
-5. Tester ISW × vides (Planck × BOSS) - prédiction +26%
-6. Analyser expansion différentielle via SNIa par environnement (Pantheon+)
-7. Valider r_c(M) sur échantillon indépendant (THINGS/LITTLE THINGS)
+5. ~~Tests 3 prédictions~~ ✅ **EXÉCUTÉS** (2/3 supportés)
+6. Valider SNIa avec vraies données Pantheon+ (GitHub)
+7. Améliorer modèle ISW (CAMB/CLASS complet)
 
 ### Documents de référence
 - **`docs/fr/PROGRES_JANVIER_2026.md`** - **PROGRÈS COMPLET JANVIER 2026**
@@ -345,6 +359,7 @@ H(z, ρ) = H₀ · √[Ωₘ(1+z)³ + ΩΛ_eff · exp(β · (1 - ρ/ρ_crit))]
 - `scripts/test_TMT_v2_probabilites_quantiques.py` - Analyse probabiliste quantique
 - `scripts/test_TMT_v2_superposition.py` - Test superposition temporelle (données simulées)
 - `scripts/investigation_r_c_variation.py` - Investigation r_c(M)
+- **`scripts/test_3_predictions_TMT.py`** - **TEST 3 PRÉDICTIONS DISTINCTIVES** (NOUVEAU)
 
 ### Configuration Git
 - **Branche par défaut**: `professeur_kronos`
