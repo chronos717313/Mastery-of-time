@@ -19,7 +19,13 @@
       "Bash(py scripts/test_TMT_SPARC_175_galaxies.py)",
       "Bash(ls:*)",
       "Bash(git add:*)",
-      "Bash(git branch:*)"
+      "Bash(git branch:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(py scripts/test_TMT_v2_superposition.py)",
+      "Bash(python -c:*)",
+      "WebFetch(domain:astroweb.cwru.edu)",
+      "Bash(py scripts/test_TMT_v2_SPARC_reel.py)"
     ]
   }
 }

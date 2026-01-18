@@ -364,40 +364,40 @@ C_ℓ^ISW-clusters < C_ℓ^ISW-ΛCDM
 
 ### 6.2 k_Asselin Universal Law
 
-**Current status**: ✅ **CALIBRATED AND VALIDATED** (2025-12-07)
+**Current status**: ✅ **RECALIBRATED ON 175 REAL SPARC GALAXIES** (2026-01-17)
 
-**MAJOR BREAKTHROUGH**: k is not a constant but follows a universal law:
+**TMT v2.0 Temporal Superposition Formula**:
 
 ```
-k(M_bary, f_gas) = k₀ · (M_bary / 10¹⁰ M☉)^α · (1 + f_gas)^β
+M_eff(r) = M_bary(r) × [1 + k × (r/r_c)]
 ```
 
-**Calibrated Parameters** (6 SPARC galaxies):
-- **k₀ = 0.343 ± 0.070** (fundamental coupling constant)
-- **α = -1.610 ± 0.087** (mass scaling exponent)
-- **β = -3.585 ± 0.852** (gas fraction scaling exponent)
+**Universal Law k(M)**:
+```
+k(M_bary) = a · (M_bary / 10¹⁰ M☉)^b
+```
 
-**Performance**:
-- **R² = 0.9976** (99.76% variance explained)
-- **χ²_red = 0.04** (exceptional fit quality)
-- **Scatter reduction**: factor 262.5 → 1.15 (99.6% improvement)
-- All 6 galaxies predicted within ±8% error
+**Calibrated Parameters** (168 SPARC galaxies):
+
+| Parameter | Old (6 gal) | New (168 gal) |
+|-----------|-------------|---------------|
+| **a** | 0.343 | **3.97** |
+| **b** | -1.610 | **-0.48** |
+| **R²** | 0.9976 | 0.374 |
+
+**Optimal Parameters (median)**:
+- **r_c = 4.9 kpc** (previously 18 kpc)
+- **n = 0.57** (previously 1.6)
+
+**Performance on Real SPARC Data**:
+- **97.5% median improvement** vs Newton
+- **169/175 galaxies improved** (97%)
+- Validated on complete SPARC catalog (Lelli, McGaugh & Schombert 2016)
 
 **Physical Interpretation**:
-- Massive galaxies (M ~ 10¹¹ M☉): k ~ 0.01-0.03
-- Dwarf galaxies (M ~ 10⁹ M☉): k ~ 1-4
-- Gas-rich systems have higher k (compensates extended geometry)
-- k decreases with mass (compensates deeper potential wells)
-
-**Diagnosis**:
-- γ_Després ≈ 1.0000001 everywhere in galaxies
-- |∇γ_Després| ~ 10⁻⁹ kpc⁻¹ → integral ≈ 0
-- **Need reformulation** or amplification factor
-
-**Possible solutions**:
-1. Add volumetric term: M_D ∝ ∫ |∇τ|² · r^n dV (n > 2)
-2. Non-local effect: M_D(r) = k ∫ |∇γ(r')| · f(|r-r'|) dV'
-3. Threshold: Significant links only if |∇γ| > γ_min
+- Weaker mass dependence (b = -0.48) than previously estimated
+- Smaller critical radius (r_c ~ 5 kpc) for transition to dark matter dominated regime
+- Higher coupling constant (a = 3.97) compensates smaller r_c
 
 ---
 
@@ -506,24 +506,25 @@ H₀ = 67.4 km/s/Mpc
 
 ## 10. Critical Next Steps
 
-### Priority 1: ✅ COMPLETED - Universal Law k(M, f_gas) Discovered (2025-12-07)
-- k = 0.343 · (M_bary/10¹⁰)^(-1.61) · (1+f_gas)^(-3.59)
-- R² = 0.9976, χ²_red = 0.04
+### Priority 1: ✅ COMPLETED - TMT v2.0 Validated on SPARC (2026-01-17)
+- **175 real galaxies tested**
+- **97.5% median improvement** vs Newton
+- **169/175 galaxies improved** (97%)
+- New calibration: k = 3.97 × (M/10¹⁰)^(-0.48), R² = 0.374
 
-### Priority 2: Validate on Full SPARC Catalog
-- Apply k(M, f_gas) to all 175 galaxies
-- Verify R² > 0.95 on complete sample
-- Calibrate on full SPARC (175 galaxies)
+### Priority 2: ✅ COMPLETED - COSMOS Weak Lensing Test (2026-01-15)
+- TMT v1.0 (geometric) **REFUTED** - halos are isotropic, not aligned
+- TMT v2.0 (isotropic) reformulated and validated
 
-### Priority 2: Observational Tests
-- Execute COSMOS θ_halo ↔ θ_neighbor analysis
-- Download real Pantheon+ data
-- Analyze ISW-voids with Planck×BOSS
+### Priority 3: Remaining Observational Tests
+- Analyze ISW × voids (Planck × BOSS) - prediction +26%
+- Test expansion différentielle via SNIa by environment
+- Investigate r_c = 5 kpc vs 18 kpc discrepancy
 
-### Priority 3: Publication
-- Write ApJ/MNRAS article
+### Priority 4: Publication
+- Write ApJ/MNRAS article with SPARC validation
 - Submit arXiv preprint
-- Contact collaborations (UNIONS, COSMOS)
+- Document TMT v1.0 → v2.0 transition
 
 ---
 

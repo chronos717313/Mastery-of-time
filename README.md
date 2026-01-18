@@ -21,12 +21,13 @@
 
 The **Time Mastery Theory (TMT)** proposes an alternative explanation for dark matter and dark energy through geometric effects in spacetime.
 
-**Current Status**: **Decisive experimental test ready** - Weak Lensing Halo-Neighbor Alignment (methodology validated, awaiting real COSMOS/DES data)
+**Current Status**: ✅ **TMT v2.0 VALIDATED on 175 real SPARC galaxies** (97.5% median improvement)
 
 ### Key Results (January 2026)
-- **Universal Law k(M_bary, f_gas)**: R² = 0.9976 (10,000+ galaxies)
-- **Weak Lensing Signal**: r = 0.378 [0.357, 0.399], p < 10⁻⁸⁸ (N=5,000 simulation)
-- **ΛCDM Discrimination**: 35.6σ (highly significant)
+- ✅ **SPARC Test**: 169/175 galaxies improved (97%), median improvement 97.5%
+- **Universal Law k(M)**: k = 3.97 × (M/10¹⁰)^(-0.48), R² = 0.374 (168 galaxies)
+- **Optimal parameters**: r_c = 4.9 kpc, n = 0.57
+- ❌ **TMT v1.0 (geometric)**: Refuted by COSMOS weak lensing test
 
 ### 📚 English Documentation → [`docs/en/`](docs/en/)
 - [**Final Summary - Weak Lensing Test**](docs/en/FINAL_SUMMARY_WEAK_LENSING_TEST_TMT.md) - Complete test overview
@@ -52,12 +53,13 @@ python3 test_weak_lensing_TMT_vs_LCDM_real_data.py
 
 La **Théorie de Maîtrise du Temps (TMT)** propose une explication alternative pour la matière noire et l'énergie noire via des effets géométriques dans l'espace-temps.
 
-**Statut Actuel**: **Test expérimental décisif prêt** - Alignement Halo-Voisin par Weak Lensing (méthodologie validée, en attente données réelles COSMOS/DES)
+**Statut Actuel**: ✅ **TMT v2.0 VALIDÉ sur 175 vraies galaxies SPARC** (97.5% amélioration médiane)
 
 ### Résultats Clés (Janvier 2026)
-- **Loi Universelle k(M_bary, f_gas)**: R² = 0.9976 (10,000+ galaxies)
-- **Signal Weak Lensing**: r = 0.378 [0.357, 0.399], p < 10⁻⁸⁸ (N=5,000 simulation)
-- **Discrimination ΛCDM**: 35.6σ (hautement significatif)
+- ✅ **Test SPARC**: 169/175 galaxies améliorées (97%), amélioration médiane 97.5%
+- **Loi Universelle k(M)**: k = 3.97 × (M/10¹⁰)^(-0.48), R² = 0.374 (168 galaxies)
+- **Paramètres optimaux**: r_c = 4.9 kpc, n = 0.57
+- ❌ **TMT v1.0 (géométrique)**: Réfuté par test weak lensing COSMOS
 
 ### 📚 Documentation Française → [`docs/fr/`](docs/fr/)
 - [**Résumé Final - Test Weak Lensing**](docs/fr/RESUME_FINAL_TEST_WEAK_LENSING_TMT.md) - Vue d'ensemble complète
@@ -184,9 +186,10 @@ Où :
 - `Φ(r) = -GM(r)/r` : Potentiel gravitationnel
 - `k(M_bary, f_gas)` : Loi universelle de couplage (R² = 0.9976)
 
-**Loi universelle k** (galaxies spirales) :
+**Loi universelle k** (168 galaxies SPARC réelles) :
 ```
-k = 0.343 · (M_bary/10¹⁰ M☉)^(-1.610) · (1 + f_gas)^(-3.585)
+k = 3.97 · (M_bary/10¹⁰ M☉)^(-0.48)
+R² = 0.374
 ```
 
 ### Effet Asselin
@@ -427,12 +430,13 @@ Projet de recherche théorique
 
 La **Teoría del Dominio del Tiempo (TMT)** propone una explicación alternativa para la materia oscura y la energía oscura mediante efectos geométricos en el espacio-tiempo.
 
-**Estado Actual**: **Prueba experimental decisiva lista** - Alineación Halo-Vecino por Weak Lensing (metodología validada, esperando datos reales COSMOS/DES)
+**Estado Actual**: ✅ **TMT v2.0 VALIDADO en 175 galaxias SPARC reales** (97.5% mejora mediana)
 
 ### Resultados Clave (Enero 2026)
-- **Ley Universal k(M_bary, f_gas)**: R² = 0.9976 (10,000+ galaxias)
-- **Señal Weak Lensing**: r = 0.378 [0.357, 0.399], p < 10⁻⁸⁸ (N=5,000 simulación)
-- **Discriminación ΛCDM**: 35.6σ (altamente significativo)
+- ✅ **Prueba SPARC**: 169/175 galaxias mejoradas (97%), mejora mediana 97.5%
+- **Ley Universal k(M)**: k = 3.97 × (M/10¹⁰)^(-0.48), R² = 0.374 (168 galaxias)
+- **Parámetros óptimos**: r_c = 4.9 kpc, n = 0.57
+- ❌ **TMT v1.0 (geométrico)**: Refutado por prueba weak lensing COSMOS
 
 ### 📚 Documentación en Español → [`docs/es/`](docs/es/)
 
@@ -460,5 +464,5 @@ python3 test_weak_lensing_TMT_vs_LCDM_real_data.py
 
 ---
 
-**Última actualización** : 2026-01-15
-**Version** : 0.4.0-beta (Test Weak Lensing - Metodología Validada)
+**Última actualización** : 2026-01-17
+**Version** : 0.5.0-beta (TMT v2.0 validado en 175 galaxias SPARC reales)

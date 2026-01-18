@@ -1,0 +1,28 @@
+======================================================================
+TEST TMT v2.0 - SUPERPOSITION TEMPORELLE
+======================================================================
+
+## Formulation
+M_eff(r) = M_bary(r) x [1 + (r/r_c)^n]
+
+## Parametres
+r_c = 17.76 kpc
+n   = 0.500
+
+## Resultats
+Echantillon: 175 galaxies
+
+Chi2 reduit:
+  Newton: 16.75 (moyenne)
+  TMT v2.0: 10.32 (moyenne)
+
+Amelioration vs Newton:
+  Moyenne:  -29.2%
+  Mediane:  52.2%
+  Galaxies ameliorees: 146/175
+  Amelioration >50%:   89/175
+
+## Verdict
+TMT v2.0 NON VALIDE: Amelioration -29%
+
+======================================================================
