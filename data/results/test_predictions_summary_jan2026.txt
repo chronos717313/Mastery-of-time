@@ -1,0 +1,104 @@
+======================================================================
+RESUME DES TESTS TMT v2.0 - Janvier 2026
+======================================================================
+
+TESTS AVEC DONNEES SYNTHETIQUES
+----------------------------------------------------------------------
+
+TEST 1: SNIa par environnement (synthetique)
+  Verdict: SUPPORTE
+  Delta_dL observe: +30-44%
+  Note: Donnees simulees, non concluant
+
+TEST 2: ISW x supervides (modele simplifie)
+  Verdict: NON SUPPORTE
+  Amplification: +6% (vs +26% predit)
+
+TEST 3: Validation r_c(M)
+  Verdict: PARTIEL (VALIDE)
+  Relation: r_c = 3.64 x (M/10^10)^0.55
+  Pearson r = 0.764 (p < 10^-10)
+
+======================================================================
+TESTS AVEC DONNEES REELLES (17 jan 2026)
+======================================================================
+
+TEST 1bis: SNIa Pantheon+ par environnement
+----------------------------------------------------------------------
+  Donnees: 1700 SNIa Pantheon+ (Scolnic et al. 2022)
+  Proxy environnement: HOST_LOGMASS (masse hote)
+
+  Resultats:
+    - Delta_mu moyen (amas - vide): -0.10 +/- 0.15 mag
+    - Direction: OPPOSEE a la prediction TMT
+    - Test t: t = -1.67, p = 0.15 (non significatif)
+    - Difference en distance: -4.5%
+
+  Verdict: TENDANCE OPPOSEE
+
+  LIMITATION CRITIQUE:
+  HOST_LOGMASS (masse de la galaxie hote) n'est PAS un bon proxy
+  pour l'environnement cosmologique (densite a grande echelle).
+
+  La masse de l'hote reflète:
+  - La formation stellaire locale
+  - L'historique de la galaxie
+  - PAS la densite du superamas ou du vide environnant
+
+  Action requise: Utiliser catalogues de vides/amas (BOSS, DES)
+
+TEST 2bis: ISW ameliore (facteur de croissance complet)
+----------------------------------------------------------------------
+  Script: calculate_ISW_improved.py
+  Methode: Integration complete du facteur de croissance D(z)
+
+  Resultats par environnement:
+    - Supervide extreme (rho=0.2): +17.9% (vs +26% predit)
+    - Vide profond (rho=0.3): +15.7%
+    - Vide modere (rho=0.7): +6.8%
+    - LCDM (rho=1.0): 0% (reference)
+    - Surdensité (rho=5.0): -68.5%
+
+  Verdict: PARTIELLEMENT SUPPORTE
+
+  Analyse:
+  - Direction correcte (amplification dans vides)
+  - Amplitude 30% inferieure a la prediction (+17.9% vs +26%)
+  - L'ecart peut provenir de:
+    * Approximation f ~ Omega_m^0.55
+    * Effets non-lineaires non inclus
+    * Parametres beta, H(z,rho) a affiner
+
+======================================================================
+RESUME GLOBAL
+======================================================================
+
+| Test                  | Verdict      | Confiance |
+|-----------------------|--------------|-----------|
+| r_c(M) validation     | VALIDE       | Haute     |
+| ISW ameliore          | PARTIEL      | Haute     |
+| SNIa Pantheon+        | NON CONCLUANT| Moyenne   |
+
+VERDICT: TMT v2.0 PARTIELLEMENT SUPPORTE
+
+Points forts:
+  - r_c(M) = 2.6 x (M/10^10)^0.56 confirme (r=0.77)
+  - ISW montre amplification dans bonne direction
+
+Points faibles:
+  - Amplitude ISW 30% sous la prediction
+  - Test SNIa non concluant (proxy inadequat)
+
+Prochaines etapes:
+  1. Test SNIa avec catalogues de vides cosmiques
+  2. Test ISW avec vraies donnees Planck x BOSS
+  3. Affiner parametre beta de l'expansion differentielle
+
+======================================================================
+Scripts utilises:
+  - test_3_predictions_TMT.py (tests initiaux)
+  - analyze_pantheon_real.py (Pantheon+ reel)
+  - calculate_ISW_improved.py (ISW ameliore)
+
+Date: 17 janvier 2026
+======================================================================

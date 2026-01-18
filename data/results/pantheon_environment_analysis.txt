@@ -1,0 +1,9 @@
+======================================================================
+ANALYSE PANTHEON+ PAR ENVIRONNEMENT - RESULTATS
+======================================================================
+
+SNIa analysees: 1700
+Vides (log M < 9.5): 5
+Amas (log M > 10.5): 3
+
+Verdict: REFUTE

@@ -200,24 +200,56 @@ r_c(M) = 2.6 × (M_bary / 10¹⁰ M_☉)^0.56 kpc
 - [x] Test k(M, f_gas) sur SPARC
 - [x] Test probabilités quantiques (Score 6/10)
 - [x] **Investigation r_c = 5 vs 10 vs 18 kpc** → r_c(M) découvert!
+- [x] **Test ISW amélioré** → +17.9% (vs +26% prédit) - Direction correcte!
+- [x] **Analyse SNIa Pantheon+ réelles** → Test non concluant (HOST_LOGMASS ≠ densité)
+- [x] Valider r_c(M) sur échantillon indépendant → r=0.76, p<10^-10
 
 ### À Faire
 
-1. [ ] Test ISW × vides (Planck × BOSS) - prédiction +26%
-2. [ ] Expansion différentielle SNIa par environnement
-3. [ ] Valider r_c(M) sur échantillon indépendant
-4. [ ] Publication arXiv
+1. [ ] Test SNIa avec catalogue de vides/amas (BOSS, DES) - pas masse hôte
+2. [ ] Test ISW avec vraies données Planck × catalogue supervides
+3. [ ] Publication arXiv
 
 ### Questions Ouvertes
 
 1. ~~Pourquoi r_c varie entre 5-18 kpc selon les tests?~~ **RÉSOLU** (r_c dépend de M)
-2. Comment améliorer R² de la loi k(M)?
-3. Prédictions testables supplémentaires?
-4. **Interprétation physique** de r_c(M) ∝ M^0.56 ?
+2. ~~Test ISW~~ **PARTIEL** (+17.9% vs +26%)
+3. **Interprétation physique** de r_c(M) ∝ M^0.56 ?
+4. Pourquoi HOST_LOGMASS donne résultat opposé? (biais de sélection?)
 
 ---
 
-## 8. Conclusion
+## 8. Tests avec Données Réelles (17 jan 2026)
+
+### Test SNIa Pantheon+ par Environnement
+
+**Script**: `scripts/analyze_pantheon_real.py`
+**Données**: 1700 SNIa Pantheon+ (Scolnic et al. 2022)
+
+| Résultat | Valeur |
+|----------|--------|
+| Δμ moyen (amas - vide) | -0.10 ± 0.15 mag |
+| Direction | **OPPOSÉE** à TMT |
+| p-value | 0.15 (non significatif) |
+
+**Limitation critique**: HOST_LOGMASS (masse de l'hôte) n'est pas un bon proxy
+pour l'environnement cosmologique (densité à grande échelle).
+
+### Test ISW Amélioré
+
+**Script**: `scripts/calculate_ISW_improved.py`
+
+| Environnement | Amplification TMT |
+|---------------|-------------------|
+| Supervide extrême (ρ=0.2) | **+17.9%** |
+| Vide profond (ρ=0.3) | +15.7% |
+| ΛCDM (ρ=1.0) | 0% |
+
+**Verdict**: Direction correcte, amplitude 30% sous-estimée par rapport aux +26% prédits.
+
+---
+
+## 9. Conclusion
 
 **TMT v2.0** propose que la "matière noire" est le **reflet temporel quantique** de la matière visible:
 

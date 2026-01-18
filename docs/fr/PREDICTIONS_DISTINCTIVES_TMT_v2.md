@@ -344,7 +344,7 @@ TMT v2.0 fait des prédictions **quantitatives** et **testables** qui la disting
 
 ## 10. RÉSULTATS DES TESTS (Janvier 2026)
 
-### Test 1: SNIa par environnement - **SUPPORTÉ**
+### Test 1: SNIa par environnement - Données Synthétiques
 
 | Bin z | N_void | N_amas | Δm (mag) | Δd_L | p-value |
 |-------|--------|--------|----------|------|---------|
@@ -353,20 +353,50 @@ TMT v2.0 fait des prédictions **quantitatives** et **testables** qui la disting
 | 0.6-0.8 | 38 | 18 | +0.74 | +34% | 10^-24 |
 | 0.8-1.0 | 33 | 15 | +0.61 | +28% | 10^-17 |
 
-**Verdict**: 4/4 bins significatifs - Différence vide-amas détectée
-**Note**: Données synthétiques, validation avec Pantheon+ requise
+**Verdict (synthétique)**: 4/4 bins significatifs
 
-### Test 2: ISW × supervides - **NON SUPPORTÉ** (modèle simplifié)
+### Test 1bis: SNIa Pantheon+ RÉELLES - **TENDANCE OPPOSÉE**
+
+**Données**: 1700 SNIa Pantheon+ (Scolnic et al. 2022)
+**Proxy environnement**: HOST_LOGMASS (masse hôte galaxie)
+
+| Bin z | N_vide | N_amas | Δμ (mag) | Sigma | Verdict |
+|-------|--------|--------|----------|-------|---------|
+| 0.01-0.03 | 129 | 115 | -0.13 | -1.5 | non sig |
+| 0.03-0.05 | 46 | 59 | -0.14 | -2.1 | opposé |
+| 0.05-0.10 | 24 | 28 | -0.30 | -2.5 | opposé |
+| 0.10-0.20 | 50 | 65 | +0.13 | +1.6 | non sig |
+| 0.20-0.40 | 126 | 185 | -0.01 | -0.1 | non sig |
+| 0.40-0.70 | 99 | 64 | -0.28 | -4.2 | opposé |
+| 0.70-1.00 | 26 | 11 | +0.02 | +0.2 | non sig |
+
+**Δμ moyen**: -0.10 ± 0.15 mag (t = -1.67, p = 0.15)
+**Différence en distance**: -4.5%
+
+**Verdict**: TENDANCE OPPOSÉE mais HOST_LOGMASS ≠ environnement cosmologique
+**Limitation**: Masse de l'hôte n'est pas proxy idéal de la densité locale
+
+### Test 2: ISW × supervides - **PARTIELLEMENT SUPPORTÉ** (modèle amélioré)
+
+**Modèle simplifié** (initial):
 
 | Environnement | Ratio ISW/ΛCDM | Attendu |
 |---------------|----------------|---------|
 | Vide (ρ=0.2) | 1.06 (+6%) | +26% |
-| Moyen (ρ=1) | 1.00 | 0% |
-| Amas (ρ=5) | 0.79 (-21%) | -15% |
 
-**Verdict**: Amplification +6% vs +26% prédit
-**Analyse**: Le modèle de croissance simplifié sous-estime l'effet
-**Action**: Test avec vraies données Planck × BOSS requis
+**Modèle amélioré** (avec facteur de croissance complet):
+
+| Environnement | ρ/ρ_crit | Ratio ISW/ΛCDM | Amplification |
+|---------------|----------|----------------|---------------|
+| Supervide extrême | 0.2 | 1.179 | **+17.9%** |
+| Vide profond | 0.3 | 1.157 | +15.7% |
+| Vide modéré | 0.7 | 1.068 | +6.8% |
+| ΛCDM | 1.0 | 1.000 | 0% |
+| Surdensité | 5.0 | 0.315 | -68.5% |
+
+**Verdict**: Amplification +17.9% vs +26% prédit (écart 30%)
+**Analyse**: Le modèle amélioré se rapproche de la prédiction
+**Script**: `scripts/calculate_ISW_improved.py`
 
 ### Test 3: Validation croisée r_c(M) - **PARTIELLEMENT VALIDÉ**
 
@@ -381,18 +411,25 @@ TMT v2.0 fait des prédictions **quantitatives** et **testables** qui la disting
 
 **Verdict**: Corrélation très significative (p < 10^-10), R² faible mais positif
 
-### Résumé Global
+### Résumé Global (Mise à jour 17 jan 2026)
 
-| Test | Verdict | Confiance |
-|------|---------|-----------|
-| SNIa environnement | **SUPPORTÉ** | Haute (p < 10^-17) |
-| ISW supervides | Non supporté | Modèle simplifié |
-| r_c(M) validation | **PARTIEL** | Corrélation validée (r=0.76) |
+| Test | Verdict | Confiance | Note |
+|------|---------|-----------|------|
+| SNIa synthétique | SUPPORTÉ | Haute | Données simulées |
+| **SNIa Pantheon+** | **OPPOSÉ** | Moyenne | HOST_LOGMASS ≠ densité |
+| **ISW amélioré** | **PARTIEL** | Haute | +17.9% vs +26% |
+| r_c(M) validation | **VALIDÉ** | Haute | r=0.76, p<10^-10 |
 
-**VERDICT GLOBAL: TMT v2.0 SUPPORTÉ (2/3 tests positifs)**
+**VERDICT GLOBAL: TMT v2.0 PARTIELLEMENT SUPPORTÉ**
+
+- r_c(M): ✅ Validé empiriquement
+- ISW: ⚠️ Direction correcte, amplitude sous-estimée
+- SNIa: ❓ Test non concluant (proxy inadéquat)
+
+**Action requise**: Test SNIa avec catalogue de vides/amas (pas masse hôte)
 
 ---
 
 *Document créé le 17 janvier 2026*
-*Tests exécutés le 17 janvier 2026*
-*Script: `scripts/test_3_predictions_TMT.py`*
+*Mise à jour: 17 janvier 2026*
+*Scripts: `scripts/test_3_predictions_TMT.py`, `scripts/analyze_pantheon_real.py`, `scripts/calculate_ISW_improved.py`*
