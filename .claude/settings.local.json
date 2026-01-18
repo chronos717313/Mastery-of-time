@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git checkout:*)",
+      "Bash(git merge:*)",
+      "Bash(git config:*)",
+      "Bash(pip3 show:*)",
+      "Bash(pip3 install:*)",
+      "Bash(py -m pip install:*)",
+      "Bash(py -c:*)",
+      "Bash(py test_TMT_classique_COSMOS.py:*)",
+      "Bash(py scripts/test_TMT_GUIDE_PEDAGOGIQUE.py)",
+      "Bash(py scripts/test_TMT_10000_galaxies.py)",
+      "Bash(py scripts/analyse_reformulation_TMT.py)",
+      "Bash(for file in *.md)",
+      "Bash(done)",
+      "Bash(git mv:*)",
+      "Bash(python scripts/test_TMT_SPARC_175_galaxies.py:*)",
+      "Bash(py scripts/test_TMT_SPARC_175_galaxies.py)",
+      "Bash(ls:*)",
+      "Bash(git add:*)",
+      "Bash(git branch:*)"
+    ]
+  }
+}
