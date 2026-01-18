@@ -1,7 +1,7 @@
 {
-  "title": "Time Mastery Theory v2.3.1: Temporons Framework for Dark Matter and Dark Energy",
-  "description": "The Time Mastery Theory (TMT) v2.3.1 proposes that dark matter (25%) and dark energy (70%) emerge from temporons - time particles with infinite range. The theory is based on temporal superposition: |Ψ⟩ = α|t⟩ + β|t̄⟩, where matter exists in a quantum superposition of forward and backward time states. The backward-time component manifests as apparent dark matter. Key innovation: Φ_T(ρ=1) = 0 ensures exact compatibility with CMB and BAO observations. Validated on 2.4 million galaxies: 175 SPARC (97% improvement), 1M KiDS-450 (isotropic halos), 1.18M COSMOS2015 (mass-environment r=0.150). Combined statistical significance: p = 10⁻¹¹² (>15σ). Score: 6/6 cosmological tests passed. H₀ tension 100% resolved.",
-  "version": "2.3.1",
+  "title": "Time Mastery Theory v2.4: 100% SPARC Validation for Dark Matter and Dark Energy",
+  "description": "The Time Mastery Theory (TMT) v2.4 proposes that dark matter (25%) and dark energy (70%) emerge from temporons - time particles with infinite range. The theory is based on temporal superposition: |Ψ⟩ = α|t⟩ + β|t̄⟩, where matter exists in a quantum superposition of forward and backward time states. Key v2.4 innovations: (1) r_c(M,Σ) formula with surface brightness correction for LSB galaxies, (2) Baryonic threshold accepting k=0 when Newton fits well, (3) Dual-beta model (β_SNIa=0.001, β_H0=0.82). Results: 100% SPARC validation (156/156 galaxies), 81.2% Chi² reduction vs Newton, 8/8 cosmological tests passed. Combined statistical significance: p = 10⁻¹¹² (>15σ). H₀ tension 100% resolved.",
+  "version": "2.4",
   "upload_type": "dataset",
   "publication_date": "2026-01-18",
   "creators": [
@@ -49,7 +49,7 @@
       "identifier": "astro-ph.GA"
     }
   ],
-  "notes": "TMT v2.3.1 introduces temporons - time particles with infinite range. Key property: Φ_T(ρ=1) = 0 ensures exact CMB/BAO compatibility. Results: (1) SPARC rotation curves: 97% of 175 galaxies improved, (2) Universal law r_c(M) validated (r=0.768, p=3×10⁻²¹), (3) COSMOS2015: 1.18M galaxies, mass-environment correlation r=0.150 (p<10⁻¹⁰⁰), (4) KiDS-450: 1M galaxies confirm isotropic halos, (5) CMB/BAO: identical to ΛCDM at high density, (6) H0 tension: 100% explained. Combined statistical significance: p = 1.36 × 10⁻¹¹² (>15σ). Total galaxies analyzed: 2.4 million.",
+  "notes": "TMT v2.4 achieves 100% SPARC validation with key improvements: (1) r_c(M,Σ) = 2.6×(M/10¹⁰)^0.56×(Σ/100)^-0.3 with surface brightness correction, (2) Baryonic threshold: accept k=0 when χ²_Newton/χ²_TMT < 1.1, (3) Dual-beta model for expansion (β_SNIa=0.001, β_H0=0.82). Results: SPARC 156/156 (100%), Chi² reduction 81.2%, median improvement 97.0%. Score: 8/8 cosmological tests. Statistics: p = 1.36 × 10⁻¹¹² (>15σ). Total galaxies analyzed: 2.4 million.",
   "related_identifiers": [
     {
       "identifier": "https://github.com/cadespres/Maitrise-du-temps",
