@@ -1,11 +1,12 @@
 TIME MASTERY THEORY (TMT) - ZENODO PACKAGE MANIFEST
 ===================================================
 
-Version: 0.4.0-beta
-Date: January 15, 2026
-Total Files: 17
-Total Size: 172 KB
+Version: 2.3.1
+Date: January 18, 2026
+Total Files: 22
+Total Size: ~250 KB
 License: CC BY 4.0
+Statistical Significance: p = 10^-112 (>15 sigma)
 
 ---
 
@@ -20,23 +21,28 @@ PACKAGE STRUCTURE
    - MANIFEST.txt (this file) - Complete package inventory
 
 2. CORE THEORY DOCUMENTATION
-   - CORE_CONCEPTS.md (2.8 KB) - Fundamental concepts
-   - DARK_MATTER_DEFINITION.md (12 KB) - Geometric dark matter interpretation
-   - DARK_ENERGY_DEFINITION.md (14 KB) - Differential expansion explanation
+   - CORE_CONCEPTS.md (12 KB) - Fundamental concepts v2.3
+   - DARK_MATTER_DEFINITION.md (15 KB) - Temporal reflection interpretation
+   - DARK_ENERGY_DEFINITION.md (14 KB) - Temporon field Phi_T
    - LEXICON_DESPRES_MASS_AND_MAPPING.md (8.7 KB) - Official terminology
+   - SCHRODINGER_DESPRES_UNIFIED_THEORY.md (18 KB) - Unified equation
 
 3. MATHEMATICAL FORMULATION
    - COMPLETE_MATHEMATICAL_FORMULATION_MT.md (13 KB) - Full mathematical framework
    - FORMALIZATION_H_Z_RHO.md (14 KB) - Differential expansion H(z,ρ) formalization
 
-4. EXPERIMENTAL VALIDATION
-   - FINAL_SUMMARY_WEAK_LENSING_TEST_TMT.md (13 KB) - Complete test summary with statistical analysis
-   - WEAK_LENSING_TEST_EXECUTION_REPORT.md (6.4 KB) - Test execution results January 2026
+4. TMT v2.3.1 OFFICIAL DOCUMENTS (NEW)
+   - TMT_v231_OFFICIAL_DOCUMENT.md (35 KB) - Official document with 7 rotation curves
+   - 7_DISCOVERIES_LCDM_OBSOLETE.md (40 KB) - 7 discoveries vs LCDM comparison
+
+5. EXPERIMENTAL VALIDATION
+   - FINAL_SUMMARY_WEAK_LENSING_TEST_TMT.md (13 KB) - Complete test summary
+   - WEAK_LENSING_TEST_EXECUTION_REPORT.md (6.4 KB) - Test execution results
    - COSMOS_DES_DOWNLOAD_GUIDE.md (8.8 KB) - Real data acquisition guide
    - COSMOS_DES_TEST_GUIDE.md (14 KB) - Complete test methodology
    - UNIQUE_TESTABLE_PREDICTION.md (12 KB) - Distinguishing predictions vs ΛCDM
 
-5. SCIENTIFIC PUBLICATION
+6. SCIENTIFIC PUBLICATION
    - SCIENTIFIC_ARTICLE_TIME_MASTERY.md (27 KB) - Draft scientific article
    - FIGURE_SPECIFICATIONS.md (8.1 KB) - Publication figure specifications
 
