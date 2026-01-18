@@ -1,6 +1,6 @@
 TMT v2.3 COSMOS2015 Test Results
 ==================================================
 
-differential_expansion: {'n_void': np.int64(601), 'n_field': np.int64(4621), 'n_cluster': np.int64(289), 'H_void': np.float64(91.10618256265482), 'H_field': np.float64(92.54010182077823), 'H_cluster': np.float64(93.84287328180275)}
-mass_environment: {'r_mass_density': np.float64(0.026275551517760235), 'p_value': np.float64(0.13634863563820615)}
-redshift_dist: {'median_z': np.float64(3.1079), 'n_total': 98027}
+differential_expansion: {'n_void': np.int64(4458), 'n_field': np.int64(372696), 'n_cluster': np.int64(3115), 'H_void': np.float64(91.10618256265482), 'H_field': np.float64(92.54010182077823), 'H_cluster': np.float64(93.84287328180275)}
+mass_environment: {'r_mass_density': np.float64(0.14958766470804483), 'p_value': np.float64(0.0)}
+redshift_dist: {'median_z': np.float64(1.6818), 'n_total': 1161903}
