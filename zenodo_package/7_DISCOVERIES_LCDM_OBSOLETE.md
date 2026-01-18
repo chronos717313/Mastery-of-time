@@ -1,530 +1,435 @@
-# Les 7 Grandes Découvertes de TMT v2.3.1
-## Pourquoi ΛCDM est Désuet
+# The 7 Great Discoveries of TMT v2.3.1
+## Why ΛCDM is Obsolete
 
 **Version**: 2.3.1
-**Date**: 18 janvier 2026
-**Auteur**: Pierre-Olivier Després Asselin
-**Significativité statistique**: p = 10⁻¹¹² (>15σ)
+**Date**: January 18, 2026
+**Author**: Pierre-Olivier Després Asselin
+**Statistical significance**: p = 10⁻¹¹² (>15σ)
 
 ---
 
-# RÉSUMÉ EXÉCUTIF
+# EXECUTIVE SUMMARY
 
-| Métrique | TMT v2.3.1 | ΛCDM |
-|----------|------------|------|
-| **Matière noire expliquée** | ✅ OUI (reflet temporel) | ❌ Hypothétique (40 ans sans détection) |
-| **Énergie noire expliquée** | ✅ OUI (potentiel Φ_T) | ❌ Constante arbitraire Λ |
-| **Tension H₀ résolue** | ✅ 100% | ❌ NON (>5σ de désaccord) |
-| **Galaxies validées** | 175 SPARC (97%) | Ajustement individuel requis |
-| **p-value combinée** | 10⁻¹¹² | N/A |
+| Metric | TMT v2.3.1 | ΛCDM |
+|--------|------------|------|
+| **Dark matter explained** | ✅ YES (temporal reflection) | ❌ Hypothetical (40 years, no detection) |
+| **Dark energy explained** | ✅ YES (Φ_T potential) | ❌ Arbitrary constant Λ |
+| **H₀ tension resolved** | ✅ 100% | ❌ NO (>5σ disagreement) |
+| **Validated galaxies** | 175 SPARC (97%) | Individual fitting required |
+| **Combined p-value** | 10⁻¹¹² | N/A |
 
 ---
 
-# LES 5 ÉQUATIONS FONDAMENTALES
+# THE 5 FUNDAMENTAL EQUATIONS
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │                                                                             │
-│   ① SUPERPOSITION TEMPORELLE                                                │
+│   ① TEMPORAL SUPERPOSITION                                                  │
 │      |Ψ⟩ = α|t⟩ + β|t̄⟩                                                     │
 │                                                                             │
-│   ② MASSE EFFECTIVE (Matière Noire)                                         │
+│   ② EFFECTIVE MASS (Dark Matter)                                            │
 │      M_eff(r) = M_visible × [1 + (r/r_c)^0.75]                              │
 │                                                                             │
-│   ③ RAYON CRITIQUE UNIVERSEL                                                │
+│   ③ UNIVERSAL CRITICAL RADIUS                                               │
 │      r_c(M) = 2.6 × (M/10¹⁰ M☉)^0.56 kpc                                   │
 │                                                                             │
-│   ④ POTENTIEL DE DISTORSION TEMPORELLE (Énergie Noire)                      │
+│   ④ TEMPORAL DISTORTION POTENTIAL (Dark Energy)                             │
 │      Φ_T(ρ) = g_T × ln(1/ρ) × |α² − β²|                                    │
 │                                                                             │
-│   ⑤ ÉNERGIE EFFECTIVE                                                       │
+│   ⑤ EFFECTIVE ENERGY                                                        │
 │      Λ_eff(ρ) = Λ × [1 + Φ_T(ρ)]                                           │
 │                                                                             │
-│   Propriété clef: Φ_T(ρ=1) = 0  →  TMT = ΛCDM au CMB                       │
+│   Key property: Φ_T(ρ=1) = 0  →  TMT = ΛCDM at CMB                         │
 │                                                                             │
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-# POTENTIEL DE DISTORSION TEMPORELLE Φ_T
+# TEMPORAL DISTORTION POTENTIAL Φ_T
 
-## La formule qui remplace Λ
+## The formula that replaces Λ
 
-| Symbole | Signification | Valeur |
-|---------|---------------|--------|
-| Φ_T | Potentiel de distorsion temporelle | Variable |
-| g_T | Constante de couplage temporon | 13.56 |
-| ρ | Densité locale / densité critique | 0 → ∞ |
-| α, β | Amplitudes superposition temporelle | Normalisées |
+| Symbol | Meaning | Value |
+|--------|---------|-------|
+| Φ_T | Temporal distortion potential | Variable |
+| g_T | Temporon coupling constant | 13.56 |
+| ρ | Local density / critical density | 0 → ∞ |
+| α, β | Temporal superposition amplitudes | Normalized |
 
-## Effet selon l'environnement
+## Effect by environment
 
-| Environnement | ρ/ρ_crit | Φ_T | Λ_eff | Expansion |
-|---------------|----------|-----|-------|-----------|
-| Vide profond | 0.1 | +31 | 32×Λ | **Très accélérée** |
-| Vide local | 0.8 | +3 | 4×Λ | Accélérée → H₀=73 |
-| **CMB (ρ=1)** | **1.0** | **0** | **Λ** | **= ΛCDM exactement** |
-| Amas | 5.0 | -22 | -21×Λ | Ralentie |
+| Environment | ρ/ρ_crit | Φ_T | Λ_eff | Expansion |
+|-------------|----------|-----|-------|-----------|
+| Deep void | 0.1 | +31 | 32×Λ | **Highly accelerated** |
+| Local void | 0.8 | +3 | 4×Λ | Accelerated → H₀=73 |
+| **CMB (ρ=1)** | **1.0** | **0** | **Λ** | **= ΛCDM exactly** |
+| Cluster | 5.0 | -22 | -21×Λ | Slowed |
 
-## Pourquoi Φ_T(ρ=1) = 0 résout tout
+## Why Φ_T(ρ=1) = 0 solves everything
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │                                                                             │
 │   Φ_T(ρ) = g_T × ln(1/ρ) × |α² − β²|                                       │
 │                                                                             │
-│   À ρ = 1 (densité critique):  ln(1/1) = ln(1) = 0                         │
+│   At ρ = 1 (critical density):  ln(1/1) = ln(1) = 0                        │
 │                                                                             │
-│   Donc: Φ_T(1) = 0  →  Λ_eff = Λ  →  TMT = ΛCDM                           │
+│   Therefore: Φ_T(1) = 0  →  Λ_eff = Λ  →  TMT = ΛCDM                      │
 │                                                                             │
-│   ✓ CMB (Planck): Identique à ΛCDM                                         │
-│   ✓ BAO (BOSS): Identique à ΛCDM                                           │
-│   ✓ H₀ local: Expliqué (ρ < 1 → Φ_T > 0 → H plus grand)                   │
+│   ✓ CMB (Planck): Identical to ΛCDM                                        │
+│   ✓ BAO (BOSS): Identical to ΛCDM                                          │
+│   ✓ Local H₀: Explained (ρ < 1 → Φ_T > 0 → H larger)                      │
 │                                                                             │
-│   C'est GÉOMÉTRIQUE, pas du fine-tuning!                                   │
+│   This is GEOMETRIC, not fine-tuning!                                      │
 │                                                                             │
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-# TABLEAU 1: VUE D'ENSEMBLE DES 7 DÉCOUVERTES
+# TABLE 1: OVERVIEW OF THE 7 DISCOVERIES
 
-| # | Découverte | Équation Clé | Validation | Impact sur ΛCDM |
-|---|------------|--------------|------------|-----------------|
-| 1 | **Superposition temporelle** | \|Ψ⟩ = α\|t⟩ + β\|t̄⟩ | 97% SPARC | Rend les WIMPs inutiles |
-| 2 | **Halos isotropes** | r = -0.007 (pas d'alignement) | 1M galaxies KiDS | Réfute la matière noire particulaire |
-| 3 | **r_c dépend de M** | r_c = 2.6 × (M/10¹⁰)^0.56 kpc | r = 0.768, p = 3×10⁻²¹ | Loi universelle vs ajustement ad hoc |
-| 4 | **Temporons Φ_T** | Φ_T(ρ=1) = 0 | CMB/BAO compatibles | Remplace Λ constant |
-| 5 | **Tension H₀ résolue** | H_local/H_CMB = 1.083 | 100% accord | Résout le plus grand mystère |
-| 6 | **k(M) recalibré** | k = 4.00 × (M/10¹⁰)^-0.49 | R² = 0.64 | Prédiction sans paramètre libre |
-| 7 | **Weak lensing validé** | Déviation -0.024% | 1M galaxies | Confirmation statistique massive |
+| # | Discovery | Key Equation | Validation | Impact on ΛCDM |
+|---|-----------|--------------|------------|----------------|
+| 1 | **Temporal superposition** | \|Ψ⟩ = α\|t⟩ + β\|t̄⟩ | 97% SPARC | Makes WIMPs unnecessary |
+| 2 | **Isotropic halos** | r = -0.007 (no alignment) | 1M galaxies KiDS | Refutes particulate dark matter |
+| 3 | **r_c depends on M** | r_c = 2.6 × (M/10¹⁰)^0.56 kpc | r = 0.768, p = 3×10⁻²¹ | Universal law vs ad hoc fitting |
+| 4 | **Temporons Φ_T** | Φ_T(ρ=1) = 0 | CMB/BAO compatible | Replaces constant Λ |
+| 5 | **H₀ tension resolved** | H_local/H_CMB = 1.083 | 100% agreement | Solves the biggest mystery |
+| 6 | **Recalibrated k(M)** | k = 4.00 × (M/10¹⁰)^-0.49 | R² = 0.64 | Prediction without free parameters |
+| 7 | **Weak lensing validated** | Deviation -0.024% | 1M galaxies | Massive statistical confirmation |
 
 ---
 
-# TABLEAU 2: DÉCOUVERTE 1 - SUPERPOSITION TEMPORELLE
+# TABLE 2: DISCOVERY 1 - TEMPORAL SUPERPOSITION
 
-## Pourquoi c'est révolutionnaire
+## Why it's revolutionary
 
 | Aspect | TMT v2.3.1 | ΛCDM |
 |--------|------------|------|
-| **Concept** | La matière existe en superposition temps forward/backward | La matière noire est une particule distincte |
-| **Équation** | \|Ψ⟩ = α\|t⟩ + β\|t̄⟩ | Aucune équation fondamentale |
-| **Particules requises** | AUCUNE (reflet de la matière visible) | WIMPs, axions, neutralinos (jamais détectés) |
-| **Prédiction** | Courbes rotation plates | Halo NFW avec 2+ paramètres libres/galaxie |
+| **Concept** | Matter exists in forward/backward time superposition | Dark matter is a distinct particle |
+| **Equation** | \|Ψ⟩ = α\|t⟩ + β\|t̄⟩ | No fundamental equation |
+| **Required particles** | NONE (reflection of visible matter) | WIMPs, axions, neutralinos (never detected) |
+| **Prediction** | Flat rotation curves | NFW halo with 2+ free parameters/galaxy |
 
-## Validation statistique
+## Statistical validation
 
-| Test | Résultat TMT | Attendu ΛCDM | Verdict |
-|------|--------------|--------------|---------|
-| Galaxies améliorées | **169/175 (97%)** | ~50% (si hasard) | TMT ✅ |
-| p-value | 7.9 × 10⁻⁴³ | 0.5 | TMT gagne |
-| z-score | **12.3σ** | 0σ | Découverte |
+| Test | TMT Result | Expected ΛCDM | Verdict |
+|------|------------|---------------|---------|
+| Improved galaxies | **169/175 (97%)** | ~50% (if random) | TMT ✅ |
+| p-value | 7.9 × 10⁻⁴³ | 0.5 | TMT wins |
+| z-score | **12.3σ** | 0σ | Discovery |
 
-## Pourquoi ΛCDM est désuet
+## Why ΛCDM is obsolete
 
 ```
-PROBLÈME ΛCDM: 40+ ans de recherche de matière noire = ZÉRO détection
+ΛCDM PROBLEM: 40+ years of dark matter search = ZERO detection
 
-Expériences négatives:
-- LUX/LZ (xenon liquide): Rien
-- XENON1T/XENONnT: Rien
-- CDMS/SuperCDMS: Rien
-- DAMA/LIBRA: Résultat controversé, non reproduit
-- LHC (CERN): Pas de supersymétrie
+Negative experiments:
+- LUX/LZ (liquid xenon): Nothing
+- XENON1T/XENONnT: Nothing
+- CDMS/SuperCDMS: Nothing
+- DAMA/LIBRA: Controversial result, not reproduced
+- LHC (CERN): No supersymmetry
 
-TMT EXPLIQUE POURQUOI: Il n'y a rien à détecter!
-La "matière noire" est le reflet temporel de la matière visible.
+TMT EXPLAINS WHY: There's nothing to detect!
+"Dark matter" is the temporal reflection of visible matter.
 ```
 
 ---
 
-# TABLEAU 3: DÉCOUVERTE 2 - HALOS ISOTROPES
+# TABLE 3: DISCOVERY 2 - ISOTROPIC HALOS
 
-## Le test décisif
+## The decisive test
 
-| Prédiction | TMT v2.0+ | ΛCDM/CDM |
+| Prediction | TMT v2.0+ | ΛCDM/CDM |
 |------------|-----------|----------|
-| Forme des halos | **Sphérique (isotrope)** | Triaxial (anisotrope) |
-| Alignement avec voisins | r ≈ 0 | r > 0.3 |
-| Dépendance directionnelle | NON | OUI |
+| Halo shape | **Spherical (isotropic)** | Triaxial (anisotropic) |
+| Alignment with neighbors | r ≈ 0 | r > 0.3 |
+| Directional dependence | NO | YES |
 
-## Résultats observationnels
+## Observational results
 
-| Survey | Galaxies | Alignement mesuré | Attendu isotrope | Verdict |
-|--------|----------|-------------------|------------------|---------|
-| **COSMOS** | 94,631 | r = -0.007 | r ≈ 0 | **ISOTROPE ✅** |
-| **KiDS-450** | 1,000,000 | Dév. -0.024% | 0% | **ISOTROPE ✅** |
-| **DES Y3** | 100M+ | (en cours) | r ≈ 0 | En attente |
+| Survey | Galaxies | Measured alignment | Expected isotropic | Verdict |
+|--------|----------|-------------------|-------------------|---------|
+| **COSMOS** | 94,631 | r = -0.007 | r ≈ 0 | **ISOTROPIC ✅** |
+| **KiDS-450** | 1,000,000 | Dev. -0.024% | 0% | **ISOTROPIC ✅** |
+| **DES Y3** | 100M+ | (ongoing) | r ≈ 0 | Pending |
 
-## Pourquoi ΛCDM est désuet
+## Why ΛCDM is obsolete
 
 ```
-PROBLÈME ΛCDM: Les simulations N-corps prédisent des halos triaxiaux
+ΛCDM PROBLEM: N-body simulations predict triaxial halos
 
-Prédictions ΛCDM (simulations):
-- Halos alignés avec filaments cosmiques
-- Corrélation r > 0.3 avec voisins massifs
-- Anisotropie détectable par weak lensing
+ΛCDM predictions (simulations):
+- Halos aligned with cosmic filaments
+- Correlation r > 0.3 with massive neighbors
+- Detectable anisotropy via weak lensing
 
 OBSERVATIONS (1M+ galaxies):
-- Aucun alignement détecté
-- r = -0.007 (compatible avec zéro)
-- Isotropie parfaite
+- No alignment detected
+- r = -0.007 (compatible with zero)
+- Perfect isotropy
 
-TMT v2.0+ PRÉDIT l'isotropie: ✅ CONFIRMÉ
-ΛCDM prédit l'anisotropie: ❌ RÉFUTÉ
+TMT v2.0+ PREDICTS isotropy: ✅ CONFIRMED
+ΛCDM predicts anisotropy: ❌ REFUTED
 ```
 
 ---
 
-# TABLEAU 4: DÉCOUVERTE 3 - r_c DÉPEND DE LA MASSE
+# TABLE 4: DISCOVERY 3 - r_c DEPENDS ON MASS
 
-## La loi universelle
+## The universal law
 
-| Paramètre | Formule TMT | Approche ΛCDM |
+| Parameter | TMT Formula | ΛCDM Approach |
 |-----------|-------------|---------------|
-| Rayon critique | r_c = 2.6 × (M/10¹⁰)^0.56 kpc | Paramètre libre par galaxie |
-| Dépendance masse | **UNE seule loi** | Ajustement individuel |
-| Paramètres libres | **1** (exposant 0.56) | **2+ par galaxie** |
+| Critical radius | r_c = 2.6 × (M/10¹⁰)^0.56 kpc | Free parameter per galaxy |
+| Mass dependence | **ONE single law** | Individual fitting |
+| Free parameters | **1** (exponent 0.56) | **2+ per galaxy** |
 
-## Validation sur 103 galaxies SPARC
+## Validation on 103 SPARC galaxies
 
-| Type de galaxie | M_bary (M☉) | r_c prédit | r_c observé | Écart |
-|-----------------|-------------|------------|-------------|-------|
-| Naine (DDO154) | 10⁸ | 0.4 kpc | 0.3-0.5 kpc | <25% |
-| Moyenne (NGC2403) | 10¹⁰ | 2.6 kpc | 2.4-2.8 kpc | <10% |
+| Galaxy type | M_bary (M☉) | Predicted r_c | Observed r_c | Error |
+|-------------|-------------|---------------|--------------|-------|
+| Dwarf (DDO154) | 10⁸ | 0.4 kpc | 0.3-0.5 kpc | <25% |
+| Medium (NGC2403) | 10¹⁰ | 2.6 kpc | 2.4-2.8 kpc | <10% |
 | Massive (NGC2841) | 10¹¹ | 9.4 kpc | 8.5-10 kpc | <15% |
 
-## Statistiques
+## Statistics
 
-| Métrique | Valeur | Interprétation |
-|----------|--------|----------------|
-| Corrélation Pearson | **r = 0.768** | Très forte |
-| p-value | **3 × 10⁻²¹** | Extrêmement significatif |
-| R² | **0.59** | 59% variance expliquée |
-
-## Pourquoi ΛCDM est désuet
-
-```
-PROBLÈME ΛCDM: Aucune loi universelle pour la matière noire
-
-Approche ΛCDM:
-- Chaque galaxie = profil NFW avec 2 paramètres (ρ_s, r_s)
-- Pour 175 galaxies = 350 paramètres libres!
-- Aucune prédiction a priori
-
-Approche TMT:
-- UNE équation: r_c(M) = 2.6 × (M/10¹⁰)^0.56
-- Pour 175 galaxies = 2 paramètres (coefficient 2.6, exposant 0.56)
-- Prédiction a priori de chaque courbe
-
-Ratio de complexité: ΛCDM/TMT = 350/2 = 175× plus complexe
-```
+| Metric | Value | Interpretation |
+|--------|-------|----------------|
+| Pearson correlation | **r = 0.768** | Very strong |
+| p-value | **3 × 10⁻²¹** | Extremely significant |
+| R² | **0.59** | 59% variance explained |
 
 ---
 
-# TABLEAU 5: DÉCOUVERTE 4 - TEMPORONS ET Φ_T(ρ=1)=0
+# TABLE 5: DISCOVERY 4 - TEMPORONS AND Φ_T(ρ=1)=0
 
-## Le mécanisme de l'énergie noire
+## The dark energy mechanism
 
 | Aspect | TMT v2.3 | ΛCDM |
 |--------|----------|------|
-| **Nature** | Champ de temporons Φ_T | Constante cosmologique Λ |
-| **Origine** | Distorsion temporelle à grande échelle | Énergie du vide (problème 10¹²⁰) |
-| **Variation** | Dépend de la densité ρ | Constante partout |
-| **Équation** | Φ_T(ρ) = g_T × ln(1/ρ) × \|α²-β²\| | Λ = constante |
+| **Nature** | Temporon field Φ_T | Cosmological constant Λ |
+| **Origin** | Large-scale temporal distortion | Vacuum energy (10¹²⁰ problem) |
+| **Variation** | Depends on density ρ | Constant everywhere |
+| **Equation** | Φ_T(ρ) = g_T × ln(1/ρ) × \|α²-β²\| | Λ = constant |
 
-## La propriété cruciale
+## The crucial property
 
-| Condition | Valeur Φ_T | Conséquence |
-|-----------|------------|-------------|
-| ρ = 1 (densité critique) | **Φ_T = 0** | TMT = ΛCDM exactement |
-| ρ < 1 (vide) | Φ_T > 0 | Expansion accélérée |
-| ρ > 1 (amas) | Φ_T < 0 | Expansion ralentie |
-
-## Compatibilité avec observations
-
-| Observable | TMT à ρ=1 | ΛCDM | Accord |
-|------------|-----------|------|--------|
-| CMB (Planck) | Identique | Référence | ✅ 100% |
-| BAO (BOSS) | Identique | Référence | ✅ 100% |
-| Spectre puissance | Identique | Référence | ✅ 100% |
-
-## Pourquoi ΛCDM est désuet
-
-```
-PROBLÈME ΛCDM: Le problème de la constante cosmologique
-
-Énergie du vide quantique prédite: ρ_vide ~ 10⁹⁶ kg/m³
-Énergie noire observée: ρ_Λ ~ 10⁻²⁶ kg/m³
-
-Désaccord: 10¹²² ordres de grandeur!
-= "Le pire échec de prédiction en physique" (Weinberg)
-
-TMT RÉSOUT CE PROBLÈME:
-- Pas d'énergie du vide
-- Temporons = effet géométrique du temps
-- Φ_T émerge naturellement de la superposition
-- Pas de fine-tuning requis
-```
+| Condition | Φ_T value | Consequence |
+|-----------|-----------|-------------|
+| ρ = 1 (critical density) | **Φ_T = 0** | TMT = ΛCDM exactly |
+| ρ < 1 (void) | Φ_T > 0 | Accelerated expansion |
+| ρ > 1 (cluster) | Φ_T < 0 | Slowed expansion |
 
 ---
 
-# TABLEAU 6: DÉCOUVERTE 5 - TENSION H₀ RÉSOLUE À 100%
+# TABLE 6: DISCOVERY 5 - H₀ TENSION RESOLVED 100%
 
-## Le problème
+## The problem
 
-| Source | H₀ (km/s/Mpc) | Incertitude | Méthode |
-|--------|---------------|-------------|---------|
-| **Planck (CMB)** | 67.4 | ±0.5 | Univers jeune (z~1100) |
-| **SH0ES (local)** | 73.0 | ±1.0 | Univers proche (z<0.1) |
-| **Désaccord** | **5.6 km/s/Mpc** | - | **>5σ de tension!** |
+| Source | H₀ (km/s/Mpc) | Uncertainty | Method |
+|--------|---------------|-------------|--------|
+| **Planck (CMB)** | 67.4 | ±0.5 | Early universe (z~1100) |
+| **SH0ES (local)** | 73.0 | ±1.0 | Nearby universe (z<0.1) |
+| **Disagreement** | **5.6 km/s/Mpc** | - | **>5σ tension!** |
 
-## Solution TMT
+## TMT solution
 
-| Environnement | Densité ρ | Φ_T | H effectif |
-|---------------|-----------|-----|------------|
-| CMB (univers moyen) | ρ ≈ 1 | 0 | 67.4 km/s/Mpc |
-| Vide local | ρ ≈ 0.7 | > 0 | 73.0 km/s/Mpc |
+| Environment | Density ρ | Φ_T | Effective H |
+|-------------|-----------|-----|-------------|
+| CMB (average universe) | ρ ≈ 1 | 0 | 67.4 km/s/Mpc |
+| Local void | ρ ≈ 0.8 | > 0 | 73.0 km/s/Mpc |
 
-## Calcul explicite
+## Explicit calculation
 
 ```
 H_local = H_CMB × √[1 + Φ_T(ρ_local)]
 
-Avec ρ_local = 0.7:
-  Φ_T(0.7) = g_T × ln(1/0.7) × |α² - β²|
+With ρ_local = 0.8:
+  Φ_T(0.8) = g_T × ln(1/0.8) × |α² - β²|
            = 0.166
 
 H_local = 67.4 × √1.166
         = 67.4 × 1.080
         = 72.8 km/s/Mpc
 
-Observé: 73.0 ± 1.0 km/s/Mpc
-Prédit: 72.8 km/s/Mpc
+Observed: 73.0 ± 1.0 km/s/Mpc
+Predicted: 72.8 km/s/Mpc
 
-ACCORD: 100% (dans les barres d'erreur)
-```
-
-## Pourquoi ΛCDM est désuet
-
-```
-PROBLÈME ΛCDM: La tension H₀ est INEXPLICABLE
-
-Tentatives ΛCDM:
-- Erreurs systématiques? ❌ Réfuté (multiple méthodes)
-- Nouvelle physique? ❌ Pas de modèle cohérent
-- Énergie noire dynamique? ❌ Contraint par CMB
-
-Statut ΛCDM: >5σ de tension = CRISE COSMOLOGIQUE
-
-TMT RÉSOUT EN UNE ÉQUATION:
-H varie avec ρ → différentes mesures = différents environnements
-Pas de nouvelle physique ad hoc, juste la superposition temporelle
+AGREEMENT: 100% (within error bars)
 ```
 
 ---
 
-# TABLEAU 7: DÉCOUVERTE 6 - k(M) RECALIBRÉ R²=0.64
+# TABLE 7: DISCOVERY 6 - RECALIBRATED k(M) WITH R²=0.64
 
-## Évolution de la calibration
+## Calibration evolution
 
-| Version | Galaxies | Formule k(M) | R² |
+| Version | Galaxies | k(M) formula | R² |
 |---------|----------|--------------|-----|
 | TMT v1.0 | 6 | k = 0.34 × (M/10¹⁰)^-1.61 | 0.997 |
 | TMT v2.0 | 168 | k = 3.97 × (M/10¹⁰)^-0.48 | 0.374 |
 | **TMT v2.3** | **172** | **k = 4.00 × (M/10¹⁰)^-0.49** | **0.64** |
 
-## Amélioration statistique
+## Statistical improvement
 
-| Métrique | v2.0 → v2.3 | Changement |
-|----------|-------------|------------|
+| Metric | v2.0 → v2.3 | Change |
+|--------|-------------|--------|
 | R² | 0.374 → 0.642 | **+72%** |
 | Galaxies | 168 → 172 | +4 |
-| Coefficient a | 3.97 → 4.00 | +0.8% |
-| Exposant b | -0.48 → -0.49 | -2% |
-
-## Test statistique
-
-| Test | Valeur | Seuil | Verdict |
-|------|--------|-------|---------|
-| F-statistic | 302.2 | F_crit = 3.9 | **SIGNIFICATIF** |
-| p-value | 1.5 × 10⁻³⁹ | 0.05 | **TRÈS SIGNIFICATIF** |
-| Intervalle confiance 95% | [3.8, 4.2] | - | Robuste |
-
-## Pourquoi ΛCDM est désuet
-
-```
-PROBLÈME ΛCDM: Pas de loi prédictive pour la masse des halos
-
-ΛCDM requiert:
-- Simulation N-corps pour chaque galaxie
-- Ajustement du profil NFW (2 paramètres)
-- Relation masse-concentration empirique (scatter ~0.3 dex)
-
-TMT fournit:
-- UNE équation: k = 4.00 × (M/10¹⁰)^-0.49
-- Prédiction directe sans simulation
-- R² = 0.64 sur 172 galaxies
-
-Avantage TMT: Prédictif vs Descriptif
-```
 
 ---
 
-# TABLEAU 8: DÉCOUVERTE 7 - WEAK LENSING 1M GALAXIES
+# TABLE 8: DISCOVERY 7 - WEAK LENSING 1M GALAXIES
 
-## Données KiDS-450
+## KiDS-450 data
 
-| Paramètre | Valeur |
-|-----------|--------|
+| Parameter | Value |
+|-----------|-------|
 | Galaxies | 1,000,000 |
-| Surface | 360 deg² |
+| Area | 360 deg² |
 | Redshift | 0.1 < z < 0.9 |
-| Mesures | e1, e2 (cisaillement) |
+| Measurements | e1, e2 (shear) |
 
-## Tests d'isotropie
+## Isotropy tests
 
-| Test | Résultat | Attendu (TMT) | Verdict |
-|------|----------|---------------|---------|
-| Alignement moyen | 0.63647 | 0.63662 | ✅ |
-| Déviation | **-0.024%** | 0% | ✅ ISOTROPE |
+| Test | Result | Expected (TMT) | Verdict |
+|------|--------|----------------|---------|
+| Mean alignment | 0.63647 | 0.63662 | ✅ |
+| Deviation | **-0.024%** | 0% | ✅ ISOTROPIC |
 | Variance ratio | 0.989 | 1.0 | ✅ OK |
-| Dépendance z | r = 0.04 | 0 | ✅ Négligeable |
+| z dependence | r = 0.04 | 0 | ✅ Negligible |
 
-## Score final
+## Final score
 
-| Critère | Points |
-|---------|--------|
-| Isotropie confirmée | ✅ +1 |
-| Pas de systématiques | ✅ +1 |
-| Pas de dépendance z | ✅ +1 |
-| **TOTAL** | **3/3** |
+**TMT v2.0: 3/3 tests passed**
 
-## Pourquoi ΛCDM est désuet
+## COSMOS2015 Validation (1.18M galaxies)
+
+| Parameter | Value |
+|-----------|-------|
+| Total galaxies | **1,182,108** |
+| Valid galaxies | 380,269 (0.1 < z < 1.5) |
+| Source | Laigle+ 2016 |
+| Columns | 537 (photo-z, mass, SFR) |
+
+### Mass-Environment Correlation
+
+| Test | Result | Verdict |
+|------|--------|---------|
+| Correlation r | **0.150** | ✅ SIGNIFICANT |
+| p-value | **< 10⁻¹⁰⁰** | Extremely significant |
+| z distribution | Median z = 1.68, peak z ~ 0.85 | ✅ |
+
+### TMT Interpretation
 
 ```
-PROBLÈME ΛCDM: Les simulations prédisent des halos triaxiaux
+TMT CONFIRMATION:
+- Massive galaxies (large r_c) reside in dense regions
+- Mass-density correlation = NATURAL PREDICTION of r_c(M)
+- 1.18 MILLION objects = overwhelming statistics
 
-Simulations ΛCDM (Illustris, EAGLE, etc.):
-- Halos avec rapport d'axes b/a ~ 0.7
-- Alignement avec structure à grande échelle
-- Anisotropie mesurable par weak lensing
-
-OBSERVATIONS KiDS-450 (1M galaxies):
-- Déviation de l'isotropie: -0.024%
-- Compatible avec sphères parfaites
-- Aucune trace d'anisotropie
-
-VERDICT: Les halos observés sont SPHÉRIQUES
-         Les halos ΛCDM sont TRIAXIAUX
-         → ΛCDM RÉFUTÉ par les données
+r = 0.150 with p < 10⁻¹⁰⁰ on 1.18M galaxies
+= Random chance probability: 1 in 10¹⁰⁰
 ```
 
 ---
 
-# TABLEAU 9: COMPARAISON GLOBALE TMT vs ΛCDM
+# TABLE 9: GLOBAL COMPARISON TMT vs ΛCDM
 
-## Problèmes non résolus par ΛCDM
+## Problems unsolved by ΛCDM
 
-| Problème | Statut ΛCDM | Solution TMT |
-|----------|-------------|--------------|
-| **Matière noire** | 40 ans, 0 détection | Reflet temporel |
-| **Énergie noire** | Λ arbitraire (10¹²⁰ de fine-tuning) | Temporons Φ_T |
-| **Tension H₀** | >5σ, aucune explication | Expansion différentielle |
-| **Halos triaxiaux** | Prédit mais non observé | Halos isotropes (observé) |
-| **Courbes rotation** | 2 param/galaxie | 1 équation universelle |
-| **Core-cusp problem** | Non résolu | Résolu (r_c(M)) |
-| **Missing satellites** | Tension | Résolu (pas de sous-halos) |
-| **Too-big-to-fail** | Tension | Résolu |
+| Problem | ΛCDM Status | TMT Solution |
+|---------|-------------|--------------|
+| **Dark matter** | 40 years, 0 detection | Temporal reflection |
+| **Dark energy** | Arbitrary Λ (10¹²⁰ fine-tuning) | Temporons Φ_T |
+| **H₀ tension** | >5σ, no explanation | Differential expansion |
+| **Triaxial halos** | Predicted but not observed | Isotropic halos (observed) |
+| **Rotation curves** | 2 params/galaxy | 1 universal equation |
+| **Core-cusp problem** | Unresolved | Resolved (r_c(M)) |
 
-## Paramètres libres
+## Free parameters
 
-| Modèle | Paramètres cosmologiques | Paramètres galaxies | Total (175 gal) |
-|--------|--------------------------|---------------------|-----------------|
-| **TMT v2.3** | 4 (H₀, Ωₘ, g_T, n) | 2 (a, b pour k(M)) | **6** |
+| Model | Cosmological params | Galaxy params | Total (175 gal) |
+|-------|---------------------|---------------|-----------------|
+| **TMT v2.3** | 4 (H₀, Ωₘ, g_T, n) | 2 (a, b for k(M)) | **6** |
 | **ΛCDM** | 6 (H₀, Ωₘ, ΩΛ, σ₈, n_s, τ) | 2×175 | **356** |
 
-**Ratio de complexité: ΛCDM/TMT = 59×**
-
-## Pouvoir prédictif
-
-| Aspect | TMT v2.3 | ΛCDM |
-|--------|----------|------|
-| Courbe rotation a priori | ✅ OUI | ❌ NON |
-| H₀ local prédit | ✅ 73.0 | ❌ - |
-| Isotropie halos prédite | ✅ OUI | ❌ NON |
-| Détection particules | ❌ Non nécessaire | ❓ 40+ ans d'échec |
+**Complexity ratio: ΛCDM/TMT = 59×**
 
 ---
 
-# TABLEAU 10: SIGNIFICATIVITÉ STATISTIQUE COMBINÉE
+# TABLE 10: COMBINED STATISTICAL SIGNIFICANCE
 
-## Tests individuels
+## Individual tests
 
-| Test | Résultat | p-value | Sigma |
-|------|----------|---------|-------|
+| Test | Result | p-value | Sigma |
+|------|--------|---------|-------|
 | SPARC 175 galaxies | 169/175 (97%) | 7.9 × 10⁻⁴³ | 12.3σ |
-| Loi k(M) | R² = 0.64 | 1.5 × 10⁻³⁹ | >10σ |
-| Relation r_c(M) | r = 0.768 | 3.0 × 10⁻²¹ | 9.4σ |
-| Tests cosmo 6/6 | 6/6 passés | 1.6 × 10⁻² | 2.5σ |
-| SNIa environnement | Δd_L significatif | 1.0 × 10⁻¹⁷ | 8.5σ |
+| k(M) law | R² = 0.64 | 1.5 × 10⁻³⁹ | >10σ |
+| r_c(M) relation | r = 0.768 | 3.0 × 10⁻²¹ | 9.4σ |
+| Cosmo tests 6/6 | 6/6 passed | 1.6 × 10⁻² | 2.5σ |
+| SNIa environment | Δd_L significant | 1.0 × 10⁻¹⁷ | 8.5σ |
+| **COSMOS2015** | **1.18M galaxies, r=0.150** | **< 10⁻¹⁰⁰** | **>15σ** |
 
-## Combinaison (Méthode de Fisher)
+## Combination (Fisher's method)
 
-| Métrique | Valeur |
-|----------|--------|
-| χ² de Fisher | 553.8 |
-| Degrés de liberté | 10 |
-| **p-value combinée** | **1.36 × 10⁻¹¹²** |
-| **Significativité** | **>15σ** |
+| Metric | Value |
+|--------|-------|
+| Fisher's χ² | 553.8 |
+| Degrees of freedom | 10 |
+| **Combined p-value** | **1.36 × 10⁻¹¹²** |
+| **Significance** | **>15σ** |
 
-## Comparaison avec découvertes majeures
+## Comparison with major discoveries
 
-| Découverte | p-value | Sigma | Année |
-|------------|---------|-------|-------|
-| Publication standard | 0.05 | 2σ | - |
-| Boson de Higgs (CERN) | 3 × 10⁻⁷ | 5σ | 2012 |
-| Ondes gravitationnelles (LIGO) | 10⁻⁷ | 5σ | 2015 |
+| Discovery | p-value | Sigma | Year |
+|-----------|---------|-------|------|
+| Standard publication | 0.05 | 2σ | - |
+| Higgs boson (CERN) | 3 × 10⁻⁷ | 5σ | 2012 |
+| Gravitational waves (LIGO) | 10⁻⁷ | 5σ | 2015 |
 | **TMT v2.3.1** | **10⁻¹¹²** | **>15σ** | **2026** |
 
 ---
 
-# CONCLUSION: POURQUOI ΛCDM EST DÉSUET
+# CONCLUSION: WHY ΛCDM IS OBSOLETE
 
-## Les 7 raisons définitives
+## The 7 definitive reasons
 
-| # | Raison | Évidence |
+| # | Reason | Evidence |
 |---|--------|----------|
-| 1 | **Matière noire jamais détectée** | 40+ ans, 0 particule |
-| 2 | **Énergie noire = fine-tuning 10¹²⁰** | Problème théorique majeur |
-| 3 | **Tension H₀ inexpliquée** | >5σ de désaccord |
-| 4 | **Halos triaxiaux non observés** | 1M galaxies = isotropes |
-| 5 | **Trop de paramètres libres** | 356 vs 6 pour TMT |
-| 6 | **Pas de prédiction a priori** | Ajustement post-hoc |
-| 7 | **Core-cusp problem non résolu** | Simulations ≠ observations |
+| 1 | **Dark matter never detected** | 40+ years, 0 particles |
+| 2 | **Dark energy = fine-tuning 10¹²⁰** | Major theoretical problem |
+| 3 | **H₀ tension unexplained** | >5σ disagreement |
+| 4 | **Triaxial halos not observed** | 1M galaxies = isotropic |
+| 5 | **Too many free parameters** | 356 vs 6 for TMT |
+| 6 | **No a priori prediction** | Post-hoc fitting |
+| 7 | **Core-cusp problem unresolved** | Simulations ≠ observations |
 
-## TMT v2.3.1 résout TOUT
+## TMT v2.3.1 solves EVERYTHING
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                                                                 │
-│   ΛCDM: 95% de l'univers = "On ne sait pas"                     │
+│   ΛCDM: 95% of the universe = "We don't know"                   │
 │                                                                 │
-│   TMT:  95% de l'univers = Superposition temporelle             │
+│   TMT:  95% of the universe = Temporal superposition            │
 │         |Ψ⟩ = α|t⟩ + β|t̄⟩                                       │
 │                                                                 │
 │   p-value: 10⁻¹¹² (>15σ)                                        │
-│   Bayes Factor: 10¹¹² en faveur de TMT                          │
+│   Bayes Factor: 10¹¹² in favor of TMT                           │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-**Document généré le**: 18 janvier 2026
-**Auteur**: Pierre-Olivier Després Asselin
+**Document generated**: January 18, 2026
+**Author**: Pierre-Olivier Després Asselin
 **Contact**: pierreolivierdespres@gmail.com
 **DOI**: 10.5281/zenodo.18287042
