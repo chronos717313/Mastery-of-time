@@ -206,14 +206,14 @@ pip install numpy scipy matplotlib astropy
 git clone https://github.com/cadespres/Maitrise-du-temps.git
 cd Maitrise-du-temps
 
-# TMT v2.3.1 cosmological tests
-python scripts/test_TMT_cosmologie_final.py
+# TMT v2.4 SPARC test (100% validation)
+python scripts/validation/test_TMT_v24_SPARC.py
 
-# SPARC rotation curves
-python scripts/test_TMT_v2_SPARC_reel.py
+# TMT v2.3.2 complete test (8/8)
+python scripts/validation/test_complet_TMT_v232.py
 
 # Statistical significance
-python scripts/calcul_significativite_TMT_v231.py
+python scripts/validation/calcul_significativite_TMT_v231.py
 ```
 
 ---
