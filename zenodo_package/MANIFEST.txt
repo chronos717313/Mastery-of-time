@@ -36,7 +36,7 @@ PACKAGE STRUCTURE
    - FORMALIZATION_H_Z_RHO.md (14.5 KB) - Differential expansion H(z,rho) formalization
 
 4. TMT v2.4 OFFICIAL DOCUMENTS
-   - TMT_v231_OFFICIAL_DOCUMENT.md (42 KB) - Official document with 7 rotation curves
+   - TMT_v24_OFFICIAL_DOCUMENT.md (42 KB) - Official document with 7 rotation curves
    - 7_DISCOVERIES_LCDM_OBSOLETE.md (17 KB) - 7 discoveries vs LCDM comparison
 
 5. EXPERIMENTAL VALIDATION
@@ -150,7 +150,7 @@ USAGE
 
 2. Read CORE_CONCEPTS.md for theory fundamentals
 
-3. Review TMT_v231_OFFICIAL_DOCUMENT.md for complete theory with 7 rotation curves
+3. Review TMT_v24_OFFICIAL_DOCUMENT.md for complete theory with 7 rotation curves
 
 4. Consult 7_DISCOVERIES_LCDM_OBSOLETE.md for detailed LCDM comparison
 

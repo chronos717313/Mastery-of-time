@@ -124,7 +124,7 @@ Massive galaxies (large r_c) reside preferentially in dense regions, as predicte
 | File | Description |
 |------|-------------|
 | **README_ZENODO.md** | This file - Package overview |
-| **TMT_v231_OFFICIAL_DOCUMENT.md** | Official document with 7 rotation curves |
+| **TMT_v24_OFFICIAL_DOCUMENT.md** | Official document with 7 rotation curves |
 | **7_DISCOVERIES_LCDM_OBSOLETE.md** | 7 discoveries vs ΛCDM comparison |
 | **CORE_CONCEPTS.md** | Fundamental theory concepts |
 
@@ -213,7 +213,7 @@ python scripts/validation/test_TMT_v24_SPARC.py
 python scripts/validation/test_complet_TMT_v232.py
 
 # Statistical significance
-python scripts/validation/calcul_significativite_TMT_v231.py
+python scripts/validation/calcul_significativite_TMT_v24.py
 ```
 
 ---
