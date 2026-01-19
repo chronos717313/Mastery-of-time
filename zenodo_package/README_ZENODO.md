@@ -269,7 +269,7 @@ python scripts/calcul_significativite_TMT_v231.py
 
 ---
 
-<div align="center">
+<div     align="center">
 
 **TMT v2.4: 100% SPARC Validation - Dark Matter as Temporal Reflection**
 
