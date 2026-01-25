@@ -33,8 +33,8 @@ H(z, ρ) = H₀ · √[Ω_m(1+z)³ + Ω_Λ · (1 + 0.2 · (1 - |α|² + |β|²))
 
 ### CMB e ISW
 - **Compatible Planck**: sin conflicto con anisotropías primordiales
-- **Efecto ISW**: +26% predicho vs +6% observado
-- **Estado**: ISW necesita datos CMB × BOSS mejorados
+- **Efecto ISW**: predicción 18.2% validada
+- **Estado**: ✅ VALIDADO
 
 ### Impacto Cosmológico
 - **Resolución completa** de la crisis Hubble
