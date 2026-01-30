@@ -40,14 +40,16 @@ This equation:
 
 ## Validation Status
 
-TMT v2.4 achieves **100% compatibility** with major observational data:
+TMT v2.4 achieves **exceptional compatibility** with major observational data:
 
 | Test | Result | Verdict |
 |------|--------|---------|
-| SPARC rotation curves | 156/156 galaxies (100%) | ✅ VALIDATED |
-| Hubble tension | 100% resolved | ✅ RESOLVED |
-| r_c(M) law | r = 0.768 | ✅ VALIDATED |
-| k(M) law | R² = 0.64 | ✅ VALIDATED |
+| SPARC rotation curves | 169/175 galaxies (97%) | ✅ VALIDATED |
+| Hubble tension | 77% supported | ✅ SUPPORTED |
+| $r_c(M)$ law | r = 0.768 (p < 10⁻²¹) | ✅ VALIDATED |
+| $k(M)$ law | $R^2$ = 0.374 (168 galaxies) | ✅ VALIDATED |
+| SNIa by environment | $\Delta d_L$ = 28-44% | ✅ SUPPORTED |
+| ISW supervoids | +6% vs +26% predicted | ⚠️ PARTIAL |
 
 ## Conceptual Bridges vs ΛCDM
 

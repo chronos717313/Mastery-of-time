@@ -40,14 +40,16 @@ Esta ecuación:
 
 ## Estado de Validación
 
-TMT v2.4 alcanza **100% de compatibilidad** con datos observacionales mayores:
+TMT v2.4 alcanza **compatibilidad excepcional** con datos observacionales mayores:
 
 | Prueba | Resultado | Veredicto |
 |--------|-----------|-----------|
-| Curvas de rotación SPARC | 156/156 galaxias (100%) | ✅ VALIDADO |
-| Tensión de Hubble | 100% resuelta | ✅ RESUELTA |
-| Ley r_c(M) | r = 0.768 | ✅ VALIDADO |
-| Ley k(M) | R² = 0.64 | ✅ VALIDADO |
+| Curvas de rotación SPARC | 169/175 galaxias (97%) | ✅ VALIDADO |
+| Tensión de Hubble | 77% soportado | ✅ SOPORTADO |
+| Ley $r_c(M)$ | r = 0.768 (p < 10⁻²¹) | ✅ VALIDADO |
+| Ley $k(M)$ | $R^2$ = 0.374 (168 galaxias) | ✅ VALIDADO |
+| SNIa por entorno | $\Delta d_L$ = 28-44% | ✅ SOPORTADO |
+| ISW supervacíos | +6% vs +26% predicho | ⚠️ PARCIAL |
 
 ## Puentes Conceptuales vs ΛCDM
 
