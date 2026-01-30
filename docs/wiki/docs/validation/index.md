@@ -17,13 +17,13 @@ TMT v2.4 atteint une **validation quantitative exceptionnelle** avec des résult
 
 ## Sections Détaillées
 
-### [Échelle Galactique](courbes_rotation/)
+### [Échelle Galactique](courbes_rotation/index.md)
 Tests sur les courbes de rotation des galaxies (SPARC, 156 galaxies).
 
-### [Échelle Cosmologique](echelle_cosmo/)
+### [Échelle Cosmologique](echelle_cosmo/index.md)
 Tests sur l'expansion de l'Univers (tension Hubble, supernovae, CMB).
 
-### [Autres Tests](autres_tests/)
+### [Autres Tests](autres_tests/index.md)
 Tests complémentaires (lensing, effets intégrés Sachs-Wolfe).
 
 ---

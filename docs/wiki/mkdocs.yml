@@ -5,9 +5,64 @@ copyright: © 2026 Théorie de Maîtrise du Temps
 
 nav:
   - Accueil: index.md
-  - Ponts Conceptuels: ponts_conceptuels/index.md
-  - Validation Empirique: validation/index.md
-  - Publications: publications/index.md
+  - Ponts Conceptuels:
+    - Vue d'ensemble: ponts_conceptuels/index.md
+    - Physique connue: ponts_conceptuels/physique_connue.md
+    - Relativité générale: ponts_conceptuels/relativite_generale.md
+    - Mécanique quantique: ponts_conceptuels/mecanique_quantique.md
+    - Cosmologie: ponts_conceptuels/cosmologie.md
+    - Particules: ponts_conceptuels/particules.md
+    - Thermodynamique: ponts_conceptuels/thermodynamique.md
+    - Mesures: ponts_conceptuels/mesures.md
+  - Validation Empirique:
+    - Vue d'ensemble: validation/index.md
+    - Courbes de rotation: validation/courbes_rotation/index.md
+    - Échelle cosmologique: validation/echelle_cosmo/index.md
+    - Autres tests: validation/autres_tests/index.md
+  - Publications:
+    - Vue d'ensemble: publications/index.md
+    - Package Zenodo: publications/package_zenodo.md
+    - Article scientifique: publications/article_scientifique.md
+  - English:
+    - Home: en/index.md
+    - Conceptual Bridges:
+      - Overview: en/ponts_conceptuels/index.md
+      - Known Physics: en/ponts_conceptuels/known_physics.md
+      - General Relativity: en/ponts_conceptuels/general_relativity.md
+      - Quantum Mechanics: en/ponts_conceptuels/quantum_mechanics.md
+      - Cosmology: en/ponts_conceptuels/cosmology.md
+      - Particles: en/ponts_conceptuels/particles.md
+      - Thermodynamics: en/ponts_conceptuels/thermodynamics.md
+      - Measurements: en/ponts_conceptuels/measurements.md
+    - Validation:
+      - Overview: en/validation/index.md
+      - Galactic Scale: en/validation/galactic_scale/index.md
+      - Cosmological Scale: en/validation/cosmological_scale/index.md
+      - Other Tests: en/validation/other_tests/index.md
+    - Publications:
+      - Overview: en/publications/index.md
+      - Zenodo Package: en/publications/zenodo_package.md
+      - Scientific Article: en/publications/scientific_article.md
+  - Español:
+    - Inicio: es/index.md
+    - Puentes Conceptuales:
+      - Vista general: es/pontes_conceptuales/index.md
+      - Física conocida: es/pontes_conceptuales/fisica_conocida.md
+      - Relatividad general: es/pontes_conceptuales/relatividad_general.md
+      - Mecánica cuántica: es/pontes_conceptuales/mecanica_cuantica.md
+      - Cosmología: es/pontes_conceptuales/cosmologia.md
+      - Partículas: es/pontes_conceptuales/particulas.md
+      - Termodinámica: es/pontes_conceptuales/termodinamica.md
+      - Mediciones: es/pontes_conceptuales/mediciones.md
+    - Validación:
+      - Vista general: es/validacion/index.md
+      - Escala galáctica: es/validacion/galactic_scale/index.md
+      - Escala cosmológica: es/validacion/cosmological_scale/index.md
+      - Otras pruebas: es/validacion/other_tests/index.md
+    - Publicaciones:
+      - Vista general: es/publicaciones/index.md
+      - Paquete Zenodo: es/publicaciones/zenodo_package.md
+      - Artículo científico: es/publicaciones/scientific_article.md
 
 theme:
   name: material

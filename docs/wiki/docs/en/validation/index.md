@@ -17,13 +17,13 @@ TMT v2.4 achieves **exceptional quantitative validation** with 100% results on m
 
 ## Detailed Sections
 
-### [Galactic Scale](galactic_scale/)
+### [Galactic Scale](galactic_scale/index.md)
 Tests on galaxy rotation curves (SPARC, 156 galaxies).
 
-### [Cosmological Scale](cosmological_scale/)
+### [Cosmological Scale](cosmological_scale/index.md)
 Tests on Universe expansion (Hubble tension, supernovae, CMB).
 
-### [Other Tests](other_tests/)
+### [Other Tests](other_tests/index.md)
 Additional tests (lensing, integrated Sachs-Wolfe effects).
 
 ---

@@ -39,11 +39,9 @@ TMT v2.4 establece 7 puentes conceptuales fundamentales en comparación con el m
 
 ## Estructura de la Documentación
 
-- **[Introducción](introduction/)**: Presentación completa e historia
-- **[Puentes Conceptuales](pontes_conceptuales/)**: Comparaciones detalladas con ΛCDM
-- **[Formulación Matemática](formulacion_matematica/)**: Ecuaciones y derivación
-- **[Validación Empírica](validacion/)**: Pruebas y resultados observacionales
-- **[Publicaciones](publicaciones/)**: Documentos de presentación científica
+- **[Puentes Conceptuales](pontes_conceptuales/index.md)**: Comparaciones detalladas con ΛCDM
+- **[Validación Empírica](validacion/index.md)**: Pruebas y resultados observacionales
+- **[Publicaciones](publicaciones/index.md)**: Documentos de presentación científica
 
 ---
 

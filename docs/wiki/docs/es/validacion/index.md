@@ -17,13 +17,13 @@ TMT v2.4 alcanza una **validación cuantitativa excepcional** con resultados al 
 
 ## Secciones Detalladas
 
-### [Escala Galáctica](galactic_scale/)
+### [Escala Galáctica](galactic_scale/index.md)
 Pruebas en curvas de rotación de galaxias (SPARC, 156 galaxias).
 
-### [Escala Cosmológica](cosmological_scale/)
+### [Escala Cosmológica](cosmological_scale/index.md)
 Pruebas en expansión del Universo (tensión Hubble, supernovas, CMB).
 
-### [Otras Pruebas](other_tests/)
+### [Otras Pruebas](other_tests/index.md)
 Pruebas adicionales (lensing, efectos integrados Sachs-Wolfe).
 
 ---

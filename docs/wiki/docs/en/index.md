@@ -39,11 +39,9 @@ TMT v2.4 establishes 7 fundamental conceptual bridges compared to the ΛCDM mode
 
 ## Documentation Structure
 
-- **[Introduction](introduction/)**: Complete presentation and history
-- **[Conceptual Bridges](ponts_conceptuels/)**: Detailed comparisons with ΛCDM
-- **[Mathematical Formulation](formulation_mathematique/)**: Equations and derivation
-- **[Empirical Validation](validation/)**: Tests and observational results
-- **[Publications](publications/)**: Scientific submission documents
+- **[Conceptual Bridges](ponts_conceptuels/index.md)**: Detailed comparisons with ΛCDM
+- **[Empirical Validation](validation/index.md)**: Tests and observational results
+- **[Publications](publications/index.md)**: Scientific submission documents
 
 ---
 

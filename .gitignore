@@ -33,3 +33,6 @@ venv/
 data/input/
 *.fits
 *.fits.gz
+
+# MkDocs generated site
+docs/wiki/site/
