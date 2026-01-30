@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  mkdocs:
+    image: python:3.11-slim
+    container_name: tmt-wiki
+    working_dir: /docs
+    volumes:
+      - ./docs/wiki:/docs
+      - ./scripts:/scripts
+    ports:
+      - "8000:8000"
+    command: >
+      sh -c "
+        pip install --no-cache-dir mkdocs mkdocs-material pymdown-extensions &&
+        if [ -f /scripts/requirements.txt ]; then pip install --no-cache-dir -r /scripts/requirements.txt; fi &&
+        mkdocs serve --dev-addr 0.0.0.0:8000
+      "
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
