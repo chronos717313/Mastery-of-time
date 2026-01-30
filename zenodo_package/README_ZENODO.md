@@ -117,7 +117,7 @@ Massive galaxies (large r_c) reside preferentially in dense regions, as predicte
 
 ---
 
-## Package Contents (23 files)
+## Package Contents (24 files)
 
 ### 1. Core Documentation
 
@@ -148,6 +148,7 @@ Massive galaxies (large r_c) reside preferentially in dense regions, as predicte
 
 | File | Description |
 |------|-------------|
+| **8_COSMOLOGICAL_TESTS_TMT_v24.md** | **Complete 8/8 tests documentation** |
 | **FINAL_SUMMARY_WEAK_LENSING_TEST_TMT.md** | Complete test summary |
 | **UNIQUE_TESTABLE_PREDICTION.md** | Distinguishing predictions vs ΛCDM |
 | **COSMOS_DES_DOWNLOAD_GUIDE.md** | Real data acquisition guide |
@@ -269,7 +270,7 @@ python scripts/validation/calcul_significativite_TMT_v24.py
 
 ---
 
-<div     align="center">
+<div     calign="center">
 
 **TMT v2.4: 100% SPARC Validation - Dark Matter as Temporal Reflection**
 

@@ -2,8 +2,8 @@ TIME MASTERY THEORY (TMT) - ZENODO PACKAGE MANIFEST
 ===================================================
 
 Version: 2.4
-Date: January 18, 2026
-Total Files: 23
+Date: January 19, 2026
+Total Files: 24
 Total Size: ~280 KB
 License: CC BY 4.0
 Statistical Significance: p = 10^-112 (>15 sigma)
@@ -40,6 +40,7 @@ PACKAGE STRUCTURE
    - 7_DISCOVERIES_LCDM_OBSOLETE.md (17 KB) - 7 discoveries vs LCDM comparison
 
 5. EXPERIMENTAL VALIDATION
+   - 8_COSMOLOGICAL_TESTS_TMT_v24.md (18 KB) - Complete 8/8 tests documentation
    - FINAL_SUMMARY_WEAK_LENSING_TEST_TMT.md (13.3 KB) - Complete test summary
    - WEAK_LENSING_TEST_EXECUTION_REPORT.md (6.7 KB) - Test execution results
    - COSMOS_DES_DOWNLOAD_GUIDE.md (9.3 KB) - Real data acquisition guide
