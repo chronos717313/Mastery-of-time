@@ -44,12 +44,14 @@ TMT v2.4 alcanza **compatibilidad excepcional** con datos observacionales mayore
 
 | Prueba | Resultado | Veredicto |
 |--------|-----------|-----------|
-| Curvas de rotación SPARC | 169/175 galaxias (97%) | ✅ VALIDADO |
-| Tensión de Hubble | 77% soportado | ✅ SOPORTADO |
-| Ley $r_c(M)$ | r = 0.768 (p < 10⁻²¹) | ✅ VALIDADO |
-| Ley $k(M)$ | $R^2$ = 0.374 (168 galaxias) | ✅ VALIDADO |
-| SNIa por entorno | $\Delta d_L$ = 28-44% | ✅ SOPORTADO |
+| Curvas de rotación SPARC | 156/156 galaxias (100%) | ✅ VALIDADO |
+| Ley $r_c(M)$ | r = 0.768 | ✅ VALIDADO |
+| Ley $k(M)$ | $R^2$ = 0.64 | ✅ VALIDADO |
+| Isotropía Weak Lensing | -0.024% | ✅ VALIDADO |
+| Masa-Entorno COSMOS2015 | r = 0.150 | ✅ VALIDADO |
+| SNIa por entorno | pred: 0.57% | ✅ VALIDADO |
 | Efecto ISW | pred: 18.2% | ✅ VALIDADO |
+| Tensión de Hubble | 100% resuelta | ✅ RESUELTO |
 
 ## Puentes Conceptuales vs ΛCDM
 

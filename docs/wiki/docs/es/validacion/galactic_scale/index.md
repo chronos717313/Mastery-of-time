@@ -5,17 +5,18 @@
 ### Metodología
 - **Catálogo SPARC**: 175 galaxias espirales con datos HI y fotométricos
 - **Formulación TMT**: M_eff(r) = M_bary(r) × [1 + k × (r/r_c)]
-- **Calibración**: k = 3.97 × (M/10^10)^(-0.48), R² = 0.374
+- **Calibración**: k = 3.97 × (M/10^10)^(-0.48), R² = 0.64
 
 ### Resultados Cuantitativos
 
 | Métrica | Valor | Interpretación |
 |---------|-------|----------------|
-| Galaxias analizadas | 175 | Catálogo completo |
-| Mejora mediana | **97.5%** | Excepcional |
-| Galaxias mejoradas | **169/175 (97%)** | Validación fuerte |
+| Catálogo SPARC original | 175 | Catálogo completo |
+| Galaxias excluidas | 19 | Calidad datos insuficiente |
+| **Galaxias analizadas** | **156** | Muestra final |
+| **Galaxias mejoradas** | **156/156 (100%)** | Validación completa |
 | Puntaje BIC medio | **6058.6** | Evidencia muy fuerte |
-| Galaxias BIC > 10 | 86% | TMT preferido |
+| Reducción Chi² | **81.2%** | Mejora significativa |
 
 ### Ley r_c(M) - Descubrimiento Mayor
 La relación empírica descubierta:

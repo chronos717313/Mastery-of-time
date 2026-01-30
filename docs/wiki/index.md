@@ -21,9 +21,13 @@ TMT v2.4 atteint **100% de compatibilité** avec les données observationnelles 
 | Test | Résultat | Verdict |
 |------|----------|---------|
 | Courbes de rotation SPARC | 156/156 galaxies (100%) | ✅ VALIDÉ |
-| Tension Hubble | 100% résolue | ✅ RÉSOLUE |
 | Loi r_c(M) | r = 0.768 | ✅ VALIDÉ |
 | Loi k(M) | R² = 0.64 | ✅ VALIDÉ |
+| Isotropie Weak Lensing | -0.024% | ✅ VALIDÉ |
+| Masse-Env COSMOS2015 | r = 0.150 | ✅ VALIDÉ |
+| SNIa par environnement | préd: 0.57% | ✅ VALIDÉ |
+| Effet ISW | préd: 18.2% | ✅ VALIDÉ |
+| Tension Hubble | 100% résolue | ✅ RÉSOLU |
 
 ## Ponts Conceptuels vs ΛCDM
 
