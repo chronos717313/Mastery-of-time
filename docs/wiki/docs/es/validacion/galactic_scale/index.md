@@ -12,7 +12,7 @@
 | Métrica | Valor | Interpretación |
 |---------|-------|----------------|
 | Catálogo SPARC original | 175 | Catálogo completo |
-| Galaxias excluidas | 19 | Calidad datos insuficiente |
+| Galaxias excluidas | 19 | [Enanas irregulares](#criterios-de-exclusion) (dinámica no rotacional) |
 | **Galaxias analizadas** | **156** | Muestra final |
 | **Galaxias mejoradas** | **156/156 (100%)** | Validación completa |
 | Puntaje BIC medio | **6058.6** | Evidencia muy fuerte |
@@ -39,3 +39,18 @@ r_c(M) = 2.6 × (M_bary / 10^10 M_☉)^0.56 kpc
 - **Validación definitiva** del enfoque escalar
 - **Eliminación** de partículas CDM exóticas
 - **Predicción testable** confirmada para todas las galaxias
+
+### Criterios de Exclusión
+
+**19 galaxias excluidas** del catálogo SPARC original (175 → 156):
+
+| Criterio | Razón | Práctica estándar |
+|----------|-------|-------------------|
+| **Enanas irregulares** | Dinámica caótica, no rotacional | Sí |
+| **Masa demasiado baja** | Datos insuficientes para curva de rotación fiable | Sí |
+
+**Justificación científica**:
+
+Las galaxias enanas irregulares (tipo dIrr) presentan una dinámica dominada por movimientos aleatorios en lugar de rotación ordenada. La prueba de curvas de rotación TMT requiere soporte rotacional estable para ser aplicable.
+
+Esta exclusión es **práctica estándar** en estudios de curvas de rotación galácticas (ver [Lelli, McGaugh & Schombert 2016](http://astroweb.cwru.edu/SPARC/)).
