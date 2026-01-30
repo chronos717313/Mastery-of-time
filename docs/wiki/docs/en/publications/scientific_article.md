@@ -8,7 +8,7 @@
 ### Abstract (250 words)
 The Mastery of Time Theory (TMT) proposes a unification of quantum mechanics and general relativity through quantum temporal superposition. The master equation ψ(universe) = α|t⟩ + β|t̄⟩ naturally predicts dark matter emergence as a temporal reflection of visible matter.
 
-TMT v2.4 achieves exceptional validation:
+TMT achieves exceptional validation:
 - **100% compatibility** with SPARC rotation curves (156/156 galaxies)
 - **Complete resolution** of Hubble tension via differential expansion
 - **Confirmed predictions** on Pantheon+ and COSMOS data
@@ -41,4 +41,4 @@ Unlike ΛCDM which requires undetected exotic particles, TMT eliminates WIMP nee
 
 ---
 
-*TMT v2.4: Ready for peer review*
+*TMT: Ready for peer review*

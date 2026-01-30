@@ -1,4 +1,4 @@
-# TMT v2.4 Lexicon
+# TMT Lexicon
 
 This lexicon defines all terms specific to the **Time Mastery Theory** (TMT).
 

@@ -1,4 +1,4 @@
-# Théorie de Maîtrise du Temps (TMT) v2.4
+# Théorie de Maîtrise du Temps (TMT)
 
 ## Vue d'ensemble
 
@@ -6,7 +6,7 @@ La **Théorie de Maîtrise du Temps** (TMT) est une formulation alternative à l
 
 ### Équation Maîtresse
 
-La formulation centrale de TMT v2.4 repose sur l'équation maîtresse :
+La formulation centrale de TMT repose sur l'équation maîtresse :
 
 $$
 \psi(\text{univers}) = \alpha(r,p,t)|t\rangle + \beta(r,p)|\bar{t}\rangle
@@ -43,7 +43,7 @@ Cette équation :
 
 ## Statut de Validation
 
-TMT v2.4 atteint une **compatibilité exceptionnelle** avec les données observationnelles majeures :
+TMT atteint une **compatibilité exceptionnelle** avec les données observationnelles majeures :
 
 | Test | Résultat | Script | Verdict |
 |------|----------|--------|---------|
@@ -60,7 +60,7 @@ TMT v2.4 atteint une **compatibilité exceptionnelle** avec les données observa
 
 ## Ponts Conceptuels vs ΛCDM
 
-TMT v2.4 établit 7 ponts conceptuels fondamentaux par rapport au modèle ΛCDM :
+TMT établit 7 ponts conceptuels fondamentaux par rapport au modèle ΛCDM :
 
 1. **Physique connue** : Superposition temporelle vs physique quantique + relativité
 2. **Mécanique quantique** : Distorsion du temps / flèche du temps
@@ -78,4 +78,4 @@ TMT v2.4 établit 7 ponts conceptuels fondamentaux par rapport au modèle ΛCDM 
 
 ---
 
-*TMT v2.4 - Version production prête (Janvier 2026)*
+*TMT - Version production prête (Janvier 2026)*

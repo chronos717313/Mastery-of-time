@@ -8,7 +8,7 @@
 - **Interactions faibles** avec la matière ordinaire
 - **Masse ~100 GeV** (non détectée malgré décennies de recherche)
 
-### TMT v2.4 : Aucun Besoin de Particules
+### TMT : Aucun Besoin de Particules
 TMT élimine complètement les particules CDM :
 - **Matière noire** = reflet temporel quantique
 - **Temporons** = excitations du champ temporel (pas de masse fixe)

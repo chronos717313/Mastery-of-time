@@ -5,7 +5,7 @@
 ### ΛCDM: Mecánica Cuántica Limitada a Partículas
 En ΛCDM, la mecánica cuántica se aplica solo a partículas elementales y física de altas energías. El Universo en su conjunto sigue leyes clásicas.
 
-### TMT v2.4: Distorsión Temporal Cuántica
+### TMT: Distorsión Temporal Cuántica
 TMT extiende la mecánica cuántica a escalas cosmológicas vía el concepto de **distorsión temporal**:
 
 - El Universo existe en un estado de **superposición temporal**

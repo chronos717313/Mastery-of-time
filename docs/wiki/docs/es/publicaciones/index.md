@@ -1,8 +1,8 @@
-# Publicaciones TMT v2.4
+# Publicaciones TMT
 
 ## Documentos de Presentación Científica
 
-TMT v2.4 está ahora **listo para presentación** con documentos completos para publicación científica.
+TMT está ahora **listo para presentación** con documentos completos para publicación científica.
 
 ## Materiales Disponibles
 
@@ -26,4 +26,4 @@ Manuscrito completo para presentación a revista peer-reviewed.
 
 ---
 
-*TMT v2.4: Teoría validada lista para publicación científica*
+*TMT: Teoría validada lista para publicación científica*

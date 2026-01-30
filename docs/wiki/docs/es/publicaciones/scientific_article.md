@@ -8,7 +8,7 @@
 ### Resumen (250 palabras)
 La Teoría de Dominio del Tiempo (TMT) propone una unificación de la mecánica cuántica y la relatividad general vía superposición temporal cuántica. La ecuación maestra ψ(universo) = α|t⟩ + β|t̄⟩ predice naturalmente el surgimiento de la materia oscura como reflexión temporal de la materia visible.
 
-TMT v2.4 alcanza una validación excepcional:
+TMT alcanza una validación excepcional:
 - **100% compatibilidad** con curvas de rotación SPARC (156/156 galaxias)
 - **Resolución completa** de la tensión Hubble vía expansión diferencial
 - **Predicciones confirmadas** en datos Pantheon+ y COSMOS
@@ -41,4 +41,4 @@ A diferencia de ΛCDM que requiere partículas exóticas no detectadas, TMT elim
 
 ---
 
-*TMT v2.4: Listo para revisión por pares*
+*TMT: Listo para revisión por pares*

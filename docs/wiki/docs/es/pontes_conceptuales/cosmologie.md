@@ -8,7 +8,7 @@
 - Expansión uniforme H(z) = H₀√(Ω_m(1+z)³ + Ω_Λ)
 - Sin dependencia de entorno local
 
-### TMT v2.4: Expansión Diferencial
+### TMT: Expansión Diferencial
 TMT introduce la **expansión diferencial** H(z,ρ):
 
 ```

@@ -8,7 +8,7 @@
 - **Cosmic acceleration** unexplained
 - **Tension with local H₀ measurements**
 
-### TMT v2.4: ϕ_T(p=1)=0
+### TMT: ϕ_T(p=1)=0
 TMT resolves dark energy via the condition **ϕ_T(p=1)=0** in temporal superposition:
 
 - **No exotic dark energy**

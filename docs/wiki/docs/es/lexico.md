@@ -1,4 +1,4 @@
-# Léxico TMT v2.4
+# Léxico TMT
 
 Este léxico define todos los términos específicos de la **Teoría de Dominio del Tiempo** (TMT).
 

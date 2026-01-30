@@ -2,7 +2,7 @@
 
 ## Description du Package
 
-Le package Zenodo contient tous les matériaux nécessaires pour reproduire et valider TMT v2.4.
+Le package Zenodo contient tous les matériaux nécessaires pour reproduire et valider TMT.
 
 ## Contenu Inclus
 
@@ -26,7 +26,7 @@ Le package Zenodo contient tous les matériaux nécessaires pour reproduire et v
 
 | Champ | Valeur |
 |-------|--------|
-| Titre | Théorie de Maîtrise du Temps v2.4 : Alternative à ΛCDM |
+| Titre | Théorie de Maîtrise du Temps : Alternative à ΛCDM |
 | Auteur | C. Després |
 | Description | Validation complète 100% SPARC, résolution tension Hubble |
 | Mots-clés | cosmologie, matière noire, expansion univers, théorie alternative |

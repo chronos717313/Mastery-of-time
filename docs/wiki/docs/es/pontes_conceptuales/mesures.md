@@ -8,10 +8,10 @@
 - **Curvas de rotación**: materia oscura ajustada post-hoc
 - **Energía oscura**: origen desconocido
 
-### TMT v2.4: Resoluciones Completas
-TMT v2.4 resuelve todas las tensiones mayores:
+### TMT: Resoluciones Completas
+TMT resuelve todas las tensiones mayores:
 
-| Tensión | ΛCDM | TMT v2.4 | Resolución |
+| Tensión | ΛCDM | TMT | Resolución |
 |---------|-------|----------|------------|
 | Hubble | 4.4σ | 0σ | 100% resuelta |
 | Curvas rotación | Ajuste | 100% predicho | Perfecta |
@@ -24,7 +24,7 @@ TMT v2.4 resuelve todas las tensiones mayores:
 - **SNIa**: predicciones confirmadas
 
 ### Impacto Científico
-TMT v2.4 representa un **avance mayor**:
+TMT representa un **avance mayor**:
 - **Unificación** de física fundamental
 - **Predicciones** todas validadas
 - **Simplicidad** vs complejidad ΛCDM

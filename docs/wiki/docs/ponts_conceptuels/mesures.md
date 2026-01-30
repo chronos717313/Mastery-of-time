@@ -8,10 +8,10 @@
 - **Courbes de rotation** : matière noire ajustée post-hoc
 - **Énergie noire** : origine inconnue
 
-### TMT v2.4 : Résolutions Complètes
-TMT v2.4 résout toutes les tensions majeures :
+### TMT : Résolutions Complètes
+TMT résout toutes les tensions majeures :
 
-| Tension | ΛCDM | TMT v2.4 | Résolution |
+| Tension | ΛCDM | TMT | Résolution |
 |---------|-------|----------|------------|
 | Hubble | 4.4σ | 0σ | 100% résolue |
 | Courbes rotation | Ajustement | 100% prédit | Parfaite |
@@ -24,7 +24,7 @@ TMT v2.4 résout toutes les tensions majeures :
 - **SNIa** : prédictions confirmées
 
 ### Impact Scientifique
-TMT v2.4 représente une **avancée majeure** :
+TMT représente une **avancée majeure** :
 - **Unification** de la physique fondamentale
 - **Prédictions** toutes validées
 - **Simplicité** vs complexité ΛCDM

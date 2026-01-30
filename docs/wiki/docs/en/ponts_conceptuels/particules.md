@@ -8,7 +8,7 @@
 - **Weak interactions** with ordinary matter
 - **Mass ~100 GeV** (undetected despite decades of research)
 
-### TMT v2.4: No Particle Requirement
+### TMT: No Particle Requirement
 TMT completely eliminates CDM particles:
 - **Dark matter** = quantum temporal reflection
 - **Temporons** = excitations of temporal field (no fixed mass)

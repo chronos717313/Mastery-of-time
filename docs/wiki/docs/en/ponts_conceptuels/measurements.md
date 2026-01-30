@@ -8,10 +8,10 @@
 - **Rotation curves**: dark matter fitted post-hoc
 - **Dark energy**: unknown origin
 
-### TMT v2.4: Complete Resolutions
-TMT v2.4 resolves all major tensions:
+### TMT: Complete Resolutions
+TMT resolves all major tensions:
 
-| Tension | ΛCDM | TMT v2.4 | Resolution |
+| Tension | ΛCDM | TMT | Resolution |
 |---------|-------|----------|------------|
 | Hubble | 4.4σ | 0σ | 100% resolved |
 | Rotation curves | Fitting | 100% predicted | Perfect |
@@ -24,7 +24,7 @@ TMT v2.4 resolves all major tensions:
 - **SNIa**: predictions confirmed
 
 ### Scientific Impact
-TMT v2.4 represents a **major advancement**:
+TMT represents a **major advancement**:
 - **Unification** of fundamental physics
 - **All predictions** validated
 - **Simplicity** vs ΛCDM complexity

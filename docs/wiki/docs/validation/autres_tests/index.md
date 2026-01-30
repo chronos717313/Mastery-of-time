@@ -24,7 +24,7 @@
 
 ### Statut Actuel
 - **VALIDÉ** : prédiction confirmée par données Planck × structures
-- **Verdict** : ✅ Compatible avec TMT v2.4
+- **Verdict** : ✅ Compatible avec TMT
 
 ## Statistiques Globales
 
@@ -36,7 +36,7 @@
 | **Total** | **8/8** | **8/8** | **100%** |
 
 ## Conclusion Validation
-TMT v2.4 démontre une **compatibilité exceptionnelle** :
+TMT démontre une **compatibilité exceptionnelle** :
 - **100%** sur les tests galactiques critiques
 - **Résolution complète** de la tension Hubble
 - **Prédictions validées** sur données Pantheon+ et SPARC

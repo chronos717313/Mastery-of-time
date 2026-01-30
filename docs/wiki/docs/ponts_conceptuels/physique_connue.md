@@ -9,8 +9,8 @@ Le modèle standard ΛCDM repose sur **deux cadres théoriques fondamentalement 
 
 Ces deux théories sont mathématiquement incompatibles à haute énergie, créant le "problème de quantification de la gravité".
 
-### TMT v2.4 : Unification par Superposition Temporelle
-TMT v2.4 propose une **unification conceptuelle** via l'équation maîtresse :
+### TMT : Unification par Superposition Temporelle
+TMT propose une **unification conceptuelle** via l'équation maîtresse :
 
 $$\psi(\text{univers}) = \alpha(r,p,t)|\uparrow\rangle + \beta(r,p)|\downarrow\rangle$$
 

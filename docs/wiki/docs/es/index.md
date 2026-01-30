@@ -1,11 +1,11 @@
-# Teoría de Dominio del Tiempo (TMT) v2.4
+# Teoría de Dominio del Tiempo (TMT)
 
 ## Visión General
 
 La **Teoría de Dominio del Tiempo** (TMT) es una formulación alternativa a la cosmología ΛCDM estándar, basada en el concepto de **superposición temporal cuántica**.
 
 ### Ecuación Maestra
-La formulación central de TMT v2.4 se basa en la ecuación maestra:
+La formulación central de TMT se basa en la ecuación maestra:
 
 $$\psi(\text{universo}) = \alpha(r,p,t)|t\rangle + \beta(r,p)|\bar{t}\rangle$$
 
@@ -40,7 +40,7 @@ Esta ecuación:
 
 ## Estado de Validación
 
-TMT v2.4 alcanza **compatibilidad excepcional** con datos observacionales mayores:
+TMT alcanza **compatibilidad excepcional** con datos observacionales mayores:
 
 | Prueba | Resultado | Script | Veredicto |
 |--------|-----------|--------|-----------|
@@ -57,7 +57,7 @@ TMT v2.4 alcanza **compatibilidad excepcional** con datos observacionales mayore
 
 ## Puentes Conceptuales vs ΛCDM
 
-TMT v2.4 establece 7 puentes conceptuales fundamentales en comparación con el modelo ΛCDM:
+TMT establece 7 puentes conceptuales fundamentales en comparación con el modelo ΛCDM:
 
 1. **Física conocida**: Superposición temporal vs física cuántica + relatividad
 2. **Mecánica cuántica**: Distorsión del tiempo / flecha del tiempo
@@ -75,4 +75,4 @@ TMT v2.4 establece 7 puentes conceptuales fundamentales en comparación con el m
 
 ---
 
-*TMT v2.4 - Versión lista para producción (Enero 2026)*
+*TMT - Versión lista para producción (Enero 2026)*

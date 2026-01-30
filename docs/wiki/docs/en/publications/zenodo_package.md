@@ -2,7 +2,7 @@
 
 ## Package Description
 
-The Zenodo package contains all materials needed to reproduce and validate TMT v2.4.
+The Zenodo package contains all materials needed to reproduce and validate TMT.
 
 ## Included Content
 
@@ -26,7 +26,7 @@ The Zenodo package contains all materials needed to reproduce and validate TMT v
 
 | Field | Value |
 |-------|-------|
-| Title | Mastery of Time Theory v2.4: Alternative to ΛCDM |
+| Title | Mastery of Time Theory: Alternative to ΛCDM |
 | Author | C. Després |
 | Description | Complete 100% SPARC validation, Hubble tension resolution |
 | Keywords | cosmology, dark matter, universe expansion, alternative theory |

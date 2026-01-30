@@ -8,7 +8,7 @@
 ### Résumé (250 mots)
 La Théorie de Maîtrise du Temps (TMT) propose une unification de la mécanique quantique et de la relativité générale via la superposition temporelle quantique. L'équation maîtresse ψ(univers) = α|t⟩ + β|t̄⟩ prédit naturellement l'émergence de la matière noire comme reflet temporel de la matière visible.
 
-TMT v2.4 atteint une validation exceptionnelle :
+TMT atteint une validation exceptionnelle :
 - **100% compatibilité** avec les courbes de rotation SPARC (156/156 galaxies)
 - **Résolution complète** de la tension Hubble via expansion différentielle
 - **Prédictions confirmées** sur données Pantheon+ et COSMOS
@@ -41,4 +41,4 @@ Contrairement à ΛCDM qui requiert particules exotiques non détectées, TMT é
 
 ---
 
-*TMT v2.4 : Prêt pour évaluation par pairs*
+*TMT : Prêt pour évaluation par pairs*

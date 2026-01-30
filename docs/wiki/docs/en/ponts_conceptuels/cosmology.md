@@ -8,7 +8,7 @@
 - Uniform expansion H(z) = H₀√(Ω_m(1+z)³ + Ω_Λ)
 - No dependence on local environment
 
-### TMT v2.4: Differential Expansion
+### TMT: Differential Expansion
 TMT introduces **differential expansion** H(z,ρ):
 
 ```

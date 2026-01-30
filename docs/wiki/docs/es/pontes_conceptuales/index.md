@@ -1,10 +1,10 @@
-# Puentes Conceptuales: ΛCDM vs TMT v2.4
+# Puentes Conceptuales: ΛCDM vs TMT
 
 ## Comparación de Paradigmas
 
-La Teoría de Dominio del Tiempo v2.4 establece **7 puentes conceptuales fundamentales** que conectan la física conocida con los misterios del modelo ΛCDM estándar. Cada puente representa una transición conceptual mayor.
+La Teoría de Dominio del Tiempo establece **7 puentes conceptuales fundamentales** que conectan la física conocida con los misterios del modelo ΛCDM estándar. Cada puente representa una transición conceptual mayor.
 
-| # | Puente Conceptual | ΛCDM Estándar | TMT v2.4 | Estado |
+| # | Puente Conceptual | ΛCDM Estándar | TMT | Estado |
 |---|-------------------|----------------|----------|--------|
 | 1 | Física Conocida | Cuántico + Relatividad | Superposición Temporal | ✅ Unificado |
 | 2 | Mecánica Cuántica | Estado Único | Distorsión Temporal | ✅ Extendido |

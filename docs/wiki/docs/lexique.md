@@ -1,4 +1,4 @@
-# Lexique TMT v2.4
+# Lexique TMT
 
 Ce lexique définit tous les termes spécifiques à la **Théorie de Maîtrise du Temps** (TMT).
 

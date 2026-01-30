@@ -1,8 +1,8 @@
-# Validación Empírica TMT v2.4
+# Validación Empírica TMT
 
 ## Visión General de Pruebas
 
-TMT v2.4 alcanza una **validación cuantitativa excepcional** con resultados al 100% en datos observacionales mayores.
+TMT alcanza una **validación cuantitativa excepcional** con resultados al 100% en datos observacionales mayores.
 
 ## Resultados Clave
 
@@ -34,4 +34,4 @@ Pruebas adicionales (lensing, efectos integrados Sachs-Wolfe).
 
 ---
 
-*Todas las pruebas mayores confirman TMT v2.4 al 100% de compatibilidad.*
+*Todas las pruebas mayores confirman TMT al 100% de compatibilidad.*

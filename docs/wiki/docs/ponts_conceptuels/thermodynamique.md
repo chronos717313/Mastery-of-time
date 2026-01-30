@@ -8,7 +8,7 @@
 - **Accélération cosmique** non expliquée
 - **Tension avec mesures locales de H₀**
 
-### TMT v2.4 : ϕ_T(p=1)=0
+### TMT : ϕ_T(p=1)=0
 TMT résout l'énergie noire via la condition **ϕ_T(p=1)=0** dans la superposition temporelle :
 
 - **Pas d'énergie noire exotique**

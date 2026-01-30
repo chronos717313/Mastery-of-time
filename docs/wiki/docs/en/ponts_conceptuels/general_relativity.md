@@ -8,7 +8,7 @@
 - **Dark energy** as cosmological constant Λ
 - Curved geometry by undetected particles
 
-### TMT v2.4: Temporons and Temporal Distortion
+### TMT: Temporons and Temporal Distortion
 TMT replaces WIMP particles with **temporons**:
 - **Temporons**: Quantum excitations of temporal distortion
 - **Després Mass**: $M_D = k \times \int(\Phi/c^2)^2 dV$ with universal law $k(M)$

@@ -1,11 +1,11 @@
-# Théorie de Maîtrise du Temps (TMT) v2.4
+# Théorie de Maîtrise du Temps (TMT)
 
 ## Overview
 
 The **Mastery of Time Theory** (TMT) is an alternative formulation to standard ΛCDM cosmology, based on the concept of **quantum temporal superposition**.
 
 ### Master Equation
-The central formulation of TMT v2.4 is based on the master equation:
+The central formulation of TMT is based on the master equation:
 
 $$\psi(\text{universe}) = \alpha(r,p,t)|t\rangle + \beta(r,p)|\bar{t}\rangle$$
 
@@ -40,7 +40,7 @@ This equation:
 
 ## Validation Status
 
-TMT v2.4 achieves **exceptional compatibility** with major observational data:
+TMT achieves **exceptional compatibility** with major observational data:
 
 | Test | Result | Script | Verdict |
 |------|--------|--------|---------|
@@ -57,7 +57,7 @@ TMT v2.4 achieves **exceptional compatibility** with major observational data:
 
 ## Conceptual Bridges vs ΛCDM
 
-TMT v2.4 establishes 7 fundamental conceptual bridges compared to the ΛCDM model:
+TMT establishes 7 fundamental conceptual bridges compared to the ΛCDM model:
 
 1. **Known physics**: Temporal superposition vs quantum physics + relativity
 2. **Quantum mechanics**: Time distortion / arrow of time
@@ -75,4 +75,4 @@ TMT v2.4 establishes 7 fundamental conceptual bridges compared to the ΛCDM mode
 
 ---
 
-*TMT v2.4 - Production ready version (January 2026)*
+*TMT - Production ready version (January 2026)*

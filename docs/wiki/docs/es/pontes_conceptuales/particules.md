@@ -8,7 +8,7 @@
 - **Interacciones débiles** con materia ordinaria
 - **Masa ~100 GeV** (no detectada pese a décadas de búsqueda)
 
-### TMT v2.4: Ninguna Necesidad de Partículas
+### TMT: Ninguna Necesidad de Partículas
 TMT elimina completamente partículas CDM:
 - **Materia oscura** = reflejo temporal cuántico
 - **Temporones** = excitaciones de campo temporal (sin masa fija)

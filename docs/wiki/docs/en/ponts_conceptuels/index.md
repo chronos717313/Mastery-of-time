@@ -1,10 +1,10 @@
-# Conceptual Bridges: ΛCDM vs TMT v2.4
+# Conceptual Bridges: ΛCDM vs TMT
 
 ## Paradigm Comparison
 
-The Mastery of Time Theory v2.4 establishes **7 fundamental conceptual bridges** that connect known physics to the mysteries of the standard ΛCDM model. Each bridge represents a major conceptual transition.
+The Mastery of Time Theory establishes **7 fundamental conceptual bridges** that connect known physics to the mysteries of the standard ΛCDM model. Each bridge represents a major conceptual transition.
 
-| # | Conceptual Bridge | ΛCDM Standard | TMT v2.4 | Status |
+| # | Conceptual Bridge | ΛCDM Standard | TMT | Status |
 |---|-------------------|---------------|----------|--------|
 | 1 | Known Physics | Quantum + Relativity | Temporal Superposition | ✅ Unified |
 | 2 | Quantum Mechanics | Single State | Time Distortion | ✅ Extended |

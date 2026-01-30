@@ -28,7 +28,7 @@ r_c(M) = 2.6 × (M_bary / 10^10 M_☉)^0.56 kpc
 - **Validation** : r_c dépend de la masse baryonique
 
 ### Comparaison avec ΛCDM
-| Aspect | ΛCDM | TMT v2.4 |
+| Aspect | ΛCDM | TMT |
 |--------|-------|----------|
 | Particules requises | WIMP (non détectées) | Aucune |
 | Ajustement | Post-hoc par galaxie | Prédiction universelle |

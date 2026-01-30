@@ -8,7 +8,7 @@
 - **Aceleración cósmica** no explicada
 - **Tensión con mediciones locales de H₀**
 
-### TMT v2.4: ϕ_T(p=1)=0
+### TMT: ϕ_T(p=1)=0
 TMT resuelve la energía oscura vía la condición **ϕ_T(p=1)=0** en superposición temporal:
 
 - **Sin energía oscura exótica**

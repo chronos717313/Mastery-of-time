@@ -8,7 +8,7 @@ La relativité générale ΛCDM nécessite :
 - **Énergie noire** sous forme de constante cosmologique Λ
 - Géométrie courbée par des particules non détectées
 
-### TMT v2.4 : Temporons et Distorsion Temporelle
+### TMT : Temporons et Distorsion Temporelle
 TMT remplace les particules WIMP par les **temporons** :
 - **Temporons** : Excitations quantiques de la distorsion temporelle
 - **Masse Després** : $M_D = k \times \int(\Phi/c^2)^2 dV$ avec loi universelle $k(M)$

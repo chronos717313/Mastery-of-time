@@ -8,7 +8,7 @@ La relatividad general ΛCDM requiere:
 - **Energía oscura** como constante cosmológica Λ
 - Geometría curvada por partículas no detectadas
 
-### TMT v2.4: Temporones y Distorsión Temporal
+### TMT: Temporones y Distorsión Temporal
 TMT reemplaza partículas WIMP con **temporones**:
 - **Temporones**: Excitaciones cuánticas de la distorsión temporal
 - **Masa Després**: $M_D = k \times \int(\Phi/c^2)^2 dV$ con ley universal $k(M)$

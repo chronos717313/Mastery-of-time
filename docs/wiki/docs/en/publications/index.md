@@ -1,8 +1,8 @@
-# Publications TMT v2.4
+# Publications TMT
 
 ## Scientific Submission Documents
 
-TMT v2.4 is now **ready for submission** with complete documents for scientific publication.
+TMT is now **ready for submission** with complete documents for scientific publication.
 
 ## Available Materials
 
@@ -26,4 +26,4 @@ Complete manuscript for peer-reviewed journal submission.
 
 ---
 
-*TMT v2.4: Validated theory ready for scientific publication*
+*TMT: Validated theory ready for scientific publication*

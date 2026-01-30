@@ -9,8 +9,8 @@ The standard ΛCDM model relies on **two fundamentally different theoretical fra
 
 These two theories are mathematically incompatible at high energies, creating the "gravity quantization problem".
 
-### TMT v2.4: Unification Through Temporal Superposition
-TMT v2.4 proposes a **conceptual unification** via the master equation:
+### TMT: Unification Through Temporal Superposition
+TMT proposes a **conceptual unification** via the master equation:
 
 $$\psi(\text{universe}) = \alpha(r,p,t)|\uparrow\rangle + \beta(r,p)|\downarrow\rangle$$
 

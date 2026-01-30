@@ -2,7 +2,7 @@
 
 ## Descripción del Paquete
 
-El paquete Zenodo contiene todos los materiales necesarios para reproducir y validar TMT v2.4.
+El paquete Zenodo contiene todos los materiales necesarios para reproducir y validar TMT.
 
 ## Contenido Incluido
 
@@ -26,7 +26,7 @@ El paquete Zenodo contiene todos los materiales necesarios para reproducir y val
 
 | Campo | Valor |
 |-------|-------|
-| Título | Teoría de Dominio del Tiempo v2.4: Alternativa a ΛCDM |
+| Título | Teoría de Dominio del Tiempo: Alternativa a ΛCDM |
 | Autor | C. Després |
 | Descripción | Validación completa 100% SPARC, resolución tensión Hubble |
 | Palabras clave | cosmología, materia oscura, expansión universo, teoría alternativa |

@@ -1,10 +1,10 @@
-# Ponts Conceptuels : ΛCDM vs TMT v2.4
+# Ponts Conceptuels : ΛCDM vs TMT
 
 ## Comparaison des Paradigmes
 
-La Théorie de Maîtrise du Temps v2.4 établit **7 ponts conceptuels** fondamentaux qui relient la physique connue aux mystères du modèle ΛCDM standard. Chaque pont représente une transition conceptuelle majeure.
+La Théorie de Maîtrise du Temps établit **7 ponts conceptuels** fondamentaux qui relient la physique connue aux mystères du modèle ΛCDM standard. Chaque pont représente une transition conceptuelle majeure.
 
-| # | Pont Conceptuel | ΛCDM Standard | TMT v2.4 | Statut |
+| # | Pont Conceptuel | ΛCDM Standard | TMT | Statut |
 |---|----------------|----------------|----------|--------|
 | 1 | Physique connue | Quantique + Relativité | Superposition temporelle | ✅ Unifié |
 | 2 | Mécanique quantique | État unique | Distorsion temporelle | ✅ Étendu |

@@ -1,6 +1,6 @@
 # Scripts de Reproducción
 
-Esta página proporciona todos los scripts Python necesarios para reproducir las 8 pruebas de validación de TMT v2.4.
+Esta página proporciona todos los scripts Python necesarios para reproducir las 8 pruebas de validación de TMT.
 
 ## Requisitos Previos
 

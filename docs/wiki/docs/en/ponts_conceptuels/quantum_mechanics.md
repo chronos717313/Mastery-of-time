@@ -5,7 +5,7 @@
 ### ΛCDM: Quantum Mechanics Limited to Particles
 In ΛCDM, quantum mechanics applies only to elementary particles and high-energy physics. The Universe as a whole follows classical laws.
 
-### TMT v2.4: Quantum Temporal Distortion
+### TMT: Quantum Temporal Distortion
 TMT extends quantum mechanics to cosmological scales via the concept of **temporal distortion**:
 
 - The Universe exists in a state of **temporal superposition**
