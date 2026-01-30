@@ -42,16 +42,18 @@ Esta ecuación:
 
 TMT v2.4 alcanza **compatibilidad excepcional** con datos observacionales mayores:
 
-| Prueba | Resultado | Veredicto |
-|--------|-----------|-----------|
-| Curvas de rotación SPARC | 156/156 galaxias (100%) | ✅ VALIDADO |
-| Ley $r_c(M)$ | r = 0.768 | ✅ VALIDADO |
-| Ley $k(M)$ | $R^2$ = 0.64 | ✅ VALIDADO |
-| Isotropía Weak Lensing | -0.024% | ✅ VALIDADO |
-| Masa-Entorno COSMOS2015 | r = 0.150 | ✅ VALIDADO |
-| SNIa por entorno | pred: 0.57% | ✅ VALIDADO |
-| Efecto ISW | pred: 18.2% | ✅ VALIDADO |
-| Tensión de Hubble | 100% resuelta | ✅ RESUELTO |
+| Prueba | Resultado | Script | Veredicto |
+|--------|-----------|--------|-----------|
+| Curvas de rotación SPARC | 156/156 (100%) | [:material-file-code: test_TMT_v2_SPARC_reel.py](https://github.com/cadespres/Maitrise-du-temps/blob/professeur_kronos/scripts/test_TMT_v2_SPARC_reel.py) | ✅ VALIDADO |
+| Ley $r_c(M)$ | r = 0.768 | [:material-file-code: investigation_r_c_variation.py](https://github.com/cadespres/Maitrise-du-temps/blob/professeur_kronos/scripts/investigation_r_c_variation.py) | ✅ VALIDADO |
+| Ley $k(M)$ | $R^2$ = 0.64 | [:material-file-code: test_TMT_v2_SPARC_reel.py](https://github.com/cadespres/Maitrise-du-temps/blob/professeur_kronos/scripts/test_TMT_v2_SPARC_reel.py) | ✅ VALIDADO |
+| Isotropía Weak Lensing | -0.024% | [:material-file-code: test_weak_lensing_TMT_vs_LCDM.py](https://github.com/cadespres/Maitrise-du-temps/blob/professeur_kronos/scripts/test_weak_lensing_TMT_vs_LCDM.py) | ✅ VALIDADO |
+| Masa-Entorno COSMOS2015 | r = 0.150 | [:material-file-code: test_weak_lensing_real_data.py](https://github.com/cadespres/Maitrise-du-temps/blob/professeur_kronos/scripts/test_weak_lensing_TMT_vs_LCDM_real_data.py) | ✅ VALIDADO |
+| SNIa por entorno | pred: 0.57% | [:material-file-code: test_3_predictions_TMT.py](https://github.com/cadespres/Maitrise-du-temps/blob/professeur_kronos/scripts/test_3_predictions_TMT.py) | ✅ VALIDADO |
+| Efecto ISW | pred: 18.2% | [:material-file-code: calculate_ISW_improved.py](https://github.com/cadespres/Maitrise-du-temps/blob/professeur_kronos/scripts/calculate_ISW_improved.py) | ✅ VALIDADO |
+| Tensión de Hubble | 100% resuelta | [:material-file-code: calibrate_TMT_v23_cosmologie.py](https://github.com/cadespres/Maitrise-du-temps/blob/professeur_kronos/scripts/calibrate_TMT_v23_cosmologie.py) | ✅ RESUELTO |
+
+> **[Scripts de reproducción completos](validacion/scripts_reproduccion.md)**: Instrucciones detalladas y datos requeridos.
 
 ## Puentes Conceptuales vs ΛCDM
 
