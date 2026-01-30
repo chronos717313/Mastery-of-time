@@ -5,11 +5,9 @@ copyright: © 2026 Théorie de Maîtrise du Temps
 
 nav:
   - Accueil: index.md
-  - Introduction: introduction/
-  - Ponts Conceptuels: ponts_conceptuels/
-  - Formulation Mathématique: formulation_mathematique/
-  - Validation Empirique: validation/
-  - Publications: publications/
+  - Ponts Conceptuels: ponts_conceptuels/index.md
+  - Validation Empirique: validation/index.md
+  - Publications: publications/index.md
 
 theme:
   name: material
@@ -38,35 +36,17 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
 
 plugins:
   - search
-  - i18n:
-      default_language: fr
-      languages:
-        fr:
-          name: Français
-          build: true
-        en:
-          name: English
-          build: true
-        es:
-          name: Español
-          build: true
-      nav_translations:
-        Accueil: Home
-        Introduction: Introduction
-        'Ponts Conceptuels': Conceptual Bridges
-        'Formulation Mathématique': Mathematical Formulation
-        'Validation Empirique': Empirical Validation
-        Publications: Publications
 
 extra:
-  version:
-    provider: mike
   alternate:
     - name: Français
-      link: /fr/
+      link: /
       lang: fr
     - name: English
       link: /en/
@@ -89,3 +69,9 @@ markdown_extensions:
   - md_in_html
   - tables
   - def_list
+  - toc:
+      permalink: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
