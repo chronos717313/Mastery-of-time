@@ -20,6 +20,7 @@ nav:
     - Courbes de rotation: validation/courbes_rotation/index.md
     - Échelle cosmologique: validation/echelle_cosmo/index.md
     - Autres tests: validation/autres_tests/index.md
+    - Scripts de reproduction: validation/scripts_reproduction.md
   - Publications:
     - Vue d'ensemble: publications/index.md
     - Package Zenodo: publications/package_zenodo.md
@@ -41,6 +42,7 @@ nav:
       - Galactic Scale: en/validation/galactic_scale/index.md
       - Cosmological Scale: en/validation/cosmological_scale/index.md
       - Other Tests: en/validation/other_tests/index.md
+      - Reproduction Scripts: en/validation/scripts_reproduction.md
     - Publications:
       - Overview: en/publications/index.md
       - Zenodo Package: en/publications/zenodo_package.md
@@ -62,6 +64,7 @@ nav:
       - Escala galáctica: es/validacion/galactic_scale/index.md
       - Escala cosmológica: es/validacion/cosmological_scale/index.md
       - Otras pruebas: es/validacion/other_tests/index.md
+      - Scripts de reproducción: es/validacion/scripts_reproduccion.md
     - Publicaciones:
       - Vista general: es/publicaciones/index.md
       - Paquete Zenodo: es/publicaciones/zenodo_package.md
@@ -121,6 +124,7 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.details
   - footnotes
   - admonition
   - attr_list
