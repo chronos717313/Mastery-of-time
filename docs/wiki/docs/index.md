@@ -9,14 +9,37 @@ La **Théorie de Maîtrise du Temps** (TMT) est une formulation alternative à l
 La formulation centrale de TMT v2.4 repose sur l'équation maîtresse :
 
 $$
-\psi(\text{univers}) = \alpha(r,p,t)|\uparrow\rangle + \beta(r,p)|\downarrow\rangle
+\psi(\text{univers}) = \alpha(r,p,t)|t\rangle + \beta(r,p)|\bar{t}\rangle
 $$
 
 où :
 
-- $|\uparrow\rangle$ représente l'état temporel forward (matière visible)
-- $|\downarrow\rangle$ représente l'état temporel backward (matière noire comme reflet quantique)
+- $|t\rangle$ représente l'état temporel forward (matière visible)
+- $|\bar{t}\rangle$ représente l'état temporel backward (matière noire comme reflet quantique)
 - $\alpha$ et $\beta$ sont les amplitudes de probabilité avec $|\alpha|^2 + |\beta|^2 = 1$
+
+### Équation Després-Schrödinger
+
+L'unification de la mécanique quantique et de la gravitation se réalise via l'équation Després-Schrödinger :
+
+$$
+i\hbar [1 + \tau(x)]^{-1} \frac{\partial\psi}{\partial t} = \left[-\frac{\hbar^2}{2m_{eff}} \nabla^2 + V(x) + mc^2\tau(x)\right] \psi
+$$
+
+où :
+
+- $\tau(x) = \Phi(x)/c^2$ est la **distorsion temporelle locale**
+- $[1 + \tau(x)]^{-1}$ ralentit le temps dans les champs gravitationnels
+- $mc^2\tau(x)$ est le **potentiel temporel** (terme nouveau)
+- $m_{eff} = m_0/\gamma_{\text{Després}}$ est la masse effective
+
+Cette équation :
+
+- Récupère Schrödinger standard quand $\tau \to 0$
+- Explique la matière noire sans particules exotiques
+- Unifie MQ + RG dans un cadre cohérent
+
+> **[Voir le Lexique complet](lexique.md)** pour toutes les définitions des termes TMT.
 
 ## Statut de Validation
 

@@ -7,12 +7,36 @@ The **Mastery of Time Theory** (TMT) is an alternative formulation to standard �
 ### Master Equation
 The central formulation of TMT v2.4 is based on the master equation:
 
-$$\psi(\text{universe}) = \alpha(r,p,t)|\uparrow\rangle + \beta(r,p)|\downarrow\rangle$$
+$$\psi(\text{universe}) = \alpha(r,p,t)|t\rangle + \beta(r,p)|\bar{t}\rangle$$
 
 where:
-- $|\uparrow\rangle$ represents the forward time state (visible matter)
-- $|\downarrow\rangle$ represents the backward time state (dark matter as quantum reflection)
+
+- $|t\rangle$ represents the forward time state (visible matter)
+- $|\bar{t}\rangle$ represents the backward time state (dark matter as quantum reflection)
 - $\alpha$ and $\beta$ are probability amplitudes with $|\alpha|^2 + |\beta|^2 = 1$
+
+### Després-Schrödinger Equation
+
+The unification of quantum mechanics and gravitation is achieved via the Després-Schrödinger equation:
+
+$$
+i\hbar [1 + \tau(x)]^{-1} \frac{\partial\psi}{\partial t} = \left[-\frac{\hbar^2}{2m_{eff}} \nabla^2 + V(x) + mc^2\tau(x)\right] \psi
+$$
+
+where:
+
+- $\tau(x) = \Phi(x)/c^2$ is the **local temporal distortion**
+- $[1 + \tau(x)]^{-1}$ slows time in gravitational fields
+- $mc^2\tau(x)$ is the **temporal potential** (new term)
+- $m_{eff} = m_0/\gamma_{\text{Després}}$ is the effective mass
+
+This equation:
+
+- Recovers standard Schrödinger when $\tau \to 0$
+- Explains dark matter without exotic particles
+- Unifies QM + GR in a coherent framework
+
+> **[See the complete Lexicon](lexicon.md)** for all TMT term definitions.
 
 ## Validation Status
 
