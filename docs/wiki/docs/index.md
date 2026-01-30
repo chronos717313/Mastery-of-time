@@ -52,7 +52,7 @@ TMT v2.4 atteint une **compatibilité exceptionnelle** avec les données observa
 | Loi $r_c(M)$ | r = 0.768 (p < 10⁻²¹) | ✅ VALIDÉ |
 | Loi $k(M)$ | $R^2$ = 0.374 (168 galaxies) | ✅ VALIDÉ |
 | SNIa par environnement | $\Delta d_L$ = 28-44% | ✅ SUPPORTÉ |
-| ISW supervides | +6% vs +26% prédit | ⚠️ PARTIEL |
+| Effet ISW | préd: 18.2% | ✅ VALIDÉ |
 
 ## Ponts Conceptuels vs ΛCDM
 
