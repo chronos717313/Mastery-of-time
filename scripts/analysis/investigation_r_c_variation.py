@@ -124,8 +124,18 @@ def main():
     print("INVESTIGATION r_c : Pourquoi 5 vs 10 vs 18 kpc?")
     print("=" * 75)
 
-    # Charger données
-    data_dir = Path(__file__).parent.parent / "data" / "SPARC"
+    # Charger données - try multiple paths
+    possible_paths = [
+        Path(__file__).parent.parent.parent / "data" / "SPARC",
+        Path(__file__).parent.parent / "data" / "SPARC",
+    ]
+    data_dir = None
+    for p in possible_paths:
+        if (p / "MassModels_Lelli2016c.mrt").exists():
+            data_dir = p
+            break
+    if data_dir is None:
+        data_dir = possible_paths[0]  # For error message
     print("\n[1/4] Chargement données SPARC réelles...")
     rotation_curves = load_sparc_data(data_dir)
     print(f"      {len(rotation_curves)} galaxies chargées")

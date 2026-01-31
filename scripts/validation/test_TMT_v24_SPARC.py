@@ -226,11 +226,21 @@ def load_sparc_mrt():
     - Bytes 61-67: SBdisk (L_sun/pc^2)
     - Bytes 69-76: SBbul (L_sun/pc^2)
     """
-    mrt_file = Path(__file__).parent.parent / "data" / "sparc" / "MassModels_Lelli2016c.mrt"
-
-    if not mrt_file.exists():
-        # Try alternate path
-        mrt_file = Path(__file__).parent.parent / "data" / "SPARC" / "MassModels_Lelli2016c.mrt"
+    # Try multiple paths to find SPARC data
+    possible_paths = [
+        Path(__file__).parent.parent.parent / "data" / "SPARC" / "MassModels_Lelli2016c.mrt",
+        Path(__file__).parent.parent / "data" / "SPARC" / "MassModels_Lelli2016c.mrt",
+        Path(__file__).parent.parent / "data" / "sparc" / "MassModels_Lelli2016c.mrt",
+    ]
+    
+    mrt_file = None
+    for path in possible_paths:
+        if path.exists():
+            mrt_file = path
+            break
+    
+    if mrt_file is None:
+        mrt_file = possible_paths[0]  # For error message
 
     if not mrt_file.exists():
         print(f"SPARC MRT file not found: {mrt_file}")
