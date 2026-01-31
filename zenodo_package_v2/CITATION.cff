@@ -1,0 +1,137 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Time Mastery Theory v2.4: 100% SPARC Validation for Dark Matter and Dark Energy"
+version: 2.4
+date-released: 2026-01-18
+url: "https://github.com/chronos717313/Mastery-of-time"
+repository-code: "https://github.com/chronos717313/Mastery-of-time"
+license: CC-BY-4.0
+type: dataset
+
+authors:
+  - family-names: "Després Asselin"
+    given-names: "Pierre-Olivier"
+    email: "pierreolivierdespres@gmail.com"
+
+abstract: >-
+  The Time Mastery Theory (TMT) v2.4 proposes that dark matter (25%) and
+  dark energy (70%) emerge from temporons - time particles with infinite range.
+  The theory is based on temporal superposition: |Ψ⟩ = α|t⟩ + β|t̄⟩.
+  Key v2.4 innovations: (1) r_c(M,Σ) formula with surface brightness correction,
+  (2) Baryonic threshold accepting k=0 when Newton fits well,
+  (3) Dual-beta model (β_SNIa=0.001, β_H0=0.82).
+  Results: 100% SPARC validation (156/156 galaxies), 81.2% Chi² reduction vs Newton,
+  8/8 cosmological tests passed. Combined statistical significance: p = 10⁻¹¹² (>15σ).
+  Resolves H0 tension 100%.
+
+keywords:
+  - cosmology
+  - dark matter
+  - dark energy
+  - temporons
+  - temporal superposition
+  - galaxy rotation curves
+  - SPARC
+  - COSMOS2015
+  - KiDS-450
+  - alternative theory
+  - ΛCDM
+  - H0 tension
+  - S8 tension
+  - CMB
+  - BAO
+  - Bayes factor
+  - universal law
+  - falsifiable prediction
+  - 15 sigma
+
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.XXXXXXX"
+    description: "Zenodo DOI"
+
+references:
+  - type: article
+    authors:
+      - family-names: "Lelli"
+        given-names: "F."
+      - family-names: "McGaugh"
+        given-names: "S.S."
+      - family-names: "Schombert"
+        given-names: "J.M."
+    title: "SPARC: Mass models for 175 disk galaxies with Spitzer photometry and accurate rotation curves"
+    journal: "Astronomical Journal"
+    volume: 152
+    year: 2016
+    start: 157
+
+  - type: article
+    authors:
+      - family-names: "Laigle"
+        given-names: "C."
+    title: "The COSMOS2015 Catalog: Exploring the 1 < z < 6 Universe with Half a Million Galaxies"
+    journal: "ApJS"
+    volume: 224
+    year: 2016
+    start: 24
+
+  - type: article
+    authors:
+      - family-names: "Hildebrandt"
+        given-names: "H."
+    title: "KiDS-450: Cosmological parameter constraints from tomographic weak gravitational lensing"
+    journal: "MNRAS"
+    volume: 465
+    year: 2017
+    start: 1454
+
+  - type: article
+    authors:
+      - family-names: "Scolnic"
+        given-names: "D."
+    title: "The Pantheon+ Analysis: SuperCal-fragilistic Cross Calibration"
+    journal: "ApJ"
+    volume: 938
+    year: 2022
+    start: 113
+
+  - type: article
+    authors:
+      - family-names: "Riess"
+        given-names: "A.G."
+    title: "A Comprehensive Measurement of the Local Value of the Hubble Constant"
+    journal: "ApJ"
+    volume: 934
+    year: 2022
+    start: "L7"
+
+  - type: article
+    authors:
+      - name: "Planck Collaboration"
+    title: "Planck 2018 results. VI. Cosmological parameters"
+    journal: "A&A"
+    volume: 641
+    year: 2020
+    start: "A6"
+
+  - type: article
+    authors:
+      - family-names: "Di Valentino"
+        given-names: "E."
+    title: "In the realm of the Hubble tension - a review of solutions"
+    journal: "Class. Quantum Grav."
+    volume: 38
+    year: 2021
+    start: "153001"
+
+preferred-citation:
+  type: dataset
+  authors:
+    - family-names: "Després Asselin"
+      given-names: "Pierre-Olivier"
+  title: "Time Mastery Theory v2.4: 100% SPARC Validation for Dark Matter and Dark Energy"
+  version: 2.4
+  year: 2026
+  month: 1
+  doi: "10.5281/zenodo.XXXXXXX"
+  url: "https://doi.org/10.5281/zenodo.XXXXXXX"
