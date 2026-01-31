@@ -118,7 +118,7 @@ python test_TMT_v2_SPARC_reel.py
     # ... [Code complet disponible sur GitHub]
     ```
 
-[:material-download: Télécharger le script complet](https://github.com/cadespres/Maitrise-du-temps/blob/professeur_kronos/scripts/test_TMT_v2_SPARC_reel.py){ .md-button }
+[:material-download: Télécharger le script complet](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/test_TMT_v2_SPARC_reel.py){ .md-button }
 
 ---
 
@@ -162,7 +162,7 @@ r_c(M) = 2.6 × (M_bary / 10¹⁰ M_☉)^0.56 kpc
     # ... [Code complet disponible sur GitHub]
     ```
 
-[:material-download: Télécharger le script complet](https://github.com/cadespres/Maitrise-du-temps/blob/professeur_kronos/scripts/investigation_r_c_variation.py){ .md-button }
+[:material-download: Télécharger le script complet](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/investigation_r_c_variation.py){ .md-button }
 
 ---
 
@@ -211,7 +211,7 @@ python test_weak_lensing_TMT_vs_LCDM.py
     # ... [Code complet disponible sur GitHub]
     ```
 
-[:material-download: Télécharger le script complet](https://github.com/cadespres/Maitrise-du-temps/blob/professeur_kronos/scripts/test_weak_lensing_TMT_vs_LCDM.py){ .md-button }
+[:material-download: Télécharger le script complet](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/test_weak_lensing_TMT_vs_LCDM.py){ .md-button }
 
 ---
 
@@ -229,7 +229,7 @@ cd scripts
 python test_weak_lensing_TMT_vs_LCDM_real_data.py
 ```
 
-[:material-download: Télécharger le script complet](https://github.com/cadespres/Maitrise-du-temps/blob/professeur_kronos/scripts/test_weak_lensing_TMT_vs_LCDM_real_data.py){ .md-button }
+[:material-download: Télécharger le script complet](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/test_weak_lensing_TMT_vs_LCDM_real_data.py){ .md-button }
 
 ---
 
@@ -271,7 +271,7 @@ python test_3_predictions_TMT.py
     # ... [Code complet disponible sur GitHub]
     ```
 
-[:material-download: Télécharger le script complet](https://github.com/cadespres/Maitrise-du-temps/blob/professeur_kronos/scripts/test_3_predictions_TMT.py){ .md-button }
+[:material-download: Télécharger le script complet](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/test_3_predictions_TMT.py){ .md-button }
 
 ---
 
@@ -311,7 +311,7 @@ python calculate_ISW_improved.py
     # ... [Code complet disponible sur GitHub]
     ```
 
-[:material-download: Télécharger le script complet](https://github.com/cadespres/Maitrise-du-temps/blob/professeur_kronos/scripts/calculate_ISW_improved.py){ .md-button }
+[:material-download: Télécharger le script complet](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/calculate_ISW_improved.py){ .md-button }
 
 ---
 
@@ -333,7 +333,7 @@ python calibrate_TMT_v23_cosmologie.py
 Φ_T(ρ<1) > 0 → H_local > H_CMB (vide local)
 ```
 
-[:material-download: Télécharger le script complet](https://github.com/cadespres/Maitrise-du-temps/blob/professeur_kronos/scripts/calibrate_TMT_v23_cosmologie.py){ .md-button }
+[:material-download: Télécharger le script complet](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/calibrate_TMT_v23_cosmologie.py){ .md-button }
 
 ---
 

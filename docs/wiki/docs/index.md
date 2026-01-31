@@ -47,14 +47,14 @@ TMT atteint une **compatibilité exceptionnelle** avec les données observationn
 
 | Test | Résultat | Script | Verdict |
 |------|----------|--------|---------|
-| Courbes de rotation SPARC | 156/156 (100%) | [:material-file-code: test_TMT_v2_SPARC_reel.py](https://github.com/cadespres/Maitrise-du-temps/blob/professeur_kronos/scripts/test_TMT_v2_SPARC_reel.py) | ✅ VALIDÉ |
-| Loi $r_c(M)$ | r = 0.768 | [:material-file-code: investigation_r_c_variation.py](https://github.com/cadespres/Maitrise-du-temps/blob/professeur_kronos/scripts/investigation_r_c_variation.py) | ✅ VALIDÉ |
-| Loi $k(M)$ | $R^2$ = 0.64 | [:material-file-code: test_TMT_v2_SPARC_reel.py](https://github.com/cadespres/Maitrise-du-temps/blob/professeur_kronos/scripts/test_TMT_v2_SPARC_reel.py) | ✅ VALIDÉ |
-| Isotropie Weak Lensing | -0.024% | [:material-file-code: test_weak_lensing_TMT_vs_LCDM.py](https://github.com/cadespres/Maitrise-du-temps/blob/professeur_kronos/scripts/test_weak_lensing_TMT_vs_LCDM.py) | ✅ VALIDÉ |
-| Masse-Env COSMOS2015 | r = 0.150 | [:material-file-code: test_weak_lensing_real_data.py](https://github.com/cadespres/Maitrise-du-temps/blob/professeur_kronos/scripts/test_weak_lensing_TMT_vs_LCDM_real_data.py) | ✅ VALIDÉ |
-| SNIa par environnement | préd: 0.57% | [:material-file-code: test_3_predictions_TMT.py](https://github.com/cadespres/Maitrise-du-temps/blob/professeur_kronos/scripts/test_3_predictions_TMT.py) | ✅ VALIDÉ |
-| Effet ISW | préd: 18.2% | [:material-file-code: calculate_ISW_improved.py](https://github.com/cadespres/Maitrise-du-temps/blob/professeur_kronos/scripts/calculate_ISW_improved.py) | ✅ VALIDÉ |
-| Tension Hubble | 100% résolue | [:material-file-code: calibrate_TMT_v23_cosmologie.py](https://github.com/cadespres/Maitrise-du-temps/blob/professeur_kronos/scripts/calibrate_TMT_v23_cosmologie.py) | ✅ RÉSOLU |
+| Courbes de rotation SPARC | [156/156 (100%)](validation/courbes_rotation/#criteres-dexclusion) | [:material-file-code: test_TMT_v2_SPARC_reel.py](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/test_TMT_v2_SPARC_reel.py) | ✅ VALIDÉ |
+| Loi $r_c(M)$ | r = 0.768 | [:material-file-code: investigation_r_c_variation.py](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/investigation_r_c_variation.py) | ✅ VALIDÉ |
+| Loi $k(M)$ | $R^2$ = 0.64 | [:material-file-code: test_TMT_v2_SPARC_reel.py](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/test_TMT_v2_SPARC_reel.py) | ✅ VALIDÉ |
+| Isotropie Weak Lensing | -0.024% | [:material-file-code: test_weak_lensing_TMT_vs_LCDM.py](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/test_weak_lensing_TMT_vs_LCDM.py) | ✅ VALIDÉ |
+| Masse-Env COSMOS2015 | r = 0.150 | [:material-file-code: test_weak_lensing_real_data.py](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/test_weak_lensing_TMT_vs_LCDM_real_data.py) | ✅ VALIDÉ |
+| SNIa par environnement | préd: 0.57% | [:material-file-code: test_3_predictions_TMT.py](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/test_3_predictions_TMT.py) | ✅ VALIDÉ |
+| Effet ISW | préd: 18.2% | [:material-file-code: calculate_ISW_improved.py](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/calculate_ISW_improved.py) | ✅ VALIDÉ |
+| Tension Hubble | 100% résolue | [:material-file-code: calibrate_TMT_v23_cosmologie.py](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/calibrate_TMT_v23_cosmologie.py) | ✅ RÉSOLU |
 
 > **[Scripts de reproduction complets](validation/scripts_reproduction.md)** : Instructions détaillées et données requises.
 

@@ -8,14 +8,14 @@ TMT alcanza una **validación cuantitativa excepcional** con resultados al 100% 
 
 | Prueba | Resultado | Script | Estado |
 |--------|-----------|--------|--------|
-| **Curvas de rotación SPARC** | 156/156 galaxias (100%) | [:material-file-code:](https://github.com/cadespres/Maitrise-du-temps/blob/professeur_kronos/scripts/test_TMT_v2_SPARC_reel.py) | ✅ VALIDADO |
-| **Ley r_c(M)** | r = 0.768 | [:material-file-code:](https://github.com/cadespres/Maitrise-du-temps/blob/professeur_kronos/scripts/investigation_r_c_variation.py) | ✅ VALIDADO |
-| **Ley k(M)** | R² = 0.64 | [:material-file-code:](https://github.com/cadespres/Maitrise-du-temps/blob/professeur_kronos/scripts/test_TMT_v2_SPARC_reel.py) | ✅ VALIDADO |
-| **Isotropía Weak Lensing** | -0.024% | [:material-file-code:](https://github.com/cadespres/Maitrise-du-temps/blob/professeur_kronos/scripts/test_weak_lensing_TMT_vs_LCDM.py) | ✅ VALIDADO |
-| **Masa-Entorno COSMOS2015** | r = 0.150 | [:material-file-code:](https://github.com/cadespres/Maitrise-du-temps/blob/professeur_kronos/scripts/test_weak_lensing_TMT_vs_LCDM_real_data.py) | ✅ VALIDADO |
-| **SNIa por entorno** | pred: 0.57% | [:material-file-code:](https://github.com/cadespres/Maitrise-du-temps/blob/professeur_kronos/scripts/test_3_predictions_TMT.py) | ✅ VALIDADO |
-| **Efecto ISW** | pred: 18.2% | [:material-file-code:](https://github.com/cadespres/Maitrise-du-temps/blob/professeur_kronos/scripts/calculate_ISW_improved.py) | ✅ VALIDADO |
-| **Tensión de Hubble** | 100% resuelta | [:material-file-code:](https://github.com/cadespres/Maitrise-du-temps/blob/professeur_kronos/scripts/calibrate_TMT_v23_cosmologie.py) | ✅ RESUELTO |
+| **Curvas de rotación SPARC** | [156/156 galaxias (100%)](galactic_scale/#criterios-de-exclusion) | [:material-file-code:](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/test_TMT_v2_SPARC_reel.py) | ✅ VALIDADO |
+| **Ley r_c(M)** | r = 0.768 | [:material-file-code:](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/investigation_r_c_variation.py) | ✅ VALIDADO |
+| **Ley k(M)** | R² = 0.64 | [:material-file-code:](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/test_TMT_v2_SPARC_reel.py) | ✅ VALIDADO |
+| **Isotropía Weak Lensing** | -0.024% | [:material-file-code:](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/test_weak_lensing_TMT_vs_LCDM.py) | ✅ VALIDADO |
+| **Masa-Entorno COSMOS2015** | r = 0.150 | [:material-file-code:](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/test_weak_lensing_TMT_vs_LCDM_real_data.py) | ✅ VALIDADO |
+| **SNIa por entorno** | pred: 0.57% | [:material-file-code:](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/test_3_predictions_TMT.py) | ✅ VALIDADO |
+| **Efecto ISW** | pred: 18.2% | [:material-file-code:](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/calculate_ISW_improved.py) | ✅ VALIDADO |
+| **Tensión de Hubble** | 100% resuelta | [:material-file-code:](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/calibrate_TMT_v23_cosmologie.py) | ✅ RESUELTO |
 
 **Significatividad estadística**: p = 10⁻¹¹² (>15σ) | Reducción Chi²: 81.2%
 
