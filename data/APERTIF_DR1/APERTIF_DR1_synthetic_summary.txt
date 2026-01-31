@@ -1,0 +1,16 @@
+============================================================
+APERTIF DR1 Data Summary
+============================================================
+
+Total galaxies: 1500
+With rotation curves: 271
+
+Mass distribution:
+  Min: 1.34e+07 M_sun
+  Max: 1.09e+11 M_sun
+  Median: 3.72e+09 M_sun
+
+Velocity distribution:
+  Min: 25 km/s
+  Max: 173 km/s
+  Median: 65 km/s

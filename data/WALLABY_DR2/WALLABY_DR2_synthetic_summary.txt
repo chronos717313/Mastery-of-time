@@ -1,0 +1,16 @@
+============================================================
+WALLABY DR2 Data Summary
+============================================================
+
+Total galaxies: 1800
+With rotation curves: 541
+
+Mass distribution:
+  Min: 1.91e+07 M_sun
+  Max: 3.99e+11 M_sun
+  Median: 8.58e+09 M_sun
+
+Velocity distribution:
+  Min: 30 km/s
+  Max: 242 km/s
+  Median: 86 km/s

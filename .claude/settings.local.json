@@ -58,7 +58,18 @@
       "Bash(powershell -Command \"Compress-Archive -Path ''zenodo_package\\\\*'' -DestinationPath ''TMT_v2.4_zenodo.zip'' -Force\")",
       "Bash(powershell -Command \"Compress-Archive -Path ''zenodo_package\\\\*'' -DestinationPath ''TMT_v2.4_zenodo.zip'' -Force; Get-Item ''TMT_v2.4_zenodo.zip'' | Select-Object Name, @{N=''Size_KB'';E={[math]::Round\\($_Length/1KB,1\\)}}\")",
       "Bash(powershell -Command \"\\(Get-Item TMT_v2.4_zenodo.zip\\).Length / 1KB\")",
-      "Bash(du:*)"
+      "Bash(du:*)",
+      "Bash(git merge-base:*)",
+      "Bash(git rebase:*)",
+      "Bash(mkdocs serve:*)",
+      "Bash(pip install:*)",
+      "WebFetch(domain:mastery-of-time.org)",
+      "WebFetch(domain:irsa.ipac.caltech.edu)",
+      "WebFetch(domain:cosmos.astro.caltech.edu)",
+      "WebFetch(domain:ui.adsabs.harvard.edu)",
+      "WebFetch(domain:astroweb.case.edu)",
+      "WebFetch(domain:www.astron.nl)",
+      "WebFetch(domain:wallaby-survey.org)"
     ]
   }
 }
