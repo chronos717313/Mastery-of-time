@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 """
-Test TMT v2.3 with COSMOS2015 Real Data
+Test TMT v2.4 with COSMOS2020 Real Data
 =======================================
-Tests TMT differential expansion H(z, rho) using COSMOS2015 photometric catalog.
+Tests TMT differential expansion H(z, rho) using COSMOS2020 photometric catalog.
 
 Key TMT predictions to test:
 1. H(z, rho) varies with local density
 2. Distance-redshift relation differs in voids vs clusters
 3. Temporal superposition effects on galaxy properties
 
-Data: ~500,000 galaxies with photo-z (σ = 0.007)
-Reference: Laigle et al. (2016) - ApJS 224, 24
+Data: ~1.7M galaxies with photo-z
+Reference: Weaver et al. (2022) - ApJS 258, 11
 """
 
 import numpy as np
@@ -20,9 +20,11 @@ from scipy.optimize import curve_fit
 import warnings
 warnings.filterwarnings('ignore')
 
-# Paths
-DATA_DIR = Path(__file__).parent.parent / "data" / "COSMOS2015"
-RESULTS_DIR = Path(__file__).parent.parent / "data" / "results"
+# Paths - fixed for correct data location
+BASE_DIR = Path(__file__).parent.parent.parent
+DATA_DIR = BASE_DIR / "data" / "COSMOS2020"
+DATA_DIR_ALT = BASE_DIR / "data" / "COSMOS2015"  # Fallback
+RESULTS_DIR = BASE_DIR / "data" / "results"
 
 # TMT v2.3 Parameters
 G_T = 13.56  # Temporon coupling constant
@@ -32,29 +34,32 @@ OMEGA_M = 0.315
 OMEGA_LAMBDA = 0.685
 
 
-def load_cosmos2015(filepath=None):
+def load_cosmos(filepath=None):
     """
-    Load COSMOS2015 catalog.
+    Load COSMOS2020 or COSMOS2015 catalog.
 
     Returns
     -------
     dict with arrays: ra, dec, photoz, stellar_mass, sfr, etc.
     """
     if filepath is None:
-        # Try different file names
-        candidates = [
-            DATA_DIR / "COSMOS2015_VizieR_full.fits",
-            DATA_DIR / "COSMOS2015_VizieR_100k.fits",
-            DATA_DIR / "COSMOS2015_Laigle+_v1.1.fits",
-        ]
+        # Try COSMOS2020 first, then COSMOS2015
+        candidates = []
+        if DATA_DIR.exists():
+            candidates.extend(list(DATA_DIR.glob("COSMOS2020*.fits")))
+            candidates.extend(list(DATA_DIR.glob("*.fits")))
+        if DATA_DIR_ALT.exists():
+            candidates.extend(list(DATA_DIR_ALT.glob("COSMOS2015*.fits")))
+            candidates.extend(list(DATA_DIR_ALT.glob("*.fits")))
+        
         for candidate in candidates:
             if candidate.exists():
                 filepath = candidate
                 break
 
-    if filepath is None or not filepath.exists():
-        print(f"File not found in {DATA_DIR}")
-        print("Run download_COSMOS2015.py first.")
+    if filepath is None or not Path(filepath).exists():
+        print(f"File not found in {DATA_DIR} or {DATA_DIR_ALT}")
+        print("Run: python scripts/download/download_with_progress.py")
         return None
 
     try:
@@ -76,7 +81,7 @@ def load_cosmos2015(filepath=None):
 
 def compute_local_density(ra, dec, z, n_neighbors=10, max_dz=0.05):
     """
-    Compute local galaxy density using nearest neighbors.
+    Compute local galaxy density using nearest neighbors (vectorized for speed).
 
     Parameters
     ----------
@@ -95,30 +100,31 @@ def compute_local_density(ra, dec, z, n_neighbors=10, max_dz=0.05):
         Local density (galaxies per sq. arcmin within dz slice)
     """
     from scipy.spatial import cKDTree
-
+    import time
+    
     # Convert to Cartesian for fast neighbor search
     # Use (ra, dec, z*1000) to weight redshift dimension
     coords = np.column_stack([ra, dec, z * 1000])
 
+    print(f"  Building KD-tree for {len(ra):,} galaxies...")
+    start_time = time.time()
     tree = cKDTree(coords)
-    densities = np.zeros(len(ra))
-
-    for i in range(len(ra)):
-        # Find neighbors within redshift slice
-        mask = np.abs(z - z[i]) < max_dz
-        if np.sum(mask) < n_neighbors:
-            densities[i] = np.nan
-            continue
-
-        # Query for n_neighbors
-        distances, _ = tree.query(coords[i], k=n_neighbors + 1)
-        # Density ~ N / Area, Area ~ pi * r^2
-        r = distances[-1]  # Distance to nth neighbor (in scaled units)
-        if r > 0:
-            densities[i] = n_neighbors / (np.pi * r ** 2)
-        else:
-            densities[i] = np.nan
-
+    print(f"  KD-tree built in {time.time() - start_time:.1f}s")
+    
+    # Vectorized query - MUCH faster than looping
+    print(f"  Querying {n_neighbors} neighbors for all galaxies (vectorized)...")
+    start_time = time.time()
+    distances, _ = tree.query(coords, k=n_neighbors + 1, workers=-1)  # Use all CPU cores
+    print(f"  Query done in {time.time() - start_time:.1f}s")
+    
+    # Compute densities from nth neighbor distance
+    print(f"  Computing densities...")
+    r = distances[:, -1]  # Distance to nth neighbor
+    densities = np.where(r > 0, n_neighbors / (np.pi * r ** 2), np.nan)
+    
+    valid = np.sum(np.isfinite(densities))
+    print(f"  Done: {valid:,}/{len(densities):,} valid densities")
+    
     return densities
 
 
@@ -203,28 +209,55 @@ def test_differential_expansion(table):
     print("TEST 1: Differential Expansion H(z, rho)")
     print("=" * 60)
 
-    # Get photo-z and positions (VizieR column names)
+    # Get photo-z and positions - handle different column names
+    z_cols = ['lpzBEST', 'EZzphot', 'zPDF', 'z', 'zphot', 'photo_z']
+    ra_cols = ['RAJ2000', 'RA', 'ra', 'ALPHA_J2000']
+    dec_cols = ['DEJ2000', 'DEC', 'dec', 'DELTA_J2000']
+    mass_cols = ['MassMed', 'MASS_MED', 'mass', 'stellar_mass', 'logM']
+    
+    def find_col(cols):
+        for c in cols:
+            if c in table.colnames:
+                return c
+        return None
+    
+    z_col = find_col(z_cols)
+    ra_col = find_col(ra_cols)
+    dec_col = find_col(dec_cols)
+    mass_col = find_col(mass_cols)
+    
+    if not z_col or not ra_col or not dec_col:
+        print(f"Required columns not found")
+        print(f"  z_col: {z_col}, ra_col: {ra_col}, dec_col: {dec_col}")
+        print(f"Available columns: {table.colnames[:30]}")
+        return None
+    
+    print(f"Using columns: z={z_col}, ra={ra_col}, dec={dec_col}, mass={mass_col}")
+    
     try:
-        z = table['zPDF']  # Photometric redshift
-        ra = table['RAJ2000']
-        dec = table['DEJ2000']
-        mass = table['MassMed']  # log stellar mass (median)
+        z = np.array(table[z_col])
+        ra = np.array(table[ra_col])
+        dec = np.array(table[dec_col])
+        mass = np.array(table[mass_col]) if mass_col else np.ones(len(z)) * 10  # Default mass
     except KeyError as e:
         print(f"Column not found: {e}")
         print("Available columns:", table.colnames[:30])
         return None
 
     # Filter valid sources
-    mask = (z > 0.1) & (z < 1.5) & (mass > 8) & np.isfinite(z) & np.isfinite(mass)
+    print(f"Filtering valid sources...")
+    mask = (z > 0.1) & (z < 1.5) & np.isfinite(z)
+    if mass_col:
+        mask = mask & (mass > 8) & np.isfinite(mass)
     z = z[mask]
     ra = ra[mask]
     dec = dec[mask]
     mass = mass[mask]
 
-    print(f"Valid galaxies: {len(z)}")
+    print(f"Valid galaxies: {len(z):,}")
 
     # Compute local density
-    print("Computing local densities (this may take a while)...")
+    print("Computing local densities...")
     density = compute_local_density(np.array(ra), np.array(dec), np.array(z))
 
     # Classify environments
@@ -299,12 +332,32 @@ def test_mass_environment_correlation(table):
     print("TEST 2: Mass-Environment Correlation")
     print("=" * 60)
 
+    # Find columns with flexible naming
+    z_cols = ['lpzBEST', 'EZzphot', 'zPDF', 'z', 'zphot']
+    ra_cols = ['RAJ2000', 'RA', 'ra']
+    dec_cols = ['DEJ2000', 'DEC', 'dec']
+    mass_cols = ['MassMed', 'MASS_MED', 'mass', 'logM']
+    
+    def find_col(cols):
+        for c in cols:
+            if c in table.colnames:
+                return c
+        return None
+    
+    z_col = find_col(z_cols)
+    ra_col = find_col(ra_cols)
+    dec_col = find_col(dec_cols)
+    mass_col = find_col(mass_cols)
+    
+    if not z_col or not ra_col:
+        print("Required columns not found")
+        return None
+    
     try:
-        z = table['zPDF']
-        mass = table['MassMed']
-        sfr = table['SFRMed'] if 'SFRMed' in table.colnames else None
-        ra = table['RAJ2000']
-        dec = table['DEJ2000']
+        z = table[z_col]
+        ra = table[ra_col]
+        dec = table[dec_col]
+        mass = table[mass_col] if mass_col else np.ones(len(z)) * 10
     except KeyError as e:
         print(f"Column not found: {e}")
         return None
@@ -316,7 +369,7 @@ def test_mass_environment_correlation(table):
     ra = np.array(ra[mask])
     dec = np.array(dec[mask])
 
-    print(f"Galaxies analyzed: {len(z)}")
+    print(f"Galaxies analyzed: {len(z):,}")
 
     # Compute density
     print("Computing local densities...")
@@ -350,15 +403,19 @@ def test_redshift_distribution(table):
     print("TEST 3: Redshift Distribution Analysis")
     print("=" * 60)
 
-    try:
-        z = table['zPDF']
-        z_err = table['b_zPDF'] if 'b_zPDF' in table.colnames else None  # lower bound
-    except KeyError:
-        z = None
-
-    if z is None:
+    z_cols = ['lpzBEST', 'EZzphot', 'zPDF', 'z', 'zphot']
+    z_col = None
+    for c in z_cols:
+        if c in table.colnames:
+            z_col = c
+            break
+    
+    if z_col is None:
         print("No redshift column found")
+        print(f"Available: {table.colnames[:20]}")
         return None
+    
+    z = table[z_col]
 
     z = np.array(z)
     mask = (z > 0) & (z < 6) & np.isfinite(z)
@@ -384,17 +441,17 @@ def test_redshift_distribution(table):
 def main():
     """Main test routine."""
     print("=" * 70)
-    print("TMT v2.3 Test with COSMOS2015 Real Data")
+    print("TMT v2.4 Test with COSMOS Real Data")
     print("=" * 70)
     print()
 
     # Load data
-    table = load_cosmos2015()
+    table = load_cosmos()
 
     if table is None:
         print()
-        print("To download COSMOS2015 data, run:")
-        print("  python scripts/download_COSMOS2015.py")
+        print("To download COSMOS data, run:")
+        print("  python scripts/download/download_with_progress.py")
         return
 
     RESULTS_DIR.mkdir(parents=True, exist_ok=True)
@@ -420,7 +477,7 @@ def main():
     # Summary
     print()
     print("=" * 70)
-    print("SUMMARY - TMT v2.3 vs COSMOS2015")
+    print(f"SUMMARY - TMT v2.4 vs COSMOS ({len(table):,} galaxies)")
     print("=" * 70)
     print()
 
@@ -436,9 +493,9 @@ def main():
         print(f"Mass-Environment: r = {r['r_mass_density']:.3f} {verdict}")
 
     # Save results
-    output_file = RESULTS_DIR / "TMT_COSMOS2015_results.txt"
+    output_file = RESULTS_DIR / "TMT_v24_COSMOS_results.txt"
     with open(output_file, 'w') as f:
-        f.write("TMT v2.3 COSMOS2015 Test Results\n")
+        f.write("TMT v2.4 COSMOS Test Results\n")
         f.write("=" * 50 + "\n\n")
         for key, val in results.items():
             f.write(f"{key}: {val}\n")
