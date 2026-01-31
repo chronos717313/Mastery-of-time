@@ -36,3 +36,6 @@ data/input/
 
 # MkDocs generated site
 docs/wiki/site/
+
+# SWAG SSL configuration (generated automatically)
+config/

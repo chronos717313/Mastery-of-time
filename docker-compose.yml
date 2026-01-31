@@ -25,12 +25,23 @@ services:
       start_period: 60s
 
   nginx:
-    image: nginx:alpine
+    image: linuxserver/swag
     container_name: tmt-nginx
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=UTC
+      - URL=mastery-of-time.org
+      - SUBDOMAINS=www
+      - VALIDATION=http
+      - EMAIL=charles@altacodis.com
+      - DHLEVEL=2048
+      - ONLY_SUBDOMAINS=false
+    volumes:
+      - ./config:/config
     ports:
       - "80:80"
-    volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - "443:443"
     depends_on:
       - mkdocs
     restart: unless-stopped
