@@ -18,7 +18,8 @@ git fetch --all
 git reset --hard origin/main
 
 echo -e "${GREEN}Restarting containers...${NC}"
-docker compose restart
+docker compose down
+docker compose up -d
 
 echo -e "${GREEN}Done! Site updated.${NC}"
 echo ""
