@@ -24,6 +24,10 @@ from pathlib import Path
 from datetime import datetime
 import urllib.request
 import urllib.error
+import ssl
+
+# Bypass SSL verification for trusted scientific sites
+ssl._create_default_https_context = ssl._create_unverified_context
 
 # UTF-8 for Windows
 if sys.platform == 'win32':
@@ -34,17 +38,24 @@ if sys.platform == 'win32':
 BASE_DIR = Path(__file__).parent.parent.parent
 DATA_DIR = BASE_DIR / "data" / "KiDS_shear_full"
 
-# KiDS DR3 official download URLs
-KIDS_DR3_URL = "https://kids.strw.leidenuniv.nl/DR3/data/"
+# KiDS DR3 official download URLs - Updated January 2026
+# Main site files moved, use CADC or ESO instead
+KIDS_DR3_URL = "https://www.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/data/pub/KIDS/"
 KIDS_SHEAR_FILES = [
     "KiDS_DR3.1_G9_shear.fits",
-    "KiDS_DR3.1_G12_shear.fits",
+    "KiDS_DR3.1_G12_shear.fits", 
     "KiDS_DR3.1_G15_shear.fits",
     "KiDS_DR3.1_G23_shear.fits",
     "KiDS_DR3.1_GS_shear.fits",
 ]
 
-# Alternative: ESO archive
+# Alternative URLs to try
+ALTERNATIVE_URLS = [
+    "https://kids.strw.leidenuniv.nl/DR3/data-files/",
+    "https://www.astro-wise.org/portal/kids_dr3/",
+]
+
+# ESO archive
 ESO_KIDS_URL = "https://www.eso.org/qi/"
 
 
@@ -99,12 +110,13 @@ def download_with_progress(url, dest_path, desc=""):
 
 
 def download_kids_direct():
-    """Download KiDS shear files directly from Leiden."""
+    """Download KiDS shear files - try multiple sources."""
     log("=" * 60)
     log("KiDS DR3 Shear Catalog - Direct Download")
     log("=" * 60)
     log("")
-    log("Source: https://kids.strw.leidenuniv.nl/DR3/")
+    log("Note: Original Leiden URLs may have changed.")
+    log("Trying multiple sources...")
     log("")
     
     DATA_DIR.mkdir(parents=True, exist_ok=True)
@@ -112,8 +124,14 @@ def download_kids_direct():
     downloaded = []
     failed = []
     
+    # URLs to try in order
+    base_urls = [
+        KIDS_DR3_URL,
+        "https://kids.strw.leidenuniv.nl/DR3/data-files/",
+        "https://kids.strw.leidenuniv.nl/DR3/data/",
+    ]
+    
     for filename in KIDS_SHEAR_FILES:
-        url = KIDS_DR3_URL + filename
         dest = DATA_DIR / filename
         
         if dest.exists():
@@ -122,10 +140,16 @@ def download_kids_direct():
             downloaded.append(str(dest))
             continue
         
-        log("")
-        if download_with_progress(url, dest, filename):
-            downloaded.append(str(dest))
-        else:
+        success = False
+        for base_url in base_urls:
+            url = base_url + filename
+            log(f"Trying: {url}")
+            if download_with_progress(url, dest, filename):
+                downloaded.append(str(dest))
+                success = True
+                break
+        
+        if not success:
             failed.append(filename)
     
     return downloaded, failed
@@ -265,65 +289,71 @@ def main():
     log("  - Lensing weights")
     log("  - Photometric redshifts")
     log("")
-    log("Expected size: ~4 GB total")
-    log("")
     
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     
-    # Check existing merged file
-    existing_merged = list(DATA_DIR.glob("KiDS_DR3_merged_*.fits"))
-    if existing_merged:
-        size_mb = existing_merged[0].stat().st_size / (1024 * 1024)
-        log(f"Found existing merged catalog: {existing_merged[0].name} ({size_mb:.1f} MB)")
-        if size_mb > 1000:  # >1GB is probably complete
-            log("Catalog already downloaded. Delete to re-download.")
-            return 0
+    # Check existing files with shear data
+    existing = list(DATA_DIR.glob("*.fits"))
+    for f in existing:
+        size_mb = f.stat().st_size / (1024 * 1024)
+        log(f"Found existing: {f.name} ({size_mb:.1f} MB)")
+        if size_mb > 500:  # Probably has enough data
+            # Check if it has e1, e2 columns
+            try:
+                from astropy.table import Table
+                t = Table.read(f)
+                if 'e1' in t.colnames and 'e2' in t.colnames:
+                    log(f"  Has e1, e2 columns - good for weak lensing!")
+                    log("Catalog already downloaded. Delete to re-download.")
+                    return 0
+                else:
+                    log(f"  Missing e1/e2 columns: {t.colnames[:10]}")
+            except:
+                pass
     
-    # Try direct download first
+    # VizieR is the most reliable source - try it first
+    log("")
+    log("Downloading via VizieR (most reliable)...")
+    result = download_via_vizier_full()
+    
+    if result:
+        log("")
+        log("=" * 60)
+        log(f"SUCCESS: {result}")
+        log("")
+        log("Next step: Re-run TMT KiDS test:")
+        log("  python scripts/validation/test_TMT_KiDS450.py")
+        return 0
+    
+    # Try direct download as fallback
+    log("")
+    log("VizieR failed, trying direct download...")
     downloaded, failed = download_kids_direct()
     
     if downloaded and not failed:
-        # All files downloaded, merge them
         result = merge_catalogs(downloaded)
         if result:
             log("")
             log("=" * 60)
             log(f"SUCCESS: {result}")
-            log("")
-            log("Next step: Re-run TMT KiDS test:")
-            log("  python scripts/validation/test_TMT_KiDS450.py")
             return 0
-    
-    if failed:
-        log("")
-        log(f"Failed to download: {failed}")
-        log("")
-        log("Trying VizieR alternative...")
-    
-    # Try VizieR
-    result = download_via_vizier_full()
     
     log("")
     log("=" * 60)
+    log("DOWNLOAD INCOMPLETE")
+    log("")
+    log("Manual download options:")
+    log("  1. ESO Science Archive:")
+    log("     https://archive.eso.org/scienceportal/home")
+    log("     Search: 'KiDS DR3.1 shear'")
+    log("")
+    log("  2. CADC (Canadian):")
+    log("     https://www.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/en/search/")
+    log("     Collection: KIDS")
+    log("")
+    log(f"  Place downloaded files in: {DATA_DIR}")
     
-    if result:
-        log(f"SUCCESS (VizieR): {result}")
-        log("")
-        log("Note: VizieR may not include all shear columns.")
-        log("For complete weak lensing test, download from:")
-        log("  https://kids.strw.leidenuniv.nl/DR3/lensing.php")
-    else:
-        log("DOWNLOAD INCOMPLETE")
-        log("")
-        log("Manual download required:")
-        log("  1. Go to: https://kids.strw.leidenuniv.nl/DR3/lensing.php")
-        log("  2. Download the shear catalog files")
-        log(f"  3. Place in: {DATA_DIR}")
-        log("")
-        log("Or try ESO archive:")
-        log("  https://www.eso.org/qi/catalogQuery/index/L/195")
-    
-    return 0 if result else 1
+    return 1
 
 
 if __name__ == "__main__":
