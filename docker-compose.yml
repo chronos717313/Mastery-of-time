@@ -6,8 +6,8 @@ services:
     volumes:
       - ./docs/wiki:/docs
       - ./scripts:/scripts
-    ports:
-      - "8000:8000"
+    expose:
+      - "8000"
     command: >
       sh -c "
         pip install --no-cache-dir mkdocs mkdocs-material pymdown-extensions &&
@@ -23,3 +23,14 @@ services:
       timeout: 10s
       retries: 3
       start_period: 60s
+
+  nginx:
+    image: nginx:alpine
+    container_name: tmt-nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - mkdocs
+    restart: unless-stopped

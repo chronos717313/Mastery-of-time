@@ -52,9 +52,9 @@ fi
 echo -e "${GREEN}[2/3] Configuring firewall...${NC}"
 if command -v ufw &> /dev/null; then
     ufw allow ssh
-    ufw allow 8000/tcp
+    ufw allow 80/tcp
     echo "y" | ufw enable || true
-    echo "Firewall configured (port 8000 open)"
+    echo "Firewall configured (port 80 open)"
 else
     echo -e "${YELLOW}UFW not found, skipping firewall${NC}"
 fi
@@ -77,7 +77,7 @@ echo -e "${GREEN}Deployment Complete!${NC}"
 echo "=========================================="
 echo ""
 echo "Site available at:"
-echo "  http://$DROPLET_IP:8000"
+echo "  http://$DROPLET_IP"
 echo ""
 echo "Management commands:"
 echo "  docker compose logs -f       # View logs"
