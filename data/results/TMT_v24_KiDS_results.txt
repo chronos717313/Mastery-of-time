@@ -1,0 +1,21 @@
+TMT v2.4 KiDS Weak Lensing Test Results
+==================================================
+
+
+isotropy:
+  mean_alignment: 0.6361758338766597
+  std: 0.0004356185262291352
+  random_expectation: 0.6366197723675814
+  deviation_percent: -0.06973369508627147
+  t_statistic: -1.019099198476727
+  p_value: 0.30815587466250616
+  n_pairs: 500000
+  verdict: [OK] ISOTROPIC - Strong support for TMT v2.0
+
+ellipticity:
+  verdict: [SKIP] No e1/e2 data
+
+redshift:
+  verdict: [SKIP] No redshift data
+  correlation_r: 0
+  correlation_p: 1

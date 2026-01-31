@@ -25,9 +25,28 @@ from scipy import stats
 import os
 from datetime import datetime
 
-# Configuration
-DATA_FILE = "data/Pantheon+/Pantheon+SH0ES.dat"
-OUTPUT_FILE = "data/results/test_Pantheon_environnement_TMT_v231.txt"
+# Configuration - use Path for cross-platform compatibility
+from pathlib import Path
+
+# Try multiple paths to find data
+_script_dir = Path(__file__).parent
+_possible_data_dirs = [
+    _script_dir.parent.parent / "data",
+    _script_dir.parent / "data",
+    _script_dir / "data",
+]
+
+DATA_DIR = None
+for _d in _possible_data_dirs:
+    if (_d / "Pantheon+" / "Pantheon+SH0ES.dat").exists():
+        DATA_DIR = _d
+        break
+
+if DATA_DIR is None:
+    DATA_DIR = _possible_data_dirs[0]
+
+DATA_FILE = str(DATA_DIR / "Pantheon+" / "Pantheon+SH0ES.dat")
+OUTPUT_FILE = str(DATA_DIR / "results" / "test_Pantheon_environnement_TMT_v231.txt")
 
 # Seuils pour classification environnement (log M_stellar en M_sun)
 MASS_LOW = 9.5    # Galaxies peu massives -> environnement peu dense

@@ -1,0 +1,18 @@
+======================================================================
+INVESTIGATION r_c : RÉCONCILIATION DES VALEURS
+======================================================================
+
+VALEURS OBSERVÉES
+  - Données simulées:    18 kpc (OBSOLÈTE)
+  - Médiane individuelle: 5.7 kpc
+  - Optimum global:       10.6 kpc
+
+STATISTIQUES DISTRIBUTION r_c
+  Moyenne:    8.2 kpc
+  Médiane:    5.7 kpc
+  Écart-type: 9.3 kpc
+  IC 25-75%:  [1.1, 12.8] kpc
+
+CONCLUSION
+  Valeur canonique: 6 - 11 kpc
+  Abandonner 18 kpc (données simulées)
