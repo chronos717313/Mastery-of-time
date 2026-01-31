@@ -52,7 +52,7 @@
   "notes": "TMT v2.4 achieves 100% SPARC validation with key improvements: (1) r_c(M,Σ) = 2.6×(M/10¹⁰)^0.56×(Σ/100)^-0.3 with surface brightness correction, (2) Baryonic threshold: accept k=0 when χ²_Newton/χ²_TMT < 1.1, (3) Dual-beta model for expansion (β_SNIa=0.001, β_H0=0.82). Results: SPARC 156/156 (100%), Chi² reduction 81.2%, median improvement 97.0%. Score: 8/8 cosmological tests. Statistics: p = 1.36 × 10⁻¹¹² (>15σ). Total galaxies analyzed: 2.4 million.",
   "related_identifiers": [
     {
-      "identifier": "https://github.com/cadespres/Maitrise-du-temps",
+      "identifier": "https://github.com/chronos717313/Mastery-of-time",
       "relation": "isSupplementTo",
       "resource_type": "software"
     }

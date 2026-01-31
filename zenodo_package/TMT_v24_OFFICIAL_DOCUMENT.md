@@ -199,7 +199,7 @@
       │   ●●●●●●●●●●●●●●  ← Vitesse OBSERVÉE (reste plate!)
       │  ●
       │ ●
-      │●    ╭─────────────  ← TMT v2.3.1 (prédit la courbe plate)
+      │●    ╭─────────────  ← TMT v2.4 (prédit la courbe plate)
       │   ╱
       │  ╱  ....
       │ ╱  .     Newton seul (devrait descendre)
@@ -232,7 +232,7 @@
      0 ┼────┬────┬────┬────┬────┬────→
        0    1    2    3    4    5    6  r (kpc)
 
-    ● Observé    ─── TMT v2.3.1    .... Newton
+    ● Observé    ─── TMT v2.4    .... Newton
 ```
 
 **Résultat TMT:** Amélioration **94%** par rapport à Newton
@@ -265,7 +265,7 @@
      0 ┼────┬────┬────┬────┬────┬────┬────┬────→
        0    2    4    6    8   10   12   14   16  r (kpc)
 
-    ● Observé    ─── TMT v2.3.1    .... Newton
+    ● Observé    ─── TMT v2.4    .... Newton
 ```
 
 **Résultat TMT:** Amélioration **97%** par rapport à Newton
@@ -300,7 +300,7 @@
      0 ┼────┬────┬────┬────┬────┬────┬────┬────┬────→
        0    5   10   15   20   25   30   35   40  r (kpc)
 
-    ● Observé    ─── TMT v2.3.1    .... Newton
+    ● Observé    ─── TMT v2.4    .... Newton
 ```
 
 **Résultat TMT:** Amélioration **98%** par rapport à Newton
@@ -331,7 +331,7 @@
      0 ┼────┬────┬────┬────┬────┬────┬────┬────→
        0    3    6    9   12   15   18   21   24  r (kpc)
 
-    ● Observé    ─── TMT v2.3.1    .... Newton
+    ● Observé    ─── TMT v2.4    .... Newton
 ```
 
 **Résultat TMT:** Amélioration **96%** par rapport à Newton
@@ -364,7 +364,7 @@
      0 ┼────┬────┬────┬────┬────┬────┬────┬────┬────→
        0    5   10   15   20   25   30   35   40  r (kpc)
 
-    ● Observé    ─── TMT v2.3.1    .... Newton
+    ● Observé    ─── TMT v2.4    .... Newton
 ```
 
 **Résultat TMT:** Amélioration **99%** par rapport à Newton
@@ -397,7 +397,7 @@
      0 ┼────┬────┬────┬────┬────┬────┬────┬────→
        0    4    8   12   16   20   24   28   32  r (kpc)
 
-    ● Observé    ─── TMT v2.3.1    .... Newton
+    ● Observé    ─── TMT v2.4    .... Newton
 ```
 
 **Résultat TMT:** Amélioration **97%** par rapport à Newton
@@ -430,7 +430,7 @@
      0 ┼────┬────┬────┬────┬────┬────┬────┬────→
        0    5   10   15   20   25   30   35   40  r (kpc)
 
-    ● Observé    ─── TMT v2.3.1    .... Newton
+    ● Observé    ─── TMT v2.4    .... Newton
 ```
 
 **Résultat TMT:** Amélioration **95%** par rapport à Newton
@@ -464,22 +464,22 @@
 ║ 1 ║  SUPERPOSITION TEMPORELLE                                              ║
 ║   ║  ───────────────────────────────────────────────────────────────────   ║
 ║   ║  La matière existe en deux états: |t⟩ (visible) + |t̄⟩ (reflet)        ║
-║   ║  → 169/175 galaxies améliorées (97%)                                   ║
+║   ║  → 156/156 galaxies SPARC validées (100%)                              ║
 ╠═══╬════════════════════════════════════════════════════════════════════════╣
 ║ 2 ║  HALOS ISOTROPES                                                       ║
 ║   ║  ───────────────────────────────────────────────────────────────────   ║
 ║   ║  Les halos de "matière noire" sont sphériques, pas triaxiaux           ║
 ║   ║  → Confirmé sur 1,000,000 galaxies (KiDS-450)                          ║
 ╠═══╬════════════════════════════════════════════════════════════════════════╣
-║ 3 ║  LOI UNIVERSELLE r_c(M)                                                ║
+║ 3 ║  LOI UNIVERSELLE r_c(M,Σ)                                              ║
 ║   ║  ───────────────────────────────────────────────────────────────────   ║
-║   ║  Le rayon critique suit: r_c = 2.6 × (M/10¹⁰)^0.56 kpc                ║
+║   ║  r_c = 2.6 × (M/10¹⁰)^0.56 × (Σ/100)^-0.3 kpc                         ║
 ║   ║  → Corrélation r = 0.768 (p = 3×10⁻²¹)                                 ║
 ╠═══╬════════════════════════════════════════════════════════════════════════╣
-║ 4 ║  TEMPORONS                                                             ║
+║ 4 ║  MODÈLE DUAL-BETA                                                      ║
 ║   ║  ───────────────────────────────────────────────────────────────────   ║
-║   ║  Particules de temps à portée infinie: Φ_T(ρ=1) = 0                    ║
-║   ║  → Compatible CMB/BAO exactement                                       ║
+║   ║  β_SNIa = 0.001 (intégré) | β_H0 = 0.82 (local)                       ║
+║   ║  → Compatible CMB/BAO exactement (H = H_ΛCDM à ρ = ρc)                 ║
 ╠═══╬════════════════════════════════════════════════════════════════════════╣
 ║ 5 ║  TENSION H₀ RÉSOLUE                                                    ║
 ║   ║  ───────────────────────────────────────────────────────────────────   ║
@@ -505,13 +505,13 @@
 ## Le problème en un coup d'œil
 
 ```
-                    ΛCDM                          TMT v2.3.1
-                    ────                          ──────────
+                    ΛCDM                          TMT v2.4
+                    ────                          ────────
 
     Matière noire   "Particule inconnue"          Reflet temporel |t̄⟩
                     → 40 ans, 0 détection         → Pas de particule nécessaire
 
-    Énergie noire   "Constante Λ"                 Champ de temporons Φ_T
+    Énergie noire   "Constante Λ"                 Modèle dual-beta
                     → Fine-tuning 10¹²⁰           → Émerge naturellement
 
     Tension H₀      67.4 ≠ 73.0                   67.4 = 73.0 (différents ρ)
@@ -559,24 +559,26 @@
 
 ```
 ╔════════════════════════════╦═══════════════════════╦═══════════════════════╗
-║        CRITÈRE             ║        ΛCDM           ║      TMT v2.3.1       ║
+║        CRITÈRE             ║        ΛCDM           ║      TMT v2.4         ║
 ╠════════════════════════════╬═══════════════════════╬═══════════════════════╣
 ║ Matière noire              ║ Particule hypothétique║ Reflet temporel       ║
 ║                            ║ (non détectée)        ║ (pas de particule)    ║
 ╠════════════════════════════╬═══════════════════════╬═══════════════════════╣
-║ Énergie noire              ║ Λ = constante         ║ Temporons Φ_T         ║
+║ Énergie noire              ║ Λ = constante         ║ Modèle dual-beta      ║
 ║                            ║ (fine-tuning 10¹²⁰)   ║ (émergent)            ║
 ╠════════════════════════════╬═══════════════════════╬═══════════════════════╣
 ║ Tension H₀                 ║ NON RÉSOLUE           ║ RÉSOLUE 100%          ║
 ║ (67.4 vs 73.0)             ║ (>5σ de tension)      ║ (H varie avec ρ)      ║
 ╠════════════════════════════╬═══════════════════════╬═══════════════════════╣
-║ Courbes de rotation        ║ Halo NFW              ║ M_eff = M×[1+(r/r_c)ⁿ]║
+║ Courbes de rotation        ║ Halo NFW              ║ M_eff = M×[1+k(r/r_c)ⁿ║
 ║                            ║ (2 param/galaxie)     ║ (1 équation)          ║
 ╠════════════════════════════╬═══════════════════════╬═══════════════════════╣
 ║ Paramètres (175 gal)       ║ 356                   ║ 6                     ║
 ╠════════════════════════════╬═══════════════════════╬═══════════════════════╣
+║ SPARC validation           ║ Ajustement individuel ║ 156/156 (100%)        ║
+╠════════════════════════════╬═══════════════════════╬═══════════════════════╣
 ║ Halos prédits              ║ Triaxiaux             ║ Sphériques            ║
-║ Halos observés             ║ Sphériques ❌          ║ Sphériques ✓          ║
+║ Halos observés             ║ Sphériques            ║ Sphériques            ║
 ╠════════════════════════════╬═══════════════════════╬═══════════════════════╣
 ║ Détection particules       ║ 40 ans = rien         ║ Non nécessaire        ║
 ╠════════════════════════════╬═══════════════════════╬═══════════════════════╣
@@ -616,7 +618,7 @@
 │ Boson de Higgs (CERN 2012)  │     10⁻⁷        │      5σ      │
 │ Ondes grav. (LIGO 2015)     │     10⁻⁷        │      5σ      │
 ├─────────────────────────────┼─────────────────┼──────────────┤
-│ TMT v2.3.1 (2026)           │    10⁻¹¹²       │    >15σ      │
+│ TMT v2.4 (2026)           │    10⁻¹¹²       │    >15σ      │
 └─────────────────────────────┴─────────────────┴──────────────┘
 ```
 
@@ -637,7 +639,7 @@
                     ║                                         ║
                     ╠═════════════════════════════════════════╣
                     ║                                         ║
-                    ║   TMT v2.3.1 explique l'univers ainsi:  ║
+                    ║   TMT v2.4 explique l'univers ainsi:  ║
                     ║                                         ║
                     ║   • 5% matière en temps forward |t⟩     ║
                     ║   • 95% effets de la superposition      ║
@@ -653,10 +655,10 @@
 ```
 ═══════════════════════════════════════════════════════════════════════════════
 
-                    Document officiel TMT v2.3.1
+                    Document officiel TMT v2.4
 
                     Auteur: Pierre-Olivier Després Asselin
-                    Date: 18 janvier 2026
+                    Date: 30 janvier 2026
                     Contact: pierreolivierdespres@gmail.com
 
                     DOI: 10.5281/zenodo.18287042

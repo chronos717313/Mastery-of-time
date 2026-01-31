@@ -136,14 +136,14 @@ This work presents a falsifiable alternative to the ΛCDM cosmological model. Th
 
 Current simulation results (N=5,000) show r=0.378 [0.357, 0.399] with p<10⁻⁸⁸, demonstrating methodology validity while requiring real observational data for decisive test.
 
-Repository: https://github.com/cadespres/Maitrise-du-temps
+Repository: https://github.com/chronos717313/Mastery-of-time
 ```
 
 #### Related Identifiers
 
 **GitHub Repository**:
 ```
-Identifier: https://github.com/cadespres/Maitrise-du-temps
+Identifier: https://github.com/chronos717313/Mastery-of-time
 Relation: is supplemented by
 Resource type: Software
 ```

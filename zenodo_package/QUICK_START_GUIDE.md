@@ -142,7 +142,7 @@ Are dark matter halos **aligned** with their massive neighbors?
 
 ```bash
 # Clone repository
-git clone https://github.com/cadespres/Maitrise-du-temps.git
+git clone https://github.com/chronos717313/Mastery-of-time.git
 
 # Install dependencies
 pip install numpy scipy matplotlib astropy
@@ -183,7 +183,7 @@ Follow: `COSMOS_DES_DOWNLOAD_GUIDE.md`
 
 **Pierre-Olivier Després Asselin**
 - Email: pierreolivierdespres@gmail.com
-- GitHub: [@cadespres](https://github.com/cadespres)
+- GitHub: [@chronos717313](https://github.com/chronos717313)
 
 ---
 

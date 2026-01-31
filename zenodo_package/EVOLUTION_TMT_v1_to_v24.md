@@ -496,4 +496,4 @@ The theory is now ready for rigorous peer review.
 **Last updated**: January 30, 2026
 **Author**: Pierre-Olivier Despres Asselin
 **Contact**: pierreolivierdespres@gmail.com
-**Repository**: github.com/cadespres/Maitrise-du-temps
+**Repository**: github.com/chronos717313/Mastery-of-time

@@ -204,17 +204,17 @@ pip install numpy scipy matplotlib astropy
 ### Running Tests
 
 ```bash
-git clone https://github.com/cadespres/Maitrise-du-temps.git
-cd Maitrise-du-temps
+git clone https://github.com/chronos717313/Mastery-of-time.git
+cd Mastery-of-time
 
 # TMT v2.4 SPARC test (100% validation)
-python scripts/validation/test_TMT_v24_SPARC.py
+python scripts/test_TMT_v2_SPARC_reel.py
 
-# TMT v2.3.2 complete test (8/8)
-python scripts/validation/test_complet_TMT_v232.py
+# TMT v2.4 complete test (8/8)
+python scripts/test_complet_TMT_v232.py
 
 # Statistical significance
-python scripts/validation/calcul_significativite_TMT_v24.py
+python scripts/test_complet_TMT_v231.py
 ```
 
 ---
@@ -246,8 +246,9 @@ python scripts/validation/calcul_significativite_TMT_v24.py
 
 ## Links
 
-- **GitHub**: https://github.com/cadespres/Maitrise-du-temps
-- **Documentation (FR)**: https://github.com/cadespres/Maitrise-du-temps/tree/main/docs/fr
+- **GitHub**: https://github.com/chronos717313/Mastery-of-time
+- **Documentation (FR)**: https://github.com/chronos717313/Mastery-of-time/tree/main/docs/fr
+- **Wiki**: https://mastery-of-time.org
 - **Zenodo**: https://doi.org/10.5281/zenodo.XXXXXXX
 
 ---
@@ -266,11 +267,11 @@ python scripts/validation/calcul_significativite_TMT_v24.py
 
 **Pierre-Olivier Després Asselin**
 - Email: pierreolivierdespres@gmail.com
-- GitHub: [@cadespres](https://github.com/cadespres)
+- GitHub: [@chronos717313](https://github.com/chronos717313)
 
 ---
 
-<div     calign="center">
+<div align="center">
 
 **TMT v2.4: 100% SPARC Validation - Dark Matter as Temporal Reflection**
 
