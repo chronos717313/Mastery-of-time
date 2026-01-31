@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   mkdocs:
     image: python:3.11-slim
@@ -8,8 +6,8 @@ services:
     volumes:
       - ./docs/wiki:/docs
       - ./scripts:/scripts
-    ports:
-      - "8000:8000"
+    expose:
+      - "8000"
     command: >
       sh -c "
         pip install --no-cache-dir mkdocs mkdocs-material pymdown-extensions &&
@@ -20,8 +18,30 @@ services:
     environment:
       - PYTHONUNBUFFERED=1
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8000"]
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000')"]
       interval: 30s
       timeout: 10s
       retries: 3
-      start_period: 40s
+      start_period: 60s
+
+  nginx:
+    image: linuxserver/swag
+    container_name: tmt-nginx
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=UTC
+      - URL=mastery-of-time.org
+      - SUBDOMAINS=www
+      - VALIDATION=http
+      - EMAIL=charles@altacodis.com
+      - DHLEVEL=2048
+      - ONLY_SUBDOMAINS=false
+    volumes:
+      - ./config:/config
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - mkdocs
+    restart: unless-stopped
