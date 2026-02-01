@@ -1,0 +1,35 @@
+Estimado Dr. José Luis Espinosa Enríquez,
+
+Espero que este mensaje le encuentre bien.
+
+Me dirijo a usted con mucho respeto y admiración por su trayectoria académica en la Universidad Tecnológica de la Costa Grande de Guerrero (UTCGG), donde ha destacado en la formación de estudiantes y en la promoción de la investigación y la publicación científica.
+
+Mi nombre es **Pierre-Olivier Després Asselin**, soy un investigador independiente apasionado por la cosmología teórica y la física fundamental. He desarrollado una propuesta alternativa a la cosmología estándar ΛCDM, denominada **Teoría de Maestría del Tiempo (TMT v2.4)**, basada en la idea de superposición temporal cuántica (estados temporales directos y retrogrados) para explicar fenómenos como las curvas de rotación de galaxias, el lentilleo débil, la tensión de Hubble y otros sin recurrir a materia oscura fría.
+
+La teoría ha alcanzado una **validación excepcional con 9/9 pruebas cosmológicas pasadas**, incluyendo:
+- 156/156 galaxias SPARC validadas (100%)
+- Relación Baryonic Tully-Fisher en 37,000 galaxias (exponente 3.55 ± 0.09)
+- Resolución completa de la tensión de Hubble
+- Significancia estadística combinada: p = 10⁻¹¹² (>15σ)
+
+El trabajo ya está archivado de forma permanente en **Zenodo con DOI: 10.5281/zenodo.18287042** y presentado de manera detallada en mi sitio web oficial:
+
+⭐ **https://mastery-of-time.org/** ⭐
+
+El contenido está disponible en **tres idiomas** (francés – versión principal –, inglés y español), precisamente para facilitar su acceso a la comunidad científica internacional y hispanohablante. El sitio incluye documentación completa, scripts de reproducción, y resultados interactivos.
+
+Sé que arXiv es la plataforma de referencia en nuestra disciplina y que, para mi primera sumisión en **astro-ph.CO (Cosmología y Astrofísica No-Galáctica)**, se requiere un endorsement de un investigador con historial en arXiv. Por ello, con toda humildad y sin pretender molestarle, me permito preguntarle si estaría dispuesto a considerar leer un resumen o el PDF del preprint y, en caso de encontrarlo mínimamente serio y de interés, otorgarme el endorsement correspondiente para poder compartir estos resultados con la comunidad científica.
+
+No tengo ninguna expectativa automática y comprendo perfectamente si su tiempo o sus prioridades actuales no le permiten hacerlo. Cualquier comentario, crítica o sugerencia que pudiera darme sería de un valor inmenso para mí.
+
+Adjunto el PDF del artículo (o puede descargarlo directamente desde el sitio). Estoy disponible para cualquier aclaración o para enviarle más detalles si lo considera oportuno.
+
+Muchas gracias de antemano por su tiempo y por considerar esta petición. Valoro enormemente la generosidad de investigadores como usted que apoyan a quienes trabajamos de forma independiente.
+
+Reciba un cordial saludo desde Québec, Canada,
+
+**Pierre-Olivier Després Asselin**  
+Email: pierreolivierdespres@gmail.com  
+Teléfono: +1 581-777-3247  
+Sitio web: https://mastery-of-time.org/  
+DOI Zenodo: 10.5281/zenodo.18287042
