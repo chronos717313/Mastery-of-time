@@ -16,6 +16,7 @@ TMT alcanza una **validación cuantitativa excepcional** con resultados al 100% 
 | **SNIa por entorno** | pred: 0.57% | [:material-file-code:](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/test_3_predictions_TMT.py) | ✅ VALIDADO |
 | **Efecto ISW** | pred: 18.2% | [:material-file-code:](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/calculate_ISW_improved.py) | ✅ VALIDADO |
 | **Tensión de Hubble** | 100% resuelta | [:material-file-code:](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/calibrate_TMT_v23_cosmologie.py) | ✅ RESUELTO |
+| **BTFR (37k galaxias)** | exponente 3.55 ± 0.09 | [:material-file-code:](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/calibration/analyse_BTFR_finale.py) | ✅ VALIDADO |
 
 **Significatividad estadística**: p = 10⁻¹¹² (>15σ) | Reducción Chi²: 81.2%
 

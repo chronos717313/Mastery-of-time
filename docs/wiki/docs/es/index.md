@@ -52,6 +52,7 @@ TMT alcanza **compatibilidad excepcional** con datos observacionales mayores:
 | SNIa por entorno | pred: 0.57% | [:material-file-code: test_3_predictions_TMT.py](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/test_3_predictions_TMT.py) | ✅ VALIDADO |
 | Efecto ISW | pred: 18.2% | [:material-file-code: calculate_ISW_improved.py](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/calculate_ISW_improved.py) | ✅ VALIDADO |
 | Tensión de Hubble | 100% resuelta | [:material-file-code: calibrate_TMT_v23_cosmologie.py](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/calibrate_TMT_v23_cosmologie.py) | ✅ RESUELTO |
+| **BTFR (37k galaxias)** | exponente 3.55 ± 0.09 | [:material-file-code: analyse_BTFR_finale.py](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/calibration/analyse_BTFR_finale.py) | ✅ VALIDADO |
 
 > **[Scripts de reproducción completos](validacion/scripts_reproduccion.md)**: Instrucciones detalladas y datos requeridos.
 

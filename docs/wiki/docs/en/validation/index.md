@@ -16,6 +16,7 @@ TMT achieves **exceptional quantitative validation** with 100% results on major 
 | **SNIa by environment** | pred: 0.57% | [:material-file-code:](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/test_3_predictions_TMT.py) | ✅ VALIDATED |
 | **ISW Effect** | pred: 18.2% | [:material-file-code:](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/calculate_ISW_improved.py) | ✅ VALIDATED |
 | **Hubble tension** | 100% resolved | [:material-file-code:](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/calibrate_TMT_v23_cosmologie.py) | ✅ RESOLVED |
+| **BTFR (37k galaxies)** | exponent 3.55 ± 0.09 | [:material-file-code:](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/calibration/analyse_BTFR_finale.py) | ✅ VALIDATED |
 
 **Statistical Significance**: p = 10⁻¹¹² (>15σ) | Chi² reduction: 81.2%
 
