@@ -12,7 +12,7 @@
 
 ## Website & Resources
 
-- **Official Website:** https://music-music.music.blog/maitrise-du-temps/
+- **Official Website:** https://mastery-of-time.org
 - **GitHub Repository:** https://github.com/chronos717313/Mastery-of-time
 - **Validation Scripts:** Available in GitHub repo under `scripts/`
 
