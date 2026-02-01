@@ -17,11 +17,9 @@ echo -e "${GREEN}Pulling latest changes...${NC}"
 git fetch --all
 git reset --hard origin/main
 
-echo -e "${GREEN}Rebuilding and restarting containers (minimal downtime)...${NC}"
-# Rebuild mkdocs container without stopping nginx (keeps site up during build)
-docker compose build mkdocs
-# Recreate only mkdocs container, nginx stays up
-docker compose up -d --no-deps mkdocs
+echo -e "${GREEN}Restarting mkdocs container (nginx stays up)...${NC}"
+# Force recreate mkdocs container to pick up new files
+docker compose up -d --force-recreate --no-deps mkdocs
 
 echo -e "${GREEN}Applying nginx configuration...${NC}"
 echo -e "${GREEN}Waiting for nginx to be ready...${NC}"
