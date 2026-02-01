@@ -1,15 +1,3 @@
-<div align="center" class="header-badges">
-
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18451874.svg)](https://doi.org/10.5281/zenodo.18451874)
-
-<div class="language-selector">
-  <a href="../en/" class="lang-btn">🇺🇸 🇬🇧 English</a>
-  <a href="./" class="lang-btn active">🇲🇽 🇪🇸 Español</a>
-  <a href="../" class="lang-btn"><img src="../assets/flags/quebec-flag.svg" class="flag-icon"> 🇫🇷 Français</a>
-</div>
-
-</div>
-
 # Teoría de Dominio del Tiempo (TMT)
 
 ## Visión General

@@ -104,9 +104,6 @@ theme:
 plugins:
   - search
 
-extra_css:
-  - stylesheets/extra.css
-
 extra:
   alternate:
     - name: English
