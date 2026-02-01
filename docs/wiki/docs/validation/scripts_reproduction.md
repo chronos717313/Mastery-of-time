@@ -371,8 +371,8 @@ Pour reproduire tous les tests :
 
 ```bash
 # Cloner le dépôt
-git clone https://github.com/cadespres/Maitrise-du-temps.git
-cd Maitrise-du-temps
+git clone https://github.com/chronos717313/Mastery-of-time.git
+cd Mastery-of-time
 
 # Installer les dépendances
 pip install numpy scipy matplotlib astropy

@@ -381,7 +381,7 @@ Maitrise-du-temps/
 
 **URL Pull Request**:
 ```
-https://github.com/cadespres/Maitrise-du-temps/pull/new/claude/wealth-guide-01PVgpQHX2dFvmZfP3tctRAF
+https://github.com/chronos717313/Mastery-of-time/pull/new/claude/wealth-guide-01PVgpQHX2dFvmZfP3tctRAF
 ```
 
 ---

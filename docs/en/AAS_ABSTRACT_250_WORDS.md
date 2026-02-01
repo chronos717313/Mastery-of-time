@@ -18,4 +18,4 @@ TMT provides a parsimonious alternative to ΛCDM (5 vs 350+ parameters) with fal
 ---
 
 **Contact:** pierreolivierdespres@gmail.com | +1 581-777-3247
-**Documentation:** github.com/cadespres/Maitrise-du-temps
+**Documentation:** github.com/chronos717313/Mastery-of-time

@@ -343,8 +343,8 @@ Para reproducir todas las pruebas:
 
 ```bash
 # Clonar repositorio
-git clone https://github.com/cadespres/Maitrise-du-temps.git
-cd Maitrise-du-temps
+git clone https://github.com/chronos717313/Mastery-of-time.git
+cd Mastery-of-time
 
 # Instalar dependencias
 pip install numpy scipy matplotlib astropy

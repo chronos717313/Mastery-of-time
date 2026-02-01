@@ -839,7 +839,7 @@ Les télescopes observent déjà. Les laboratoires se préparent. Les calculs s'
 
 **Suivez les développements**:
 - Publications: arXiv.org (recherche "Time Mastery Theory")
-- Code source: github.com/cadespres/Maitrise-du-temps
+- Code source: github.com/chronos717313/Mastery-of-time
 - Contact: pierreolivierdespres@gmail.com
 
 ---
