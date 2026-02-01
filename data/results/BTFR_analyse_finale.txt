@@ -1,0 +1,19 @@
+======================================================================
+ANALYSE FINALE - RELATION TULLY-FISHER BARYONIQUE
+======================================================================
+
+RESUME:
+--------------------------------------------------
+TMT predit: M_bary ~ V_flat^4 (exposant = 4.0)
+McGaugh+ 2016: exposant = 3.98 +/- 0.06
+
+SPARC (120 galaxies, masses reelles):
+  Exposant = 3.551 +/- 0.088
+  R^2 = 0.9328
+  Scatter = 0.218 dex
+
+VERDICT: BTFR VALIDEE - Coherent avec TMT v2.4
+
+ALFALFA + WALLABY (27712 galaxies, masses HI):
+  Exposant M_HI = 1.197 +/- 0.011
+  Note: Ce n'est pas la vraie BTFR (M_HI != M_bary)

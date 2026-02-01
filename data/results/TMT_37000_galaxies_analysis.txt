@@ -1,0 +1,26 @@
+======================================================================
+ANALYSE COMPLETE TMT - 37,000+ GALAXIES
+======================================================================
+
+SOURCES DE DONNEES:
+--------------------------------------------------
+  ALFALFA: 30536 galaxies
+  WALLABY: 3454 galaxies
+  WHISP: 53 galaxies
+
+TOTAL: 34043 galaxies
+
+==================================================
+RELATION TULLY-FISHER BARYONIQUE
+==================================================
+
+log(M_bary) = 7.33 + 1.19 x log(V_flat)
+
+Exposant BTFR: 1.194
+  TMT predit: 4.0
+  Observe: 1.19
+
+R^2 = 0.3344
+Correlation r = 0.5782
+p-value = 0.00e+00
+Galaxies: 29221

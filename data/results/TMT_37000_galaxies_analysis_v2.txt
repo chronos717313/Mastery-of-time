@@ -1,0 +1,55 @@
+======================================================================
+ANALYSE COMPLETE TMT v2 - MASSES CORRIGEES
+======================================================================
+
+SOURCES DE DONNEES:
+--------------------------------------------------
+  ALFALFA: 29196 galaxies
+  WALLABY: 3454 galaxies
+  SPARC: 120 galaxies
+
+TOTAL: 32770 galaxies
+
+CORRECTION APPLIQUEE:
+--------------------------------------------------
+M_bary = M_stars + 1.33 x M_HI
+M_stars = M_HI x 10^(0.5 + 1.5 x log(V/100))
+
+==================================================
+RELATION TULLY-FISHER BARYONIQUE
+==================================================
+
+log(M_bary) = 6.83 + 1.48 x log(V_flat)
+
+Exposant BTFR: 1.475 +/- 0.010
+  TMT predit: 4.0
+  McGaugh+ 2016: 3.98 +/- 0.06
+  Observe: 1.48
+
+R^2 = 0.4319
+Scatter = 0.394 dex
+Correlation r = 0.6572
+p-value = 0.00e+00
+Galaxies: 29288
+
+==================================================
+BTFR PAR SOURCE
+==================================================
+
+SPARC (n=120):
+  Exposant: 3.551 +/- 0.088
+  R^2 = 0.933
+  Scatter = 0.218 dex
+
+ALFALFA (n=29168):
+  Exposant: 1.466 +/- 0.010
+  R^2 = 0.430
+  Scatter = 0.393 dex
+
+==================================================
+VERDICT
+==================================================
+
+BTFR ECART SIGNIFICATIF: Exposant = 1.48 vs 4.0 predit
+
+Significativite: p = 0.00e+00
