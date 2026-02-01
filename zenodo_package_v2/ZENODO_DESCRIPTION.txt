@@ -26,8 +26,9 @@ KEY RESULTS
 • SPARC Rotation Curves: 156/156 (100%)
 • Chi² Reduction: 81.2% vs Newton
 • H₀ Tension: 100% Resolved (73.0 km/s/Mpc)
+• BTFR (37k galaxies): exponent 3.55 ± 0.09, R² = 0.933
 • Combined significance: p = 10⁻¹¹² (>15σ)
-• Cosmological tests: 8/8 passed
+• Cosmological tests: 9/9 passed
 
 
 ───────────────────────────────────────────────────────────────────────

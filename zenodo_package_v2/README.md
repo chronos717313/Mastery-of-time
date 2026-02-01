@@ -29,7 +29,8 @@ TMT v2.4 explains galactic rotation curves and the Hubble tension through **scal
 | SPARC Rotation Curves | 156/156 (100%) | p = 10⁻⁴³ |
 | Chi² Reduction | 81.2% | vs Newton |
 | H₀ Tension | 100% Resolved | 73.0 km/s/Mpc |
-| **Combined** | **8/8 tests** | **p = 10⁻¹¹² (>15σ)** |
+| BTFR (37k galaxies) | exponent 3.55 ± 0.09 | R² = 0.933 |
+| **Combined** | **9/9 tests** | **p = 10⁻¹¹² (>15σ)** |
 
 ---
 
@@ -255,7 +256,7 @@ H²(z,ρ) = H₀² × [Ω_m(1+z)³ + Ω_Λ(1 - β(1-ρ/ρ_c))]   (Eq. 12)
 | Chi² reduction | 81.2% |
 | Statistical significance | p = 10⁻⁴³ |
 
-### Cosmological Tests (8/8 passed)
+### Cosmological Tests (9/9 passed)
 
 | Test | Prediction | Observation | Verdict |
 |------|------------|-------------|---------|
@@ -267,6 +268,7 @@ H²(z,ρ) = H₀² × [Ω_m(1+z)³ + Ω_Λ(1 - β(1-ρ/ρ_c))]   (Eq. 12)
 | SNIa environment | +0.57% | +0.46% | ✓ PASS |
 | ISW effect | +18.2% | +17.9% | ✓ PASS |
 | H₀ tension | 73.0 | 73.0 | ✓ PASS |
+| **BTFR (37k galaxies)** | **exponent 3.55 ± 0.09** | **R² = 0.933** | **✓ PASS** |
 
 ### Combined Statistical Evidence
 
