@@ -104,17 +104,20 @@ theme:
 plugins:
   - search
 
+extra_css:
+  - stylesheets/extra.css
+
 extra:
   alternate:
-    - name: Français
-      link: /
-      lang: fr
     - name: English
       link: /en/
       lang: en
     - name: Español
       link: /es/
       lang: es
+    - name: Français
+      link: /
+      lang: fr
 
 markdown_extensions:
   - pymdownx.highlight:
