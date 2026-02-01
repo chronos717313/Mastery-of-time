@@ -5,13 +5,7 @@
 **An Alternative Cosmological Framework**
 *Une Théorie Cosmologique Alternative*
 
-[![Version](https://img.shields.io/badge/version-TMT%20v2.4-blue)]()
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18451874.svg)](https://doi.org/10.5281/zenodo.18451874)
-[![Tests](https://img.shields.io/badge/cosmological%20tests-9%2F9%20passed-brightgreen)]()
-[![SPARC](https://img.shields.io/badge/SPARC%20galaxies-100%25%20validated-brightgreen)]()
-[![BTFR](https://img.shields.io/badge/BTFR-37k%20galaxies-blue)]()
-[![Significance](https://img.shields.io/badge/significance-%3E15σ-orange)]()
-[![Website](https://img.shields.io/badge/website-mastery--of--time.org-informational)](https://mastery-of-time.org)
 
 [English](#english-version) | [Français](#version-française) | [Español](#versión-española)
 
