@@ -22,7 +22,8 @@ docker compose down
 docker compose up -d
 
 echo -e "${GREEN}Applying nginx configuration...${NC}"
-sleep 5  # Wait for containers to fully start
+echo -e "${GREEN}Waiting for nginx to be ready...${NC}"
+sleep 10  # Wait for containers to fully start
 docker exec tmt-nginx sh -c 'cat > /config/nginx/site-confs/default.conf << '\''EOF'\''
 ## Version 2025/07/18 - Changelog: https://github.com/linuxserver/docker-swag/commits/master/root/defaults/nginx/site-confs/default.conf.sample
 
@@ -83,7 +84,7 @@ include /config/nginx/proxy-confs/*.subdomain.conf;
 EOF'
 
 echo -e "${GREEN}Reloading nginx...${NC}"
-docker exec tmt-nginx nginx -s reload
+docker exec tmt-nginx s6-svc -h /run/service/svc-nginx
 
 echo -e "${GREEN}Done! Site updated with HTTPS.${NC}"
 echo ""
