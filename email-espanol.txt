@@ -12,7 +12,7 @@ La teoría ha alcanzado una **validación excepcional con 9/9 pruebas cosmológi
 - Resolución completa de la tensión de Hubble
 - Significancia estadística combinada: p = 10⁻¹¹² (>15σ)
 
-El trabajo ya está archivado de forma permanente en **Zenodo con DOI: 10.5281/zenodo.18287042** y presentado de manera detallada en mi sitio web oficial:
+El trabajo ya está archivado de forma permanente en **Zenodo con DOI: 10.5281/zenodo.18451874** y presentado de manera detallada en mi sitio web oficial:
 
 ⭐ **https://mastery-of-time.org/** ⭐
 
@@ -32,4 +32,4 @@ Reciba un cordial saludo desde Québec, Canada,
 Email: pierreolivierdespres@gmail.com  
 Teléfono: +1 581-777-3247  
 Sitio web: https://mastery-of-time.org/  
-DOI Zenodo: 10.5281/zenodo.18287042
+DOI Zenodo: 10.5281/zenodo.18451874

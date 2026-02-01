@@ -57,6 +57,7 @@ LINKS
 
 ★ Website: https://mastery-of-time.org
 ★ GitHub: https://github.com/chronos717313/Mastery-of-time
+★ DOI: https://doi.org/10.5281/zenodo.18451874
 
 
 ═══════════════════════════════════════════════════════════════════════

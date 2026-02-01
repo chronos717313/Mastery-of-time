@@ -6,7 +6,7 @@
 **Author:** Pierre-Olivier Després
 **Date:** February 2026
 **License:** CC-BY 4.0
-**DOI:** 10.5281/zenodo.18287042
+**DOI:** 10.5281/zenodo.18451874
 
 ---
 
@@ -323,7 +323,7 @@ TMT v2.4 would be **FALSIFIED** if:
            for Galaxy Rotation Curves and Cosmological Tensions},
   year = {2026},
   version = {2.4},
-  doi = {10.5281/zenodo.18287042},
+  doi = {10.5281/zenodo.18451874},
   url = {https://github.com/chronos717313/Mastery-of-time}
 }
 ```

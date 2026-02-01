@@ -69,7 +69,7 @@ Le wiki TMT contient:
    - Résolution tension H₀
 
 5. **Publications** - Ressources académiques
-   - Package Zenodo v2.4 (DOI: 10.5281/zenodo.18287042)
+   - Package Zenodo v2.4 (DOI: 10.5281/zenodo.18451874)
    - Article scientifique
    - Scripts de reproduction
 
@@ -119,7 +119,7 @@ Le serveur MkDocs en mode développement (`serve`) recharge automatiquement les 
 
 **Projet**: Théorie de Maîtrise du Temps (TMT)  
 **Version**: TMT v2.4  
-**DOI**: [10.5281/zenodo.18287042](https://doi.org/10.5281/zenodo.18287042)  
+**DOI**: [10.5281/zenodo.18451874](https://doi.org/10.5281/zenodo.18451874)  
 **GitHub**: [chronos717313/Mastery-of-time](https://github.com/chronos717313/Mastery-of-time)
 
 ---
