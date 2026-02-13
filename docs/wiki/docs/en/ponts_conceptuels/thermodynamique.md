@@ -9,14 +9,14 @@
 - **Tension with local H₀ measurements**
 
 ### TMT: ϕ_T(p=1)=0
-TMT resolves dark energy through the **ϕ_T(p=1)=0** condition in temporal superposition:
+TMT resolves dark energy via the condition **ϕ_T(p=1)=0** in temporal superposition:
 
 - **No exotic dark energy**
 - **Acceleration** emergent from temporal distortion
 - **Natural resolution** of Hubble tension
 
 ### Physical Mechanism
-Temporal superposition imposes ϕ_T(p=1)=0, eliminating the need for a cosmological constant. Accelerated expansion results from the evolution of amplitudes α(r,p,t) and β(r,p).
+Temporal superposition imposes ϕ_T(p=1)=0, eliminating the need for a cosmological constant. Accelerated expansion results from evolution of amplitudes α(r,p,t) and β(r,p).
 
 ### Validation
 - **Hubble tension 100% resolved**

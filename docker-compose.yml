@@ -10,7 +10,7 @@ services:
       - "8000"
     command: >
       sh -c "
-        pip install --no-cache-dir mkdocs mkdocs-material pymdown-extensions &&
+        pip install --no-cache-dir mkdocs mkdocs-material pymdown-extensions mkdocs-static-i18n &&
         if [ -f /scripts/requirements.txt ]; then pip install --no-cache-dir -r /scripts/requirements.txt; fi &&
         mkdocs serve --dev-addr 0.0.0.0:8000
       "

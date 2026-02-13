@@ -7,7 +7,7 @@ El modelo ΛCDM estándar se basa en **dos marcos teóricos fundamentalmente dif
 - **Mecánica cuántica**: Descripción probabilística de partículas elementales
 - **Relatividad general**: Geometría dinámica del espacio-tiempo
 
-Estas dos teorías son matemáticamente incompatibles a altas energías, creando el "problema de cuantización de la gravedad".
+Estas dos teorías son matemáticamente incompatibles a alta energía, creando el "problema de cuantización de la gravedad".
 
 ### TMT: Unificación por Superposición Temporal
 TMT propone una **unificación conceptual** vía la ecuación maestra:
@@ -16,12 +16,12 @@ $$\psi(\text{universo}) = \alpha(r,p,t)|\uparrow\rangle + \beta(r,p)|\downarrow\
 
 Esta formulación:
 - **Unifica** mecánica cuántica y relatividad en un marco único
-- **Elimina** el problema de cuantización de la gravedad
-- **Predice naturalmente** la emergencia de materia oscura como reflexión temporal
+- **Elimina** el problema de gravedad cuántica
+- **Predice naturalmente** el surgimiento de materia oscura como reflexión temporal
 
 ### Validación Conceptual
 - Compatible con todas las pruebas cuánticas existentes
 - Reproduce relatividad general a escalas macroscópicas
-- Proporciona una base unificada para cosmología
+- Proporciona base unificada para cosmología
 
-[Volver a Puentes Conceptuales](../index.md) | [Puente Siguiente: Mecánica Cuántica](mecanique_quantique.md)
+[Volver a Puentes Conceptuales](../index.md) | [Siguiente Puente: Mecánica Cuántica](mecanique_quantique.md)

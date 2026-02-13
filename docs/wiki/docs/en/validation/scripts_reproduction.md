@@ -13,7 +13,7 @@ pip install numpy scipy matplotlib astropy
 ### Data structure
 
 ```
-Maitrise-du-temps/
+Mastery-of-time/
 ├── data/
 │   ├── sparc/
 │   │   ├── SPARC_Lelli2016c.mrt

@@ -16,23 +16,23 @@ La Teoría de Dominio del Tiempo establece **7 puentes conceptuales fundamentale
 
 ## Detalles de los Puentes
 
-### [Puente 1: Física Conocida](fisica_conocida.md)
+### [Puente 1: Física Conocida](physique_connue.md)
 Cómo unificar mecánica cuántica y relatividad general vía superposición temporal.
 
-### [Puente 2: Mecánica Cuántica](mecanica_cuantica.md)
+### [Puente 2: Mecánica Cuántica](mecanique_quantique.md)
 Extensión de la mecánica cuántica a escalas cosmológicas con la flecha del tiempo.
 
-### [Puente 3: Relatividad General](relatividad_general.md)
+### [Puente 3: Relatividad General](relativite_generale.md)
 Reemplazo de materia oscura WIMP con temporones de distorsión temporal.
 
-### [Puente 4: Termodinámica](termodinamica.md)
+### [Puente 4: Termodinámica](thermodynamique.md)
 Resolución de energía oscura vía ϕ_T(p=1)=0 en superposición temporal.
 
-### [Puente 5: Cosmología](cosmologia.md)
+### [Puente 5: Cosmología](cosmologie.md)
 Transición de ΛCDM uniforme a expansión diferencial H(z,ρ).
 
-### [Puente 6: Física de Partículas](particulas.md)
+### [Puente 6: Física de Partículas](particules.md)
 Eliminación de partículas CDM exóticas a favor de efecto puramente temporal.
 
-### [Puente 7: Grandes Mediciones](mediciones.md)
+### [Puente 7: Grandes Mediciones](mesures.md)
 Resolución completa de tensión Hubble y compatibilidad CMB.

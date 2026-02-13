@@ -24,4 +24,4 @@ TMT elimina completamente las partículas CDM:
 - **Curvas de rotación**: explicadas sin partículas exóticas
 - **Anisotropías CMB**: compatible sin CDM caliente/fría
 
-[Volver a Puentes Conceptuales](../index.md) | [Puente Anterior: Cosmología](cosmologia.md) | [Siguiente Puente: Grandes Mediciones](mediciones.md)
+[Volver a Puentes Conceptuales](../index.md) | [Puente Anterior: Cosmología](cosmologie.md) | [Siguiente Puente: Grandes Mediciones](mesures.md)

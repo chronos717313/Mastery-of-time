@@ -6,10 +6,10 @@ TMT is now **ready for submission** with complete documents for scientific publi
 
 ## Available Materials
 
-### [Zenodo Package](zenodo_package.md)
+### [Zenodo Package](package_zenodo.md)
 Complete set of data, scripts, and results for scientific archiving.
 
-### [Scientific Article](scientific_article.md)
+### [Scientific Article](article_scientifique.md)
 Complete manuscript for peer-reviewed journal submission.
 
 ## Publication Status

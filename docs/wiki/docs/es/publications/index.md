@@ -6,10 +6,10 @@ TMT está ahora **listo para presentación** con documentos completos para publi
 
 ## Materiales Disponibles
 
-### [Paquete Zenodo](zenodo_package.md)
+### [Paquete Zenodo](package_zenodo.md)
 Conjunto completo de datos, scripts y resultados para archivado científico.
 
-### [Artículo Científico](scientific_article.md)
+### [Artículo Científico](article_scientifique.md)
 Manuscrito completo para presentación a revista peer-reviewed.
 
 ## Estado de Publicación

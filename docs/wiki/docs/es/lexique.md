@@ -311,4 +311,4 @@ $$
 
 ---
 
-[Volver al Inicio](index.md) | [Puentes Conceptuales](pontes_conceptuales/index.md) | [Validación](validacion/index.md)
+[Volver al Inicio](index.md) | [Puentes Conceptuales](ponts_conceptuels/index.md) | [Validación](validation/index.md)

@@ -36,7 +36,7 @@ This equation:
 - Explains dark matter without exotic particles
 - Unifies QM + GR in a coherent framework
 
-> **[See the complete Lexicon](lexicon.md)** for all TMT term definitions.
+> **[See the complete Lexicon](lexique.md)** for all TMT term definitions.
 
 ## Validation Status
 
@@ -44,7 +44,7 @@ TMT achieves **exceptional compatibility** with major observational data:
 
 | Test | Result | Script | Verdict |
 |------|--------|--------|---------|
-| SPARC rotation curves | [156/156 (100%)](validation/galactic_scale/#exclusion-criteria) | [:material-file-code: test_TMT_v2_SPARC_reel.py](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/test_TMT_v2_SPARC_reel.py) | ✅ VALIDATED |
+| SPARC rotation curves | [156/156 (100%)](validation/courbes_rotation/#exclusion-criteria) | [:material-file-code: test_TMT_v2_SPARC_reel.py](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/test_TMT_v2_SPARC_reel.py) | ✅ VALIDATED |
 | $r_c(M)$ law | r = 0.768 | [:material-file-code: investigation_r_c_variation.py](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/investigation_r_c_variation.py) | ✅ VALIDATED |
 | $k(M)$ law | $R^2$ = 0.64 | [:material-file-code: test_TMT_v2_SPARC_reel.py](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/test_TMT_v2_SPARC_reel.py) | ✅ VALIDATED |
 | Weak Lensing Isotropy | -0.024% | [:material-file-code: test_weak_lensing_TMT_vs_LCDM.py](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/test_weak_lensing_TMT_vs_LCDM.py) | ✅ VALIDATED |

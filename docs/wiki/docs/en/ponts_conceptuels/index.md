@@ -16,23 +16,23 @@ The Mastery of Time Theory establishes **7 fundamental conceptual bridges** that
 
 ## Bridge Details
 
-### [Bridge 1: Known Physics](known_physics.md)
+### [Bridge 1: Known Physics](physique_connue.md)
 How to unify quantum mechanics and general relativity via temporal superposition.
 
-### [Bridge 2: Quantum Mechanics](quantum_mechanics.md)
+### [Bridge 2: Quantum Mechanics](mecanique_quantique.md)
 Extension of quantum mechanics to cosmological scales with the arrow of time.
 
-### [Bridge 3: General Relativity](general_relativity.md)
+### [Bridge 3: General Relativity](relativite_generale.md)
 Replacement of WIMP dark matter with temporons from temporal distortion.
 
-### [Bridge 4: Thermodynamics](thermodynamics.md)
+### [Bridge 4: Thermodynamics](thermodynamique.md)
 Resolution of dark energy via ϕ_T(p=1)=0 in temporal superposition.
 
-### [Bridge 5: Cosmology](cosmology.md)
+### [Bridge 5: Cosmology](cosmologie.md)
 Transition from uniform ΛCDM to differential expansion H(z,ρ).
 
-### [Bridge 6: Particle Physics](particles.md)
+### [Bridge 6: Particle Physics](particules.md)
 Elimination of exotic CDM particles in favor of purely temporal effect.
 
-### [Bridge 7: Major Measurements](measurements.md)
+### [Bridge 7: Major Measurements](mesures.md)
 Complete resolution of Hubble tension and CMB compatibility.

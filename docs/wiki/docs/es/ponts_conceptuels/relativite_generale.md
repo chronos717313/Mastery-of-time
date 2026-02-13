@@ -78,6 +78,6 @@ $$
 - **Ley $k(M)$** validada en 168 galaxias
 - **Radio crítico $r_c$** dependiente de masa: r = 0.768
 
-> **[Ver el Léxico](../lexico.md)** para definiciones completas de todos los términos TMT.
+> **[Ver el Léxico](../lexique.md)** para definiciones completas de todos los términos TMT.
 
-[Volver a Puentes Conceptuales](index.md) | [Puente Anterior: Mecánica Cuántica](mecanica_cuantica.md) | [Siguiente Puente: Termodinámica](termodinamica.md)
+[Volver a Puentes Conceptuales](index.md) | [Puente Anterior: Mecánica Cuántica](mecanique_quantique.md) | [Siguiente Puente: Termodinámica](thermodynamique.md)

@@ -22,11 +22,11 @@ H(z, ρ) = H₀ · √[Ω_m(1+z)³ + Ω_Λ · (1 + 0.2 · (1 - |α|² + |β|²))
 ### Observational Implications
 - **Resolves Hubble tension**: local voids accelerate apparent H₀
 - **Testable predictions**: Δd_L variation by environment
-- **CMB compatibility**: local effects don't disturb large scales
+- **CMB compatible**: local effects don't disturb large scales
 
 ### Validation
-- **SNIa by environment**: predicted Δd_L = 5-10%, observed 28-44%
-- **Hubble tension**: 100% resolved
+- **SNIa by environment**: Δd_L = 5-10% predicted, 28-44% observed
+- **H₀ tension**: 100% resolved
 - **Planck CMB**: 100% compatible
 
 [Back to Conceptual Bridges](../index.md) | [Previous Bridge: Thermodynamics](thermodynamique.md) | [Next Bridge: Particle Physics](particules.md)

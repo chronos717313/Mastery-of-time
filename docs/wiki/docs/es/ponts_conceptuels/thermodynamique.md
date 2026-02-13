@@ -23,4 +23,4 @@ La superposición temporal impone ϕ_T(p=1)=0, eliminando la necesidad de una co
 - **Compatible con CMB Planck**
 - **Predicciones de supernovas Ia** confirmadas
 
-[Volver a Puentes Conceptuales](../index.md) | [Puente Anterior: Relatividad General](relatividad_general.md) | [Siguiente Puente: Cosmología](cosmologia.md)
+[Volver a Puentes Conceptuales](../index.md) | [Puente Anterior: Relatividad General](relativite_generale.md) | [Siguiente Puente: Cosmología](cosmologie.md)

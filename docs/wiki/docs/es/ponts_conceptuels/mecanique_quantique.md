@@ -96,6 +96,6 @@ Este es el **término clave**: una nueva energía potencial creada por la distor
 - Predice la ley $r_c(M)$ observada con r = 0.768
 - Simplifica drásticamente el modelo de partículas
 
-> **[Ver el Léxico](../lexico.md)** para definiciones completas de $\tau(x)$, $\gamma_{\text{Després}}$, y todos los términos TMT.
+> **[Ver el Léxico](../lexique.md)** para definiciones completas de $\tau(x)$, $\gamma_{\text{Després}}$, y todos los términos TMT.
 
-[Volver a Puentes Conceptuales](index.md) | [Puente Anterior: Física Conocida](fisica_conocida.md) | [Siguiente Puente: Relatividad General](relatividad_general.md)
+[Volver a Puentes Conceptuales](index.md) | [Puente Anterior: Física Conocida](physique_connue.md) | [Siguiente Puente: Relatividad General](relativite_generale.md)

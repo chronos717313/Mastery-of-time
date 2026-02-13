@@ -29,4 +29,4 @@ TMT representa un **avance mayor**:
 - **Todas las predicciones** validadas
 - **Simplicidad** vs complejidad ΛCDM
 
-[Volver a Puentes Conceptuales](../index.md) | [Puente Anterior: Física de Partículas](particulas.md)
+[Volver a Puentes Conceptuales](../index.md) | [Puente Anterior: Física de Partículas](particules.md)

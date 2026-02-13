@@ -6,17 +6,17 @@
 ΛCDM requires **exotic dark matter particles**:
 - **WIMP** (Weakly Interacting Massive Particles)
 - **Weak interactions** with ordinary matter
-- **Mass ~100 GeV** (undetected despite decades of research)
+- **Mass ~100 GeV** (undetected despite decades of searching)
 
-### TMT: No Particle Requirement
+### TMT: No Particle Need
 TMT completely eliminates CDM particles:
 - **Dark matter** = quantum temporal reflection
 - **Temporons** = excitations of temporal field (no fixed mass)
-- **No particles** to discover at LHC or in detectors
+- **No particles** to discover at LHC or detectors
 
 ### Drastic Simplification
 - **Parsimonious model**: single temporal field vs dozens of particles
-- **Falsifiable predictions**: rotation curves without free adjustment
+- **Falsifiable predictions**: rotation curves without free parameters
 - **Compatible** with absence of WIMP detection (ϕ_T(p=1)=0)
 
 ### Validation

@@ -36,7 +36,7 @@ Esta ecuación:
 - Explica la materia oscura sin partículas exóticas
 - Unifica MC + RG en un marco coherente
 
-> **[Ver el Léxico completo](lexico.md)** para todas las definiciones de términos TMT.
+> **[Ver el Léxico completo](lexique.md)** para todas las definiciones de términos TMT.
 
 ## Estado de Validación
 
@@ -44,7 +44,7 @@ TMT alcanza **compatibilidad excepcional** con datos observacionales mayores:
 
 | Prueba | Resultado | Script | Veredicto |
 |--------|-----------|--------|-----------|
-| Curvas de rotación SPARC | [156/156 (100%)](validacion/galactic_scale/#criterios-de-exclusion) | [:material-file-code: test_TMT_v2_SPARC_reel.py](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/test_TMT_v2_SPARC_reel.py) | ✅ VALIDADO |
+| Curvas de rotación SPARC | [156/156 (100%)](validation/courbes_rotation/#criterios-de-exclusion) | [:material-file-code: test_TMT_v2_SPARC_reel.py](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/test_TMT_v2_SPARC_reel.py) | ✅ VALIDADO |
 | Ley $r_c(M)$ | r = 0.768 | [:material-file-code: investigation_r_c_variation.py](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/investigation_r_c_variation.py) | ✅ VALIDADO |
 | Ley $k(M)$ | $R^2$ = 0.64 | [:material-file-code: test_TMT_v2_SPARC_reel.py](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/test_TMT_v2_SPARC_reel.py) | ✅ VALIDADO |
 | Isotropía Weak Lensing | -0.024% | [:material-file-code: test_weak_lensing_TMT_vs_LCDM.py](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/test_weak_lensing_TMT_vs_LCDM.py) | ✅ VALIDADO |
@@ -54,7 +54,7 @@ TMT alcanza **compatibilidad excepcional** con datos observacionales mayores:
 | Tensión de Hubble | 100% resuelta | [:material-file-code: calibrate_TMT_v23_cosmologie.py](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/calibrate_TMT_v23_cosmologie.py) | ✅ RESUELTO |
 | **BTFR (37k galaxias)** | exponente 3.55 ± 0.09 | [:material-file-code: analyse_BTFR_finale.py](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/calibration/analyse_BTFR_finale.py) | ✅ VALIDADO |
 
-> **[Scripts de reproducción completos](validacion/scripts_reproduccion.md)**: Instrucciones detalladas y datos requeridos.
+> **[Scripts de reproducción completos](validation/scripts_reproduction.md)**: Instrucciones detalladas y datos requeridos.
 
 ## Puentes Conceptuales vs ΛCDM
 
@@ -70,9 +70,9 @@ TMT establece 7 puentes conceptuales fundamentales en comparación con el modelo
 
 ## Estructura de la Documentación
 
-- **[Puentes Conceptuales](pontes_conceptuales/index.md)**: Comparaciones detalladas con ΛCDM
-- **[Validación Empírica](validacion/index.md)**: Pruebas y resultados observacionales
-- **[Publicaciones](publicaciones/index.md)**: Documentos de presentación científica
+- **[Puentes Conceptuales](ponts_conceptuels/index.md)**: Comparaciones detalladas con ΛCDM
+- **[Validación Empírica](validation/index.md)**: Pruebas y resultados observacionales
+- **[Publicaciones](publications/index.md)**: Documentos de presentación científica
 
 ---
 
