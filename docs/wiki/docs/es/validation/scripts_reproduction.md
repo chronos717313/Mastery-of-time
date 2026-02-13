@@ -170,7 +170,7 @@ r_c(M) = 2.6 × (M_bary / 10¹⁰ M_☉)^0.56 kpc
 
 **Resultado**: R² = 0.64 | **Archivo**: `test_TMT_v2_SPARC_reel.py`
 
-La ley k(M) se calibra en el mismo script que las curvas de rotación.
+La ley k(M) se calibra en el mismo script que las [curvas de rotación](courbes_rotation/).
 
 **Ley calibrada**:
 ```

@@ -4,7 +4,7 @@
 
 ### ΛCDM: WIMP Dark Matter
 ΛCDM general relativity requires:
-- **Exotic WIMP particles** to explain rotation curves
+- **Exotic WIMP particles** to explain [rotation curves](../validation/courbes_rotation/)
 - **Dark energy** as cosmological constant Λ
 - Curved geometry by undetected particles
 

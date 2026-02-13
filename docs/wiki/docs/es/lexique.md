@@ -166,7 +166,7 @@ $$
 r_c = 2.6 \times \left(\frac{M_{\text{bary}}}{10^{10} M_\odot}\right)^{0.56} \text{ kpc}
 $$
 
-**Significado**: Es exactamente el radio donde las curvas de rotación galáctica se vuelven planas.
+**Significado**: Es exactamente el radio donde las [curvas de rotación](validation/courbes_rotation/) galáctica se vuelven planas.
 
 **Ejemplos por tipo de galaxia**:
 
@@ -280,7 +280,7 @@ $$
 | Escala | Aplicación |
 |--------|------------|
 | Sistema Solar | TDI verificado al 0.001% de precisión |
-| Galaxias | Predice curvas de rotación planas |
+| Galaxias | Predice [curvas de rotación](validation/courbes_rotation/) planas |
 | Cosmología | Explica expansión diferencial |
 
 ---

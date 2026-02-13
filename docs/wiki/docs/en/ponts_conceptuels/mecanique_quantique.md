@@ -92,7 +92,7 @@ This is the **key term**: a new potential energy created by temporal distortion 
 - Compatible with all galactic observations
 
 ### Validation
-- Perfectly reproduces galaxy rotation curves (SPARC 100%)
+- Perfectly reproduces galaxy [rotation curves](../validation/courbes_rotation/) (SPARC 100%)
 - Predicts the observed $r_c(M)$ law with r = 0.768
 - Dramatically simplifies the particle model
 

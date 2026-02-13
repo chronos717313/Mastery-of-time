@@ -166,7 +166,7 @@ $$
 r_c = 2.6 \times \left(\frac{M_{\text{bary}}}{10^{10} M_\odot}\right)^{0.56} \text{ kpc}
 $$
 
-**Meaning**: This is exactly the radius where galactic rotation curves become flat.
+**Meaning**: This is exactly the radius where galactic [rotation curves](validation/courbes_rotation/) become flat.
 
 **Examples by galaxy type**:
 
@@ -280,7 +280,7 @@ $$
 | Scale | Application |
 |-------|-------------|
 | Solar System | TDI verified to 0.001% precision |
-| Galaxies | Predicts flat rotation curves |
+| Galaxies | Predicts flat [rotation curves](validation/courbes_rotation/) |
 | Cosmology | Explains differential expansion |
 
 ---

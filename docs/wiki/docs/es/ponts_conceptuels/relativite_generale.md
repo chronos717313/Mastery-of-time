@@ -4,7 +4,7 @@
 
 ### ΛCDM: Materia Oscura WIMP
 La relatividad general ΛCDM requiere:
-- **Partículas WIMP exóticas** para explicar curvas de rotación
+- **Partículas WIMP exóticas** para explicar [curvas de rotación](../validation/courbes_rotation/)
 - **Energía oscura** como constante cosmológica Λ
 - Geometría curvada por partículas no detectadas
 

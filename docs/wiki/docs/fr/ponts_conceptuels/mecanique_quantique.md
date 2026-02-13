@@ -92,7 +92,7 @@ C'est le **terme clé** : une nouvelle énergie potentielle créée par la disto
 - Compatible avec toutes les observations galactiques
 
 ### Validation
-- Reproduit parfaitement les courbes de rotation des galaxies (SPARC 100%)
+- Reproduit parfaitement les [courbes de rotation](../validation/courbes_rotation/) des galaxies (SPARC 100%)
 - Prédit la loi $r_c(M)$ observée avec r = 0.768
 - Simplifie drastiquement le modèle particulaire
 

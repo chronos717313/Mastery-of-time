@@ -92,7 +92,7 @@ Este es el **término clave**: una nueva energía potencial creada por la distor
 - Compatible con todas las observaciones galácticas
 
 ### Validación
-- Reproduce perfectamente las curvas de rotación de galaxias (SPARC 100%)
+- Reproduce perfectamente las [curvas de rotación](../validation/courbes_rotation/) de galaxias (SPARC 100%)
 - Predice la ley $r_c(M)$ observada con r = 0.768
 - Simplifica drásticamente el modelo de partículas
 

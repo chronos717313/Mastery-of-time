@@ -8,7 +8,7 @@ TMT achieves **exceptional quantitative validation** with 100% results on major 
 
 | Test | Result | Script | Status |
 |------|--------|--------|--------|
-| **SPARC rotation curves** | [156/156 galaxies (100%)](courbes_rotation/#exclusion-criteria) | [:material-file-code:](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/test_TMT_v2_SPARC_reel.py) | ✅ VALIDATED |
+| **SPARC [rotation curves](courbes_rotation/)** | [156/156 galaxies (100%)](courbes_rotation/#exclusion-criteria) | [:material-file-code:](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/test_TMT_v2_SPARC_reel.py) | ✅ VALIDATED |
 | **r_c(M) law** | r = 0.768 | [:material-file-code:](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/investigation_r_c_variation.py) | ✅ VALIDATED |
 | **k(M) law** | R² = 0.64 | [:material-file-code:](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/test_TMT_v2_SPARC_reel.py) | ✅ VALIDATED |
 | **Weak Lensing Isotropy** | -0.024% | [:material-file-code:](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/test_weak_lensing_TMT_vs_LCDM.py) | ✅ VALIDATED |
@@ -25,7 +25,7 @@ TMT achieves **exceptional quantitative validation** with 100% results on major 
 ## Detailed Sections
 
 ### [Galactic Scale](courbes_rotation/index.md)
-Tests on galaxy rotation curves (SPARC, 156 galaxies).
+Tests on galaxy [rotation curves](courbes_rotation/) (SPARC, 156 galaxies).
 
 ### [Cosmological Scale](echelle_cosmo/index.md)
 Tests on Universe expansion (Hubble tension, supernovae, CMB).

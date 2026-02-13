@@ -166,7 +166,7 @@ $$
 r_c = 2.6 \times \left(\frac{M_{\text{bary}}}{10^{10} M_\odot}\right)^{0.56} \text{ kpc}
 $$
 
-**Signification** : C'est exactement le rayon où les courbes de rotation galactiques deviennent plates.
+**Signification** : C'est exactement le rayon où les [courbes de rotation](validation/courbes_rotation/) galactiques deviennent plates.
 
 **Exemples par type de galaxie** :
 
@@ -280,7 +280,7 @@ $$
 | Échelle | Application |
 |---------|-------------|
 | Système solaire | TDI vérifié à 0.001% de précision |
-| Galaxies | Prédit courbes de rotation plates |
+| Galaxies | Prédit [courbes de rotation](validation/courbes_rotation/) plates |
 | Cosmologie | Explique expansion différentielle |
 
 ---

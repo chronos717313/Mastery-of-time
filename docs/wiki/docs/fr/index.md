@@ -47,7 +47,7 @@ TMT atteint une **compatibilité exceptionnelle** avec les données observationn
 
 | Test | Résultat | Script | Verdict |
 |------|----------|--------|---------|
-| Courbes de rotation SPARC | [156/156 (100%)](validation/courbes_rotation/#criteres-dexclusion) | [:material-file-code: test_TMT_v2_SPARC_reel.py](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/test_TMT_v2_SPARC_reel.py) | ✅ VALIDÉ |
+| [Courbes de rotation](validation/courbes_rotation/) SPARC | [156/156 (100%)](validation/courbes_rotation/#criteres-dexclusion) | [:material-file-code: test_TMT_v2_SPARC_reel.py](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/test_TMT_v2_SPARC_reel.py) | ✅ VALIDÉ |
 | Loi $r_c(M)$ | r = 0.768 | [:material-file-code: investigation_r_c_variation.py](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/investigation_r_c_variation.py) | ✅ VALIDÉ |
 | Loi $k(M)$ | $R^2$ = 0.64 | [:material-file-code: test_TMT_v2_SPARC_reel.py](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/test_TMT_v2_SPARC_reel.py) | ✅ VALIDÉ |
 | Isotropie Weak Lensing | -0.024% | [:material-file-code: test_weak_lensing_TMT_vs_LCDM.py](https://github.com/chronos717313/Mastery-of-time/blob/main/scripts/test_weak_lensing_TMT_vs_LCDM.py) | ✅ VALIDÉ |

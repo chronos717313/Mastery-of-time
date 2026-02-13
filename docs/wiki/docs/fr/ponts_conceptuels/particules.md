@@ -16,12 +16,12 @@ TMT élimine complètement les particules CDM :
 
 ### Simplification Drastique
 - **Modèle parcimonieux** : un seul champ temporel vs dizaines de particules
-- **Prédictions falsifiables** : courbes de rotation sans ajustement libre
+- **Prédictions falsifiables** : [courbes de rotation](../validation/courbes_rotation/) sans ajustement libre
 - **Compatible** avec absence de détection WIMP (ϕ_T(p=1)=0)
 
 ### Validation
 - **Aucune particule CDM détectée** : prédiction confirmée
-- **Courbes de rotation** : expliquées sans particules exotiques
+- **[Courbes de rotation](../validation/courbes_rotation/)** : expliquées sans particules exotiques
 - **CMB anisotropies** : compatible sans CDM chaude/froide
 
 [Retour aux Ponts Conceptuels](../index.md) | [Pont Précédent : Cosmologie](cosmologie.md) | [Pont Suivant : Grandes Mesures](mesures.md)

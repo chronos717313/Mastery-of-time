@@ -4,7 +4,7 @@
 
 ### ΛCDM : Matière Noire WIMP
 La relativité générale ΛCDM nécessite :
-- **Particules exotiques WIMP** pour expliquer les courbes de rotation
+- **Particules exotiques WIMP** pour expliquer les [courbes de rotation](../validation/courbes_rotation/)
 - **Énergie noire** sous forme de constante cosmologique Λ
 - Géométrie courbée par des particules non détectées
 

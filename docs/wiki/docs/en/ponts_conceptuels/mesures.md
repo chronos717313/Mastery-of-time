@@ -5,7 +5,7 @@
 ### ΛCDM: Unresolved Tensions
 ΛCDM has **major incompatibilities**:
 - **Hubble tension**: local H₀ vs CMB (4.4σ)
-- **Rotation curves**: dark matter fitted post-hoc
+- **[Rotation curves](../validation/courbes_rotation/)**: dark matter fitted post-hoc
 - **Dark energy**: unknown origin
 
 ### TMT: Complete Resolutions
@@ -14,7 +14,7 @@ TMT resolves all major tensions:
 | Tension | ΛCDM | TMT | Resolution |
 |---------|-------|----------|------------|
 | Hubble | 4.4σ | 0σ | 100% resolved |
-| Rotation curves | Fitting | 100% predicted | Perfect |
+| [Rotation curves](../validation/courbes_rotation/) | Fitting | 100% predicted | Perfect |
 | Dark energy | Unknown | ϕ_T(p=1)=0 | Explained |
 
 ### Quantitative Validation

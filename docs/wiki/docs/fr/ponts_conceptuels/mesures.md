@@ -5,7 +5,7 @@
 ### ΛCDM : Tensions Non Résolues
 ΛCDM présente des **incompatibilités majeures** :
 - **Tension Hubble** : H₀ local vs CMB (4.4σ)
-- **Courbes de rotation** : matière noire ajustée post-hoc
+- **[Courbes de rotation](../validation/courbes_rotation/)** : matière noire ajustée post-hoc
 - **Énergie noire** : origine inconnue
 
 ### TMT : Résolutions Complètes
@@ -14,7 +14,7 @@ TMT résout toutes les tensions majeures :
 | Tension | ΛCDM | TMT | Résolution |
 |---------|-------|----------|------------|
 | Hubble | 4.4σ | 0σ | 100% résolue |
-| Courbes rotation | Ajustement | 100% prédit | Parfaite |
+| [Courbes rotation](../validation/courbes_rotation/) | Ajustement | 100% prédit | Parfaite |
 | Énergie noire | Inconnue | ϕ_T(p=1)=0 | Expliquée |
 
 ### Validation Quantitative

@@ -171,7 +171,7 @@ r_c(M) = 2.6 × (M_bary / 10¹⁰ M_☉)^0.56 kpc
 
 **Résultat** : R² = 0.64 | **Fichier** : `test_TMT_v2_SPARC_reel.py`
 
-La loi k(M) est calibrée dans le même script que les courbes de rotation.
+La loi k(M) est calibrée dans le même script que les [courbes de rotation](courbes_rotation/).
 
 **Loi calibrée** :
 ```
@@ -345,7 +345,7 @@ python calibrate_TMT_v23_cosmologie.py
 Test de la relation Baryonique Tully-Fisher sur 37,000 galaxies.
 
 **Données** :
-- **SPARC** : 120 galaxies avec courbes de rotation complètes
+- **SPARC** : 120 galaxies avec [courbes de rotation](courbes_rotation/) complètes
 - **ALFALFA + WALLABY** : 32,650 galaxies avec masses HI
 
 **Exécution** :
