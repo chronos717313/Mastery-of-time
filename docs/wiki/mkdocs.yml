@@ -121,6 +121,9 @@ plugins:
             Package Zenodo: Paquete Zenodo
             Article scientifique: Artículo científico
 
+extra:
+  generator: false
+
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
