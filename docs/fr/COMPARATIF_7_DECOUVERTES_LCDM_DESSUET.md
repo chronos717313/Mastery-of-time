@@ -265,7 +265,7 @@ Désaccord: 10¹²² ordres de grandeur!
 
 TMT RÉSOUT CE PROBLÈME:
 - Pas d'énergie du vide
-- Temporons = effet géométrique du temps
+- Temporons = effet scalaire du temps
 - Φ_T émerge naturellement de la superposition
 - Pas de fine-tuning requis
 ```

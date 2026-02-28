@@ -204,13 +204,13 @@ Les URLs publiques testées sont obsolètes (erreur 404). Alternatives:
 #### Si r > 0.50 (TMT Validée)
 - **Urgence**: Publication immédiate (ApJ Letters ou Nature)
 - **Titre suggéré**: *"Dark Matter Halos Aligned with Neighbors: Evidence for Temporal Coupling in Weak Lensing Data"*
-- **Impact**: Remise en question ΛCDM, alternatives géométriques
+- **Impact**: Remise en question ΛCDM, alternatives scalaires
 - **Suivi**: Tests indépendants (Euclid 2026+, LSST/Rubin 2027+)
 
 #### Si r < 0.20 (ΛCDM Validé)
 - **Publication honorable**: Test rigoureux théorie alternative
 - **Titre suggéré**: *"Testing Temporal Distortion Theory via Weak Lensing Halo Alignment: Null Result Favors ΛCDM"*
-- **Impact**: Contraintes serrées sur alternatives géométriques
+- **Impact**: Contraintes serrées sur alternatives scalaires
 - **Valeur**: Démontre falsifiabilité TMT
 
 ---

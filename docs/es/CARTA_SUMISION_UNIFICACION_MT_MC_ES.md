@@ -38,7 +38,7 @@ Nuestro trabajo propone una solución elegante y verificable a ambos enigmas med
 
 La teoría TDT ha demostrado que:
 
-**Materia oscura**: Efecto geométrico resultante de la acumulación de distorsiones temporales
+**Materia oscura**: Efecto escalar resultante de la acumulación de distorsiones temporales
 ```
 M_Després(r) = k(M_bary, f_gas) · ∫₀ʳ Φ²(r') · 4πr'² dr'
 ```

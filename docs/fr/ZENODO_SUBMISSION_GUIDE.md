@@ -88,7 +88,7 @@ Affiliation: Independent Researcher
 
 **Description:**
 ```
-We present the Time Mastery Theory (TMT), a novel geometric framework that explains
+We present the Time Mastery Theory (TMT), a novel scalar framework that explains
 the observed phenomena attributed to dark matter and dark energy without invoking
 exotic particles or fields.
 

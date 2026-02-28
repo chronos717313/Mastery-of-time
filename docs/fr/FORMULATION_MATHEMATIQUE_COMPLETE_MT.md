@@ -140,7 +140,7 @@ où:
 M_Després = M_observée - M_baryonique
 ```
 
-**Nature**: Effet géométrique, NON particule exotique.
+**Nature**: Effet scalaire, NON particule exotique.
 
 ---
 

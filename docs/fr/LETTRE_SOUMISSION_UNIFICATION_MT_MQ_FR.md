@@ -40,7 +40,7 @@ Notre travail propose une solution élégante et testable à ces deux énigmes p
 
 La théorie MT a démontré que :
 
-**Matière noire** : Effet géométrique résultant de l'accumulation des distorsions temporelles
+**Matière noire** : Effet scalaire résultant de l'accumulation des distorsions temporelles
 ```
 M_Després(r) = k(M_bary, f_gas) · ∫₀ʳ Φ²(r') · 4πr'² dr'
 ```

@@ -35,7 +35,7 @@
 
 ### Time Mastery Theory
 
-**Nature of "dark matter"**: Asselin Link accumulation points (geometric effect)
+**Nature of "dark matter"**: Asselin Link accumulation points (scalar effect)
 
 **Spatial distribution**:
 - Follows temporal distortion lines

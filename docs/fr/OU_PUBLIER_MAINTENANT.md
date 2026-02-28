@@ -56,7 +56,7 @@ Després Asselin, Pierre-Olivier
 
 **Description:** (copier-coller ci-dessous)
 ```
-We present the Time Mastery Theory (TMT), a novel geometric framework that
+We present the Time Mastery Theory (TMT), a novel scalar framework that
 explains dark matter and dark energy without exotic particles or fields.
 
 BREAKTHROUGH RESULT: We discovered the universal coupling law

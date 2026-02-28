@@ -29,7 +29,7 @@ Galaxie Spirale (Vue de dessus)
     Matière noire → 🌑 🌑 🌑 🌑 🌑 (invisible, mais ressentie)
 ```
 
-Cette "matière noire" représente 95% de la masse de l'univers, mais on ne l'a jamais détectée directement. La cosmologie standard (ΛCDM) suppose qu'elle est faite de particules exotiques. TMT propose une explication différente : **l'espace-temps lui-même crée cet effet**.
+Cette "matière noire" représente environ 25% du contenu de l'univers (avec l'énergie noire à 70%), mais on ne l'a jamais détectée directement. La cosmologie standard (ΛCDM) suppose qu'elle est faite de particules exotiques. TMT propose une explication différente : **l'espace-temps lui-même crée cet effet**. D'un côté l'espace s'étire en absence de matière, de l'autre côté la distortion temporelle agit comme un centre de masse. Le champ Després qui remplace la matière noire.
 
 ---
 
@@ -61,18 +61,15 @@ Comme une particule peut être à deux endroits à la fois, l'univers entier peu
 La formule centrale décrit l'univers comme un système quantique avec deux composantes temporelles :
 
 $$
-\psi(\text{univers}) = \alpha(r,p,t) \cdot |\text{forward}\rangle + \beta(r,p) \cdot |\text{backward}\rangle
+\psi(\text{univers}) = \alpha \cdot |\text{forward}\rangle + \beta \cdot |\text{backward}\rangle
 $$
 
-**Explication simple des variables** :
-- **ψ (psi)** : La "description quantique" complète de l'univers à un instant donné
-- **α (alpha)** : Amplitude de probabilité pour le temps normal (matière visible)
-- **β (beta)** : Amplitude de probabilité pour le temps réfléchi (matière noire apparente)
-- **r** : Position dans l'espace (où nous sommes)
-- **p** : Quantité de mouvement (vitesse × masse)
-- **t** : Temps (le moment présent)
-- **|forward⟩** : État quantique où le temps coule vers l'avenir
-- **|backward⟩** : État quantique où le temps est "reflété" (crée l'effet matière noire)
+**Explication simple** :
+- **ψ (psi)** : La "description quantique" complète de l'univers
+- **α (alpha)** : Probabilité du temps normal (matière visible que nous voyons)
+- **β (beta)** : Probabilité du temps réfléchi (matière noire que nous ressentons)
+- **|forward⟩** : État où le temps coule vers l'avenir
+- **|backward⟩** : État où le temps est "reflété" (crée l'effet matière noire)
 
 ```
 Superposition Universelle :
@@ -95,8 +92,8 @@ i\hbar \frac{[1 + \tau]^{-1} \partial\psi}{\partial t} = \left[-\frac{\hbar^2}{2
 $$
 
 **Ce que cela signifie** :
-- **Côté gauche** : Comment les particules évoluent dans le temps, ralenti par la gravité
-- **Côté droit** : L'énergie totale (mouvement + potentiel + distorsion temporelle)
+- **Côté gauche** : Comment les particules évoluent dans le temps, ralenties par la gravité
+- **Côté droit** : L'énergie totale (cinétique + potentielle + distorsion temporelle)
 - **τ (tau)** : Mesure de la "distorsion temporelle" causée par la gravité
 
 ```
@@ -132,18 +129,18 @@ TMT a été testée sur des données réelles astronomiques :
 - **Simplicité** : 2 paramètres vs 6 pour ΛCDM
 
 ### Impact Scientifique
-TMT pourrait révolutionner notre compréhension de l'univers, éliminant le besoin de 95% de matière "invisible" et résolvant les tensions cosmologiques.
+TMT pourrait révolutionner notre compréhension de l'univers, expliquant la matière noire (25%) et l'énergie noire (70%) sans particules exotiques, et résolvant les tensions cosmologiques.
 
 ---
 
 ## Explorer Plus Loin
 
-- **[Version Complète Technique](version-complete.md)** : Équations détaillées et références
+- **[Version Complète Technique](version-complete)** : Équations détaillées et références
 - **[Ponts Conceptuels](ponts_conceptuels/index.md)** : Comparaisons avec la physique connue
 - **[Validation Détaillée](validation/index.md)** : Tests scientifiques complets
-- **[Lexique](lexique.md)** : Définitions de tous les termes
+- **[Lexique](lexique.md)** : Définitions de tous les termes TMT
 
 ---
 
 *TMT : Une nouvelle façon de voir l'univers (Accessible à tous depuis 2026)*</content>
-<parameter name="filePath">docs/wiki/docs/fr/index.md
+<parameter name="filePath">docs/wiki/docs/index.md

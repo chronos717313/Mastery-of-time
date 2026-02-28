@@ -14,7 +14,7 @@
 
 **Physical nature**:
 - **Not** an exotic particle or unknown matter
-- **But** a **geometric effect** of cumulative temporal distortion
+- **But** a **scalar effect** of cumulative temporal distortion
 - Analogous to Lagrange points, where distortions add up
 
 **Characteristics**:
@@ -156,7 +156,7 @@ Where k_Asselin is a coupling coefficient (calibrated on observations).
 
 | Term | Meaning |
 |------|---------|
-| **Després Mass** | Equivalent mass (geometric effect) |
+| **Després Mass** | Equivalent mass (scalar effect) |
 | **Després Mass halo** | Temporal distortion distribution |
 | **Després Mapping** | Map of γ_Després (Lorentz) values |
 | **Asselin Link** | Temporal distortion gradient |
@@ -265,7 +265,7 @@ Observations: rotation curves, lensing, velocities
 ## Summary
 
 ### Després Mass
-- **What?** Equivalent mass (geometric effect)
+- **What?** Equivalent mass (scalar effect)
 - **Where?** Temporal distortion accumulation points
 - **Why?** Convergence of Asselin Links
 - **How to measure?** Rotation curves, lensing, velocities

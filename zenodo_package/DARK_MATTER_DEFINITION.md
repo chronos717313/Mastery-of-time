@@ -192,7 +192,7 @@ For n = 0.75 and typical mass profiles, this produces **flat rotation curves** w
 | Aspect | TMT v2.3 | LCDM |
 |--------|----------|------|
 | **Nature of dark matter** | Temporal reflection of visible matter | Exotic particles (WIMPs, axions...) |
-| **Particles required** | None (geometric effect) | Undiscovered particles |
+| **Particles required** | None (scalar effect) | Undiscovered particles |
 | **Detection** | Not applicable (same matter) | 40+ years, no detection |
 | **Free parameters** | 3 (n, r_c coefficient, r_c exponent) | 2 per galaxy (NFW) + 6 cosmological |
 | **Halo shape** | Isotropic (spherical) | Isotropic (spherical) |

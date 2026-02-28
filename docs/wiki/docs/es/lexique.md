@@ -86,7 +86,7 @@ $$
 - Aumenta cerca de objetos masivos
 - Integra la 3ª ley de Kepler ($v \propto \sqrt{M/r}$)
 
-**Validación**: Relación $2\Phi/c^2 = 2 \times v^2/c^2$ verificada al 0.001% de precisión en el Sistema Solar.
+**Validación**: Relación $2\Phi/c^2 = 2 \times v^2/c^2$ verificada al 0.001% de precisión en el Sistema Solar. Validaciones adicionales incluyen las curvas de rotación SPARC (156 galaxias, 100% éxito), isotropía del lensado débil (-0.024%), correlación masa-entorno COSMOS2015 (r=0.150), efectos entorno SNIa, ISW, y resolución de la tensión H₀.
 
 ---
 
@@ -143,7 +143,7 @@ $$
 M_{\text{Després}} = k \times \int \left(\frac{\Phi}{c^2}\right)^2 dV = k \times \int \tau^2 \, dV
 $$
 
-**Naturaleza**: Efecto **geométrico**, NO una partícula exótica.
+**Naturaleza**: Efecto **escalar**, NO una partícula exótica.
 
 **Interpretación física**:
 
@@ -154,7 +154,7 @@ $$
 | Modelo | Interpretación de la "materia oscura" |
 |--------|---------------------------------------|
 | ΛCDM | Partículas exóticas (WIMPs, axiones) |
-| TMT | Efecto geométrico de distorsión temporal |
+| TMT | Efecto escalar de distorsión temporal |
 
 ---
 
@@ -303,7 +303,7 @@ $$
 
 | Concepto | ΛCDM | TMT |
 |----------|------|-----|
-| **Materia oscura** | Partículas WIMP/axiones | Efecto geométrico ($M_{\text{Després}}$) |
+| **Materia oscura** | Partículas WIMP/axiones | Efecto escalar ($M_{\text{Després}}$) |
 | **Energía oscura** | Constante cosmológica Λ | Superposición $\alpha/\beta$ en vacíos |
 | **Unificación MC+RG** | Problema abierto | Ecuación Després-Schrödinger |
 | **Parámetros libres** | 6 (ΛCDM estándar) | 2 ($r_c$, $n$) |

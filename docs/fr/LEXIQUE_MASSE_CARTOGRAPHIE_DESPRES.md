@@ -14,7 +14,7 @@
 
 **Nature physique** :
 - **Non pas** une particule exotique ou une matière inconnue
-- **Mais** un **effet géométrique** de la distorsion temporelle cumulée
+- **Mais** un **effet scalaire** de la distorsion temporelle cumulée
 - Analogue aux points de Lagrange, où les distorsions s'additionnent
 
 **Caractéristiques** :
@@ -39,7 +39,7 @@ La Masse Després se manifeste par ses effets gravitationnels :
 
 | Lambda-CDM | Maîtrise du Temps |
 |------------|-------------------|
-| Particules exotiques (WIMPs, axions) | Effet géométrique de distorsion temporelle |
+| Particules exotiques (WIMPs, axions) | Effet scalaire de distorsion temporelle |
 | Matière réelle de masse M_noire | **Masse Després** = masse équivalente |
 | Distribution NFW (simulations N-corps) | Distribution selon Liaisons Asselin |
 
@@ -156,7 +156,7 @@ Où k_Asselin est un coefficient de couplage (calibré sur observations).
 
 | Terme | Signification |
 |-------|---------------|
-| **Masse Després** | Masse équivalente (effet géométrique) |
+| **Masse Després** | Masse équivalente (effet scalaire) |
 | **Halo de Masse Després** | Distribution de distorsion temporelle |
 | **Cartographie Després** | Carte des valeurs γ_Després (Lorentz) |
 | **Liaison Asselin** | Gradient de distorsion temporelle |
@@ -265,7 +265,7 @@ Observations : courbes rotation, lentilles, vitesses
 ## Résumé
 
 ### Masse Després
-- **Quoi ?** Masse équivalente (effet géométrique)
+- **Quoi ?** Masse équivalente (effet scalaire)
 - **Où ?** Points d'accumulation de distorsion temporelle
 - **Pourquoi ?** Convergence des Liaisons Asselin
 - **Comment mesurer ?** Courbes rotation, lentilles, vitesses

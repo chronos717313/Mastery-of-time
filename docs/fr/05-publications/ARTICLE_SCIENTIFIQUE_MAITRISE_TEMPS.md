@@ -40,14 +40,14 @@ La Dynamique Newtonienne Modifiée (MOND) [13-14] tente d'expliquer les courbes 
 
 ### 1.3 Théorie de Maîtrise du Temps : Un Nouveau Cadre
 
-Nous proposons la Théorie de Maîtrise du Temps (TMT), qui réinterprète les phénomènes noirs comme **effets géométriques** issus de :
+Nous proposons la Théorie de Maîtrise du Temps (TMT), qui réinterprète les phénomènes noirs comme **effets scalaires** issus de :
 
 1. **Liaisons Asselin** (L) : Gradients de distorsion temporelle accumulés entre distributions de masse
 2. **Masse Després** (M_D) : Masse gravitationnelle apparente issue des champs de distorsion temporelle intégrés
 3. **Cartographie Després** (γ_D) : Facteur de Lorentz généralisé incorporant le potentiel gravitationnel
 4. **Expansion Différentielle** : Paramètre de Hubble dépendant de l'environnement H(z,ρ)
 
-La TMT opère entièrement dans le cadre de la Relativité Générale (RG) sans nouveaux champs ni particules, reconnaissant plutôt que la distorsion temporelle (dilatation gravitationnelle du temps) crée des effets géométriques cumulatifs précédemment attribués à de la matière exotique.
+La TMT opère entièrement dans le cadre de la Relativité Générale (RG) sans nouveaux champs ni particules, reconnaissant plutôt que la distorsion temporelle (dilatation gravitationnelle du temps) crée des effets scalaires cumulatifs précédemment attribués à de la matière exotique.
 
 ### 1.4 Ce Travail
 

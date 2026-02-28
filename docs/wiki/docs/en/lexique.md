@@ -86,7 +86,7 @@ $$
 - Increases near massive objects
 - Integrates Kepler's 3rd law ($v \propto \sqrt{M/r}$)
 
-**Validation**: Relation $2\Phi/c^2 = 2 \times v^2/c^2$ verified to 0.001% precision in the Solar System.
+**Validation**: Relation $2\Phi/c^2 = 2 \times v^2/c^2$ verified to 0.001% precision in the Solar System. Additional validations include SPARC rotation curves (156 galaxies, 100% success), weak lensing isotropy (-0.024%), COSMOS2015 mass-environment correlation (r=0.150), SNIa environment effects, ISW, and H0 tension resolution.
 
 ---
 
@@ -143,7 +143,7 @@ $$
 M_{\text{Després}} = k \times \int \left(\frac{\Phi}{c^2}\right)^2 dV = k \times \int \tau^2 \, dV
 $$
 
-**Nature**: **Geometric** effect, NOT an exotic particle.
+**Nature**: **Scalar** effect, NOT an exotic particle.
 
 **Physical interpretation**:
 
@@ -154,7 +154,7 @@ $$
 | Model | Interpretation of "dark matter" |
 |-------|--------------------------------|
 | ΛCDM | Exotic particles (WIMPs, axions) |
-| TMT | Geometric effect of temporal distortion |
+| TMT | Scalar effect of temporal distortion |
 
 ---
 
@@ -303,7 +303,7 @@ $$
 
 | Concept | ΛCDM | TMT |
 |---------|------|-----|
-| **Dark matter** | WIMP/axion particles | Geometric effect ($M_{\text{Després}}$) |
+| **Dark matter** | WIMP/axion particles | Scalar effect ($M_{\text{Després}}$) |
 | **Dark energy** | Cosmological constant Λ | $\alpha/\beta$ superposition in voids |
 | **QM+GR unification** | Open problem | Després-Schrödinger equation |
 | **Free parameters** | 6 (standard ΛCDM) | 2 ($r_c$, $n$) |

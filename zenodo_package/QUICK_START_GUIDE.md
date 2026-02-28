@@ -6,7 +6,7 @@
 
 ## What is TMT?
 
-**Time Mastery Theory** proposes that dark matter and dark energy are not exotic substances, but **geometric effects** arising from spacetime curvature.
+**Time Mastery Theory** proposes that dark matter and dark energy are not exotic substances, but **scalar effects** arising from spacetime curvature.
 
 ### Key Ideas (30 seconds)
 
@@ -39,7 +39,7 @@ Apparent mass from accumulated temporal distortions.
 M_D = k × ∫ Φ²(r') dV'
 ```
 
-**Not a new particle** - A geometric effect!
+**Not a new particle** - A scalar effect!
 
 ---
 

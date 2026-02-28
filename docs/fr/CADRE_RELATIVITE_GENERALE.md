@@ -238,7 +238,7 @@ Notre théorie ajoute des prédictions **au-delà de la RG standard** :
 | **Métrique cosmologique** | `a²(t)dr²` (espace) | `-τ²(t)dt²` (temps) |
 | **Redshift** | `1+z = a_obs/a_émis` | `1+z = τ_obs/τ_émis` |
 | **Expansion** | Spatiale | Temporelle |
-| **Matière noire** | Particule exotique | Effet géométrique (liaisons) |
+| **Matière noire** | Particule exotique | Effet scalaire (liaisons) |
 | **Énergie noire** | Constante Λ | Émergente (rupture liaisons) |
 
 ---

@@ -40,14 +40,14 @@ Modified Newtonian Dynamics (MOND) [13-14] attempts to explain rotation curves b
 
 ### 1.3 Time Mastery Theory: A New Framework
 
-We propose Time Mastery Theory (TMT), which reinterprets dark phenomena as **geometric effects** arising from:
+We propose Time Mastery Theory (TMT), which reinterprets dark phenomena as **scalar effects** arising from:
 
 1. **Asselin Links** (L): Accumulated temporal distortion gradients between mass distributions
 2. **Després Mass** (M_D): Apparent gravitational mass from integrated temporal distortion fields
 3. **Després Mapping** (γ_D): Generalized Lorentz factor incorporating gravitational potential
 4. **Differential Expansion**: Environment-dependent Hubble parameter H(z,ρ)
 
-TMT operates entirely within General Relativity (GR) with no new fields or particles, instead recognizing that temporal distortion (gravitational time dilation) creates cumulative geometric effects previously attributed to exotic matter.
+TMT operates entirely within General Relativity (GR) with no new fields or particles, instead recognizing that temporal distortion (gravitational time dilation) creates cumulative scalar effects previously attributed to exotic matter.
 
 ### 1.4 This Work
 
@@ -585,7 +585,7 @@ TMT can be falsified by:
 
 ## 9. CONCLUSIONS
 
-We have presented Time Mastery Theory (TMT), a geometric reinterpretation of dark matter and dark energy as effects of temporal distortion in curved spacetime. Key results:
+We have presented Time Mastery Theory (TMT), a scalar reinterpretation of dark matter and dark energy as effects of temporal distortion in curved spacetime. Key results:
 
 1. **Universal coupling law** for Després Mass:
    ```

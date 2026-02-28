@@ -445,7 +445,7 @@ galaxies using weak gravitational lensing of [N] galaxies
 from [COSMOS/DES]. We measure a correlation r = [value] ± [error]
 (p < [p-value]), inconsistent with standard ΛCDM predictions
 (r < 0.2) at [X]σ significance. This result supports Time
-Mastery Theory (TMT), which predicts geometric dark matter
+Mastery Theory (TMT), which predicts scalar dark matter
 arising from temporal distortion gradients.
 
 SECTIONS:

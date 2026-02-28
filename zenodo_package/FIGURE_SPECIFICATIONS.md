@@ -219,7 +219,7 @@ where:
 > "Validation of universal law k(M_bary, f_gas): observed k values (from individual rotation curve fits) versus predicted k values (from universal law with no free parameters). All 6 galaxies fall within ±8% of perfect correlation (diagonal line), demonstrating exceptional predictive power. Residuals shown in inset."
 
 **Figure 3 Caption**:
-> "Rotation curves for 6 calibration galaxies spanning 3 orders of magnitude in mass. Blue dashed: baryonic contribution (disk + gas). Red dotted: Després Mass contribution (geometric dark matter). Black solid: total predicted velocity. All curves use k from universal law—no galaxy-specific fitting. Average χ²_red = 0.04."
+> "Rotation curves for 6 calibration galaxies spanning 3 orders of magnitude in mass. Blue dashed: baryonic contribution (disk + gas). Red dotted: Després Mass contribution (scalar dark matter). Black solid: total predicted velocity. All curves use k from universal law—no galaxy-specific fitting. Average χ²_red = 0.04."
 
 **Figure 4 Caption**:
 > "Comprehensive summary of universal law k(M_bary, f_gas). (a) Mass dependence showing power-law k ∝ M^(-1.61). (b) Gas fraction dependence k ∝ (1+f_gas)^(-3.59). (c) Observed vs predicted correlation (R² = 0.9976). (d) Example: NGC3198 rotation curve predicted with zero free parameters, showing baryonic (blue), Després Mass (red), and total (black) contributions."

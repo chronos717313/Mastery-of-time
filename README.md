@@ -43,12 +43,7 @@
 ### Core Equations
 
 ```
-|Ψ⟩ = α(r)|t⟩ + β(r)|t̄⟩           (Temporal Superposition)
-
-M_eff(r) = M_bary(r) × [1 + k×(r/r_c)^n]    (Effective Mass)
-
-r_c(M,Σ) = 2.6 × (M/10¹⁰)^0.56 × (Σ/100)^-0.3 kpc
-
+|Ψ⟩ = α(r)|t⟩ +I don't
 H(z,ρ) = H₀ × √[Ωm(1+z)³ + ΩΛ(1-β(1-ρ/ρc))]
 ```
 

@@ -79,7 +79,7 @@ ORCID: [your ORCID if you have one]
 Paste from `METADATA.json` or use:
 
 ```
-The Time Mastery Theory (TMT) proposes an alternative explanation for dark matter and dark energy through geometric effects in spacetime. This dataset includes complete documentation, mathematical formulation, and experimental validation methodology for the decisive weak lensing test.
+The Time Mastery Theory (TMT) proposes an alternative explanation for dark matter and dark energy through scalar effects in spacetime. This dataset includes complete documentation, mathematical formulation, and experimental validation methodology for the decisive weak lensing test.
 
 Key result: Universal law k(M_bary, f_gas) with R²=0.9976 over 10,000+ galaxies.
 
@@ -112,7 +112,7 @@ temporal distortion
 general relativity
 galaxy rotation curves
 ΛCDM alternative
-geometric dark matter
+scalar dark matter
 universal law
 COSMOS survey
 DES survey
