@@ -29,7 +29,7 @@ Galaxie Spirale (Vue de dessus)
     Matière noire → 🌑 🌑 🌑 🌑 🌑 (invisible, mais ressentie)
 ```
 
-Cette "matière noire" représente environ 25% du contenu de l'univers (avec l'énergie noire à 70%), mais on ne l'a jamais détectée directement. La cosmologie standard (ΛCDM) suppose qu'elle est faite de particules exotiques. TMT propose une explication différente : **l'espace-temps lui-même crée cet effet**. D'un côté l'espace s'étire en absence de matière, de l'autre côté la distortion temporelle agit comme un centre de masse. Le champ Després qui remplace la matière noire.
+Cette "matière noire" représente environ 25% du contenu de l'univers (avec l'énergie noire à 70%), mais on ne l'a jamais détectée directement. La cosmologie standard (ΛCDM) suppose qu'elle est faite de particules exotiques. TMT propose une explication différente : **l'espace-temps lui-même crée cet effet**. D'un côté l'espace s'étire en absence de matière, de l'autre côté la distortion temporelle agit comme un centre de masse. Le champ Després qui remplace la matière noire. Le champ Després est un champ scalaire qui représente la distortion temporelle en tout lieu. Cette distortion temporelle est équivalente à une masse ; la masse Després (matière noire).
 
 ---
 

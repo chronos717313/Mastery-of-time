@@ -29,7 +29,7 @@ Spiral Galaxy (Top View)
     Dark Matter   → 🌑 🌑 🌑 🌑 🌑 (invisible, but felt)
 ```
 
-This "dark matter" makes up about 25% of the universe's content (with dark energy at 70%), but has never been directly detected. Standard cosmology (ΛCDM) assumes it's made of exotic particles. TMT proposes a different explanation: **spacetime itself creates this effect**. On one side space stretches in absence of matter, on the other side temporal distortion acts like a center of mass. The Després field which replaces dark matter.
+This "dark matter" makes up about 25% of the universe's content (with dark energy at 70%), but has never been directly detected. Standard cosmology (ΛCDM) assumes it's made of exotic particles. TMT proposes a different explanation: **spacetime itself creates this effect**. On one side space stretches in absence of matter, on the other side temporal distortion acts like a center of mass. The Després field which replaces dark matter. The Després field is a scalar field that represents temporal distortion everywhere. This temporal distortion is equivalent to a mass; the Després mass (dark matter).
 
 ---
 
