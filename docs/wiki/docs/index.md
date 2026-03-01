@@ -21,15 +21,7 @@ Le temps n'est pas uniforme. Près d'objets massifs, le temps s'écoule plus len
 
 Imaginez une galaxie comme une gigantesque roue tournant dans l'espace. Les étoiles à l'extérieur devraient tourner lentement à cause de la gravité décroissante. Pourtant, les observations montrent qu'elles tournent **très vite**, comme si une matière invisible fournissait une attraction gravitationnelle supplémentaire.
 
-```
-Galaxie Spirale (Vue de dessus)
-                    ☼ Centre massif
-          Étoiles  ⭐ ⭐ ⭐ ⭐ (tourne très vite !)
-    Matière visible → 💫 💫 💫 💫 💫
-    Matière noire → 🌑 🌑 🌑 🌑 🌑 (invisible, mais ressentie)
-```
-
-Cette "matière noire" représente environ 25% du contenu de l'univers (avec l'énergie noire à 70%), mais on ne l'a jamais détectée directement. La cosmologie standard (ΛCDM) suppose qu'elle est faite de particules exotiques. TMT propose une explication différente : **l'espace-temps lui-même crée cet effet**. D'un côté l'espace s'étire en absence de matière, de l'autre côté la distortion temporelle agit comme un centre de masse. Le champ Després est un champ scalaire qui représente la distortion temporelle en tout lieu. Cette distortion temporelle est équivalente à une masse ; la masse Després (matière noire).
+Cette "matière noire" représente environ 25% du contenu de l'univers (avec l'énergie noire à 70%), mais on ne l'a jamais détectée directement. La cosmologie standard (ΛCDM) suppose qu'elle est faite de particules exotiques. TMT propose une explication différente : **l'espace-temps lui-même crée cet effet**. D'un côté l'espace s'étire en absence de matière, de l'autre côté la distortion temporelle agit comme une masse diffuse ; le champ Després (la matière noire).
 
 ---
 

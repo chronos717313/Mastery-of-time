@@ -21,15 +21,7 @@ A la escala de átomos y partículas, las leyes de la física cambian. Las part�
 
 Imagina una galaxia como una rueda gigante girando en el espacio. Las estrellas en el exterior deberían girar lentamente debido a la gravedad decreciente. Sin embargo, las observaciones muestran que giran **muy rápido**, como si materia invisible proporcionara atracción gravitacional extra.
 
-```
-Galaxia Espiral (Vista Superior)
-                    ☼ Centro Masivo
-          Estrellas ⭐ ⭐ ⭐ ⭐ (gira muy rápido!)
-    Materia Visible → 💫 💫 💫 💫 💫
-    Materia Oscura → 🌑 🌑 🌑 🌑 🌑 (invisible, pero sentida)
-```
-
-Esta "materia oscura" constituye aproximadamente el 25% del contenido del universo (con la energía oscura en 70%), pero nunca ha sido detectada directamente. La cosmología estándar (ΛCDM) asume que está hecha de partículas exóticas. TMT propone una explicación diferente: **el espacio-tiempo mismo crea este efecto**. De un lado el espacio se estira en ausencia de materia, del otro lado la distorsión temporal actúa como un centro de masa. El campo Després es un campo escalar que representa la distorsión temporal en todo lugar. Esta distorsión temporal es equivalente a una masa; la masa Després (materia oscura).
+Esta "materia oscura" constituye aproximadamente el 25% del contenido del universo (con la energía oscura en 70%), pero nunca ha sido detectada directamente. La cosmología estándar (ΛCDM) asume que está hecha de partículas exóticas. TMT propone una explicación diferente: **el espacio-tiempo mismo crea este efecto**. De un lado el espacio se estira en ausencia de materia, del otro lado la distorsión temporal actúa como una masa difusa; el campo Després (la materia oscura).
 
 ---
 
