@@ -44,7 +44,7 @@ Temps Reflété (Backward): ← ← ← ← ← (matière noire apparente)
 ```
 
 ### 2. Distorsion Temporelle
-La gravité ne courbe pas seulement l'espace, elle "étire" aussi le temps localement.
+La gravité ne courbe pas seulement l'espace, elle "étire" aussi le temps localement (donc le ralenti) et donne une perception que l'espace s'étire loin des masses.
 
 ```
 Sans gravité : Temps uniforme → → → → →
