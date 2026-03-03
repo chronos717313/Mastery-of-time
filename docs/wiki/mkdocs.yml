@@ -7,7 +7,7 @@ docs_dir: docs
 
 nav:
   - Accueil: index.md
-  - Version Complète: version-complete
+  - Version Complète: version-complete.md
   - Lexique: lexique.md
   - Ponts Conceptuels:
     - Vue d'ensemble: ponts_conceptuels/index.md
@@ -62,9 +62,80 @@ theme:
 
 plugins:
   - search
+  - i18n:
+      docs_structure: folder
+      reconfigure_material: true
+      fallback_to_default: true
+      languages:
+        - locale: fr
+          default: true
+          name: Français
+          build: true
+        - locale: en
+          name: English
+          build: true
+          theme:
+            language: en
+          nav_translations:
+            Accueil: Home
+            Version Complète: Full Version
+            Lexique: Lexicon
+            Ponts Conceptuels: Conceptual Bridges
+            Vue d'ensemble: Overview
+            Physique connue: Known Physics
+            Mécanique quantique: Quantum Mechanics
+            Relativité générale: General Relativity
+            Thermodynamique: Thermodynamics
+            Cosmologie: Cosmology
+            Particules: Particles
+            Mesures: Measurements
+            Validation Empirique: Empirical Validation
+            Courbes de rotation: Rotation Curves
+            Échelle cosmologique: Cosmological Scale
+            Autres tests: Other Tests
+            Scripts de reproduction: Reproduction Scripts
+            Publications: Publications
+            Package Zenodo: Zenodo Package
+            Article scientifique: Scientific Article
+        - locale: es
+          name: Español
+          build: true
+          theme:
+            language: es
+          nav_translations:
+            Accueil: Inicio
+            Version Complète: Versión Completa
+            Lexique: Léxico
+            Ponts Conceptuels: Puentes Conceptuales
+            Vue d'ensemble: Visión General
+            Physique connue: Física Conocida
+            Mécanique quantique: Mecánica Cuántica
+            Relativité générale: Relatividad General
+            Thermodynamique: Termodinámica
+            Cosmologie: Cosmología
+            Particules: Partículas
+            Mesures: Medidas
+            Validation Empirique: Validación Empírica
+            Courbes de rotation: Curvas de Rotación
+            Échelle cosmologique: Escala Cosmológica
+            Autres tests: Otras Pruebas
+            Scripts de reproduction: Scripts de Reproducción
+            Publications: Publicaciones
+            Package Zenodo: Paquete Zenodo
+            Article scientifique: Artículo Científico
 
 extra:
   generator: false
+  alternate:
+    - name: Français
+      link: /fr/
+      lang: fr
+    - name: English
+      link: /en/
+      lang: en
+    - name: Español
+      link: /es/
+      lang: es
 
 markdown_extensions:
   - pymdownx.highlight:
