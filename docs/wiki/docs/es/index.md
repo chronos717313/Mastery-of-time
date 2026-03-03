@@ -1,138 +1,119 @@
-# Teoría de Dominio del Tiempo (TMT)
+# La Teoría del Dominio del Tiempo (TMT): una alternativa a la materia oscura y la energía oscura
 
-*Una explicación accesible de la materia oscura y la energía oscura*
-
-## Prerrequisitos: Conceptos Básicos
-
-Antes de explorar TMT, aquí hay algunas ideas esenciales para entender el universo:
-
-### ¿Qué es la Gravedad?
-La gravedad es la fuerza que atrae objetos masivos entre sí. Cuanto más masivo es un objeto, más curva el espacio-tiempo a su alrededor.
-
-### ¿Qué es el Tiempo?
-El tiempo no es uniforme. Cerca de objetos masivos, el tiempo fluye más lentamente (por eso los relojes atómicos en satélites GPS deben ajustarse).
-
-### ¿Qué es la Física Cuántica?
-A la escala de átomos y partículas, las leyes de la física cambian. Las partículas pueden existir en múltiples estados a la vez (superposición).
+**Autores**: Equipo TMT
+**Fecha**: Marzo 2026
+**Versión**: TMT v2.4
+**Contacto**: github.com/chronos717313/Mastery-of-time
+**DOI**: 10.5281/zenodo.18287042
 
 ---
 
-## El Misterio de la Materia Oscura
+## El problema: el 95 % del universo se nos escapa
 
-Imagina una galaxia como una rueda gigante girando en el espacio. Las estrellas en el exterior deberían girar lentamente debido a la gravedad decreciente. Sin embargo, las observaciones muestran que giran **muy rápido**, como si materia invisible proporcionara atracción gravitacional extra.
+El modelo cosmológico estándar (ΛCDM) predice que solo el 5 % del contenido del universo está compuesto de materia bariónica ordinaria — la misma de la que estamos hechos nosotros, las estrellas y las galaxias. El 95 % restante se atribuye a dos entidades jamás observadas directamente: la **materia oscura** (25 %) y la **energía oscura** (70 %).
 
-Esta "materia oscura" constituye aproximadamente el 25% del contenido del universo (con la energía oscura en 70%), pero nunca ha sido detectada directamente. La cosmología estándar (ΛCDM) asume que está hecha de partículas exóticas. TMT propone una explicación diferente: **el espacio-tiempo mismo crea este efecto**. De un lado el espacio se estira en ausencia de materia, del otro lado la distorsión temporal actúa como una masa difusa; el campo Després (la materia oscura).
-
----
-
-## Ideas Clave de TMT en Términos Simples
-
-### 1. El Tiempo No Es Simétrico
-En nuestro universo, el tiempo "fluye" normalmente hacia el futuro. Pero TMT sugiere que el universo también contiene un componente de tiempo "revertido" o "reflejado".
-
-```
-Tiempo Normal (Forward) : → → → → → (materia visible)
-Tiempo Reflejado (Backward): ← ← ← ← ← (materia oscura aparente)
-```
-
-### 2. Distorsión Temporal
-La gravedad no solo curva el espacio, también "estira" el tiempo local.
-
-```
-Sin gravedad: Tiempo uniforme → → → → →
-Con gravedad:  Tiempo estirado  → → → → → → (más lento cerca de masas)
-```
-
-### 3. Superposición Cuántica del Universo
-Así como una partícula puede estar en dos lugares a la vez, el universo entero puede tener dos "estados temporales" superpuestos.
+A pesar de décadas de búsqueda intensa (LHC, detectores subterráneos, telescopios espaciales), ninguna de estas componentes ha sido detectada de forma directa. La Teoría del Dominio del Tiempo propone una explicación radicalmente diferente: ese 95 % no es una sustancia oculta, sino una **manifestación geométrica del tiempo mismo**.
 
 ---
 
-## La Ecuación Fundamental de TMT
+## La propuesta central: el tiempo como campo físico
 
-La fórmula central describe el universo como un sistema cuántico con dos componentes temporales:
-
-$$
-\psi(\text{universo}) = \alpha \cdot |\text{forward}\rangle + \beta \cdot |\text{backward}\rangle
-$$
-
-**Explicación simple**:
-- **ψ (psi)**: La "descripción cuántica" completa del universo
-- **α (alpha)**: Probabilidad del tiempo normal (materia visible que vemos)
-- **β (beta)**: Probabilidad del tiempo reflejado (materia oscura que sentimos)
-- **|forward⟩**: Estado donde el tiempo fluye hacia el futuro
-- **|backward⟩**: Estado donde el tiempo es "reflejado" (crea efecto materia oscura)
+La TMT postula que el potencial gravitacional Φ genera una **distorsión temporal local** cuantificable, denominada el **Índice de Distorsión Temporal (IDT)**:
 
 ```
-Superposición Universal:
-   α × Tiempo Normal  → Materia Visible ⭐
- + β × Tiempo Reflejado → Materia Oscura 🌑
- = Universo Observado
+IDT = Φ / c²
+```
+
+Esta distorsión no es solo una consecuencia de la relatividad general — actúa como **fuente activa de dinámica gravitacional adicional** a través de la **Masa Després**:
+
+```
+M_D = k × ∫(Φ/c²)² dV
+```
+
+El parámetro de acoplamiento k sigue una ley empírica calibrada sobre 172 galaxias SPARC reales:
+
+```
+k(M) = 4,00 × (M / 10¹⁰ M☉)^(-0,49)     [R² = 0,64]
 ```
 
 ---
 
-## Unificando Física Cuántica + Gravedad
+## La superposición temporal: el tiempo en doble sentido
 
-TMT unifica las dos grandes teorías de la física moderna:
-
-### Ecuación Després-Schrödinger
-Esta ecuación combina mecánica cuántica y relatividad general:
-
-$$
-i\hbar \frac{[1 + \tau]^{-1} \partial\psi}{\partial t} = \left[-\frac{\hbar^2}{2m_{eff}} \nabla^2 + V + mc^2\tau\right] \psi
-$$
-
-**Qué significa esto**:
-- **Lado izquierdo**: Cómo evolucionan las partículas en el tiempo, ralentizadas por la gravedad
-- **Lado derecho**: Energía total (cinética + potencial + distorsión temporal)
-- **τ (tau)**: Medida de "distorsión temporal" causada por la gravedad
+La pieza central del formalismo TMT es la **superposición temporal cuántica**:
 
 ```
-Analogía de Saturno:
-         ☾ Anillos (materia visible)
-    🌌 Gravedad de Saturno curva el espacio
-         ⏰ Tiempo más lento cerca del planeta
-    💫 Efecto aparente: atracción extra (como materia oscura)
+|Ψ⟩ = α(r)|t⟩ + β(r)|t̄⟩
 ```
 
----
+donde |t⟩ representa el flujo temporal ordinario (materia visible) y |t̄⟩ su reflejo inverso. La masa efectiva que siente una partícula de prueba a la distancia r es:
 
-## Validación: ¿Funciona TMT?
+```
+M_eff(r) = M_bary(r) × [1 + (r/r_c)^n]
+```
 
-TMT ha sido probada en datos astronómicos reales:
+con:
+- r_c(M) = 2,6 × (M/10¹⁰)^0,56 kpc — el radio de transición, dependiente de la masa
+- n ≈ 0,75 — el exponente de superposición
 
-| Prueba | Qué prueba | Resultado | Significado |
-|--------|------------|-----------|-------------|
-| Rotación galáctica | Velocidad de estrellas | ✅ 100% de galaxias | Ajuste perfecto |
-| Lente gravitacional | Doblamiento de luz | ✅ Isotropía perfecta | Sin partículas |
-| Expansión del universo | Aceleración cósmica | ✅ Tensión de Hubble resuelta | Energía oscura explicada |
-
-**Puntuación general**: 8/8 pruebas validadas con significancia >15σ!
+**El efecto llamado "materia oscura" emerge de forma natural** como el reflejo cuántico de la materia bariónica, sin invocar ninguna partícula exótica.
 
 ---
 
-## Por Qué TMT Cambia Todo
+## Validación empírica: 8 pruebas independientes
 
-### Ventajas Sobre ΛCDM
-- **Sin partículas exóticas**: La materia oscura es un efecto geométrico
-- **Unificación natural**: Cuántico + Gravedad en una ecuación
-- **Predicciones comprobables**: Todas verificadas por observaciones
-- **Simplicidad**: 2 parámetros vs 6 para ΛCDM
+La TMT v2.4 ha sido confrontada con 8 conjuntos de datos observacionales independientes:
 
-### Impacto Científico
-TMT podría revolucionar nuestra comprensión del universo, explicando la materia oscura (25%) y la energía oscura (70%) sin partículas exóticas, y resolviendo tensiones cosmológicas.
+| Prueba | Datos | Resultado | Veredicto |
+|--------|-------|-----------|-----------|
+| Curvas de rotación | SPARC (175 galaxias) | 156/156 aplicables | VÁLIDO |
+| Ley r_c(M) | SPARC | r = 0,768, p = 3×10⁻²¹ | VÁLIDO |
+| Ley k(M) | 172 galaxias | R² = 0,64 | VÁLIDO |
+| Isotropía de halos | KiDS-450 (1 M galaxias) | Desviación −0,024 % | VÁLIDO |
+| Masa-Entorno | COSMOS2015 (1,18 M galaxias) | r = 0,150, p < 10⁻¹⁰⁰ | VÁLIDO |
+| SNIa por entorno | Pantheon+ (1 700 SNIa) | Δd_L = +0,57 % predicho | VÁLIDO |
+| Efecto ISW | Supervacíos Planck×BOSS | +18,2 % predicho | VÁLIDO |
+| Tensión H₀ | Medidas locales vs CMB | 73,0 km/s/Mpc resuelto | RESUELTO |
 
----
-
-## Explorar Más
-
-- **[Versión Técnica Completa](version-complete)**: Ecuaciones detalladas y referencias
-- **[Puentes Conceptuales](ponts_conceptuels/index.md)**: Comparaciones con física conocida
-- **[Validación Detallada](validation/index.md)**: Pruebas científicas completas
-- **[Léxico](lexique.md)**: Definiciones de todos los términos TMT
+**Puntuación global: 8,0/8 — Significación estadística combinada: p = 10⁻¹¹² (> 15σ)**
 
 ---
 
-*TMT: Una nueva forma de ver el universo (Accesible para todos desde 2026)*</content>
-<parameter name="filePath">docs/wiki/docs/es/index.md
+## La tensión de Hubble resuelta
+
+La TMT v2.3.2 ofrece una resolución natural de la tensión H₀ (73 vs 67 km/s/Mpc) mediante una **expansión diferencial según la densidad local**:
+
+```
+H(z, ρ) = H₀ × √[ Ωm(1+z)³ + ΩΛ × (1 − β × (1 − ρ/ρc)) ]
+```
+
+Nuestro vacío local (ρ/ρc ≈ 0,7) produce H_local = 73,0 km/s/Mpc, sin parámetros libres adicionales.
+
+---
+
+## Lo que la TMT predice y ΛCDM no
+
+| Predicción distintiva | Diferencia medible |
+|-----------------------|-------------------|
+| r_c ∝ M^0,56 | El radio de transición galáctica depende de la masa |
+| Ley potencial k(M) | Acoplamiento temporal universal decreciente con M |
+| Expansión H(z, ρ) | Tasa de expansión diferente en vacíos vs cúmulos |
+| Halos estrictamente isótropos | Sin alineamiento direccional (refuta DM filamentaria) |
+
+---
+
+## Estado actual y llamado a la comunidad
+
+La TMT no es un modelo fenomenológico ajustado a posteriori: su formulación se deriva de la relatividad general y la mecánica cuántica, y sus parámetros son **calibrados en un subconjunto y luego validados en el resto**.
+
+Invitamos a la comunidad científica a:
+1. **Verificar de forma independiente** los scripts de prueba (disponibles públicamente)
+2. **Aplicar el marco teórico** a nuevos conjuntos de datos (DES Y3, Euclid, DESI)
+3. **Criticar formalmente** los supuestos fundamentales
+
+> Todo el código, los datos y los resultados son accesibles en:
+> **github.com/chronos717313/Mastery-of-time**
+
+---
+
+*Este documento se distribuye para comentarios científicos. Versión preliminar, aún no enviada a revisión formal por pares.*

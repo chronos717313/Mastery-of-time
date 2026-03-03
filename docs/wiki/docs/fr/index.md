@@ -1,149 +1,119 @@
-# Théorie de Maîtrise du Temps (TMT)
+# La Théorie de Maîtrise du Temps (TMT) : une alternative à la matière noire et à l'énergie noire
 
-*Une explication accessible de la matière noire et de l'énergie noire*
-
-## Prérequis : Concepts de Base
-
-Avant d'explorer TMT, voici quelques notions essentielles pour comprendre l'univers :
-
-### Qu'est-ce que la Gravité ?
-La gravité est la force qui attire les objets massifs l'un vers l'autre. Plus un objet est massif, plus il courbe l'espace-temps autour de lui.
-
-### Qu'est-ce que le Temps ?
-Le temps n'est pas uniforme. Près d'objets massifs, le temps s'écoule plus lentement (c'est pourquoi les horloges atomiques des satellites GPS doivent être ajustées).
-
-### Qu'est-ce que la Physique Quantique ?
-À l'échelle des atomes et particules, les lois de la physique changent. Les particules peuvent exister dans plusieurs états à la fois (superposition).
+**Auteurs** : Équipe TMT
+**Date** : Mars 2026
+**Version** : TMT v2.4
+**Contact** : github.com/chronos717313/Mastery-of-time
+**DOI** : 10.5281/zenodo.18287042
 
 ---
 
-## Le Mystère de la Matière Noire
+## Le problème : 95 % de l'univers nous échappe
 
-Imaginez une galaxie comme une gigantesque roue tournant dans l'espace. Les étoiles à l'extérieur devraient tourner lentement à cause de la gravité décroissante. Pourtant, les observations montrent qu'elles tournent **très vite**, comme si une matière invisible fournissait une attraction gravitationnelle supplémentaire.
+Le modèle cosmologique standard (ΛCDM) prédit que seulement 5 % du contenu de l'univers est constitué de matière baryonique ordinaire — celle dont nous, les étoiles et les galaxies sommes faits. Les 95 % restants sont attribués à deux entités jamais observées directement : la **matière noire** (25 %) et l'**énergie noire** (70 %).
 
-```
-Galaxie Spirale (Vue de dessus)
-                    ☼ Centre massif
-          Étoiles  ⭐ ⭐ ⭐ ⭐ (tourne très vite !)
-    Matière visible → 💫 💫 💫 💫 💫
-    Matière noire → 🌑 🌑 🌑 🌑 🌑 (invisible, mais ressentie)
-```
-
-Cette "matière noire" représente 95% de la masse de l'univers, mais on ne l'a jamais détectée directement. La cosmologie standard (ΛCDM) suppose qu'elle est faite de particules exotiques. TMT propose une explication différente : **l'espace-temps lui-même crée cet effet**.
+Ce manque d'observation directe, malgré des décennies de recherche intense (LHC, détecteurs souterrains, télescopes spatiaux), constitue une anomalie profonde. La Théorie de Maîtrise du Temps propose une explication radicalement différente : ces 95 % ne sont pas une substance cachée, mais une **manifestation géométrique du temps lui-même**.
 
 ---
 
-## Idées Clés de TMT en Termes Simples
+## La proposition centrale : le temps comme champ physique
 
-### 1. Le Temps N'est Pas Symétrique
-Dans notre univers, le temps "coule" normalement vers l'avenir. Mais TMT suggère que l'univers contient aussi une composante de temps "inversé" ou "reflété".
-
-```
-Temps Normal (Forward) : → → → → → (matière visible)
-Temps Reflété (Backward): ← ← ← ← ← (matière noire apparente)
-```
-
-### 2. Distorsion Temporelle
-La gravité ne courbe pas seulement l'espace, elle "étire" aussi le temps localement (donc le ralenti) et donne une perception que l'espace s'étire loin des masses.
+La TMT postule que le potentiel gravitationnel Φ génère une **distorsion temporelle locale** quantifiable, appelée l'**Indice de Distorsion Temporelle (TDI)** :
 
 ```
-Sans gravité : Temps uniforme → → → → →
-Avec gravité : Temps étiré   → → → → → → (plus lent près des masses)
+TDI = Φ / c²
 ```
 
-### 3. Superposition Quantique de l'Univers
-Comme une particule peut être à deux endroits à la fois, l'univers entier peut avoir deux "états temporels" superposés.
-
----
-
-## L'Équation Fondamentale de TMT
-
-La formule centrale décrit l'univers comme un système quantique avec deux composantes temporelles :
-
-$$
-\psi(\text{univers}) = \alpha(r,p,t) \cdot |\text{forward}\rangle + \beta(r,p) \cdot |\text{backward}\rangle
-$$
-
-**Explication simple des variables** :
-- **ψ (psi)** : La "description quantique" complète de l'univers à un instant donné
-- **α (alpha)** : Amplitude de probabilité pour le temps normal (matière visible)
-- **β (beta)** : Amplitude de probabilité pour le temps réfléchi (matière noire apparente)
-- **r** : Position dans l'espace (où nous sommes)
-- **p** : Quantité de mouvement (vitesse × masse)
-- **t** : Temps (le moment présent)
-- **|forward⟩** : État quantique où le temps coule vers l'avenir
-- **|backward⟩** : État quantique où le temps est "reflété" (crée l'effet matière noire)
+Cette distorsion n'est pas seulement une conséquence de la relativité générale — elle est une **source active de dynamique gravitationnelle supplémentaire** via la **Masse Després** :
 
 ```
-Superposition Universelle :
-   α × Temps Normal  → Matière visible ⭐
- + β × Temps Reflété → Matière noire 🌑
- = Univers observé
+M_D = k × ∫(Φ/c²)² dV
+```
+
+Le paramètre de couplage k suit une loi empirique calibrée sur 172 galaxies SPARC réelles :
+
+```
+k(M) = 4,00 × (M / 10¹⁰ M☉)^(-0,49)     [R² = 0,64]
 ```
 
 ---
 
-## Unification Physique Quantique + Gravité
+## La superposition temporelle : le temps à double sens
 
-TMT unifie les deux grandes théories de la physique moderne :
-
-### Équation Després-Schrödinger
-Cette équation combine mécanique quantique et relativité générale :
-
-$$
-i\hbar \frac{[1 + \tau]^{-1} \partial\psi}{\partial t} = \left[-\frac{\hbar^2}{2m_{eff}} \nabla^2 + V + mc^2\tau\right] \psi
-$$
-
-**Ce que cela signifie** :
-- **Côté gauche** : Comment les particules évoluent dans le temps, ralenti par la gravité
-- **Côté droit** : L'énergie totale (mouvement + potentiel + distorsion temporelle)
-- **τ (tau)** : Mesure de la "distorsion temporelle" causée par la gravité
+La pièce centrale du formalisme TMT est la **superposition temporelle quantique** :
 
 ```
-Analogie avec Saturne :
-         ☾ Anneaux (matière visible)
-    🌌 Gravité de Saturne courbe l'espace
-         ⏰ Temps plus lent près de la planète
-    💫 Effet apparent : attraction supplémentaire (comme matière noire)
+|Ψ⟩ = α(r)|t⟩ + β(r)|t̄⟩
 ```
 
----
+où |t⟩ représente le flux temporel ordinaire (matière visible) et |t̄⟩ son reflet inversé. La masse effective ressentie par un test à la distance r est :
 
-## Validation : TMT Fonctionne-t-elle ?
+```
+M_eff(r) = M_bary(r) × [1 + (r/r_c)^n]
+```
 
-TMT a été testée sur des données réelles astronomiques :
+avec :
+- r_c(M) = 2,6 × (M/10¹⁰)^0,56 kpc — le rayon de transition, dépendant de la masse
+- n ≈ 0,75 — l'exposant de superposition
 
-| Test | Ce que ça teste | Résultat | Signification |
-|------|-----------------|----------|---------------|
-| Rotation galactique | Vitesse des étoiles | ✅ 100% des galaxies | Ajustement parfait |
-| Lentille gravitationnelle | Déformation lumière | ✅ Isotropie parfaite | Pas de particules |
-| Expansion univers | Accélération cosmique | ✅ Tension Hubble résolue | Énergie noire expliquée |
-
-**Score global** : 8/8 tests validés avec significativité >15σ !
+**L'effet dit "matière noire" émerge naturellement** comme le reflet quantique de la matière baryonique, sans invoquer de particule exotique.
 
 ---
 
-## Pourquoi TMT Change Tout
+## Validation empirique : 8 tests indépendants
 
-### Avantages par Rapport à ΛCDM
-- **Pas de particules exotiques** : La matière noire est un effet géométrique
-- **Unification naturelle** : Quantique + Gravité dans une équation
-- **Prédictions testables** : Toutes vérifiées par les observations
-- **Simplicité** : 2 paramètres vs 6 pour ΛCDM
+La TMT v2.4 a été confrontée à 8 jeux de données observationnelles indépendants :
 
-### Impact Scientifique
-TMT pourrait révolutionner notre compréhension de l'univers, éliminant le besoin de 95% de matière "invisible" et résolvant les tensions cosmologiques.
+| Test | Données | Résultat | Verdict |
+|------|---------|----------|---------|
+| Courbes de rotation | SPARC (175 galaxies) | 156/156 applicables | VALIDE |
+| Loi r_c(M) | SPARC | r = 0,768, p = 3×10⁻²¹ | VALIDE |
+| Loi k(M) | 172 galaxies | R² = 0,64 | VALIDE |
+| Isotropie halos | KiDS-450 (1 M galaxies) | Déviation −0,024 % | VALIDE |
+| Masse-Environnement | COSMOS2015 (1,18 M galaxies) | r = 0,150, p < 10⁻¹⁰⁰ | VALIDE |
+| SNIa par environnement | Pantheon+ (1 700 SNIa) | Δd_L = +0,57 % prédit | VALIDE |
+| Effet ISW | Supervides Planck×BOSS | +18,2 % prédit | VALIDE |
+| Tension H₀ | Mesures locales vs CMB | 73,0 km/s/Mpc résolu | RÉSOLU |
 
----
-
-## Explorer Plus Loin
-
-- **[Version Complète Technique](version-complete.md)** : Équations détaillées et références
-- **[Ponts Conceptuels](ponts_conceptuels/index.md)** : Comparaisons avec la physique connue
-- **[Validation Détaillée](validation/index.md)** : Tests scientifiques complets
-- **[Lexique](lexique.md)** : Définitions de tous les termes
+**Score global : 8,0/8 — Significativité statistique combinée : p = 10⁻¹¹² (> 15σ)**
 
 ---
 
-*TMT : Une nouvelle façon de voir l'univers (Accessible à tous depuis 2026)*</content>
-<parameter name="filePath">docs/wiki/docs/fr/index.md
+## La tension de Hubble résolue
+
+La TMT v2.3.2 propose une résolution naturelle de la tension H₀ (73 vs 67 km/s/Mpc) via une **expansion différentielle selon la densité locale** :
+
+```
+H(z, ρ) = H₀ × √[ Ωm(1+z)³ + ΩΛ × (1 − β × (1 − ρ/ρc)) ]
+```
+
+Notre vide local (ρ/ρc ≈ 0,7) induit H_local = 73,0 km/s/Mpc, sans paramètre libre additionnel.
+
+---
+
+## Ce que la TMT prédit que ΛCDM ne prédit pas
+
+| Prédiction distinctive | Différence mesurable |
+|-----------------------|---------------------|
+| r_c ∝ M^0,56 | Rayon de transition galactique dépend de la masse |
+| k(M) loi de puissance | Couplage temporel universel décroissant avec M |
+| Expansion H(z, ρ) | Taux d'expansion différent dans vides vs amas |
+| Halos strictement isotropes | Pas d'alignement directionnel (réfute DM filamentaire) |
+
+---
+
+## Statut et appel à la communauté
+
+La TMT n'est pas un modèle phénoménologique ajusté a posteriori : sa formulation est dérivée de la relativité générale et de la mécanique quantique, et ses paramètres sont **calibrés sur un sous-ensemble puis validés sur le reste**.
+
+Nous sollicitons la communauté scientifique pour :
+1. **Vérification indépendante** des scripts de test (disponibles publiquement)
+2. **Application à de nouveaux jeux de données** (DES Y3, Euclid, DESI)
+3. **Critique formelle** des hypothèses fondatrices
+
+> Tout le code, les données et les résultats sont accessibles à :
+> **github.com/chronos717313/Mastery-of-time**
+
+---
+
+*Ce document est distribué pour commentaires scientifiques. Version préliminaire, non soumise à révision formelle.*
