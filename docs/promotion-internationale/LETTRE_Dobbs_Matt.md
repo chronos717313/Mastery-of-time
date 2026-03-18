@@ -34,9 +34,9 @@ I would welcome a brief exchange by email or video call at your convenience.
 
 Respectfully,
 
-[Your name]
-[Email]
-[GitHub link]
+Pierre-Olivier Després Asselin
+pierreolivierdespres@gmail.com
+github.com/chronos717313/Mastery-of-time
 
 ---
 *Suggested attachment: ARTICLE_VULGARISATION_EN.md (2 pages)*

@@ -40,9 +40,9 @@ A brief email exchange, or 20 minutes of your time at McGill, would be invaluabl
 
 Respectfully,
 
-[Your name]
-[Email]
-[GitHub link]
+Pierre-Olivier Després Asselin
+pierreolivierdespres@gmail.com
+github.com/chronos717313/Mastery-of-time
 
 ---
 *Suggested attachment: ARTICLE_VULGARISATION_EN.md (2 pages)*

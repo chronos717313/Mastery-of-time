@@ -34,9 +34,9 @@ Je serais honoré de pouvoir échanger avec vous, en personne à Montréal ou pa
 
 Respectueusement,
 
-[Votre nom]
-[Courriel]
-[Lien GitHub]
+Pierre-Olivier Després Asselin
+pierreolivierdespres@gmail.com
+github.com/chronos717313/Mastery-of-time
 
 ---
 *Pièce jointe suggérée : ARTICLE_VULGARISATION_FR.md (2 pages)*
