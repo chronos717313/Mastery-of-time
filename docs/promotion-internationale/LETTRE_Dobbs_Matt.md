@@ -26,7 +26,10 @@ The combined statistical significance across 8 independent tests is p = 10⁻¹�
 
 I am not asking for endorsement. I am asking whether the prediction is falsifiable with data you already have access to — and if so, whether you would be interested in testing it.
 
-All scripts, data, and results are publicly available:
+For a structured overview of the framework — formalism, results, and visualizations — a dedicated presentation site is available:
+**mastery-of-time.org**
+
+All scripts, data, and results are also publicly available:
 **github.com/chronos717313/Mastery-of-time**
 **DOI: 10.5281/zenodo.18287042**
 

@@ -28,7 +28,10 @@ J'ai appliqué ce formalisme à l'ensemble des 175 galaxies du catalogue SPARC (
 
 **Ce que je vous demande** n'est pas une caution, mais une vérification critique : est-ce que la formulation est physiquement cohérente sur les cas que vous connaissez le mieux — DDO 154, NGC 3198, les galaxies LSB de votre catalogue ? Y a-t-il des galaxies que vous jugeriez particulièrement discriminantes pour tester ce type de formalisme ?
 
-Tout le code, les scripts et les résultats sont publics :
+Pour une vue d'ensemble structurée de la théorie — formalismes, résultats et visualisations — un site de présentation est disponible :
+**mastery-of-time.org**
+
+Tout le code, les scripts et les résultats sont également publics :
 **github.com/chronos717313/Mastery-of-time**
 **DOI : 10.5281/zenodo.18287042**
 

@@ -26,7 +26,10 @@ Au-delà de H₀, la TMT a été confrontée à 8 jeux de données indépendants
 
 Je ne cherche pas une caution institutionnelle, mais un regard méthodologiquement exigeant. Si l'approche ne tient pas à l'examen, je préfère le savoir avant toute soumission.
 
-Tout le matériel est public :
+Pour une vue d'ensemble structurée de la théorie — formalismes, résultats et visualisations — un site de présentation est disponible :
+**mastery-of-time.org**
+
+Tout le matériel technique est également public :
 **github.com/chronos717313/Mastery-of-time**
 **DOI : 10.5281/zenodo.18287042**
 

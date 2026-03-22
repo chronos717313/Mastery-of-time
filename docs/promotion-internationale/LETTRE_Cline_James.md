@@ -32,7 +32,10 @@ Applied to all 8 major observational tests — SPARC rotation curves, KiDS-450 w
 
 I am not asking you to believe the results. I am asking whether the mathematical structure is coherent enough to warrant the serious theoretical treatment it would need before peer review.
 
-Everything is open:
+For a structured overview of the framework — formalism, results, and visualizations — a dedicated presentation site is available:
+**mastery-of-time.org**
+
+Everything is also open:
 **github.com/chronos717313/Mastery-of-time**
 **DOI: 10.5281/zenodo.18287042**
 
