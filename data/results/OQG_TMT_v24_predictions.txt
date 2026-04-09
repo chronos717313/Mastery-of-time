@@ -1,0 +1,20 @@
+OSCILLATION QUANTIQUE GRAVITATIONNELLE (OQG) — TMT v2.4
+============================================================
+
+Loi de scaling : T_OQG = 51 × (M/10^10)^0.340 Myr
+Exposant mesuré : 0.340 (prédit : 0.34)
+T₀ : 50.7 Myr
+Amplitude universelle δv/v à r_c : 0.414
+
+Données par classe de masse :
+  Masse (M☉)  r_c (kpc)  T_OQG (Myr)
+    1.00e+06      0.015          2.2
+    1.00e+08      0.197         10.6
+    1.00e+09      0.716         23.2
+    1.00e+10      2.600         50.7
+    6.00e+10      7.091         93.2
+    1.00e+11      9.440        110.9
+    1.00e+12     34.275        242.7
+
+Prédiction PTA : signal monopolaire à f ~ 3e-9 Hz
+h_c (estimation) : ~ 1e-16 à 1e-15
