@@ -4,40 +4,36 @@
 
 ---
 
-Subject: SNIa environment signal and H₀ tension — a scalar temporal framework
+Subject: A prediction your Rubin pipeline could confirm — or definitively refute
 
 ---
 
 Dear Professor Hložek,
 
-Your work spanning Type Ia supernovae cosmology, dark energy constraints, and the Rubin Observatory DESC collaboration places you at the intersection of exactly the two observational tests where my framework makes its most distinctive predictions. It is with that specific overlap in mind that I am writing.
+There are moments in research when a result feels almost too clean — when the data aligns with a prediction so precisely that one's first instinct is suspicion rather than celebration. I have been living with such a result for several months, and I believe you may be one of the very few people on Earth with the tools to tell me whether it is real.
 
-I have developed the Theory of Time Mastery (TMT), which proposes that the apparent effects of dark matter and dark energy emerge from a density-dependent temporal distortion rather than from new particles or fields. Two of its eight validated predictions are directly relevant to your work:
+I am an independent researcher who has developed a framework called the Theory of Time Mastery (TMT). Its core proposition is that the apparent effects of both dark matter and dark energy are manifestations of a single physical mechanism: the density-dependent distortion of time in a gravitational field. No new particles. No new fields. A geometric consequence of what general relativity already tells us about time.
 
-**1. SNIa environment signal (Pantheon+)**
-TMT predicts supernovae in voids appear systematically farther than those in clusters — a differential of +0.57% in distance modulus. Cross-matched against Pantheon+ (1,700 SNIa), the observed signal is +0.46% in the correct direction (ratio 0.80). The Rubin Observatory, with its statistical power of millions of SNIa, could detect or definitively rule out this signal.
+Two of the framework's eight validated predictions map directly onto your work:
 
-**2. H₀ tension resolution**
-TMT resolves the 73 vs 67 km/s/Mpc discrepancy through a density-dependent expansion:
-```
-H(z, ρ) = H₀ × √[ Ωm(1+z)³ + ΩΛ × (1 − β × (1 − ρ/ρc)) ]
-```
-Our local void (ρ/ρc ≈ 0.7) yields H_local = 73.0 km/s/Mpc without additional free parameters.
+**On Type Ia supernovae:** TMT predicts that supernovae in cosmic voids are systematically more distant than those in clusters — not because of intrinsic differences, but because local expansion is faster in underdense regions. The predicted differential is +0.57% in distance modulus. When cross-matched against Pantheon+ (1,700 SNIa), the observed signal is +0.46%, in the correct direction. The Rubin Observatory, with the statistical power of millions of supernovae, will either confirm this signal or eliminate it entirely. Either outcome advances our understanding.
 
-Combined across 8 independent tests, the framework achieves p = 10⁻¹¹².
+**On the Hubble tension:** The same mechanism that shifts SNIa distances in voids predicts H_local = 73.0 km/s/Mpc from H₀_CMB = 67.4 km/s/Mpc — the exact measured discrepancy, resolved naturally by our galaxy's position in a local underdensity.
 
-What I am asking: does your DESC pipeline include environment-binned SNIa analysis? Even an upper bound on Δμ(void vs cluster) from existing Rubin commissioning data would be a meaningful test.
+Across all 8 tests — SPARC rotation curves (175 galaxies), KiDS-450 weak lensing (1 million galaxies), COSMOS2015 (1.18 million galaxies) — the combined significance is p = 10⁻¹¹². I say this not to boast, but because I believe a result of this magnitude either reflects something real, or contains an error serious enough that it deserves to be found and corrected by experts like yourself.
 
-For a structured overview of the full framework:
+I would be honoured to know whether the DESC analysis pipeline could include an environment-binned SNIa test. Even a null result from Rubin would be scientifically invaluable.
+
+The full framework is presented at:
 **mastery-of-time.org**
 
-All scripts and data are publicly available:
+All scripts and data are freely accessible:
 **github.com/chronos717313/Mastery-of-time**
 **DOI: 10.5281/zenodo.18287042**
 
-I would welcome any feedback, including critical, at your convenience.
+Thank you for considering this, and for the remarkable work you are doing to illuminate the dark universe.
 
-Respectfully,
+With admiration and hopeful anticipation,
 
 Pierre-Olivier Després Asselin
 pierreolivierdespres@gmail.com

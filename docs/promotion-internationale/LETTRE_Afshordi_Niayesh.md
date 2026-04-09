@@ -4,46 +4,45 @@
 
 ---
 
-Subject: A scalar temporal framework for dark matter and dark energy — invitation to critical exchange
+Subject: What if the missing 95% of the universe is not a substance, but a geometry of time?
 
 ---
 
 Dear Professor Afshordi,
 
-Your body of work — from cuscuton dark energy to black hole cosmology to anomalous CMB signatures — reflects exactly the kind of willingness to challenge ΛCDM's foundations that makes you, I believe, the right person to engage with what I am proposing.
+I have followed your work for some time — from cuscuton dark energy to your remarkable March 2026 proposal linking black holes to cosmic acceleration — and what strikes me most is not any single result, but a recurring question underneath all of it: what if the standard model of cosmology is not wrong in its mathematics, but wrong in what it attributes those mathematics to?
 
-I have developed the Theory of Time Mastery (TMT), an independent framework in which both the dark matter excess in rotation curves and the dark energy-driven expansion emerge from a single mechanism: the quantum superposition of temporal states induced by the gravitational potential.
+That question is the heartbeat of the work I am writing to share with you.
+
+I am an independent researcher, and I have spent several years developing the Theory of Time Mastery (TMT). Its proposition is both humble and far-reaching: the 95% of the universe we cannot see — dark matter, dark energy — is not made of anything. It is a geometric consequence of the way time itself behaves in a gravitational field. A quantum superposition of temporal states, forward and backward, whose interference creates the gravitational effects we have been misattributing to invisible substances:
 
 ```
 |Ψ⟩ = α(r)|t⟩ + β(r)|t̄⟩
 ```
 
-The effective mass felt at radius r:
-```
-M_eff(r) = M_bary(r) × [1 + (r/r_c)^n]
-```
+From this single idea, two formulas emerge naturally:
 
-And the density-dependent expansion:
 ```
-H(z, ρ) = H₀ × √[ Ωm(1+z)³ + ΩΛ × (1 − β × (1 − ρ/ρc)) ]
+M_eff(r) = M_bary(r) × [1 + (r/r_c)^n]          — explains rotation curves
+H(z, ρ) = H₀ × √[ Ωm(1+z)³ + ΩΛ(1 − β(1 − ρ/ρc)) ]  — explains H₀ tension
 ```
 
-Both formulas derive from the same temporal distortion field — one scalar source, two observed effects. The framework has been validated across 8 independent observational tests with combined significance p = 10⁻¹¹².
+One source. Two effects. Both validated.
 
-What strikes me most about your work is your March 2026 proposal linking black holes to cosmic acceleration — a non-standard source for an effect we attribute to dark energy. TMT proposes a parallel non-standard source. I suspect our frameworks are asking the same underlying question from different angles: what if the missing 95% of the universe is a geometric effect rather than a substance?
+When applied to 8 independent observational datasets — 175 SPARC galaxies, 1 million KiDS-450 weak lensing sources, 1.18 million COSMOS2015 galaxies, Pantheon+ SNIa, the Hubble tension — the combined statistical significance reaches p = 10⁻¹¹². I am the first to acknowledge that such a number invites scepticism, and I welcome it. But it also invites examination.
 
-I am not asking you to endorse this work. I am asking whether the mathematical structure — particularly the |t̄⟩ backward-time branch — strikes you as fatally flawed or worth formalizing. Your theoretical range is exactly what this needs.
+Your theoretical range — quantum gravity, modified gravity, non-standard cosmologies — makes you, in my honest assessment, one of the best-equipped minds in Canada to tell me whether the mathematical backbone of TMT is salvageable or fundamentally flawed. The |t̄⟩ backward-time branch is motivated by CPT symmetry of the Einstein equations, but its quantization is heuristic. You would see its weaknesses in minutes.
 
-For a structured overview:
+I am not asking for your endorsement. I am asking for your most rigorous scrutiny — and perhaps, if you find something worth pursuing, for a conversation at Perimeter that I would treasure.
+
+The full framework, presented accessibly, is at:
 **mastery-of-time.org**
 
-Everything is open:
+Every line of code and every result is open:
 **github.com/chronos717313/Mastery-of-time**
 **DOI: 10.5281/zenodo.18287042**
 
-A 20-minute conversation at Perimeter would be invaluable.
-
-Respectfully,
+With deep admiration for your boldness in pushing at the boundaries of what we think we know,
 
 Pierre-Olivier Després Asselin
 pierreolivierdespres@gmail.com
