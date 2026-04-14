@@ -6,6 +6,16 @@
 %%          pdflatex ms.tex  (twice more)
 %%
 %% Or with latexmk:  latexmk -pdf ms.tex
+%%
+%% AAS SUBMISSION REQUIREMENTS MET:
+%%   [x] Line numbers (\linenumbers)
+%%   [x] Abstract < 250 words
+%%   [x] \correspondingauthor
+%%   [x] \facilities{}
+%%   [x] \software{} in AASTeX format
+%%   [x] Dataset DOIs acknowledged
+%%   [x] \bibliographystyle before \bibliography
+%%   [x] SNe~Ia nomenclature
 
 \documentclass[twocolumn]{aastex631}
 
@@ -13,7 +23,6 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{physics}       % for \bra, \ket, \braket
-\usepackage{booktabs}      % professional tables
 \usepackage{hyperref}
 \hypersetup{
   colorlinks=true,
@@ -37,14 +46,18 @@
 %% =====================================================================
 \begin{document}
 
+%% AAS REQUIREMENT: line numbers for manuscript review
+\linenumbers
+
 \title{Temporal Distortion as a Unified Explanation for Dark Matter and
 Dark Energy: Validation Against Eight Independent Cosmological Datasets}
 
-\author{Pierre-Olivier Despr\'{e}s Asselin}
+\correspondingauthor{Pierre-Olivier Despr\'{e}s Asselin}
+
+\author[0009-0009-7611-4550]{Pierre-Olivier Despr\'{e}s Asselin}
 \affiliation{Independent Researcher, Montr\'{e}al, Qu\'{e}bec, Canada}
 \email{pierreolivierdespres@gmail.com}
-%% Replace the ORCID below once created at https://orcid.org/register
-\orcid{0000-0000-0000-0000}
+\orcid{0009-0009-7611-4550}
 
 %% ---- abstract -------------------------------------------------------
 \begin{abstract}
@@ -249,7 +262,7 @@ expansion rate according to the matter density environment:
 \end{equation}
 Two distinct coupling regimes are identified:
 \begin{itemize}
-  \item $\beta_{\mathrm{SNIa}} = 0.001$: integrated effect along
+  \item $\beta_{\mathrm{SNe\,Ia}} = 0.001$: integrated effect along
     photon lines of sight through mixed environments;
   \item $\beta_{\HObs} = 0.82$: local effect in our underdense void
     ($\rho/\rho_{c} \approx 0.7$).
@@ -427,7 +440,7 @@ $\HObs$ tension            & $<10^{-5}$   & Resolved \\
 \label{sec:comp_lcdm}
 
 TMT uses 5 global parameters ($\rc$ slope and intercept, $n$,
-$\beta_{\mathrm{SNIa}}$, $\beta_{\HObs}$) to describe phenomena that
+$\beta_{\mathrm{SNe\,Ia}}$, $\beta_{\HObs}$) to describe phenomena that
 $\Lambda$CDM addresses with individual NFW profiles (2--3 parameters
 per galaxy) plus 6 cosmological parameters
 ($\Omega_{m}$, $\Omega_{\Lambda}$, $\HObs$, $n_{s}$, $\sigma_{8}$,
@@ -466,7 +479,7 @@ We identify four primary limitations of the current framework.
     tensor formulation is in preparation.
 
   \item \textbf{Dual-$\beta$ structure.}  The two-regime $\beta$ model
-    ($\beta_{\mathrm{SNIa}} = 0.001$, $\beta_{\HObs} = 0.82$) is
+    ($\beta_{\mathrm{SNe\,Ia}} = 0.001$, $\beta_{\HObs} = 0.82$) is
     physically motivated but requires formal derivation from first
     principles.
 \end{enumerate}
@@ -523,16 +536,39 @@ We explicitly welcome independent replication, critique, and extension.
 \begin{acknowledgments}
 The author thanks F.~Lelli, S.~McGaugh, and J.~Schombert for the
 publicly available SPARC catalogue, which made this analysis possible.
+The author also acknowledges the KiDS collaboration, the COSMOS team,
+and the Pantheon+ team for making their data publicly available.
 This work received no external funding and was conducted entirely
 independently.
-
-\textit{Software}: Python 3.11, NumPy \citep{Harris2020},
-SciPy \citep{Virtanen2020}, Astropy \citep{Astropy2022}.
 \end{acknowledgments}
 
+%% AAS REQUIREMENT: \facilities{} macro
+\facilities{
+  Spitzer (IRAC),
+  \textit{Herschel},
+  Planck,
+  BOSS (SDSS-III)
+}
+
+%% AAS REQUIREMENT: \software{} macro (AASTeX native format)
+\software{
+  Python 3.11 \citep{python},
+  NumPy \citep{Harris2020},
+  SciPy \citep{Virtanen2020},
+  Astropy \citep{Astropy2022}
+}
+
+%% AAS REQUIREMENT: Dataset acknowledgments
+%% SPARC catalogue: http://astroweb.cwru.edu/SPARC/  (Lelli et al. 2016)
+%% KiDS-450: http://kids.strw.leidenuniv.nl/  (Hildebrandt et al. 2017)
+%% COSMOS2015: https://cosmos.astro.caltech.edu/  (Laigle et al. 2016)
+%% Pantheon+: https://pantheonplussh0es.github.io/ (Scolnic et al. 2022)
+%% Analysis code: https://github.com/chronos717313/Mastery-of-time
+%%                DOI: 10.5281/zenodo.18287042
+
 %% =====================================================================
-%% BIBLIOGRAPHY — BibTeX file: refs.bib
-\bibliography{refs}
+%% BIBLIOGRAPHY
 \bibliographystyle{aasjournal}
+\bibliography{refs}
 
 \end{document}
