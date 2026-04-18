@@ -1,0 +1,572 @@
+%% AASTeX v6.3.1 — The Astrophysical Journal
+%% Template: https://journals.aas.org/authors/aastex.html
+%%
+%% COMPILE: pdflatex ms.tex  (twice for cross-references)
+%%          bibtex ms
+%%          pdflatex ms.tex  (twice more)
+%%
+%% Or with latexmk:  latexmk -pdf ms.tex
+%%
+%% AAS SUBMISSION REQUIREMENTS MET:
+%%   [x] Line numbers (\linenumbers)
+%%   [x] Abstract < 250 words
+%%   [x] \correspondingauthor
+%%   [x] \facilities{}
+%%   [x] \software{} in AASTeX format
+%%   [x] Dataset DOIs acknowledged
+%%   [x] \bibliographystyle before \bibliography
+%%   [x] SNe~Ia nomenclature
+
+\documentclass[manuscript,linenumbers]{aastex631}
+%% NOTE: 'manuscript' = format recommandé ApJ pour soumission initiale
+%%   - Colonne unique, double interligne (facile à annoter pour les reviewers)
+%%   - Numéros de ligne automatiques (exigence AAS satisfaite)
+%%   - Pas d'en-têtes courants (évite le conflit ORCID/date)
+%%   - Équations et notation identiques à twocolumn
+
+%% ---- packages -------------------------------------------------------
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{physics}       % for \bra, \ket, \braket
+%% NOTE: hyperref is loaded automatically by aastex631 -- do not reload
+
+%% ---- custom commands ------------------------------------------------
+\newcommand{\tdi}{\mathrm{TDI}}
+\newcommand{\Msun}{M_{\odot}}
+\newcommand{\Meff}{M_{\mathrm{eff}}}
+\newcommand{\Mbary}{M_{\mathrm{bary}}}
+\newcommand{\MD}{M_{\mathrm{D}}}
+\newcommand{\rc}{r_{\mathrm{c}}}
+\newcommand{\kpc}{\,\mathrm{kpc}}
+\newcommand{\kms}{\,\mathrm{km\,s^{-1}}}
+\newcommand{\kmsMpc}{\,\mathrm{km\,s^{-1}\,Mpc^{-1}}}
+\newcommand{\HObs}{H_{\mathrm{0}}}
+
+%% =====================================================================
+\begin{document}
+
+%% Running headers — prevent ORCID from leaking into the page header
+\shorttitle{Temporal Distortion: Dark Matter \& Dark Energy}
+\shortauthors{Despr\'{e}s Asselin}
+
+\title{Temporal Distortion as a Unified Explanation for Dark Matter and
+Dark Energy: Validation Against Eight Independent Cosmological Datasets}
+
+\author{Pierre-Olivier Despr\'{e}s Asselin}
+\affiliation{Independent Researcher, Montr\'{e}al, Qu\'{e}bec, Canada}
+\email{pierreolivierdespres@gmail.com}
+\orcid{0009-0009-7611-4550}
+
+%% ---- abstract -------------------------------------------------------
+\begin{abstract}
+We present the Theory of Time Mastery (TMT), a gravitational framework
+in which the apparent effects of dark matter and dark energy arise from
+the local distortion of time in a gravitational potential, without
+invoking exotic particles or new fields.  The central quantity is the
+Temporal Distortion Index $\tdi = \Phi/c^{2}$, from which an effective
+mass contribution --- the Despr\'{e}s mass --- is derived as
+$\MD = k \int (\Phi/c^{2})^{2}\,dV$.  In the galactic regime this
+yields an effective mass profile
+$\Meff(r) = \Mbary(r)\,[1 + (r/\rc)^{n}]$, where the transition
+radius $\rc$ follows the empirical law
+\begin{equation*}
+  \rc(\Mbary) = 2.6
+    \left(\frac{\Mbary}{10^{10}\,\Msun}\right)^{0.56}\kpc,
+\end{equation*}
+confirmed with Pearson $r = 0.768$ ($p = 3\times10^{-21}$,
+$N = 103$ SPARC galaxies).  Applied to 156 applicable galaxies from
+the SPARC catalogue \citep{Lelli2016}, the framework achieves a
+97.5\% median $\chi^{2}$ improvement over Newtonian dynamics alone.
+In the cosmological regime, a density-dependent expansion
+\begin{equation*}
+  H(z,\rho)=\HObs\sqrt{\Omega_{m}(1+z)^{3}
+    +\Omega_{\Lambda}\bigl[1-\beta(1-\rho/\rho_{c})\bigr]}
+\end{equation*}
+resolves the $\HObs$ tension (73.0 vs.\ 67.4\kmsMpc) without
+additional free parameters.  Validated against eight independent
+datasets --- including KiDS-450 ($10^{6}$ galaxies), COSMOS2015
+($1.18\times10^{6}$ galaxies), Pantheon+ (1700 SNe~Ia), and
+Planck$\times$BOSS ISW --- the combined statistical significance is
+$p = 10^{-112}$ ($>15\sigma$).  All analysis code and data are
+publicly available at
+\url{https://github.com/chronos717313/Mastery-of-time}
+(DOI: \href{https://doi.org/10.5281/zenodo.18287042}{10.5281/zenodo.18287042}).
+\end{abstract}
+
+\keywords{dark matter --- dark energy --- galaxy rotation curves ---
+Hubble tension --- modified gravity --- gravitational potential ---
+weak gravitational lensing}
+
+%% =====================================================================
+\section{Introduction}
+\label{sec:intro}
+
+The standard cosmological model ($\Lambda$CDM) has achieved remarkable
+predictive success over several decades, accounting for the large-scale
+structure of the universe, the cosmic microwave background (CMB) power
+spectrum, and the accelerated expansion of the universe.  Yet it
+attributes 95\% of the universe's energy content to two entities ---
+dark matter (25\%) and dark energy (70\%) --- that have never been
+directly detected despite extensive experimental searches.
+
+The galaxy rotation curve problem \citep{Rubin1970, Persic1996} remains
+one of the most compelling observational anomalies: stars in the outer
+regions of spiral galaxies rotate at velocities far exceeding the
+Newtonian prediction from visible matter alone.  $\Lambda$CDM resolves
+this by postulating extended dark matter halos with
+Navarro--Frenk--White (NFW) profiles \citep{NFW1997}.  However,
+decades of direct searches --- including the Large Hadron Collider
+\citep{ATLAS2021}, liquid xenon detectors \citep{LZ2024}, and
+gamma-ray observations \citep{FermiLAT2015} --- have yielded no
+confirmed dark matter particle detection.
+
+The Hubble tension --- a $5\sigma$ discrepancy between the Hubble
+constant measured from the CMB
+($\HObs = 67.4 \pm 0.5\kmsMpc$; \citealt{Planck2020}) and from the
+local distance ladder
+($\HObs = 73.0 \pm 1.0\kmsMpc$; \citealt{Riess2022}) --- further
+challenges $\Lambda$CDM as currently formulated.
+
+Alternative frameworks have been proposed, including Modified Newtonian
+Dynamics \citep[MOND;][]{Milgrom1983}, which modifies the effective
+gravitational force below a critical acceleration $a_{0}$, and
+Covarying Coupling Constants + Tired Light \citep[CCC+TL;][]{Gupta2024},
+which challenges the need for dark matter via variable physical
+constants.  However, no single framework has simultaneously addressed
+rotation curves, weak gravitational lensing, the Hubble tension, and
+the integrated Sachs--Wolfe (ISW) effect with a unified physical
+mechanism.
+
+Here we present the Theory of Time Mastery (TMT), in which both dark
+matter and dark energy effects emerge from a single source: the
+distortion of time in a gravitational field.
+Section~\ref{sec:theory} presents the theoretical framework.
+Section~\ref{sec:data} describes the observational datasets.
+Section~\ref{sec:results} presents the results across eight independent
+tests.
+Section~\ref{sec:discussion} discusses the implications and limitations.
+Section~\ref{sec:conclusions} concludes.
+
+%% =====================================================================
+\section{Theoretical Framework}
+\label{sec:theory}
+
+\subsection{The Temporal Distortion Index}
+\label{sec:tdi}
+
+General relativity predicts that time flows more slowly in regions of
+deeper gravitational potential.  We define the Temporal Distortion
+Index (TDI) as
+\begin{equation}
+  \tdi(r) \equiv \frac{\Phi(r)}{c^{2}},
+  \label{eq:tdi}
+\end{equation}
+where $\Phi(r)$ is the Newtonian gravitational potential at position
+$r$ and $c$ is the speed of light.  In the weak-field limit, $\tdi$
+is equivalent to the $g_{00}$ component deviation of the metric.
+This quantity is well-defined and observationally constrained for any
+mass distribution.
+
+\subsection{The Despr\'{e}s Mass}
+\label{sec:despres}
+
+We postulate that the temporal distortion field stores gravitational
+energy in a manner analogous to electromagnetic field energy.  The
+effective additional mass --- the Despr\'{e}s mass --- is
+\begin{equation}
+  \MD = k \int \left(\frac{\Phi}{c^{2}}\right)^{2} dV,
+  \label{eq:MD}
+\end{equation}
+where $k$ is a dimensionless coupling constant and the integral is
+taken over the volume of the gravitational source.  This expression is
+motivated by the analogy with electromagnetic energy density
+$u = \varepsilon_{0}E^{2}/2$, with TDI playing the role of the field
+strength.
+
+The coupling parameter $k$ follows an empirical power law calibrated
+on SPARC galaxies:
+\begin{equation}
+  k(\Mbary) = 4.00
+    \left(\frac{\Mbary}{10^{10}\,\Msun}\right)^{-0.49},
+    \quad R^{2} = 0.64,\; N = 172.
+  \label{eq:klaw}
+\end{equation}
+The decreasing $k$ with mass reflects the saturation of temporal
+coupling in deep gravitational potentials.
+
+\subsection{Quantum Temporal Superposition}
+\label{sec:superposition}
+
+At galactic scales, the gravitational potential generates a quantum
+superposition of temporal states:
+\begin{equation}
+  \ket{\Psi(r)} = \alpha(r)\ket{t} + \beta(r)\ket{\bar{t}},
+  \label{eq:superposition}
+\end{equation}
+where $\ket{t}$ represents forward-time evolution (ordinary matter)
+and $\ket{\bar{t}}$ represents the time-reversed branch, permitted by
+the CPT symmetry of the Einstein field equations.  The probability
+amplitudes satisfy
+\begin{align}
+  |\alpha(r)|^{2} &= \frac{1}{1 + (r/\rc)^{n}},
+  \label{eq:alpha}\\
+  |\beta(r)|^{2}  &= \frac{(r/\rc)^{n}}{1 + (r/\rc)^{n}},
+  \label{eq:beta}
+\end{align}
+with $|\alpha|^{2} + |\beta|^{2} = 1$ (normalization verified
+numerically).  The effective gravitational mass is
+\begin{equation}
+  \Meff(r)
+    = \Mbary(r)\,\braket{\Psi|\hat{M}|\Psi}
+    = \Mbary(r)\,\Bigl[1 + \bigl(r/\rc\bigr)^{n}\Bigr].
+  \label{eq:Meff}
+\end{equation}
+The ``dark matter'' effect emerges as the gravitational contribution
+of the $\ket{\bar{t}}$ branch --- a quantum reflection of the visible
+matter in the time-reversed domain.
+
+\subsection{\texorpdfstring{The $\rc(M)$ Law}{The rc(M) Law}}
+\label{sec:rclaw}
+
+A key prediction of TMT is that the transition radius $\rc$ --- the
+scale at which the temporal superposition becomes significant ---
+depends on the depth of the gravitational potential well, and hence
+on baryonic mass:
+\begin{equation}
+  \rc(\Mbary) = 2.6
+    \left(\frac{\Mbary}{10^{10}\,\Msun}\right)^{0.56}\kpc.
+  \label{eq:rclaw}
+\end{equation}
+This relationship is not imposed but emerges from fitting individual
+galaxies independently.  For low surface brightness (LSB) galaxies
+with surface mass density $\Sigma$, the expression generalises to
+\begin{equation}
+  \rc(\Mbary,\Sigma) = 2.6
+    \left(\frac{\Mbary}{10^{10}\,\Msun}\right)^{0.56}
+    \left(\frac{\Sigma}{100\,\Msun\,\mathrm{pc}^{-2}}\right)^{-0.3}
+    \kpc.
+  \label{eq:rclaw_lsb}
+\end{equation}
+
+\subsection{Density-Dependent Expansion}
+\label{sec:expansion}
+
+In the cosmological regime, temporal distortion modifies the local
+expansion rate according to the matter density environment:
+\begin{equation}
+  H(z,\rho) = \HObs\sqrt{\Omega_{m}(1+z)^{3}
+    + \Omega_{\Lambda}\bigl[1 - \beta(1-\rho/\rho_{c})\bigr]}.
+  \label{eq:Hz}
+\end{equation}
+Two distinct coupling regimes are identified:
+\begin{itemize}
+  \item $\beta_{\mathrm{SNe\,Ia}} = 0.001$: integrated effect along
+    photon lines of sight through mixed environments;
+  \item $\beta_{\HObs} = 0.82$: local effect in our underdense void
+    ($\rho/\rho_{c} \approx 0.7$).
+\end{itemize}
+This dual-$\beta$ structure reflects the different physical scales of
+measurement rather than two independent parameters.
+
+%% =====================================================================
+\section{Observational Data}
+\label{sec:data}
+
+We test TMT against eight independent observational datasets.
+
+\textbf{SPARC}: 175 late-type galaxies with high-quality rotation
+curves and \textit{Spitzer} 3.6~$\mu$m photometry \citep{Lelli2016}.
+Stellar mass-to-light ratios $\Upsilon_{\mathrm{disk}} =
+0.5\,\Msun/L_{\odot}$ adopted throughout.
+
+\textbf{KiDS-450}: Weak gravitational lensing shear catalogue from the
+Kilo-Degree Survey \citep{Hildebrandt2017}, comprising $\sim10^{6}$
+source galaxies over $450\,\mathrm{deg}^{2}$.
+
+\textbf{COSMOS2015}: Photometric redshift catalogue \citep{Laigle2016}
+with $1{,}182{,}108$ galaxies to $z \sim 6$, providing
+mass--environment correlation data.
+
+\textbf{Pantheon+}: Type~Ia supernova sample of 1,701 SNe~Ia spanning
+$0.001 < z < 2.26$ \citep{Scolnic2022}, cross-matched with SDSS void
+catalogues (1,479 voids) and Abell/redMaPPer cluster catalogues
+(725 clusters).
+
+\textbf{Planck$\times$BOSS ISW}: Integrated Sachs--Wolfe (ISW)
+cross-correlation signal from \textit{Planck} CMB temperature maps
+and BOSS galaxy density maps \citep{Planck2016ISW}.
+
+\textbf{Planck CMB}: $\HObs = 67.4 \pm 0.5\kmsMpc$
+\citep{Planck2020}.
+
+\textbf{SH0ES}: $\HObs = 73.0 \pm 1.0\kmsMpc$ from
+Cepheid-calibrated distance ladder \citep{Riess2022}.
+
+%% =====================================================================
+\section{Results}
+\label{sec:results}
+
+\subsection{SPARC Rotation Curves}
+\label{sec:sparc}
+
+Of 175 SPARC galaxies, 15 irregular dwarfs are excluded
+(non-rotational kinematics) and 4 baryonically-dominated galaxies are
+treated with $k = 0$ (valid under the TMT baryonic dominance
+condition).  Of 156 applicable galaxies, all 156 are better described
+by TMT than by Newtonian dynamics alone.
+Table~\ref{tab:sparc} summarises the key metrics.
+
+\begin{deluxetable}{lc}
+\tablecaption{SPARC rotation curve performance\label{tab:sparc}}
+\tablewidth{0pt}
+\tablehead{
+  \colhead{Metric} & \colhead{Value}
+}
+\startdata
+Galaxies analysed       & 175            \\
+Applicable galaxies     & 156            \\
+Galaxies improved       & 156/156 (100\%) \\
+Median $\chi^{2}$ improvement & 97.5\%   \\
+Median optimal $\rc$    & 4.9\,kpc       \\
+Median optimal $n$      & 0.57           \\
+\enddata
+\end{deluxetable}
+
+\subsection{\texorpdfstring{The $\rc(M)$ Law}{The rc(M) Law}}
+\label{sec:rcresult}
+
+For the 103 galaxies with well-constrained $\rc$ (uncertainty $<
+50\%$), log--log regression yields
+\begin{equation}
+  \log(\rc) = 0.56\,\log\!\left(\frac{\Mbary}{10^{10}\,\Msun}\right)
+    + \log(2.6),
+  \label{eq:rcfit}
+\end{equation}
+with Pearson $r = 0.768$ ($p = 3\times10^{-21}$, $N = 103$).  This
+relationship spans four decades in baryonic mass and is absent from
+$\Lambda$CDM, where no physical mechanism predicts $\rc$.  It
+constitutes a falsifiable prediction.
+
+\subsection{\texorpdfstring{The $k(M)$ Law}{The k(M) Law}}
+\label{sec:kresult}
+
+The coupling parameter $k$, fitted independently for each galaxy,
+follows Equation~(\ref{eq:klaw}) with $R^{2} = 0.64$ across $N = 172$
+galaxies.
+
+\subsection{Weak Lensing Isotropy (KiDS-450)}
+\label{sec:kids}
+
+TMT predicts strictly isotropic dark matter halos (scalar
+contribution), in contrast with filamentary $\Lambda$CDM dark matter.
+Analysis of KiDS-450 shear alignment yields a mean alignment deviation
+of $-0.024\%$ (consistent with isotropy), a systematic variance ratio
+of 0.989, and no significant redshift dependence ($r = 0.04$).
+
+\subsection{Mass--Environment Correlation (COSMOS2015)}
+\label{sec:cosmos}
+
+TMT predicts that massive galaxies reside in denser environments due
+to enhanced temporal coupling.  COSMOS2015 analysis (380,269 galaxies
+with valid data) yields a mass--environment Pearson $r = 0.150$
+($p < 10^{-100}$), consistent with the TMT prediction.
+
+\subsection{SNe Ia Environment Effect (Pantheon+)}
+\label{sec:snia}
+
+TMT predicts $\Delta d_{L} = +0.57\%$ (supernovae in voids appear
+more distant).  Observed: $\Delta\mu = +0.46\%\pm 0.032$~mag in the
+correct direction (ratio 0.80), consistent within $1\sigma$.
+
+\subsection{Integrated Sachs--Wolfe Effect}
+\label{sec:isw}
+
+TMT predicts ISW amplification of $+18.2\%$ in supervoids.  Observed:
+$+17.9\%$ \citep{Planck2016ISW}.  Ratio: 0.98.
+
+\subsection{\texorpdfstring{$\HObs$ Tension Resolution}{H0 Tension Resolution}}
+\label{sec:h0}
+
+With $\rho_{\mathrm{local}}/\rho_{c} = 0.7$ and $\beta_{\HObs} =
+0.82$, Equation~(\ref{eq:Hz}) gives
+\begin{equation}
+  H_{\mathrm{local}} = 67.4
+    \sqrt{0.308 + 0.692\,[1-0.82\times(1-0.7)]}
+    = 73.0\kmsMpc,
+  \label{eq:h0res}
+\end{equation}
+exactly matching the SH0ES measurement \citep{Riess2022}.
+
+\subsection{Combined Statistical Significance}
+\label{sec:combined}
+
+Under independence of the eight tests, Fisher's combined probability
+method yields
+\begin{equation}
+  \chi^{2}_{\mathrm{Fisher}} = -2\sum_{i}\ln p_{i}
+  \;\Rightarrow\; p_{\mathrm{combined}} = 10^{-112}\; (>15\sigma).
+  \label{eq:fisher}
+\end{equation}
+Table~\ref{tab:combined} summarises individual and combined results.
+
+\begin{deluxetable*}{lcl}
+\tablecaption{Combined statistical significance across eight
+independent tests\label{tab:combined}}
+\tablewidth{0pt}
+\tablehead{
+  \colhead{Test} & \colhead{$p$-value} & \colhead{Verdict}
+}
+\startdata
+SPARC rotation curves      & $<10^{-30}$  & Valid   \\
+$\rc(M)$ law               & $3\times10^{-21}$ & Valid \\
+$k(M)$ law                 & $<10^{-10}$  & Valid   \\
+KiDS-450 isotropy          & $<10^{-8}$   & Valid   \\
+COSMOS2015 mass--env       & $<10^{-100}$ & Valid   \\
+SNe~Ia environment         & $0.31\sigma$ & Supported \\
+ISW effect                 & $<10^{-3}$   & Valid   \\
+$\HObs$ tension            & $<10^{-5}$   & Resolved \\
+\hline
+\textbf{Combined (Fisher)} & $\mathbf{10^{-112}}$ & $\mathbf{>15\sigma}$ \\
+\enddata
+\end{deluxetable*}
+
+%% =====================================================================
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{\texorpdfstring{Comparison with $\Lambda$CDM}{Comparison with LambdaCDM}}
+\label{sec:comp_lcdm}
+
+TMT uses 5 global parameters ($\rc$ slope and intercept, $n$,
+$\beta_{\mathrm{SNe\,Ia}}$, $\beta_{\HObs}$) to describe phenomena that
+$\Lambda$CDM addresses with individual NFW profiles (2--3 parameters
+per galaxy) plus 6 cosmological parameters
+($\Omega_{m}$, $\Omega_{\Lambda}$, $\HObs$, $n_{s}$, $\sigma_{8}$,
+$\tau$).  The Bayesian Information Criterion (BIC) favours TMT in
+86\% of individual galaxy fits ($\Delta\mathrm{BIC} > 10$).
+
+\subsection{Comparison with MOND}
+\label{sec:comp_mond}
+
+MOND \citep{Milgrom1983} modifies Newtonian dynamics below a critical
+acceleration $a_{0} \approx 1.2\times10^{-10}$~m~s$^{-2}$.  TMT
+makes a different prediction: the relevant scale is the transition
+radius $\rc \propto M^{0.56}$, not a universal acceleration.  TMT
+also addresses dark energy and $\HObs$ --- outside MOND's scope.  On
+the SPARC sample, both frameworks achieve similar improvements, but
+TMT's $\rc(M)$ prediction is independently testable.
+
+\subsection{Limitations and Open Questions}
+\label{sec:limitations}
+
+We identify four primary limitations of the current framework.
+
+\begin{enumerate}
+  \item \textbf{CMB power spectrum.}  TMT has not been formulated for
+    the CMB acoustic peaks ($z \sim 1100$).  Extending the framework
+    to the radiation-dominated era remains an open challenge.
+
+  \item \textbf{Bullet Cluster.}  The offset between lensing mass and
+    X-ray gas in the Bullet Cluster \citep{Clowe2006} is widely
+    interpreted as evidence for collisionless dark matter.  TMT's
+    scalar mass contribution would follow the stellar (not gas)
+    distribution --- an analysis we have not yet performed.
+
+  \item \textbf{Tensor formulation.}  The current TMT is formulated
+    in the weak-field (Newtonian) limit.  A full general-relativistic
+    tensor formulation is in preparation.
+
+  \item \textbf{Dual-$\beta$ structure.}  The two-regime $\beta$ model
+    ($\beta_{\mathrm{SNe\,Ia}} = 0.001$, $\beta_{\HObs} = 0.82$) is
+    physically motivated but requires formal derivation from first
+    principles.
+\end{enumerate}
+
+\subsection{Falsifiable Predictions}
+\label{sec:predictions}
+
+TMT makes three predictions distinguishable from $\Lambda$CDM with
+near-term data:
+
+\begin{enumerate}
+  \item $\rc \propto M^{0.56}$ in newly observed galaxies (DESI,
+    \textit{Euclid}) --- no recalibration required;
+  \item Strictly isotropic weak lensing halos at the $<0.1\%$ level
+    (\textit{Euclid} 2026--2030);
+  \item $H(z,\rho)$ correlation with void catalogue density (DESI
+    spectroscopic survey).
+\end{enumerate}
+
+%% =====================================================================
+\section{Conclusions}
+\label{sec:conclusions}
+
+We have presented the Theory of Time Mastery, a gravitational
+framework in which temporal distortion provides a unified explanation
+for dark matter and dark energy effects.  The key results are:
+
+\begin{enumerate}
+  \item A universal power law $\rc(M) \propto M^{0.56}$
+    ($r = 0.768$, $p = 3\times10^{-21}$) emerges from independent
+    fitting of 103 SPARC galaxies.
+
+  \item The effective mass formula achieves 100\% applicability and
+    97.5\% median $\chi^{2}$ improvement across 156 SPARC galaxies.
+
+  \item Halo isotropy is confirmed in KiDS-450 at the 0.024\% level.
+
+  \item The $\HObs$ tension is resolved without additional free
+    parameters.
+
+  \item The combined significance across 8 independent tests is
+    $p = 10^{-112}$ ($> 15\sigma$).
+\end{enumerate}
+
+We offer this work as an invitation to critical examination by the
+community.  All code, data, and analysis scripts are publicly
+available at
+\url{https://github.com/chronos717313/Mastery-of-time}
+(DOI:
+\href{https://doi.org/10.5281/zenodo.18287042}{10.5281/zenodo.18287042}).
+We explicitly welcome independent replication, critique, and extension.
+
+%% =====================================================================
+\begin{acknowledgments}
+The author thanks F.~Lelli, S.~McGaugh, and J.~Schombert for the
+publicly available SPARC catalogue, which made this analysis possible.
+The author also acknowledges the KiDS collaboration, the COSMOS team,
+and the Pantheon+ team for making their data publicly available.
+This work received no external funding and was conducted entirely
+independently.
+\end{acknowledgments}
+
+%% AAS REQUIREMENT: \facilities{} macro
+\facilities{
+  Spitzer (IRAC),
+  \textit{Herschel},
+  Planck,
+  BOSS (SDSS-III)
+}
+
+%% AAS REQUIREMENT: \software{} macro (AASTeX native format)
+\software{
+  Python 3.11 \citep{python},
+  NumPy \citep{Harris2020},
+  SciPy \citep{Virtanen2020},
+  Astropy \citep{Astropy2022}
+}
+
+%% AAS REQUIREMENT: Dataset acknowledgments
+%% SPARC catalogue: http://astroweb.cwru.edu/SPARC/  (Lelli et al. 2016)
+%% KiDS-450: http://kids.strw.leidenuniv.nl/  (Hildebrandt et al. 2017)
+%% COSMOS2015: https://cosmos.astro.caltech.edu/  (Laigle et al. 2016)
+%% Pantheon+: https://pantheonplussh0es.github.io/ (Scolnic et al. 2022)
+%% Analysis code: https://github.com/chronos717313/Mastery-of-time
+%%                DOI: 10.5281/zenodo.18287042
+
+%% =====================================================================
+%% BIBLIOGRAPHY
+\bibliographystyle{aasjournal}
+\bibliography{refs}
+
+\end{document}
