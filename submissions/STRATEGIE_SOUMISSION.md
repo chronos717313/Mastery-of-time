@@ -147,9 +147,9 @@ Après chaque soumission, noter dans ce tableau :
 | Journal | Manuscript ID | Date soumission | Statut | Dernière action |
 |---------|---------------|-----------------|--------|-----------------|
 | ApJ | AAS76125 | 16-Apr-2026 | ❌ Desk rejected | 23-Apr-2026 |
-| JCAP | — | — | À soumettre | — |
+| MNRAS | MN-26-1174-P | 23-Apr-2026 | 🟡 Under review | 23-Apr-2026 |
+| JCAP | — | — | ⏳ Bloqué (arXiv requis) | — |
 | RNAAS | — | — | À soumettre | — |
-| MNRAS | — | — | À soumettre | — |
 | PRD | — | — | À soumettre | — |
 
 ---
