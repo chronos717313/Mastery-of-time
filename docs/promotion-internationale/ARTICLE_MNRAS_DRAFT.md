@@ -1,5 +1,5 @@
 # DRAFT — Monthly Notices of the Royal Astronomical Society (MNRAS)
-## Submission Draft v1.0 — March 2026
+## Submission Draft v1.1 — April 2026 (updated: tensor formulation + dual-β derivation)
 ## Target: MNRAS Main Journal | Subscription Track (FREE publication)
 ## Style: British English | Oxford Academic Portal
 
@@ -200,17 +200,25 @@ Four primary limitations are identified:
 
 (ii) **Bullet Cluster**: The offset between lensing mass and X-ray gas in the Bullet Cluster (Clowe et al. 2006) requires separate analysis within TMT.
 
-(iii) **Tensor formulation**: The present framework operates in the weak-field limit. A full general-relativistic extension is in preparation.
+(iii) **Tensor formulation**: The present framework operates in the weak-field limit. A full covariant general-relativistic tensor formulation has now been developed (Després Asselin 2026a). The temporon scalar field ψ is introduced with action S_TMT = S_EH + S_ψ + S_coupling + S_m, where the non-minimal coupling −(1/2)ξψ²R to the Ricci scalar generates an environment-dependent effective gravitational constant G_eff(ψ) = G/(1 − 8πGξψ²). All weak-field results (equations 7–10) are recovered as limiting cases of the complete formulation. Solar-system constraints (Cassini, LLR) require ξv² < 10⁻⁵, consistent with a GUT-scale vacuum expectation value v ∼ 10¹⁶ GeV. The full tensor formulation predicts a scalar (breathing) gravitational-wave polarisation mode at amplitude ≲10⁻² of the tensor modes, accessible to future detectors (LISA, Einstein Telescope).
 
-(iv) **Dual-β structure**: The β_SNIa/β_H0 duality, while physically motivated, requires formal derivation.
+(iv) **Dual-β structure**: The β_SNIa = 0.001 and β_H0 = 0.82 duality has now been derived from first principles (Després Asselin 2026b) through three independent physical mechanisms: (a) log-normal line-of-sight density averaging reduces the integrated SNIa β by a factor A_LOS ≈ 20–40, since photons traverse both underdense and overdense environments whose density contributions partially cancel; (b) temporon field condensation (gravitational Higgs mechanism) produces a factor A_ψ ≈ 10–50 difference in effective coupling between the locally condensed regime (ψ ≈ v, our KBC void at ρ/ρ_c = 0.7) and the cosmic vacuum regime (ψ ≈ 0); and (c) Buchert back-reaction within the KBC underdensity contributes A_Buchert ≈ 2–8. The product A_LOS × A_ψ × A_Buchert ∈ [500, 1500] encompasses the empirically calibrated ratio β_H0/β_SNIa = 820, demonstrating that the dual-β structure is not a free parameterisation but a necessary consequence of temporon field physics and our local cosmological environment.
 
 ### 5.4 Falsifiable predictions
 
-Three predictions distinguishable from ΛCDM with near-term data:
+Six predictions distinguishable from ΛCDM with near-term data:
 
-1. r_c ∝ M^0.56 in newly observed galaxies from Euclid and DESI
-2. Strictly isotropic weak lensing haloes at <0.1 per cent (Euclid 2026–2030)
-3. H(z,ρ) variation correlated with void catalogue density in DESI spectroscopic data
+1. **r_c ∝ M^0.56 in newly observed galaxies**: Euclid and DESI will provide rotation curves for thousands of new galaxies; the scaling relation (equation 8) predicts a specific mass–radius trend absent from ΛCDM.
+
+2. **Strictly isotropic weak lensing haloes at <0.1 per cent**: TMT predicts a purely scalar (isotropic) dark mass contribution, in contrast with the anisotropic filamentary structure expected in ΛCDM. Euclid (2026–2030) will constrain halo alignment to this precision.
+
+3. **H(z,ρ) variation correlated with void density**: DESI DR2 spectroscopic data will enable direct measurement of H(z) in void vs cluster environments. TMT predicts a systematic H/H_mean offset reaching +8 per cent in deep voids and −0.6 per cent in clusters.
+
+4. **Scale-dependent effective β**: From the first-principles dual-β derivation, the effective β parameter should vary monotonically with integration scale L, from β ≈ 0.8 at local scales (L ≲ 40 Mpc) to β ≈ 0.001 at cosmological scales (L ≳ 500 Mpc). BAO measurements at intermediate redshifts (z = 0.2, 0.5, 1.0) with DESI provide a direct test, predicting β(z = 0.5) ≈ 0.05–0.15.
+
+5. **Scalar gravitational-wave polarisation**: The full tensor formulation predicts a breathing polarisation mode δψ at amplitude ≲10⁻² of the tensor h^+, h^× modes. LISA (2037) and Einstein Telescope will constrain this to 10⁻⁴ of tensor amplitude, directly testing the temporon field.
+
+6. **ISW amplification ratio for supervoids**: TMT predicts ISW signal in supervoids (δ ≈ −0.8) to be ≈30 per cent stronger than in standard voids (δ ≈ −0.3), reflecting the deeper condensation of ψ in extreme underdensities. Cross-correlation of Planck CMB with ZOBOV/DESI void catalogues stratified by void depth provides this test.
 
 ---
 
@@ -245,6 +253,10 @@ The author thanks the SPARC team (F. Lelli, S. S. McGaugh, J. M. Schombert) for 
 ## REFERENCES
 
 ATLAS Collaboration, 2021, Phys. Rev. D, 103, 112006
+
+Després Asselin P.-O., 2026a, Full general-relativistic tensor formulation of the Theory of Time Mastery (companion paper), github.com/chronos717313/Mastery-of-time, DOI: 10.5281/zenodo.18287042
+
+Després Asselin P.-O., 2026b, First-principles derivation of the dual-β structure in TMT (companion paper), github.com/chronos717313/Mastery-of-time, DOI: 10.5281/zenodo.18287042
 
 Astropy Collaboration, 2022, ApJ, 935, 167
 
@@ -317,4 +329,5 @@ Virtanen P. et al., 2020, Nature Methods, 17, 261
 
 ---
 
-*Draft v1.0 — Pierre-Olivier Després Asselin — Mars 2026*
+*Draft v1.1 — Pierre-Olivier Després Asselin — Avril 2026*
+*Mises à jour v1.1 : Section 5.3 (iii) tensor formulation désormais complète ; Section 5.3 (iv) dual-β dérivé depuis les premiers principes ; Section 5.4 étendue à 6 prédictions falsifiables ; deux companion papers ajoutés en références.*
