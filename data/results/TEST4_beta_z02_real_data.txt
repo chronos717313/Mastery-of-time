@@ -1,0 +1,38 @@
+===========================================================================
+TMT TEST 4 — β(z≈0.2) REAL-DATA MEASUREMENT
+Pantheon+ SNIa × SDSS void catalogue (proxy for DESI BAO)
+===========================================================================
+
+DATA:
+  Pantheon+ SNIa in z∈[0.05, 0.30]:  559
+  SDSS voids                      :  1479
+
+CROSS-MATCH (3D proximity, d < R_eff of void):
+  SNIa classified in voids        :  31 (5.5%)
+  SNIa classified outside voids   :  528 (94.5%)
+  Mean z of void SNIa             :  0.083
+  Mean δ_void of containing voids :  -0.680
+
+MEASUREMENT:
+  Δμ (void − outside) = +0.0499 ± 0.0340 mag
+  Significance        = 1.47σ
+  ΔH/H observed       = -2.297% ± 1.565%
+
+TMT PREDICTION (Test 4, β_H0=0.82, z_*=0.008, α=1.5):
+  β_eff(z=0.083)      = 0.02379
+  ΔH/H predicted      = 1.618% (sign: voids expand faster)
+
+COMPARISON:
+  TMT    prediction  :  +1.618%
+  ΛCDM   prediction  :   0.000%
+  Observed           :  -2.297% ± 1.565%
+
+  |Obs − TMT|  = 3.916% (2.50σ away from TMT)
+  |Obs − ΛCDM| = 2.297% (1.47σ away from ΛCDM)
+
+  ln(BF_TMT/ΛCDM) = -2.05
+  → ΛCDM favored
+
+NOTE: This is a PROXY test using SNIa distance modulus.
+      The rigorous DESI BAO peak-shift test will have much higher S/N.
+      Expected improvement: factor ~10 with DESI DR1 (2026).
