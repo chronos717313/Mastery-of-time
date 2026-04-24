@@ -1,0 +1,32 @@
+========================================================================
+TMT TEST 5 - SCALAR GW BREATHING MODE: LISA PREDICTION
+========================================================================
+
+h_scalar/h_tensor = sqrt(xi*v^2) * compactness   [Channel A]
+PPN constraint: xi*v^2 < 1e-5  -->  h_s/h_t < 1.42e-03
+Current LIGO:   |h_s/h_t| < 0.03  (GW170817)  --> xi*v^2 < 4.4e-3
+
+------------------------------------------------------------------------
+SINGLE-EVENT SCALAR SNR (LISA, eta_s=0.3)
+Source                                     SNR_t  xi*v^2=1e-8  xi*v^2=1e-5
+SMBH 10^6 Msun @ 1 Gpc                       500        0.006        0.190
+SMBH 10^7 Msun @ 1 Gpc                      1000        0.014        0.427
+SMBH 10^6 Msun @ 100 Mpc                    5000        0.060        1.897
+EMRI 10^6+10 @ 500 Mpc                        50        0.000        0.009
+Stellar BH @ 400 Mpc                           8        0.000        0.003
+
+------------------------------------------------------------------------
+STACKING N SMBH EVENTS (10^6 Msun @ 1 Gpc, SNR_tensor=500)
+  N_events    SNR_s (xi=1e-8)    SNR_s (xi=1e-5)   5σ (1e-5)?
+         1              0.006              0.190           no
+         5              0.013              0.424           no
+        10              0.019              0.600           no
+        25              0.030              0.949           no
+        50              0.042              1.342           no
+       100              0.060              1.897           no
+
+------------------------------------------------------------------------
+FALSIFICATION CRITERIA
+  TMT FALSIFIED if LISA constrains h_s/h_t < 3e-5 from stacking
+  TMT SUPPORTED if T-channel excess at >2sigma during SMBH mergers
+  Expected N for 5sigma: ~25 events if xi*v^2 at PPN limit 1e-5
