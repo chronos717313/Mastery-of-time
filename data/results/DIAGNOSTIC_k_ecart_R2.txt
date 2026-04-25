@@ -1,0 +1,67 @@
+===========================================================================
+DIAGNOSTIC ÉCART R²=0.64 vs R²=0.018 — RECALIBRATION k(M,f_gas) v2.4
+===========================================================================
+
+CAUSE DE L'ÉCART
+────────────────
+Deux définitions incompatibles de k utilisées dans différents scripts:
+
+  k_v2  (correcte): M_eff(r) = M_bary(r) × [1 + k × (r/r_c)^n]
+    Formule: fraction additionnelle sans unités, calibrée par courbes rotation
+    Source:  TMT_v2_SPARC_reel_results.txt
+    Médian:  k ~ 6  (naines: 40, massives: 1)
+    R²(k,M): 0.642
+
+  k_rc  (incorrecte pour ce test): M_D = k × ∫(Φ/c²)² dV
+    Formule: couplage Después intégral (unités différentes)
+    Source:  TMT_REAL_SPARC_calibration.txt
+    Médian:  k ~ 0.69  (naines: 0.3, massives: 1.5 — SIGNE OPPOSÉ!)
+    R²(k,M): 0.018
+
+Ratio k_v2/k_rc: médian ≈ 9× (varie de 134× pour naines à 1.3× pour massives)
+Le script recalibrate_k_mfgas_full.py lisait la mauvaise source → R²=0.018 erroné.
+
+RÉSULTATS CORRECTS (N=165 galaxies SPARC, k_v2)
+───────────────────────────────────────────────────────
+
+  [1] k(M) seul:
+      k = 4.075 × (M_bary/10^10)^(-0.520)
+      R² = 0.6455   r = -0.803
+      → Confirme calibration v2.3: k=4.00×M^(-0.49), R²=0.64 ✓
+
+  [2] k(M, f_gas):
+      k = 3.003 × (M_bary/10^10)^(-0.455) × (1+f_gas)^(0.870)
+      R² = 0.6514   ΔR² = +0.006
+      r(k, log(1+f_gas)) = +0.684 ← corrélation forte!
+      Interp.: galaxies gaz-riches (HI-dominated) ont k plus élevé
+               → couplage temporon amplifié par faible potentiel
+
+  [3] k(M, Σ_disk):
+      k = 3.882 × (M_bary/10^10)^(-0.550) × (Σ/100)^(0.063)
+      R² = 0.6491   ΔR² = +0.004
+      r(k, Σ_disk) = -0.447 ← corrélation modérée
+      Note: l'effet Σ est déjà partiellement capturé par r_c(M,Σ)
+
+CORRÉLATIONS PARTIELLES (sur 165 galaxies):
+  r(log k, log M_bary)    = -0.803  R² = 0.645  *** dominante ***
+  r(log k, log(1+f_gas))  = +0.684  (corrélée avec M, non indépendante)
+  r(log k, log Σ_disk)    = -0.447  (aussi corrélée avec M)
+
+INTERPRÉTATION PHYSIQUE:
+  La dépendance M dominante (b=-0.52) reflète la profondeur du puits
+  gravitationnel: halos profonds saturent le couplage temporon.
+  La corrélation f_gas (c=+0.87) indique que les galaxies gaz-riches
+  (faible Φ_total) maintiennent un couplage plus élevé — cohérent
+  avec la condensation du champ temporon ψ dans les puits faibles.
+
+LOI RECOMMANDÉE TMT v2.4 (bilan f_gas marginal, ΔR²<0.01):
+  k(M) = 4.075 × (M_bary/10^10)^(-0.520)
+  R² = 0.645  (N=165, SPARC, calibration courbes de rotation)
+
+  Forme étendue (si gas fraction disponible):
+  k(M,f_gas) = 3.003 × (M_bary/10^10)^(-0.455) × (1+f_gas)^(0.870)
+  R² = 0.651  (+0.6% vs k(M) seul — marginal mais physiquement motivé)
+
+ACTION CORRECTIVE:
+  recalibrate_k_mfgas_full.py → corrigé pour lire TMT_v2_SPARC_reel_results.txt
+  Résultat confirmé: k=4.00×M^(-0.49) de la v2.3 est ROBUSTE ✓
