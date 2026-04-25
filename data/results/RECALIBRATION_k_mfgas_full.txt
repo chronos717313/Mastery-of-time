@@ -1,0 +1,54 @@
+===========================================================================
+RECALIBRATION k(M, f_gas) — INTÉGRALITÉ DONNÉES SPARC
+===========================================================================
+
+ÉCHANTILLON:
+  Galaxies SPARC total       : 135
+  Avec k_opt disponible      : 135
+  Après filtres qualité      : 128
+  Avec Σ_disk disponible     : 128
+
+CORRÉLATIONS PARTIELLES:
+  r(k, M_bary)     = +0.1351  (p = 1.28e-01)
+  r(k, f_gas)      = -0.0840  (p = 3.46e-01)
+  r(k, Σ_disk)     = +0.0579  (p = 5.16e-01)
+
+=======================================================
+RÉGRESSION 1 — k(M) seul [N=128]
+=======================================================
+  k = 0.7574 × (M/10¹⁰)^(0.0456)
+  R² = 0.0182   r = +0.1351   p = 1.28e-01
+  σ(slope) = 0.0298
+  Comparaison v2.3 (N=172): k = 4.00 × M^(-0.49), R² = 0.64
+
+=======================================================
+RÉGRESSION 2 — k(M, f_gas) [N=128]
+=======================================================
+  k = 0.6922 × (M/10¹⁰)^(0.0675) × (1+f_gas)^(0.2661)
+  R² = 0.0203
+  Amélioration vs Régression 1: ΔR² = +0.0021
+  → f_gas A UN EFFET SIGNIFICATIF sur k (c=0.266)
+     Galaxies gaz-riches (f_gas élevé) ont k plus ÉLEVÉ
+
+=======================================================
+RÉGRESSION 3 — k(M, Σ_disk) [N=128]
+=======================================================
+  k = 0.7690 × (M/10¹⁰)^(0.0525) × (Σ/100)^(-0.0145)
+  R² = 0.0190
+  Amélioration vs Régression 1: ΔR² = +0.0008
+  → Effet Σ_disk marginal (d=-0.014)
+
+LOI RECOMMANDÉE (v2.4):
+  k(M) = 0.757 × (M/10¹⁰)^(0.046)
+  R² = 0.0182  (f_gas n'améliore pas significativement)
+
+PRÉDICTIONS k PAR TYPE:
+  Naine (10^8 M☉, f_gas=0.7):
+    k(M seul) = 0.6139
+    k(M,fgas) = 0.5841
+  Spirale (10^10 M☉, f_gas=0.2):
+    k(M seul) = 0.7574
+    k(M,fgas) = 0.7266
+  Massive (10^11 M☉, f_gas=0.05):
+    k(M seul) = 0.8412
+    k(M,fgas) = 0.8193

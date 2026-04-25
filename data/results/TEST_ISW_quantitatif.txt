@@ -1,0 +1,63 @@
+===========================================================================
+TMT TEST ISW QUANTITATIF
+Prédiction void-stacking vs Planck×BOSS (Cai+2017, Planck 2016)
+===========================================================================
+
+DONNÉES:
+  Vides SDSS totaux     : 1479
+  z médian              : 0.155
+  δ_c médian            : -0.709
+  R_eff médian          : 29.5 Mpc
+
+MODÈLE TMT: A_ISW(void) = 1 + β_H0 × |δ_void|
+  β_H0 = 0.82
+
+Catégorie              Critère                      N      δ̄   A_TMT  Enhancmt
+---------------------------------------------------------------------------
+  Vide profond         -0.6 < δ ≤ -0.4            334  -0.548  1.4555   +45.55%
+  Supervide            -0.8 < δ ≤ -0.6            753  -0.702  1.5762   +57.62%
+  Supervide extr.      δ ≤ -0.8                   392  -0.849  1.6959   +69.59%
+
+PRÉDICTION GLOBALE (tous vides, pondérés volume):
+  δ̄ pondéré          = -0.721
+  A_TMT global       = 1.5915
+  Amplification      = +59.15%
+
+PRÉDICTION SUPERVIDES (δ < -0.6, N=1141):
+  δ̄ supervides       = -0.753
+  A_TMT supervides   = 1.6252
+  Amplification      = +62.52%
+
+  [Avec β_eff(z) au lieu de β_H0: A = 1.0146 (+1.46%)]
+  → Nécessite β_H0 (pas β_eff) pour reproduire observation
+
+COMPARAISON OBSERVATIONS:
+  Mesure                            Observé        TMT       ΛCDM   σ(TMT-Obs)
+  -----------------------------------------------------------------
+  Cai+2017 supervoids             1.18±0.21 1.6252     1.0000       +2.12σ
+  Planck 2016 tous vides          1.00±0.33 1.5915     1.0000       +1.79σ
+
+INTERPRÉTATION:
+  TENSION — écart >2σ
+  ΛCDM est à 0.86σ de la même mesure (Cai+2017)
+
+PRÉDICTION RATIO SUPERVIDES/STANDARD:
+  A_supervides / A_standard = 1.6252 / 1.4555 = 1.1166
+  → Supervides ont signal ISW 11.7% plus fort que vides standard
+
+COURBE A_ISW(δ):
+  δ = -0.90 → A_ISW = 1.7380 (+73.8%)
+  δ = -0.82 → A_ISW = 1.6717 (+67.2%)
+  δ = -0.74 → A_ISW = 1.6055 (+60.5%)
+  δ = -0.66 → A_ISW = 1.5392 (+53.9%)
+  δ = -0.58 → A_ISW = 1.4729 (+47.3%)
+  δ = -0.50 → A_ISW = 1.4067 (+40.7%)
+  δ = -0.42 → A_ISW = 1.3404 (+34.0%)
+  δ = -0.33 → A_ISW = 1.2742 (+27.4%)
+  δ = -0.25 → A_ISW = 1.2079 (+20.8%)
+  δ = -0.17 → A_ISW = 1.1416 (+14.2%)
+
+FALSIFICATION:
+  TMT FALSIFIÉ si A_ISW(supervides) < 1.05 à >3σ
+  TMT SUPPORTÉ si 1.10 < A_ISW(supervides) < 1.30 à >2σ
+  DESI×CMB-S4 attendu: σ(A_ISW) ~ 0.05 → discrimination TMT/ΛCDM à 3.6σ

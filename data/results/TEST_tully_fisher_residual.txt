@@ -1,0 +1,51 @@
+===========================================================================
+TEST TULLY-FISHER RÉSIDUEL — TMT vs ΛCDM
+Relation de Tully-Fisher baryonique: M_bary ∝ V_flat^4
+===========================================================================
+
+ÉCHANTILLON SPARC:
+  Galaxies valides (Q≠3, inc>30°): 123
+  Gamme M_bary: [9.5e+07, 2.7e+11] M☉
+  Gamme V_flat: [34, 332] km/s
+
+BTFR AJUSTÉE (pente libre):
+  M_bary = 10^2.762 × V_flat^3.485
+  Pearson r = 0.9636  (p = 3.38e-71)
+  Pente théorique: 4.0 (MOND, TMT)
+  Pente mesurée:  3.485 ± 0.088
+  Écart vs 4.0:   -5.87σ
+
+DISPERSION (scatter) DES RÉSIDUS BTFR:
+  Newton (M_bary):         σ = 0.2255 dex
+  TMT (M_eff = M_bary×f):  σ = 0.1787 dex
+  Variation scatter TMT:   -20.8%
+  → TMT RÉDUIT le scatter BTFR (+cohérent avec TMT)
+
+CORRÉLATIONS DES RÉSIDUS BTFR vs OBSERVABLES:
+  Variable                   Pearson r      p-value Interprétation
+  ----------------------------------------------------------------------
+  log(M_bary)                  +0.2672     2.81e-03 ** TMT: attendu si b≠-0.5
+  log(1 + f_gas)               +0.0122     8.93e-01  TMT+ΛCDM: faible effet
+  log(R_disk)                  +0.3244     2.52e-04 ** TMT: attendu (r_c/Rd)
+  log(r_c/R_disk)              +0.0914     3.15e-01  TMT: prédit positif
+  log(Σ_disk/100)              -0.0160     8.60e-01   TMT: attendu si r_c(Σ)
+
+PRÉDICTIONS TMT vs ΛCDM:
+
+  TMT prédit:    résidus ∝ log(r_c/R_disk), r(résidu, Σ) ≠ 0
+  TMT prédit:    résidus INDÉPENDANTS de masse DM cachée
+  ΛCDM prédit:   résidus ∝ concentration NFW (paramètre caché)
+  ΛCDM prédit:   résidus ∝ histoire de merger (non observable)
+
+  → Si résidus corrèlent avec r_c/R_disk: TMT SUPPORTÉ
+  → Si résidus NE corrèlent PAS avec baryoniques: ΛCDM implication
+
+FALSIFICATION:
+  TMT FALSIFIÉ si |r(résidu, r_c/Rd)| < 0.05 à N > 100
+  TMT SUPPORTÉ si |r(résidu, r_c/Rd)| > 0.15 (p < 0.05)
+
+PENTE BTFR TMT (M_eff = M_bary × [1 + k×(Rd/rc)^n]):
+  Pente BTFR avec M_eff: 1.689 ± 0.070
+  r(M_eff, V_flat):      0.9107
+  ΛCDM prédit pente = 4.0 exactement (pas de variation M-dépendante)
+  TMT prédit légère courbure pour galax. massives (k décroît avec M)
