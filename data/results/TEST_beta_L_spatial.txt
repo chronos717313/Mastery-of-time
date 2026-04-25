@@ -1,0 +1,55 @@
+================================================================================
+TMT — LOI β(L) SPATIALE: DÉPENDANCE D'ÉCHELLE DU COUPLAGE TEMPORON
+================================================================================
+
+FORMULE:
+  β(L) = β_H0 × (L_0 / L)^γ
+
+  Paramètres calibrés sur deux ancres:
+    β_H0   = 0.82  à L_0 = 35.0 Mpc  [SH0ES local, z=0]
+    β_SNIa = 0.001  à L   = 2000.0 Mpc  [Pantheon+, z~0.45]
+    γ      = 1.6584
+
+  Équivalent z:
+    β_eff(z) ≈ β_H0 × (z_0/z)^γ  avec z_0 = L_0/c_H0 = 0.0079
+
+MÉCANISMES D'ATTÉNUATION:
+  1. A_LOS(L)    : Moyenne log-normale des environnements traversés
+     Actif pour L > 35 Mpc, croît comme 1 + 2.5×log10(L/L_0)
+  2. A_ψ(L)      : Longueur de cohérence temporon ~ 220 Mpc
+     Actif pour L > 220 Mpc, croît comme exp((L-L_ψ)/L_ψ × 0.8)
+  3. A_Buchert(L): Back-reaction KBC void, rayon ~ 220 Mpc
+     Décroit pour L > 220 Mpc
+
+Échelle                     L (Mpc)    z équiv       β(L)       ΔH/H       Instrument
+--------------------------------------------------------------------------------
+  Vitesse peculière              10  z ~ 0.002    6.54813    327.41%         DESI BGS
+  Vide KBC local                 40  z ~ 0.009    0.65711     32.86%   SH0ES (calibr) ← calibr.
+  BAO local                     100  z ~ 0.022    0.14377      7.19%        6dFGS BAO
+  Vide KBC radius               220  z ~ 0.049    0.03889      1.94%      2M++ survey
+  BGS DESI z=0.2                700   z ~ 0.16    0.00570      0.29%         DESI BGS
+  LRG DESI z=0.5               2000   z ~ 0.45    0.00100      0.05%         DESI LRG
+  ELG DESI z=1.0               4500    z ~ 1.0    0.00026      0.01%         DESI ELG
+  Pantheon+ SNIa               2000   z ~ 0.45    0.00100      0.05%  Pantheon+ (cal) ← calibr.
+
+VÉRIFICATION ANCRES:
+  β(L=35.0 Mpc)    = 0.820000  (attendu 0.82)  ✓
+  β(L=2000.0 Mpc) = 0.001000  (attendu 0.001)  ✓
+
+PRÉDICTIONS DESI:
+  DESI BGS z~0.16: β = 0.00570, ΔH/H(void-cluster) ≈ 2.28%
+  DESI LRG z~0.45: β = 0.00100, ΔH/H(void-cluster) ≈ 0.40%
+  DESI ELG z~1.0: β = 0.00026, ΔH/H(void-cluster) ≈ 0.10%
+
+FALSIFICATION:
+  TMT FALSIFIÉ si β ne décroît pas monotoniquement avec L
+  TMT FALSIFIÉ si β(L=700 Mpc) > 0.0114 ou < 0.00171
+  TMT SUPPORTÉ si β(L=700 Mpc) ∈ [0.00285, 0.0086]
+  Test direct: ΔH/H(BGS) ≈ 2.28% détectable si σ < 0.5%
+
+CONNEXION β(L) ↔ β(z) (formulation du manuscrit):
+  β_eff(z) = β_H0 / (1 + (z/z_*)^α)
+  β(L) = β_H0 × (L_0/L)^γ = β_H0 × (z_0/z)^γ
+  Équivalence: (z_0/z)^γ ≈ 1/(1 + (z/z_*)^α)
+    z_0 = 0.0079,  z_* = 0.008,  γ = 1.658,  α = 1.5
+    Valables sur z ∈ [0.008, 0.5] (les deux formulations convergent)
