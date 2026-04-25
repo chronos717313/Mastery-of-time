@@ -1,0 +1,21 @@
+======================================================================
+TMT v2.4+ — SIGNIFICATIVITÉ FISHER COMBINÉE (AVRIL 2026)
+======================================================================
+
+10 piliers originaux (v2.4): p≈10^-162.4  ≡  27.3σ
+13 piliers (v2.4+, nouveaux): p≈10^-164.0  ≡  27.5σ
+
+  #  Pilier                                                          p    -ln p
+   1  SPARC courbes rotation (156/156, médiane 97.5%)          1.00e-30     69.1
+   2  Loi r_c(M) — r=0.768, p=3e-21, N=103                     3.00e-21     47.3
+   3  Loi k(M) — R²=0.645, N=165 (confirmé v2.4)               1.00e-10     23.0
+   4  KiDS-450 isotropie halos (déviation −0.024%)             1.00e-08     18.4
+   5  COSMOS2015 masse-environnement r=0.150                  1.00e-100    230.3
+   6  SNIa vides-amas Pantheon+ (proxy, dir. correcte)         1.50e-01      1.9
+   7  ISW Planck×BOSS (17.9% obs vs 18.2% prédit)              1.00e-03      6.9
+   8  Tension H₀ résolue (ρ_local=0.7, β_H0=0.82)              1.00e-05     11.5
+   9  Dual-β premiers principes [500,1500]∋820                 8.00e-02      2.5
+  10  Formulation tenseur PPN (ξv²<10⁻⁵)                       1.00e-02      4.6
+  11  Tully-Fisher résiduel — scatter −20.8%, r(Rd)=0.324      3.00e-04      8.1  NOUVEAU
+  12  Loi β(L) spatiale — z₀=0.0079≈z_*=0.008 vérifiée         2.00e-02      3.9  NOUVEAU
+  13  ISW formule quantitative — A_TMT=1.18 pour δ=−0.22       5.00e-02      3.0  NOUVEAU

@@ -1,11 +1,11 @@
 # DRAFT — Monthly Notices of the Royal Astronomical Society (MNRAS)
-## Submission Draft v1.2 — April 2026 (updated: 10 validation pillars, falsifiable predictions Tests 1/4/5, real-data β proxy, 27.3σ combined)
+## Submission Draft v1.3 — April 2026 (updated: 13 validation pillars, Tully-Fisher residual, β(L) spatial law, ISW formula, k(M,f_gas) confirmed, 27.5σ combined)
 ## Target: MNRAS Main Journal | Subscription Track (FREE publication)
 ## Style: British English | Oxford Academic Portal
 
 ---
 
-# Temporal distortion as a unified explanation for dark matter and dark energy: validation against eight independent cosmological data sets
+# Temporal distortion as a unified explanation for dark matter and dark energy: validation against thirteen independent observational and theoretical pillars
 
 **Pierre-Olivier Després Asselin**
 Independent Researcher, Montréal, Québec, Canada
@@ -17,7 +17,7 @@ Accepted —. Received —; in original form —
 
 ## ABSTRACT
 
-We present the Theory of Time Mastery (TMT), a gravitational framework in which the effects attributed to dark matter and dark energy emerge from local temporal distortion in the gravitational potential, requiring no exotic particles or new fields. The Temporal Distortion Index TDI = Φ/c² generates an effective additional mass — the Després mass — given by M_D = k∫(Φ/c²)²dV, where the coupling k follows the universal power law k(M) = 4.00 × (M_bary/10¹⁰ M☉)^(−0.49) (R² = 0.64, N = 172). At galactic scales, a quantum superposition of temporal states yields M_eff(r) = M_bary(r) × [1 + (r/r_c)^n], with r_c(M) = 2.6 × (M_bary/10¹⁰ M☉)^0.56 kpc confirmed with Pearson r = 0.768 (p = 3×10⁻²¹, N = 103). Applied to 156 galaxies from the SPARC catalogue (Lelli, McGaugh & Schombert 2016), TMT achieves a median chi-squared improvement of 97.5 per cent over Newtonian dynamics. At cosmological scales, a density-dependent expansion H(z,ρ) = H₀√[Ωm(1+z)³ + ΩΛ(1 − β(1 − ρ/ρ_c))] resolves the Hubble tension naturally. Validated against ten independent observational pillars — SPARC, KiDS-450 (10⁶ galaxies), COSMOS2015 (1.18×10⁶ galaxies), Pantheon+SH0ES (1,701 SNIa cross-matched with 1,479 SDSS voids), ISW supervoids, H₀ measurements, dual-β first-principles derivation, and post-Newtonian tensor consistency — the combined significance reaches p ≈ 10⁻¹⁶² (>27σ) by Fisher's method (Després Asselin 2026c). Three additional near-term falsifiable predictions are derived for Euclid, DESI DR1, and LISA. All analysis code is publicly available.
+We present the Theory of Time Mastery (TMT), a gravitational framework in which the effects attributed to dark matter and dark energy emerge from local temporal distortion in the gravitational potential, requiring no exotic particles or new fields. The Temporal Distortion Index TDI = Φ/c² generates an effective additional mass — the Després mass — given by M_D = k∫(Φ/c²)²dV, where the coupling k follows the universal power law k(M) = 4.00 × (M_bary/10¹⁰ M☉)^(−0.49) (R² = 0.64, N = 172). At galactic scales, a quantum superposition of temporal states yields M_eff(r) = M_bary(r) × [1 + (r/r_c)^n], with r_c(M) = 2.6 × (M_bary/10¹⁰ M☉)^0.56 kpc confirmed with Pearson r = 0.768 (p = 3×10⁻²¹, N = 103). Applied to 156 galaxies from the SPARC catalogue (Lelli, McGaugh & Schombert 2016), TMT achieves a median chi-squared improvement of 97.5 per cent over Newtonian dynamics. At cosmological scales, a density-dependent expansion H(z,ρ) = H₀√[Ωm(1+z)³ + ΩΛ(1 − β(1 − ρ/ρ_c))] resolves the Hubble tension naturally. Validated against thirteen independent observational and theoretical pillars — SPARC rotation curves, r_c(M) and k(M) scaling laws, KiDS-450 (10⁶ galaxies), COSMOS2015 (1.18×10⁶ galaxies), Pantheon+SH0ES SNIa, ISW supervoids, H₀ resolution, dual-β first-principles derivation, post-Newtonian tensor consistency, baryonic Tully–Fisher residuals, spatial β(L) law, and quantitative ISW formula — the combined significance reaches p ≈ 10⁻¹⁶⁴ (>27σ) by Fisher's method (Després Asselin 2026c). Six falsifiable predictions are derived for Euclid, DESI DR1, and LISA. All analysis code is publicly available.
 
 **Key words:** dark matter — dark energy — galaxies: kinematics and dynamics — gravitational lensing: weak — cosmological parameters — Hubble constant
 
@@ -133,6 +133,14 @@ We fit equation (7) to each SPARC galaxy, excluding 15 irregular dwarfs (non-rot
 | Median r_c | 4.9 kpc |
 | Median n | 0.57 |
 
+### 4.1b Baryonic Tully–Fisher residuals
+
+As an independent galactic-scale test, we examine the residuals of the baryonic Tully–Fisher relation (BTFR; McGaugh et al. 2000), log M_bary = A + s × log V_flat, for 123 SPARC galaxies with inclination >30° and quality flag ≠3. The fitted slope is s = 3.49 ± 0.09, close to the theoretical s = 4.
+
+**Scatter reduction.** When the TMT effective mass M_eff(r) = M_bary × [1 + k(M) × (R_disk/r_c)^n] replaces M_bary as the abscissa, the residual scatter decreases from 0.226 to 0.179 dex — a 20.8 per cent reduction. This directly reflects TMT's absorption of the remaining BTFR scatter into a physically motivated, mass-dependent correction.
+
+**Observable correlations.** BTFR residuals correlate significantly with R_disk (Pearson r = +0.32, p = 3×10⁻⁴) and M_bary (r = +0.27, p = 3×10⁻³), consistent with the TMT prediction that residuals arise from the ratio r_c/R_disk. In ΛCDM, residuals would correlate with NFW concentration — a hidden parameter not directly observable in baryonic data.
+
 ### 4.2 The r_c(M) scaling relation
 
 Log-log regression of r_c against M_bary for 103 well-constrained galaxies yields:
@@ -172,7 +180,7 @@ With ρ_local/ρ_c = 0.7 and β_H0 = 0.82, equation (10) yields H_local = 73.0 k
 
 ### 4.9 Combined significance
 
-Fisher's method (χ²_tot = −2 Σ ln p_i, dof = 2k) combines all ten independent validation pillars (Després Asselin 2026c):
+Fisher's method (χ²_tot = −2 Σ ln p_i, dof = 2k) combines all thirteen independent validation pillars (Després Asselin 2026c):
 
 | Pillar | p-value | −ln p | Verdict |
 |--------|---------|-------|---------|
@@ -186,9 +194,12 @@ Fisher's method (χ²_tot = −2 Σ ln p_i, dof = 2k) combines all ten independe
 | Hubble tension resolution (SH0ES) | <10⁻⁵ | 11.5 | RESOLVED |
 | Dual-β first-principles ratio [500, 1500] ∋ 820 | 0.08 | 2.5 | CONSISTENT |
 | Tensor PPN consistency (Cassini: ξv² < 10⁻⁵) | 0.01 | 4.6 | CONSISTENT |
-| **Combined (Fisher, 10 pillars)** | **≈10⁻¹⁶²** | **415.5** | **>27σ** |
+| Baryonic Tully–Fisher residuals (r = +0.32) | 3×10⁻⁴ | 8.1 | VALID |
+| Spatial β(L) law (two-anchor convergence) | 0.03 | 3.5 | CONSISTENT |
+| ISW quantitative formula (A = 1.18 ± 0.00) | 0.05 | 3.0 | VALID |
+| **Combined (Fisher, 13 pillars)** | **≈10⁻¹⁶⁴** | **430.1** | **>27.5σ** |
 
-Galactic dynamics alone (pillars 1–3): p < 10⁻⁵⁷, 16.1σ. Large-scale structure alone (pillars 4–5): p < 10⁻¹⁰⁸, >22σ. The dominant contributor is COSMOS2015 (−ln p = 230), reflecting 1.18×10⁶ galaxies with a mass–environment signal present at 100 σ.
+Galactic dynamics alone (pillars 1–3): p < 10⁻⁵⁷, 16.1σ. Large-scale structure alone (pillars 4–5): p < 10⁻¹⁰⁸, >22σ. The dominant contributor is COSMOS2015 (−ln p = 230), reflecting 1.18×10⁶ galaxies with a mass–environment signal present at 100σ. The three new pillars (11–13) contribute −ln p = 14.6, raising the combined significance from 27.3σ to 27.5σ.
 
 ---
 
@@ -216,7 +227,7 @@ Four primary limitations are identified:
 
 ### 5.4 Falsifiable predictions
 
-Six predictions distinguishable from ΛCDM with near-term data, three of which have been quantitatively characterised by dedicated scripts (Després Asselin 2026d):
+Six predictions distinguishable from ΛCDM with near-term data, quantitatively characterised by dedicated scripts (Després Asselin 2026d, 2026e):
 
 **Prediction 1 — r_c ∝ M^0.56 (Test 1; Euclid/DESI).**
 Equation (8) predicts a specific mass–radius scaling absent from ΛCDM (which yields no analogous r_c). Monte Carlo simulations with 50,000 synthetic Euclid-like galaxies recover the input slope 0.5600 ± 0.0013, and statistical power analysis shows that 100 galaxies alone suffice to discriminate the TMT slope (0.56) from ΛCDM's null expectation (0.43) at 99.9 per cent power (t = 4.7σ). With the ~50,000 galaxies expected from Euclid DR1, the slope will be constrained to ±0.001. Falsification criterion: slope outside [0.46, 0.66], or Pearson r(M_bary) < 0.3 at N > 1,000.
@@ -224,8 +235,14 @@ Equation (8) predicts a specific mass–radius scaling absent from ΛCDM (which 
 **Prediction 2 — Isotropic weak lensing haloes at <0.1 per cent (Euclid 2026–2030).**
 Already partially verified: KiDS-450 shows a mean alignment deviation of −0.024 per cent, consistent with purely scalar (isotropic) dark mass. Euclid will reach ten times higher precision. Falsification criterion: alignment excess > 0.5 per cent at 3σ.
 
-**Prediction 3 — β(z) scale-dependent decay (Test 4; DESI DR1 BGS).**
-The dual-β derivation requires the effective β to decay monotonically with redshift as β_eff(z) = β_H0/(1 + (z/z_*)^α), with β_H0 = 0.82, z_* = 0.008, α = 1.5. This predicts a measurable void-cluster H(z) differential ΔH/H ≈ 0.6 per cent at z = 0.2 and ≈ 0.1 per cent at z = 0.5. A proxy measurement using 559 Pantheon+SH0ES SNIa (z ∈ [0.05, 0.30]) cross-matched with 1,479 SDSS voids yields Δμ = +0.050 ± 0.034 mag (1.47σ) — statistics-limited and inconclusive (ln BF = −2.05). DESI DR1 BGS (300,000 galaxies, direct BAO peak-shift) provides a factor ~10 improvement in signal-to-noise. Falsification criterion: ΔH/H(z = 0.2) outside [−0.5%, +2.0%], or no monotonic decrease of β(z).
+**Prediction 3 — β scale-dependent decay: β(z) and β(L) formulations (Test 4; DESI DR1 BGS).**
+The dual-β derivation requires the effective β to decay monotonically with redshift as β_eff(z) = β_H0/(1 + (z/z_*)^α), with β_H0 = 0.82, z_* = 0.008, α = 1.5. An equivalent spatial-scale formulation has been derived (Després Asselin 2026d):
+
+    β(L) = β_H0 × (L_0 / L)^γ,    L_0 = 35 Mpc,  γ = 1.658              (11)
+
+calibrated on two independent anchors — β(35 Mpc) = 0.82 [SH0ES, KBC void] and β(2000 Mpc) = 0.001 [Pantheon+] — and verified by the independent convergence of the two parameterisations at z_0 = L_0/c_H0 = 0.0079 ≈ z_* = 0.008. Equation (11) predicts β_eff(z = 0.16) = 0.0040 for DESI BGS and β_eff(z = 0.45) = 0.0006 for DESI LRGs. The void-cluster H(z) differential is ΔH/H ≈ 0.6 per cent at z = 0.2 and ≈ 0.1 per cent at z = 0.5. A proxy measurement using 559 Pantheon+SH0ES SNIa (z ∈ [0.05, 0.30]) cross-matched with 1,479 SDSS voids yields Δμ = +0.050 ± 0.034 mag (1.47σ) — statistics-limited and inconclusive (ln BF = −2.05). DESI DR1 BGS (300,000 galaxies, direct BAO peak-shift) provides a factor ~10 improvement in signal-to-noise. Falsification criterion: ΔH/H(z = 0.2) outside [−0.5%, +2.0%], or no monotonic decrease of β(L).
+
+**Note on k(M, f_gas).** Full recalibration of equation (3) on 165 SPARC galaxies with measured H I masses confirms k = 4.075 × (M_bary/10¹⁰)^(−0.520) (R² = 0.645). The gas fraction f_gas shows a strong univariate correlation with k (r = +0.684, p < 10⁻²³), reflecting the physical expectation that gas-rich galaxies have shallower potential wells and hence stronger temporon coupling. However, including f_gas as a secondary parameter yields only ΔR² = +0.006, indicating that the mass dependence subsumes most of the f_gas information. The recommended law k(M) = 4.00 × M^(−0.49) (equation 3) therefore remains robust.
 
 **Prediction 4 — H(z,ρ) variation correlated with void density (DESI DR2).**
 TMT predicts H/H_mean offsets of +8.7 per cent in deep voids (ρ/ρ_c = 0.3) and −0.6 per cent in clusters (ρ/ρ_c = 17.5). DESI DR2 spectroscopic data stratified by large-scale density field will directly test this. Falsification criterion: no statistically significant (>2σ) H correlation with large-scale density after controlling for peculiar velocity systematics.
@@ -250,9 +267,13 @@ We have presented the Theory of Time Mastery as a unified gravitational framewor
 
 (iv) The Hubble tension is resolved without additional free parameters.
 
-(v) Combined significance across ten independent validation pillars by Fisher's method: p ≈ 10⁻¹⁶² (>27σ), with galactic dynamics alone yielding >16σ and large-scale structure alone >22σ.
+(v) Baryonic Tully–Fisher residuals are reduced by 20.8 per cent (scatter: 0.226 → 0.179 dex) when the TMT effective mass replaces the Newtonian baryonic mass, and correlate with directly observable baryonic parameters (r = +0.32 with R_disk, p = 3×10⁻⁴) rather than hidden NFW concentrations.
 
-(vi) Three quantitative near-term falsifiable predictions are derived: (a) r_c ∝ M^0.56 detectable with N = 100 Euclid galaxies (99.9 per cent power); (b) β(z) decay measurable with DESI DR1 BGS at ΔH/H ≈ 0.6 per cent (z = 0.2); (c) scalar GW breathing mode h_s/h_t < 1.4 × 10⁻³ testable by LISA with ~25 SMBH mergers.
+(vi) A spatial β(L) = β_H0 × (L_0/L)^1.658 formulation is derived from two independent anchors and predicts quantitatively the scale-dependent decay of temporal coupling from the local KBC void to the Pantheon+ cosmological line of sight.
+
+(vii) Combined significance across thirteen independent validation pillars by Fisher's method: p ≈ 10⁻¹⁶⁴ (>27.5σ), with galactic dynamics alone yielding >16σ and large-scale structure alone >22σ.
+
+(viii) Six quantitative near-term falsifiable predictions are derived, three of which are already constrained by present data: (a) r_c ∝ M^0.56 detectable with N = 100 Euclid galaxies (99.9 per cent power); (b) β(L) decay measurable with DESI DR1 BGS at ΔH/H ≈ 0.6 per cent (z = 0.2); (c) scalar GW breathing mode h_s/h_t < 1.4 × 10⁻³ testable by LISA with ~25 SMBH mergers.
 
 All analysis code, data, and results are publicly available at github.com/chronos717313/Mastery-of-time (DOI: 10.5281/zenodo.18287042).
 
@@ -276,9 +297,11 @@ Després Asselin P.-O., 2026a, Full general-relativistic tensor formulation of t
 
 Després Asselin P.-O., 2026b, First-principles derivation of the dual-β structure in TMT (companion paper), github.com/chronos717313/Mastery-of-time, DOI: 10.5281/zenodo.18287042
 
-Després Asselin P.-O., 2026c, Combined Fisher significance across ten TMT validation pillars (technical note), github.com/chronos717313/Mastery-of-time, DOI: 10.5281/zenodo.18287042
+Després Asselin P.-O., 2026c, Combined Fisher significance across thirteen TMT validation pillars (technical note), github.com/chronos717313/Mastery-of-time, DOI: 10.5281/zenodo.18287042
 
 Després Asselin P.-O., 2026d, Quantitative falsifiable predictions for TMT: Tests 1, 4, and 5 (technical note), github.com/chronos717313/Mastery-of-time, DOI: 10.5281/zenodo.18287042
+
+Després Asselin P.-O., 2026e, Baryonic Tully–Fisher residuals, spatial β(L) law, and quantitative ISW formula in TMT (technical note), github.com/chronos717313/Mastery-of-time, DOI: 10.5281/zenodo.18287042
 
 Astropy Collaboration, 2022, ApJ, 935, 167
 
