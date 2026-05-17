@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-TMT v2.4 -- First-principles derivation of dual-beta factors
+Temporon scalar-tensor model -- First-principles derivation of dual-beta factors
 ================================================================
 
 Computes A_LOS, A_psi, A_Buchert from the scalar-tensor action of
@@ -16,7 +16,7 @@ THE THREE MECHANISMS
              plus N-body calibration of sigma_lnrho.
 
 (2) A_psi  : difference in effective non-minimal coupling between
-             the temperon-condensed phase (psi ~ v, in our local KBC
+             the temporon-condensed phase (psi ~ v, in our local KBC
              void) and the symmetric phase (psi ~ 0, in mean cosmic
              density along SNIa LOS). Derived from the action in
              Sec. II of the manuscript.
@@ -62,16 +62,16 @@ SIGMA_LNRHO_100MPC = 0.8       # at L = 100 Mpc smoothing scale
 SIGMA_LNRHO_RANGE = (0.6, 1.0) # uncertainty bracket
 
 # Non-linearity coefficient of the function g(rho) = 1 - rho/rho_c
-# coupled to the temperon field (Jensen inequality + numerical fit)
+# coupled to the temporon field (Jensen inequality + numerical fit)
 EPSILON_NL = 0.5
 EPSILON_RANGE = (0.3, 0.7)
 
 # Scalar-tensor action parameters (Sec. II of manuscript)
 XI = 1.0/6.0                    # conformal non-minimal coupling
-V_GUT_GEV = 1.0e16              # temperon VEV (PPN-constrained)
+V_GUT_GEV = 1.0e16              # temporon VEV (PPN-constrained)
 M_PL_GEV = 2.435e18             # reduced Planck mass
 
-# Temperon condensation transition density (Eq. eq:rho_transition)
+# Temporon condensation transition density (Eq. eq:rho_transition)
 RHO_TR_OVER_RHO_C = 0.30        # central value
 RHO_TR_RANGE = (0.20, 0.40)
 
@@ -86,7 +86,7 @@ OMEGA_M = 0.315
 OMEGA_L = 0.685
 
 print("=" * 72)
-print("TMT v2.4 -- First-principles derivation of dual-beta factors")
+print("Temporon scalar-tensor model -- First-principles derivation of dual-beta factors")
 print("=" * 72)
 print()
 print("INPUT PARAMETERS")
@@ -94,7 +94,7 @@ print("-" * 72)
 print(f"  sigma_lnrho (100 Mpc) = {SIGMA_LNRHO_100MPC}  range {SIGMA_LNRHO_RANGE}")
 print(f"  epsilon (non-linearity) = {EPSILON_NL}  range {EPSILON_RANGE}")
 print(f"  xi (conformal) = {XI:.4f}")
-print(f"  v (temperon VEV) = {V_GUT_GEV:.2e} GeV")
+print(f"  v (temporon VEV) = {V_GUT_GEV:.2e} GeV")
 print(f"  rho_transition / rho_c = {RHO_TR_OVER_RHO_C}  range {RHO_TR_RANGE}")
 print(f"  rho_local / rho_c (KBC) = {RHO_LOC_OVER_RHO_C}")
 print(f"  delta_KBC = {DELTA_KBC}")
@@ -155,7 +155,7 @@ print()
 
 
 # =========================================================================
-# 3. A_psi : temperon condensation factor (scalar-tensor action)
+# 3. A_psi : temporon condensation factor (scalar-tensor action)
 # =========================================================================
 # From Sec. 5 of derivation document, working from the scalar-tensor
 # action (Eq. 1 of manuscript):
@@ -194,7 +194,7 @@ def compute_A_psi(xi=XI, v_GeV=V_GUT_GEV, rho_tr=RHO_TR_OVER_RHO_C,
     # Symmetric regime (psi ~ 0, only quadratic fluctuations):
     #   <delta psi^2> ~ (xi H^2) / (lambda v^2) suppressed factor
     # In dimensionless terms vs v^2:
-    H2_over_lam_v2 = 1e-3  # numerical estimate using TMT params
+    H2_over_lam_v2 = 1e-3  # numerical estimate using temporon params
     dpsi2_d_rho_symmetric = xi * H2_over_lam_v2  # in units of v^2
 
     return dpsi2_d_rho_condensed / dpsi2_d_rho_symmetric

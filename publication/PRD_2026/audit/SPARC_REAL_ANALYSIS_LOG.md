@@ -19,14 +19,14 @@
 | Successfully analysed | 171 |
 | Valid (M>10⁷ M⊙, r_c ∈ [0.1, 100] kpc) | **168** |
 
-## Per-galaxy performance (TMT free fit vs Newtonian baseline)
+## Per-galaxy performance (temporon free fit vs Newtonian baseline)
 
 | Quantity | Value |
 |---|---|
-| Galaxies improved (χ²_TMT < χ²_Newton) | 162/168 (96.4%) |
+| Galaxies improved (χ²_temporon < χ²_Newton) | 162/168 (96.4%) |
 | Median χ² improvement | **92.2%** |
 | Mean χ² improvement | 84.5% |
-| Δ-BIC > 10 favouring TMT | 139/168 (82.7%) |
+| Δ-BIC > 10 favouring temporon | 139/168 (82.7%) |
 | Δ-BIC > 6 (strong evidence) | 143/168 (85.1%) |
 | Baryonic-dominated (k≈0 valid) | 5 |
 
@@ -71,7 +71,7 @@ r_c = (8.70 ± 0.78) × (M_bary / 10^10 M_sun)^(0.48 ± 0.04) kpc
 
 The project's documented falsification criterion was:
 
-> "TMT is FALSIFIED if measured slope outside [0.46, 0.66]"
+> "The temporon model is FALSIFIED if measured slope outside [0.46, 0.66]"
 
 Our measured slope is **0.477 ± 0.039**, which is:
 - **WITHIN** the falsification window [0.46, 0.66] ✅

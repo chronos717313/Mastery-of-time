@@ -1,15 +1,14 @@
 #!/usr/bin/env python3
 """
-TMT v2.4 - Rotation Curves Generator (PRD edition)
-===================================================
+Temporon Scalar-Tensor Model - Rotation Curves Generator (PRD edition)
+=======================================================================
 
 Generates publication-quality rotation curve figures showing:
-- Black solid: TMT v2.4 total prediction
+- Black solid: temporon model total prediction
 - Gold dashed: Newtonian baryonic contribution
-- Blue dotted: TMT contribution beyond Newton
 - Red solid + band: Observations with 1-sigma error band
 
-Based on validated TMT v2.4 parameters:
+Based on validated temporon parameters:
 - k(M) = 4.00 × (M/10^10)^(-0.49), R² = 0.64
 - r_c(M,Σ) = 2.6 × (M/10^10)^0.56 × (Σ/100)^-0.3 kpc
 - n = 0.5
@@ -17,9 +16,9 @@ Based on validated TMT v2.4 parameters:
 
 References:
 - SPARC Database: Lelli, McGaugh & Schombert 2016, AJ, 152, 157
-- TMT v2.4 Validation: Zenodo DOI 10.5281/zenodo.18287042
+- Temporon model validation: Zenodo DOI 10.5281/zenodo.18287042
 
-Author: TMT Research Team
+Author: P.-O. Despres Asselin
 Date: February 2026
 """
 
@@ -37,7 +36,7 @@ G = 4.302e-6  # Gravitational constant [kpc (km/s)² / M_sun]
 c = 299792.458  # Speed of light [km/s]
 
 # =============================================================================
-# TMT v2.4 VALIDATED PARAMETERS
+# TEMPORON MODEL VALIDATED PARAMETERS
 # =============================================================================
 
 # k(M) law: k = 4.00 × (M/10^10)^(-0.49)
@@ -174,7 +173,7 @@ GALAXIES = {
 
 def calculate_k(M_bary):
     """
-    Calculate k coupling constant from TMT v2.4 law.
+    Calculate k coupling constant from the temporon model law.
 
     k(M) = 4.00 × (M/10^10)^(-0.49)
 
@@ -185,7 +184,7 @@ def calculate_k(M_bary):
 
 def calculate_r_c(M_bary, surface_brightness=21.0):
     """
-    Calculate critical radius from TMT v2.4 law.
+    Calculate critical radius from the temporon model law.
 
     r_c(M,Σ) = 2.6 × (M/10^10)^0.56 × (Σ/100)^-0.3 kpc
 
@@ -204,7 +203,7 @@ def calculate_r_c(M_bary, surface_brightness=21.0):
 
 def calculate_v_TMT(r, v_bary, k, r_c, n=N_EXPONENT):
     """
-    Calculate TMT v2.4 rotation velocity.
+    Calculate temporon model rotation velocity.
 
     M_eff(r) = M_bary × [1 + k × (r/r_c)^n]
     v_TMT² = v_bary² × [1 + k × (r/r_c)^n]
@@ -225,9 +224,8 @@ def plot_rotation_curves(output_path=None, log_file=None):
     Generate publication-quality rotation curve figure.
 
     Color scheme (PRD):
-    - Black solid: TMT total prediction
+    - Black solid: temporon model total prediction
     - Gold dashed: Newtonian baryonic contribution
-    - Blue dotted: TMT contribution beyond Newton
     - Red solid + band: Observations with 1-sigma error band
     """
     fig, axes = plt.subplots(2, 3, figsize=(15, 10))
@@ -236,7 +234,7 @@ def plot_rotation_curves(output_path=None, log_file=None):
     # Collect log data
     log_lines = []
     log_lines.append("=" * 80)
-    log_lines.append("TMT v2.4 ROTATION CURVES - DATA LOG")
+    log_lines.append("TEMPORON MODEL ROTATION CURVES - DATA LOG")
     log_lines.append("=" * 80)
     log_lines.append(f"\nFormula: v_TMT = v_bary * sqrt(1 + k * (r/r_c)^n)")
     log_lines.append(f"Parameters: n = {N_EXPONENT}")
@@ -253,7 +251,7 @@ def plot_rotation_curves(output_path=None, log_file=None):
         v_bary = data['v_bary']
         sb = data['surface_brightness']
 
-        # Calculate TMT v2.4 parameters
+        # Calculate temporon-model parameters
         k = calculate_k(M_bary)
         r_c = calculate_r_c(M_bary, sb)
 
@@ -261,7 +259,7 @@ def plot_rotation_curves(output_path=None, log_file=None):
         if 'k_optimal' in data:
             k = data['k_optimal']
 
-        # Calculate TMT prediction
+        # Calculate temporon-model prediction
         v_TMT, v_k = calculate_v_TMT(r, v_bary, k, r_c)
 
         # Calculate enhancement factor for logging
@@ -290,19 +288,15 @@ def plot_rotation_curves(output_path=None, log_file=None):
         ax.plot(r, v_bary, '--', color='goldenrod', linewidth=2.5,
                label='Newton (baryons)', zorder=1)
 
-        # Plot TMT contribution beyond Newton (blue dotted)
-        ax.plot(r, v_k, ':', color='blue', linewidth=2,
-               label='TMT contribution', zorder=2)
-
         # Plot observations as LINE (red solid) with error band
         ax.fill_between(r, v_obs - v_err, v_obs + v_err,
                        color='red', alpha=0.2, zorder=3)
         ax.plot(r, v_obs, '-', color='red', linewidth=2.5,
                label='Observations', zorder=4)
 
-        # Plot TMT total (black solid) - should overlap with red
+        # Plot temporon-model total (black solid) - should overlap with red
         ax.plot(r, v_TMT, '-', color='black', linewidth=2,
-               label='TMT v2.4', zorder=5)
+               label='Temporon model', zorder=5)
 
         # Calculate and display chi-squared improvement
         chi2_newton = np.sum(((v_obs - v_bary) / v_err)**2) / len(v_obs)
@@ -341,7 +335,7 @@ def plot_rotation_curves(output_path=None, log_file=None):
         print(f"Log file saved: {log_file}")
 
     # Main title
-    fig.suptitle('TMT v2.4 Rotation Curves --- SPARC Validation\n'
+    fig.suptitle('Rotation Curves --- SPARC Validation (Temporon Model)\n'
                 '6 representative galaxies (LSB dwarfs to giant spirals)',
                 fontsize=13, fontweight='bold')
 
@@ -367,7 +361,7 @@ def generate_all_figures():
     print(f"Saved: {output_path}")
 
     print("\n" + "="*60)
-    print("TMT v2.4 ROTATION CURVES GENERATED")
+    print("TEMPORON MODEL ROTATION CURVES GENERATED")
     print("="*60)
     print(f"\nValidated parameters:")
     print(f"  k(M) = {K_COEFFICIENT} × (M/10^10)^{K_EXPONENT}")
@@ -380,9 +374,9 @@ def generate_all_figures():
 
 
 def print_summary():
-    """Print summary of TMT v2.4 parameters for all galaxies."""
+    """Print summary of temporon-model parameters for all galaxies."""
     print("\n" + "="*70)
-    print("TMT v2.4 GALAXY PARAMETERS SUMMARY")
+    print("TEMPORON MODEL GALAXY PARAMETERS SUMMARY")
     print("="*70)
     print(f"\n{'Galaxy':<12} {'M_bary':>10} {'k_calc':>8} {'k_opt':>8} {'r_c':>8} {'Type':<20}")
     print("-"*70)
@@ -403,7 +397,7 @@ def print_summary():
 1. SPARC Database (Lelli, McGaugh & Schombert 2016)
    AJ, 152, 157 - http://astroweb.cwru.edu/SPARC/
 
-2. TMT v2.4 Formulation:
+2. Temporon-model formulation:
    M_eff(r) = M_bary x [1 + k x (r/r_c)^n]
 
 3. k(M) Law (172 galaxies):

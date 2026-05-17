@@ -1,4 +1,4 @@
-# Tensor Modification of Time (TMT) — PRD 2026 Submission
+# Temporon Scalar-Tensor Framework — PRD 2026 Submission
 
 This directory contains the complete submission package for the manuscript:
 
@@ -46,7 +46,7 @@ Expected output: `r_c = 8.70 × (M/10^10)^0.48 kpc`, Pearson $r = 0.69$, $p = 4.
 - Empirical relation: $r_c \propto M_{\rm bary}^{0.48 \pm 0.04}$ on 168 SPARC galaxies
 - Empirical exponent deviates from theoretical 1/2 by **only 0.6σ**
 - Median χ² improvement over Newtonian baseline: **92.2 %** in **96.4 %** of the sample
-- ΔBIC > 10 favouring temperon: **82.7 %** of the sample
+- ΔBIC > 10 favouring temporon: **82.7 %** of the sample
 - Solar-system PPN tests satisfied for $\xi v^2 < 10^{-5} M_{\rm Pl}^2$
 
 ## License
@@ -72,7 +72,7 @@ Zenodo DOI: 10.5281/zenodo.18287042 (latest version)
 
 1. **Cosmological implications** — late-time density-dependent expansion, recombination behaviour, Boltzmann implementation
 2. **Bullet Cluster analysis** — density-dependent matter coupling κ(ρ) for merging clusters
-3. **Quantum-foundational interpretations** — connections between the temperon scalar field and quantum mechanics (Foundations of Physics)
+3. **Quantum-foundational interpretations** — connections between the temporon scalar field and quantum mechanics (Foundations of Physics)
 
 ## Contact
 

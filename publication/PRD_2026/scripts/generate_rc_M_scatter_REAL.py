@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-TMT v2.4 -- r_c vs M_bary scatter (REAL SPARC DATA)
+Temporon scalar-tensor model -- r_c vs M_bary scatter (REAL SPARC DATA)
 =====================================================
 
 Uses the actual per-galaxy fits from big_sparc_module.py applied to

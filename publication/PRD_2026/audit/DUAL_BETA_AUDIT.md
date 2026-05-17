@@ -60,7 +60,7 @@ Mais quand on cherche le « calcul détaillé », l'Annexe A se termine sur :
 
 Le passage de 0.02 → 0.001 (facteur 20) est attribué aux « corrections non-linéaires (§ 5) » mais **ces corrections ne sont elles-mêmes pas dérivées explicitement**. C'est un nombre choisi pour matcher l'empirique.
 
-**Pour A_ψ** : la formule documentaire est `A_ψ = (λv⁴) / (ξ H² M_Pl²)`. Avec les paramètres TMT « contraints par PPN » :
+**Pour A_ψ** : la formule documentaire est `A_ψ = (λv⁴) / (ξ H² M_Pl²)`. Avec les paramètres temporon « contraints par PPN » :
 - λ ~ 10⁻¹²² (hiérarchie cosmologique)
 - v ~ 10¹⁶ GeV → v⁴ ~ 10⁶⁴ GeV⁴
 - ξ ~ 1/6
