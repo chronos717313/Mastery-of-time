@@ -353,7 +353,7 @@ def generate_all_figures():
     """Generate the PRD rotation-curves figure (single output)."""
 
     base_dir = Path(__file__).parent
-    output_path = base_dir / 'figure_rotation_curves_v24_PRD.png'
+    output_path = base_dir / 'figure_rotation_curves_PRD.png'
     log_file = base_dir / 'rotation_curves_v24_PRD.log'
 
     fig = plot_rotation_curves(output_path=output_path, log_file=log_file)

@@ -413,7 +413,7 @@ collected in Table~\ref{tab:sparc}.
 
 \begin{figure*}[t]
 \centering
-\includegraphics[width=0.95\textwidth]{figure_rotation_curves_v24_PRD.png}
+\includegraphics[width=0.95\textwidth]{figure_rotation_curves_PRD.png}
 \caption{\label{fig:rotation_curves}
 Rotation curves of six representative SPARC galaxies spanning the
 luminosity range from low-surface-brightness dwarfs (DDO154, F563-1)
@@ -455,9 +455,11 @@ sample (a scatter plot is included in the supplementary
 materials). A log-log linear regression gives
 \begin{equation}
 \label{eq:rc_M_empirical}
-\log_{10}(\rc/\kpc) =
-   (0.48\pm 0.04)\,\log_{10}\!\bigl(\Mbary/10^{10}\Msun\bigr)
-   + \log_{10}(8.7),
+\begin{split}
+\log_{10}(\rc/\kpc) = {} & (0.48\pm 0.04)\,
+   \log_{10}\!\bigl(\Mbary/10^{10}\Msun\bigr) \\
+   {} & + \log_{10}(8.7),
+\end{split}
 \end{equation}
 with Pearson correlation $r = 0.69$, $p = 4.7\times 10^{-25}$
 ($\sim\!12\sigma$ rejection of the slope-zero null hypothesis),
@@ -532,19 +534,21 @@ solar-system tests through chameleon-type screening.
 
 \begin{table}[t]
 \caption{\label{tab:comparison} Predictions of the temporon
-scalar-tensor model relative to alternative frameworks, restricted
-to the galactic and solar-system regimes addressed in this paper.
+scalar-tensor model relative to alternative frameworks
+(``BD'': Brans--Dicke), restricted to the galactic and solar-system
+regimes addressed in this paper.
 $\checkmark$: prediction confirmed;
 $\circ$: model accommodates observation but does not predict;
 $\times$: model fails to reproduce observation.}
+\footnotesize
 \begin{ruledtabular}
 \begin{tabular}{lccccc}
-Phenomenon & $\Lambda$CDM & MOND/TeVeS & $f(R)$ & Brans--Dicke & This work \\
+Phenomenon & $\Lambda$CDM & MOND & $f(R)$ & BD & This work \\
 \hline
-Galactic rotation curves          & $\circ$      & $\checkmark$ & $\circ$ & $\circ$ & $\checkmark$ \\
-$\rc(\Mbary)\!\propto\!\Mbary^{1/2}$ & $\circ$   & $\times$ & $\circ$ & $\times$ & $\checkmark$ \\
-Bullet Cluster / lensing offset   & $\checkmark$ & $\times$~\cite{Clowe2006} & $\circ$ & $\circ$ & ($\circ$, see~\ref{sec:limitations}) \\
-Solar-system PPN tests            & $\checkmark$ & $\times$ & $\circ$ & $\checkmark$ & $\checkmark$ \\
+Galactic rotation curves            & $\circ$      & $\checkmark$ & $\circ$ & $\circ$ & $\checkmark$ \\
+$\rc\!\propto\!\Mbary^{1/2}$        & $\circ$      & $\times$     & $\circ$ & $\times$ & $\checkmark$ \\
+Bullet Cluster / lensing            & $\checkmark$ & $\times$~\cite{Clowe2006} & $\circ$ & $\circ$ & ($\circ$, see~\ref{sec:limitations}) \\
+Solar-system PPN                    & $\checkmark$ & $\times$     & $\circ$ & $\checkmark$ & $\checkmark$ \\
 \end{tabular}
 \end{ruledtabular}
 \end{table}
@@ -664,19 +668,21 @@ for forthcoming work.
 \begin{acknowledgments}
 The author thanks F. Lelli, S. McGaugh and J. Schombert for the
 publicly available SPARC catalogue, which made this analysis
-possible, and acknowledges the KiDS, COSMOS, Pantheon+, and
-Planck collaborations for their public data releases. This work
-received no external funding and was conducted entirely
-independently.
+possible. This work received no external funding and was
+conducted entirely independently.
 \end{acknowledgments}
 
 \section*{Data and Code Availability}
 
-All analysis code, calibrated parameters and validation scripts are
-publicly available at
-\url{https://github.com/chronos717313/Mastery-of-time}
-(DOI: 10.5281/zenodo.18287042). The SPARC catalogue is
-available from~\cite{Lelli2016}.
+All analysis code, calibrated parameters and validation scripts
+underlying the present manuscript are publicly available at
+\url{https://github.com/chronos717313/Mastery-of-time} and archived
+at Zenodo. The canonical version corresponding to this submission
+is \href{https://doi.org/10.5281/zenodo.20114198}{10.5281/zenodo.20114198}
+(versioned DOI), with the persistent concept DOI
+\href{https://doi.org/10.5281/zenodo.18287042}{10.5281/zenodo.18287042}
+pointing to the latest version. The SPARC catalogue is available
+from~\cite{Lelli2016}.
 
 \appendix
 
@@ -736,14 +742,13 @@ hence $r_{c}\approx 8.7\,(\Mbary/10^{10}\Msun)^{1/2}\,\kpc$, in
 agreement with the empirical prefactor of $8.7\kpc$
 (Sec.~\ref{sec:sparc}). The empirical exponent
 $0.48\pm 0.04$ deviates from the predicted $1/2$ by only
-$0.6\sigma$; residual departures from the analytic prediction
+$0.6\sigma$. Residual departures from the analytic prediction
 are absorbed in the intrinsic scatter
 $\sigma_{\log\rc}\!\approx\!0.46$~dex, dominated by the
 mass-dependent variation in $h_{z}$~\cite{Bizyaev2014} and the
 bulge contribution at high baryonic mass.
 
-
-\bibliography{refs_prd}
 \bibliographystyle{apsrev4-2}
+\bibliography{refs_prd}
 
 \end{document}

@@ -16,10 +16,10 @@ This manuscript is deliberately restricted to the **galactic and post-Newtonian 
 
 | Path | Description |
 |---|---|
-| `article_prd.tex` | Main manuscript (RevTeX 4.2, 749 lines) |
+| `article_prd.tex` | Main manuscript (RevTeX 4.2, 754 lines) |
 | `cover_letter_PRD.tex` | Cover letter to PRD editors |
-| `refs_prd.bib` | Bibliography (32 entries, all verified via NASA ADS) |
-| `figures/figure_rotation_curves_v24_PRD.png` | Fig. 1 — six representative SPARC rotation curves |
+| `refs_prd.bib` | Bibliography (21 entries, all verified via NASA ADS) |
+| `figures/figure_rotation_curves_PRD.png` | Fig. 1 — six representative SPARC rotation curves |
 | `figures/figure_rc_M_scatter_REAL.png` | Supplementary scatter $r_c$ vs $M_{\rm bary}$ |
 | `scripts/generate_rotation_curves_v24_PRD.py` | Reproduces Fig. 1 |
 | `scripts/generate_rc_M_scatter_REAL.py` | Reproduces the scatter on real SPARC data |
