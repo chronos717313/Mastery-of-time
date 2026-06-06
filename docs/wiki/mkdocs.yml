@@ -1,33 +1,18 @@
-site_name: Théorie de Maîtrise du Temps
-site_description: Une théorie alternative à ΛCDM basée sur la superposition temporelle
-site_author: Pierre-Olivier A. Després
-copyright: © 2026 Pierre-Olivier A. Després - Théorie de Maîtrise du Temps
+site_name: TMT — Temporon-Mediated Theory
+site_description: A scalar-tensor extension of general relativity with double-well potential. Research notes and reproducibility materials by Pierre-Olivier Després Asselin (Independent Researcher, Montréal).
+site_author: Pierre-Olivier Després Asselin
+copyright: © 2026 Pierre-Olivier Després Asselin
 
 docs_dir: docs
 
 nav:
   - Accueil: index.md
-  - Version Complète: version-complete.md
-  - Lexique: lexique.md
-  - Ponts Conceptuels:
-    - Vue d'ensemble: ponts_conceptuels/index.md
-    - Physique connue: ponts_conceptuels/physique_connue.md
-    - Mécanique quantique: ponts_conceptuels/mecanique_quantique.md
-    - Relativité générale: ponts_conceptuels/relativite_generale.md
-    - Thermodynamique: ponts_conceptuels/thermodynamique.md
-    - Cosmologie: ponts_conceptuels/cosmologie.md
-    - Particules: ponts_conceptuels/particules.md
-    - Mesures: ponts_conceptuels/mesures.md
-  - Validation Empirique:
-    - Vue d'ensemble: validation/index.md
-    - Courbes de rotation: validation/courbes_rotation/index.md
-    - Échelle cosmologique: validation/echelle_cosmo/index.md
-    - Autres tests: validation/autres_tests/index.md
-    - Scripts de reproduction: validation/scripts_reproduction.md
-  - Publications:
-    - Vue d'ensemble: publications/index.md
-    - Package Zenodo: publications/package_zenodo.md
-    - Article scientifique: publications/article_scientifique.md
+  - Théorie: theorie.md
+  - Résultats galactiques: resultats-galactiques.md
+  - Publications: publications.md
+  - Limites et questions ouvertes: limitations.md
+  - FAQ: faq.md
+  - À propos: a-propos.md
 
 theme:
   name: material
@@ -78,51 +63,15 @@ plugins:
             language: en
           nav_translations:
             Accueil: Home
-            Version Complète: Full Version
-            Lexique: Lexicon
-            Ponts Conceptuels: Conceptual Bridges
-            Vue d'ensemble: Overview
-            Physique connue: Known Physics
-            Mécanique quantique: Quantum Mechanics
-            Relativité générale: General Relativity
-            Thermodynamique: Thermodynamics
-            Cosmologie: Cosmology
-            Particules: Particles
-            Mesures: Measurements
-            Validation Empirique: Empirical Validation
-            Courbes de rotation: Rotation Curves
-            Échelle cosmologique: Cosmological Scale
-            Autres tests: Other Tests
-            Scripts de reproduction: Reproduction Scripts
+            Théorie: Theory
+            Résultats galactiques: Galactic results
             Publications: Publications
-            Package Zenodo: Zenodo Package
-            Article scientifique: Scientific Article
+            Limites et questions ouvertes: Limitations and open questions
+            FAQ: FAQ
+            À propos: About
         - locale: es
           name: Español
-          build: true
-          theme:
-            language: es
-          nav_translations:
-            Accueil: Inicio
-            Version Complète: Versión Completa
-            Lexique: Léxico
-            Ponts Conceptuels: Puentes Conceptuales
-            Vue d'ensemble: Visión General
-            Physique connue: Física Conocida
-            Mécanique quantique: Mecánica Cuántica
-            Relativité générale: Relatividad General
-            Thermodynamique: Termodinámica
-            Cosmologie: Cosmología
-            Particules: Partículas
-            Mesures: Medidas
-            Validation Empirique: Validación Empírica
-            Courbes de rotation: Curvas de Rotación
-            Échelle cosmologique: Escala Cosmológica
-            Autres tests: Otras Pruebas
-            Scripts de reproduction: Scripts de Reproducción
-            Publications: Publicaciones
-            Package Zenodo: Paquete Zenodo
-            Article scientifique: Artículo Científico
+          build: false
 
 extra:
   generator: false
@@ -133,9 +82,6 @@ extra:
     - name: English
       link: /en/
       lang: en
-    - name: Español
-      link: /es/
-      lang: es
 
 markdown_extensions:
   - pymdownx.highlight:
